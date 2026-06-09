@@ -112,8 +112,10 @@ async function scrapePlatform(platformName, scraperModule, types) {
   return platformTotal;
 }
 
-// NOL(야놀자) 웹에서 지원하는 숙박 유형 (guesthouse는 앱 전용 — 웹 에러 페이지 반환)
+// NOL(야놀자): guesthouse 앱 전용 제외
 const NOL_TYPES = ['motel', 'hotel', 'pension'];
+// 여기어때: motel 제외 (JSON-LD 방식으로 호텔이 혼입되는 품질 문제)
+const YEOGI_TYPES = ['hotel', 'pension', 'guesthouse'];
 
 async function scrapeAll() {
   const allTypes = getAccommodationTypes();
@@ -131,9 +133,9 @@ async function scrapeAll() {
     log(`[야놀자 치명 오류] ${err.message}`);
   }
 
-  // 여기어때 — 전체 유형 (guesthouse 포함)
+  // 여기어때 — motel 제외 (hotel/pension/guesthouse만)
   try {
-    const n = await scrapePlatform('여기어때', require('../scraper/yeogi'), allTypes);
+    const n = await scrapePlatform('여기어때', require('../scraper/yeogi'), YEOGI_TYPES);
     total += n;
   } catch (err) {
     log(`[여기어때 치명 오류] ${err.message}`);
