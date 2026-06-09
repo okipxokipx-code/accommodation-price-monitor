@@ -1,0 +1,23 @@
+{
+  "name": "accommodation-price-monitor",
+  "version": "1.0.0",
+  "description": "숙박 플랫폼 객단가 실시간 모니터링 에이전트",
+  "main": "scheduler/cron.js",
+  "scripts": {
+    "start": "node scheduler/cron.js",
+    "dashboard": "node dashboard/server.js",
+    "scrape:yanolja": "node -e \"require('./scraper/yanolja').runAll().then(r=>console.log('완료:',r.length,'건'))\"",
+    "scrape:yeogi": "node -e \"require('./scraper/yeogi').runAll().then(r=>console.log('완료:',r.length,'건'))\"",
+    "scrape:test": "node -e \"const y=require('./scraper/yanolja');y.scrapeRegion({city:'서울',district:'강남구'}).then(r=>console.log(JSON.stringify(r,null,2))))\""
+  },
+  "dependencies": {
+    "playwright": "^1.44.0",
+    "better-sqlite3": "^9.4.3",
+    "express": "^4.19.2",
+    "node-cron": "^3.0.3",
+    "p-limit": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

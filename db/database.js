@@ -1,0 +1,217 @@
+'use strict';
+
+const Database = require('better-sqlite3');
+const path = require('path');
+const fs = require('fs');
+
+const DB_PATH = path.join(__dirname, '..', 'data', 'prices.db');
+fs.mkdirSync(path.dirname(DB_PATH), { recursive: true });
+
+const db = new Database(DB_PATH);
+db.pragma('journal_mode = WAL');
+db.pragma('synchronous = NORMAL');
+
+// 테이블 생성 (없을 때만)
+db.exec(`
+  CREATE TABLE IF NOT EXISTS prices (
+    id                 INTEGER PRIMARY KEY AUTOINCREMENT,
+    platform           TEXT NOT NULL,
+    accommodation_type TEXT NOT NULL DEFAULT 'motel',
+    region_city        TEXT NOT NULL,
+    region_district    TEXT NOT NULL,
+    hotel_name         TEXT NOT NULL,
+    price              INTEGER NOT NULL,
+    scraped_at         TEXT NOT NULL
+  );
+`);
+
+// 기존 테이블에 accommodation_type 컬럼 없으면 추가 (마이그레이션) — 인덱스 생성 전에 실행
+const cols = db.prepare("PRAGMA table_info(prices)").all().map((c) => c.name);
+if (!cols.includes('accommodation_type')) {
+  db.exec("ALTER TABLE prices ADD COLUMN accommodation_type TEXT NOT NULL DEFAULT 'motel'");
+  console.log('[DB] accommodation_type 컬럼 추가 완료 (기존 데이터 → motel)');
+}
+
+// 인덱스 생성 (컬럼 확보 후)
+db.exec(`
+  CREATE INDEX IF NOT EXISTS idx_region_type_platform_time
+    ON prices (region_city, region_district, accommodation_type, platform, scraped_at);
+
+  CREATE INDEX IF NOT EXISTS idx_scraped_at
+    ON prices (scraped_at);
+
+  CREATE INDEX IF NOT EXISTS idx_accom_type
+    ON prices (accommodation_type, scraped_at);
+`);
+
+// ─── 삽입 ──────────────────────────────────────────────────────────────────
+const insertStmt = db.prepare(`
+  INSERT INTO prices (platform, accommodation_type, region_city, region_district, hotel_name, price, scraped_at)
+  VALUES (@platform, @accommodation_type, @region_city, @region_district, @hotel_name, @price, @scraped_at)
+`);
+
+const insertMany = db.transaction((rows) => {
+  for (const row of rows) insertStmt.run(row);
+});
+
+/**
+ * @param {'yanolja'|'yeogi'} platform
+ * @param {Array<{hotelName,price,city,district,accommodationType,scrapedAt}>} rows
+ */
+function saveResults(platform, rows) {
+  const mapped = rows.map((r) => ({
+    platform,
+    accommodation_type: r.accommodationType || 'motel',
+    region_city: r.city,
+    region_district: r.district,
+    hotel_name: r.hotelName,
+    price: r.price,
+    scraped_at: r.scrapedAt,
+  }));
+  insertMany(mapped);
+  return mapped.length;
+}
+
+// ─── 집계 헬퍼 ────────────────────────────────────────────────────────────
+
+function resolveHourRange(city, district, platform, hour, accommodationType) {
+  const platformClause = platform && platform !== 'all' ? `AND platform = '${platform}'` : '';
+  const typeClause = accommodationType && accommodationType !== 'all'
+    ? `AND accommodation_type = '${accommodationType}'` : '';
+
+  if (hour === 'latest' || !hour) {
+    const row = db
+      .prepare(
+        `SELECT strftime('%Y-%m-%dT%H', scraped_at) AS h
+         FROM prices
+         WHERE region_city = ? AND region_district = ?
+           ${platformClause} ${typeClause}
+         ORDER BY scraped_at DESC LIMIT 1`
+      )
+      .get(city, district);
+    if (!row) return null;
+    return { from: row.h + ':00:00', to: row.h + ':59:59' };
+  }
+  return { from: hour + ':00:00', to: hour + ':59:59' };
+}
+
+function buildWhereClause(platform, accommodationType) {
+  const parts = [];
+  if (platform && platform !== 'all') parts.push(`platform = @platform`);
+  if (accommodationType && accommodationType !== 'all') parts.push(`accommodation_type = @accommodationType`);
+  return parts.length ? 'AND ' + parts.join(' AND ') : '';
+}
+
+function getTop3(city, district, platform = 'all', hour = 'latest', accommodationType = 'all') {
+  const range = resolveHourRange(city, district, platform, hour, accommodationType);
+  if (!range) return [];
+  const where = buildWhereClause(platform, accommodationType);
+  return db
+    .prepare(
+      `SELECT hotel_name, price, platform, accommodation_type, scraped_at
+       FROM prices
+       WHERE region_city = @city AND region_district = @district
+         AND scraped_at BETWEEN @from AND @to ${where}
+       ORDER BY price DESC LIMIT 3`
+    )
+    .all({ city, district, platform: platform !== 'all' ? platform : undefined,
+           accommodationType: accommodationType !== 'all' ? accommodationType : undefined,
+           from: range.from, to: range.to });
+}
+
+function getBottom3(city, district, platform = 'all', hour = 'latest', accommodationType = 'all') {
+  const range = resolveHourRange(city, district, platform, hour, accommodationType);
+  if (!range) return [];
+  const where = buildWhereClause(platform, accommodationType);
+  return db
+    .prepare(
+      `SELECT hotel_name, price, platform, accommodation_type, scraped_at
+       FROM prices
+       WHERE region_city = @city AND region_district = @district
+         AND scraped_at BETWEEN @from AND @to ${where}
+       ORDER BY price ASC LIMIT 3`
+    )
+    .all({ city, district, platform: platform !== 'all' ? platform : undefined,
+           accommodationType: accommodationType !== 'all' ? accommodationType : undefined,
+           from: range.from, to: range.to });
+}
+
+function getAverage(city, district, platform = 'all', hour = 'latest', accommodationType = 'all') {
+  const range = resolveHourRange(city, district, platform, hour, accommodationType);
+  if (!range) return null;
+  const where = buildWhereClause(platform, accommodationType);
+  return db
+    .prepare(
+      `SELECT ROUND(AVG(price)) AS avg_price, COUNT(*) AS count
+       FROM prices
+       WHERE region_city = @city AND region_district = @district
+         AND scraped_at BETWEEN @from AND @to ${where}`
+    )
+    .get({ city, district, platform: platform !== 'all' ? platform : undefined,
+           accommodationType: accommodationType !== 'all' ? accommodationType : undefined,
+           from: range.from, to: range.to });
+}
+
+function getHistory(city, district, platform = 'all', hours = 24, accommodationType = 'all') {
+  const since = new Date(Date.now() - hours * 3600 * 1000).toISOString();
+  const platformClause = platform !== 'all' ? `AND platform = ?` : '';
+  const typeClause = accommodationType !== 'all' ? `AND accommodation_type = ?` : '';
+  const params = [city, district, since];
+  if (platform !== 'all') params.push(platform);
+  if (accommodationType !== 'all') params.push(accommodationType);
+
+  return db
+    .prepare(
+      `SELECT strftime('%Y-%m-%dT%H', scraped_at) AS hour,
+              accommodation_type,
+              ROUND(AVG(price)) AS avg_price,
+              COUNT(*) AS count
+       FROM prices
+       WHERE region_city = ? AND region_district = ? AND scraped_at >= ?
+         ${platformClause} ${typeClause}
+       GROUP BY hour, accommodation_type
+       ORDER BY hour ASC`
+    )
+    .all(...params);
+}
+
+function getSummary(city, district, platform = 'all', hour = 'latest', accommodationType = 'all') {
+  return {
+    top3: getTop3(city, district, platform, hour, accommodationType),
+    bottom3: getBottom3(city, district, platform, hour, accommodationType),
+    average: getAverage(city, district, platform, hour, accommodationType),
+    lastUpdated: resolveHourRange(city, district, platform, hour, accommodationType)?.to ?? null,
+  };
+}
+
+/**
+ * 전국 개요: 숙박 유형별 × 플랫폼별 평균 객단가 (가장 최근 배치)
+ */
+function getOverview() {
+  const since = new Date(Date.now() - 2 * 3600 * 1000).toISOString();
+  return db
+    .prepare(
+      `SELECT accommodation_type, platform,
+              region_city AS city,
+              ROUND(AVG(price)) AS avg_price,
+              COUNT(*) AS count,
+              MAX(scraped_at) AS last_scraped
+       FROM prices
+       WHERE scraped_at >= ?
+       GROUP BY accommodation_type, platform, region_city
+       ORDER BY accommodation_type, platform, region_city`
+    )
+    .all(since);
+}
+
+function pruneOld(days = 30) {
+  const cutoff = new Date(Date.now() - days * 86400 * 1000).toISOString();
+  const info = db.prepare(`DELETE FROM prices WHERE scraped_at < ?`).run(cutoff);
+  return info.changes;
+}
+
+module.exports = {
+  db, saveResults,
+  getTop3, getBottom3, getAverage, getHistory, getSummary, getOverview,
+  pruneOld,
+};

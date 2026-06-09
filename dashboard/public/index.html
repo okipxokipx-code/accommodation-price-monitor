@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>전국 숙박 객단가 모니터링</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <style>
+    :root {
+      --bg: #0f1117; --surface: #1a1d27; --surface2: #242838; --border: #2d3248;
+      --accent: #5c6bc0; --accent2: #7e57c2;
+      --green: #4caf7d; --blue: #42a5f5; --orange: #ffa726; --red: #ef5350; --yellow: #ffca28;
+      --text: #e8eaf0; --text2: #8b93b0; --radius: 12px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Apple SD Gothic Neo','Malgun Gothic',sans-serif; min-height: 100vh; }
+
+    header {
+      background: linear-gradient(135deg,#1a1d27,#242838);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+    }
+    header h1 { font-size: 1.25rem; font-weight: 700; }
+    header h1 span { color: var(--accent); }
+    .header-meta { font-size: 0.8rem; color: var(--text2); }
+
+    .layout { display: grid; grid-template-columns: 280px 1fr; min-height: calc(100vh - 60px); }
+
+    aside {
+      background: var(--surface); border-right: 1px solid var(--border);
+      padding: 20px 16px; display: flex; flex-direction: column; gap: 16px; overflow-y: auto;
+    }
+    .control-group label { display: block; font-size: 0.72rem; color: var(--text2); margin-bottom: 6px; text-transform: uppercase; letter-spacing: .5px; }
+    .control-group select {
+      width: 100%; background: var(--surface2); border: 1px solid var(--border);
+      color: var(--text); border-radius: 8px; padding: 9px 12px; font-size: .88rem; appearance: none; cursor: pointer;
+    }
+    .control-group select:focus { outline: 2px solid var(--accent); border-color: transparent; }
+
+    .type-tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+    .type-tab {
+      padding: 8px 4px; border-radius: 8px; border: 1px solid var(--border);
+      background: var(--surface2); color: var(--text2); font-size: .8rem;
+      cursor: pointer; text-align: center; transition: all .15s; font-weight: 500;
+    }
+    .type-tab.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .type-tab:hover:not(.active) { border-color: var(--accent); color: var(--text); }
+
+    .platform-tabs { display: flex; gap: 6px; }
+    .plat-tab {
+      flex: 1; padding: 8px; border-radius: 8px; border: 1px solid var(--border);
+      background: var(--surface2); color: var(--text2); font-size: .8rem;
+      cursor: pointer; text-align: center; transition: all .15s;
+    }
+    .plat-tab.active { background: var(--accent2); color: #fff; border-color: var(--accent2); }
+    .plat-tab:hover:not(.active) { border-color: var(--accent2); color: var(--text); }
+
+    .divider { border: none; border-top: 1px solid var(--border); }
+
+    .national-stats { display: flex; flex-direction: column; gap: 8px; }
+    .stat-row { background: var(--surface2); border-radius: 8px; padding: 10px 12px; border: 1px solid var(--border); font-size: .8rem; }
+    .type-badge { display: inline-block; font-size: .68rem; padding: 2px 6px; border-radius: 4px; font-weight: 600; margin-bottom: 4px; }
+    .stat-row.motel .type-badge    { background: #1a237e33; color: #7986cb; }
+    .stat-row.hotel .type-badge    { background: #e6510022; color: #ff8f00; }
+    .stat-row.pension .type-badge  { background: #1b5e2033; color: #66bb6a; }
+    .stat-row.guesthouse .type-badge { background: #4a148c33; color: #ab47bc; }
+    .stat-price { font-size: 1.05rem; font-weight: 700; }
+    .stat-meta  { color: var(--text2); font-size: .72rem; margin-top: 2px; }
+
+    main { padding: 20px; display: flex; flex-direction: column; gap: 20px; overflow-y: auto; }
+    .section-title { font-size: .85rem; font-weight: 600; color: var(--text2); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 12px; }
+
+    .avg-banner {
+      background: linear-gradient(135deg, var(--surface), var(--surface2));
+      border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 20px 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;
+    }
+    .avg-label { font-size: .8rem; color: var(--text2); }
+    .avg-price { font-size: 2rem; font-weight: 700; color: var(--green); letter-spacing: -1px; }
+    .avg-meta  { font-size: .78rem; color: var(--text2); }
+    .avg-badges { display: flex; gap: 8px; flex-wrap: wrap; }
+    .badge { padding: 5px 12px; border-radius: 20px; font-size: .78rem; font-weight: 600; border: 1px solid; }
+    .badge.yanolja { background: #1a237e22; border-color: #3949ab44; color: #7986cb; }
+    .badge.yeogi   { background: #e6510022; border-color: #ff6d0044; color: #ffb74d; }
+
+    .cards-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; }
+    .card h3 { font-size: .82rem; font-weight: 600; margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+    .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+    .dot.green { background: var(--green); }
+    .dot.blue  { background: var(--blue); }
+
+    .rank-list { display: flex; flex-direction: column; gap: 8px; }
+    .rank-item {
+      display: flex; align-items: center; gap: 10px;
+      padding: 10px 12px; border-radius: 8px;
+      background: var(--surface2); border: 1px solid var(--border);
+    }
+    .rank-num { font-size: .72rem; font-weight: 700; color: var(--text2); width: 18px; text-align: center; }
+    .rank-info { flex: 1; min-width: 0; }
+    .rank-name { font-size: .85rem; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .rank-platform { font-size: .7rem; color: var(--text2); margin-top: 2px; }
+    .rank-price { font-size: .95rem; font-weight: 700; }
+    .rank-price.high { color: var(--red); }
+    .rank-price.low  { color: var(--blue); }
+
+    .chart-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; }
+    .chart-wrap { position: relative; height: 200px; }
+
+    .overview-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; }
+    .overview-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px,1fr)); gap: 10px; margin-top: 12px; }
+    .overview-item { background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; padding: 12px; }
+    .overview-city { font-size: .78rem; font-weight: 600; color: var(--text2); margin-bottom: 6px; }
+    .overview-price-row { display: flex; justify-content: space-between; align-items: center; font-size: .82rem; margin-bottom: 3px; }
+    .overview-price-row .plat { color: var(--text2); font-size: .72rem; }
+    .overview-price-row .price { font-weight: 600; color: var(--yellow); }
+
+    .loading { text-align: center; padding: 40px; color: var(--text2); font-size: .9rem; }
+    .empty   { text-align: center; padding: 30px; color: var(--text2); font-size: .85rem; }
+    .update-pulse { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--green); margin-right: 6px; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.3} }
+
+    @media(max-width:900px) {
+      .layout { grid-template-columns: 1fr; }
+      aside { border-right: none; border-bottom: 1px solid var(--border); padding: 16px; }
+      .cards-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1><span>전국</span> 숙박 객단가 모니터링</h1>
+  <div class="header-meta">
+    <span class="update-pulse"></span>
+    <span id="lastUpdate">데이터 로딩 중...</span>
+    &nbsp;·&nbsp; 매 정시 자동 수집
+  </div>
+</header>
+
+<div class="layout">
+  <aside>
+    <div class="control-group">
+      <label>숙박 유형</label>
+      <div class="type-tabs" id="typeTabs">
+        <div class="type-tab active" data-type="motel">🏨 모텔</div>
+        <div class="type-tab" data-type="hotel">🏩 호텔</div>
+        <div class="type-tab" data-type="pension">🏡 펜션</div>
+        <div class="type-tab" data-type="guesthouse">🛏 게스트하우스</div>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label>플랫폼</label>
+      <div class="platform-tabs">
+        <div class="plat-tab active" data-platform="all">전체</div>
+        <div class="plat-tab" data-platform="yanolja">야놀자</div>
+        <div class="plat-tab" data-platform="yeogi">여기어때</div>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label>시 / 도</label>
+      <select id="citySelect"><option value="">-- 시/도 선택 --</option></select>
+    </div>
+
+    <div class="control-group">
+      <label>지역 / 구</label>
+      <select id="districtSelect"><option value="">-- 지역 선택 --</option></select>
+    </div>
+
+    <hr class="divider" />
+
+    <div class="control-group">
+      <label>전국 유형별 평균 객단가</label>
+      <div class="national-stats" id="nationalStats"><div class="loading">로딩 중...</div></div>
+    </div>
+  </aside>
+
+  <main id="mainContent">
+    <div class="loading">좌측에서 숙박 유형과 지역을 선택하세요</div>
+  </main>
+</div>
+
+<script>
+const TYPE_LABELS = { motel:'모텔', hotel:'호텔', pension:'펜션', guesthouse:'게스트하우스' };
+const PLAT_LABELS = { yanolja:'야놀자', yeogi:'여기어때' };
+
+const state = { accommodationType:'motel', platform:'all', city:'', district:'', regionsMap:{} };
+
+async function init() {
+  setupTypeTabs();
+  setupPlatformTabs();
+  await loadRegions();
+  await loadNationalStats();
+  renderLanding();
+  setInterval(() => { loadNationalStats(); if(state.city && state.district) loadAndRender(); else loadOverview(); }, 5*60*1000);
+}
+
+function setupTypeTabs() {
+  document.querySelectorAll('.type-tab').forEach(tab => {
+    tab.addEventListener('click', async () => {
+      document.querySelectorAll('.type-tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      state.accommodationType = tab.dataset.type;
+      state.city = ''; state.district = '';
+      await loadRegions();
+      renderLanding();
+    });
+  });
+}
+
+function setupPlatformTabs() {
+  document.querySelectorAll('.plat-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.plat-tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      state.platform = tab.dataset.platform;
+      if (state.city && state.district) loadAndRender(); else renderLanding();
+    });
+  });
+}
+
+async function loadRegions() {
+  const res = await fetch(`/api/regions?type=${state.accommodationType}`);
+  const regions = await res.json();
+  state.regionsMap = {};
+  regions.forEach(r => { state.regionsMap[r.city] = r.districts; });
+
+  const citySelect = document.getElementById('citySelect');
+  citySelect.innerHTML = '<option value="">-- 시/도 선택 --</option>';
+  regions.forEach(r => {
+    const opt = document.createElement('option'); opt.value = r.city; opt.textContent = r.city;
+    citySelect.appendChild(opt);
+  });
+  citySelect.value = state.city || '';
+  citySelect.onchange = () => {
+    state.city = citySelect.value; state.district = '';
+    updateDistrictSelect(); renderLanding();
+  };
+  updateDistrictSelect();
+}
+
+function updateDistrictSelect() {
+  const ds = document.getElementById('districtSelect');
+  ds.innerHTML = '<option value="">-- 지역 선택 --</option>';
+  (state.regionsMap[state.city] || []).forEach(d => {
+    const opt = document.createElement('option'); opt.value = d; opt.textContent = d;
+    ds.appendChild(opt);
+  });
+  ds.value = state.district || '';
+  ds.onchange = () => { state.district = ds.value; if(state.district) loadAndRender(); };
+}
+
+async function loadAndRender() {
+  document.getElementById('mainContent').innerHTML = '<div class="loading">⏳ 데이터 로딩 중...</div>';
+  try {
+    const [summary, history] = await Promise.all([fetchSummary(), fetchHistory()]);
+    renderDetail(summary, history);
+  } catch(e) {
+    document.getElementById('mainContent').innerHTML = `<div class="loading">오류: ${e.message}</div>`;
+  }
+}
+
+async function fetchSummary() {
+  const p = new URLSearchParams({ region:state.city, district:state.district, platform:state.platform, accommodationType:state.accommodationType });
+  return (await fetch(`/api/summary?${p}`)).json();
+}
+
+async function fetchHistory() {
+  const p = new URLSearchParams({ region:state.city, district:state.district, platform:state.platform, accommodationType:state.accommodationType, hours:24 });
+  return (await fetch(`/api/history?${p}`)).json();
+}
+
+async function loadNationalStats() {
+  const el = document.getElementById('nationalStats');
+  try {
+    const rows = await (await fetch('/api/type-stats')).json();
+    if (!rows.length) { el.innerHTML='<div class="empty">수집 데이터 없음</div>'; return; }
+
+    const byType = {};
+    rows.forEach(r => {
+      if (!byType[r.accommodation_type]) byType[r.accommodation_type] = { sum:0, cnt:0, plats:[] };
+      byType[r.accommodation_type].sum += (r.avg_price||0) * (r.count||0);
+      byType[r.accommodation_type].cnt += r.count||0;
+      byType[r.accommodation_type].plats.push({ p:r.platform, avg:r.avg_price, cnt:r.count });
+    });
+
+    el.innerHTML = ['motel','hotel','pension','guesthouse'].filter(t => byType[t]).map(t => {
+      const d = byType[t];
+      const avg = d.cnt > 0 ? Math.round(d.sum / d.cnt) : 0;
+      const plStr = d.plats.map(x => `${PLAT_LABELS[x.p]||x.p} ${Math.round(x.avg||0).toLocaleString()}원`).join(' / ');
+      return `<div class="stat-row ${t}">
+        <span class="type-badge">${TYPE_LABELS[t]||t}</span>
+        <div class="stat-price">${avg.toLocaleString()}원</div>
+        <div class="stat-meta">${d.cnt.toLocaleString()}건 · ${plStr}</div>
+      </div>`;
+    }).join('');
+  } catch(e) { el.innerHTML='<div class="empty">통계 로드 실패</div>'; }
+}
+
+function renderLanding() {
+  const main = document.getElementById('mainContent');
+  main.innerHTML = `
+    <div class="overview-card">
+      <div class="section-title">${TYPE_LABELS[state.accommodationType]||state.accommodationType} — 전국 시/도별 평균 객단가</div>
+      <div id="overviewGrid" class="overview-grid"><div class="loading">로딩 중...</div></div>
+    </div>`;
+  loadOverview();
+}
+
+function renderDetail(summary, history) {
+  const main = document.getElementById('mainContent');
+  const avg = summary.average;
+  const tl = TYPE_LABELS[state.accommodationType] || '';
+
+  if (summary.lastUpdated) {
+    const t = new Date(summary.lastUpdated);
+    document.getElementById('lastUpdate').textContent =
+      `최근 수집: ${t.getHours().toString().padStart(2,'0')}:${t.getMinutes().toString().padStart(2,'0')}`;
+  }
+
+  main.innerHTML = `
+    <div class="avg-banner">
+      <div>
+        <div class="avg-label">${state.city} ${state.district} · ${tl} 평균 객단가</div>
+        <div class="avg-price">${avg ? Math.round(avg.avg_price).toLocaleString()+'원' : '데이터 없음'}</div>
+        <div class="avg-meta">${avg ? avg.count.toLocaleString()+'개 숙소 기준' : ''}</div>
+      </div>
+      <div class="avg-badges">
+        <span class="badge yanolja">야놀자</span>
+        <span class="badge yeogi">여기어때</span>
+      </div>
+    </div>
+
+    <div class="cards-grid">
+      <div class="card">
+        <h3><span class="dot green"></span>최고가 TOP 3</h3>
+        <div class="rank-list">${renderRankList(summary.top3,'high')}</div>
+      </div>
+      <div class="card">
+        <h3><span class="dot blue"></span>최저가 TOP 3</h3>
+        <div class="rank-list">${renderRankList(summary.bottom3,'low')}</div>
+      </div>
+    </div>
+
+    <div class="chart-card">
+      <div class="section-title">24시간 평균 객단가 추이</div>
+      <div class="chart-wrap"><canvas id="trendChart"></canvas></div>
+    </div>
+
+    <div class="overview-card">
+      <div class="section-title">${tl} — 전국 시/도별 평균 객단가</div>
+      <div id="overviewGrid" class="overview-grid"><div class="loading">로딩 중...</div></div>
+    </div>`;
+
+  if (history && history.length) renderChart(history);
+  loadOverview();
+}
+
+function renderRankList(items, cls) {
+  if (!items || !items.length) return '<div class="empty">데이터 없음</div>';
+  return items.map((item, i) => `
+    <div class="rank-item">
+      <span class="rank-num">${i+1}</span>
+      <div class="rank-info">
+        <div class="rank-name" title="${item.hotel_name}">${item.hotel_name}</div>
+        <div class="rank-platform">${PLAT_LABELS[item.platform]||item.platform}</div>
+      </div>
+      <span class="rank-price ${cls}">${Math.round(item.price).toLocaleString()}원</span>
+    </div>`).join('');
+}
+
+function renderChart(history) {
+  const canvas = document.getElementById('trendChart');
+  if (!canvas) return;
+
+  const grouped = {};
+  history.forEach(r => {
+    const k = r.accommodation_type || state.accommodationType;
+    if (!grouped[k]) grouped[k] = {};
+    grouped[k][r.hour] = r.avg_price;
+  });
+
+  const allHours = [...new Set(history.map(r => r.hour))].sort();
+  const labels = allHours.map(h => h.slice(11,16));
+  const TYPE_COLORS = { motel:'#5c6bc0', hotel:'#ffa726', pension:'#4caf7d', guesthouse:'#ab47bc' };
+
+  const datasets = Object.entries(grouped).map(([type, data]) => ({
+    label: TYPE_LABELS[type]||type,
+    data: allHours.map(h => data[h]||null),
+    borderColor: TYPE_COLORS[type]||'#42a5f5',
+    backgroundColor: (TYPE_COLORS[type]||'#42a5f5')+'22',
+    tension: .3, fill: true, spanGaps: true, pointRadius: 4, pointHoverRadius: 6,
+  }));
+
+  if (window._chart) window._chart.destroy();
+  window._chart = new Chart(canvas.getContext('2d'), {
+    type: 'line', data: { labels, datasets },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { labels: { color:'#8b93b0', font:{size:11} } } },
+      scales: {
+        x: { ticks:{color:'#8b93b0',font:{size:11}}, grid:{color:'#2d3248'} },
+        y: { ticks:{color:'#8b93b0',font:{size:11},callback:v=>Math.round(v/1000)+'k원'}, grid:{color:'#2d3248'} },
+      },
+    },
+  });
+}
+
+async function loadOverview() {
+  const grid = document.getElementById('overviewGrid');
+  if (!grid) return;
+  try {
+    const rows = await (await fetch('/api/overview')).json();
+    const filtered = rows.filter(r => r.accommodation_type === state.accommodationType);
+    if (!filtered.length) {
+      grid.innerHTML = '<div class="empty">수집 데이터 없음<br/>스크래핑 완료 후 표시됩니다.</div>';
+      return;
+    }
+    const byCityPlat = {};
+    filtered.forEach(r => {
+      if (!byCityPlat[r.city]) byCityPlat[r.city] = {};
+      byCityPlat[r.city][r.platform] = { avg: r.avg_price };
+    });
+    grid.innerHTML = Object.entries(byCityPlat)
+      .sort((a,b) => {
+        const aA = Object.values(a[1]).reduce((s,v)=>s+v.avg,0)/Object.values(a[1]).length;
+        const bA = Object.values(b[1]).reduce((s,v)=>s+v.avg,0)/Object.values(b[1]).length;
+        return bA - aA;
+      })
+      .map(([city, plats]) => `
+        <div class="overview-item">
+          <div class="overview-city">${city}</div>
+          ${Object.entries(plats).map(([p,v])=>`
+            <div class="overview-price-row">
+              <span class="plat">${PLAT_LABELS[p]||p}</span>
+              <span class="price">${Math.round(v.avg).toLocaleString()}원</span>
+            </div>`).join('')}
+        </div>`).join('');
+  } catch(e) { if(grid) grid.innerHTML='<div class="empty">개요 로드 실패</div>'; }
+}
+
+init();
+</script>
+</body>
+</html>
