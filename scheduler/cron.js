@@ -156,10 +156,20 @@ async function scrapeAll() {
 
     const repoDir = path.join(__dirname, '..');
     const gitPath = '/usr/bin/git';
+    const ghPath = path.join(process.env.HOME, 'bin', 'gh');
+
+    // gh CLI 토큰으로 credential 설정 (백그라운드 실행 시 keychain 접근 불가 대비)
+    const env = { ...process.env, PATH: `${process.env.HOME}/bin:/usr/local/bin:/usr/bin:/bin` };
+    try {
+      const token = execSync(`${ghPath} auth token`, { env, stdio: 'pipe' }).toString().trim();
+      execSync(`${gitPath} config credential.helper '!f(){ echo username=x-token-auth; echo password=${token}; }; f'`,
+        { cwd: repoDir, stdio: 'pipe' });
+    } catch (_) { /* gh 없으면 osxkeychain 사용 */ }
+
     execSync(`${gitPath} add data-export/latest.json`, { cwd: repoDir, stdio: 'pipe' });
     const timestamp = new Date().toLocaleString('ko-KR', { timeZone: 'Asia/Seoul' });
     execSync(`${gitPath} commit -m "데이터 갱신: ${timestamp}"`, { cwd: repoDir, stdio: 'pipe' });
-    execSync(`${gitPath} push`, { cwd: repoDir, stdio: 'pipe' });
+    execSync(`${gitPath} push`, { cwd: repoDir, env, stdio: 'pipe' });
     log('GitHub 자동 푸시 완료 ✓');
   } catch (err) {
     log(`[JSON/푸시 오류] ${err.message.slice(0, 120)}`);
