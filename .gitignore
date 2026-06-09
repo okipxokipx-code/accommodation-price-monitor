@@ -7,3 +7,4 @@ logs/
 *.log
 .DS_Store
 scraper/diagnose*.js
+# data-export/ 는 추적 (Vercel 대시보드가 읽음)

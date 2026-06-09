@@ -3,6 +3,7 @@
 const cron = require('node-cron');
 const fs = require('fs');
 const path = require('path');
+const { execSync } = require('child_process');
 
 // p-limit v4는 ESM 전용 — CommonJS 호환 인라인 구현
 function pLimit(concurrency) {
@@ -19,7 +20,10 @@ function pLimit(concurrency) {
 }
 
 const { getRegionsByType, getAccommodationTypes } = require('../scraper/regions');
-const { saveResults, pruneOld } = require('../db/database');
+const { saveResults, pruneOld, exportDashboardData } = require('../db/database');
+
+const DATA_EXPORT_DIR = path.join(__dirname, '..', 'data-export');
+fs.mkdirSync(DATA_EXPORT_DIR, { recursive: true });
 
 const LOG_DIR = path.join(__dirname, '..', 'logs');
 const LOG_FILE = path.join(LOG_DIR, 'scrape.log');
@@ -142,6 +146,24 @@ async function scrapeAll() {
   }
 
   log(`=== 완료: 총 ${total}건 저장 ===`);
+
+  // ── JSON 내보내기 + GitHub 자동 푸시 ─────────────────────────────
+  try {
+    const data = exportDashboardData();
+    const outPath = path.join(DATA_EXPORT_DIR, 'latest.json');
+    fs.writeFileSync(outPath, JSON.stringify(data, null, 2));
+    log(`JSON 내보내기 완료 → data-export/latest.json`);
+
+    const repoDir = path.join(__dirname, '..');
+    const gitPath = '/usr/bin/git';
+    execSync(`${gitPath} add data-export/latest.json`, { cwd: repoDir, stdio: 'pipe' });
+    const timestamp = new Date().toLocaleString('ko-KR', { timeZone: 'Asia/Seoul' });
+    execSync(`${gitPath} commit -m "데이터 갱신: ${timestamp}"`, { cwd: repoDir, stdio: 'pipe' });
+    execSync(`${gitPath} push`, { cwd: repoDir, stdio: 'pipe' });
+    log('GitHub 자동 푸시 완료 ✓');
+  } catch (err) {
+    log(`[JSON/푸시 오류] ${err.message.slice(0, 120)}`);
+  }
 }
 
 // ── 즉시 1회 실행 + 매 정각 반복 ─────────────────────────────────────────

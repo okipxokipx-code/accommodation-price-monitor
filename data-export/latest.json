@@ -1,0 +1,406 @@
+{
+  "updatedAt": "2026-06-09T11:15:25.562Z",
+  "types": {
+    "motel": {
+      "platforms": {
+        "all": {
+          "avg": 50635,
+          "count": 12503,
+          "min": 8000,
+          "max": 400000
+        },
+        "yanolja": {
+          "avg": 50319,
+          "count": 12229,
+          "min": 8000,
+          "max": 400000
+        },
+        "yeogi": {
+          "avg": 64780,
+          "count": 274,
+          "min": 32000,
+          "max": 209000
+        }
+      },
+      "cities": [
+        {
+          "city": "서울",
+          "avg": 55191,
+          "count": 3582
+        },
+        {
+          "city": "부산",
+          "avg": 46619,
+          "count": 2662
+        },
+        {
+          "city": "인천",
+          "avg": 39395,
+          "count": 1181
+        },
+        {
+          "city": "광주",
+          "avg": 52209,
+          "count": 1090
+        },
+        {
+          "city": "수원",
+          "avg": 37156,
+          "count": 794
+        },
+        {
+          "city": "울산",
+          "avg": 54185,
+          "count": 757
+        },
+        {
+          "city": "대전",
+          "avg": 67579,
+          "count": 650
+        },
+        {
+          "city": "대구",
+          "avg": 53020,
+          "count": 582
+        },
+        {
+          "city": "창원",
+          "avg": 43410,
+          "count": 572
+        },
+        {
+          "city": "제주",
+          "avg": 59512,
+          "count": 436
+        },
+        {
+          "city": "고양",
+          "avg": 59839,
+          "count": 197
+        }
+      ],
+      "hourlyTrend": [
+        {
+          "hour": "2026-06-09T06:00",
+          "platform": "yanolja",
+          "avg": 49327,
+          "count": 8724
+        },
+        {
+          "hour": "2026-06-09T06:00",
+          "platform": "yeogi",
+          "avg": 70153,
+          "count": 171
+        },
+        {
+          "hour": "2026-06-09T07:00",
+          "platform": "yanolja",
+          "avg": 49338,
+          "count": 4232
+        },
+        {
+          "hour": "2026-06-09T07:00",
+          "platform": "yeogi",
+          "avg": 65991,
+          "count": 93
+        },
+        {
+          "hour": "2026-06-09T08:00",
+          "platform": "yanolja",
+          "avg": 49942,
+          "count": 4189
+        },
+        {
+          "hour": "2026-06-09T08:00",
+          "platform": "yeogi",
+          "avg": 64549,
+          "count": 92
+        },
+        {
+          "hour": "2026-06-09T09:00",
+          "platform": "yanolja",
+          "avg": 49909,
+          "count": 4135
+        },
+        {
+          "hour": "2026-06-09T09:00",
+          "platform": "yeogi",
+          "avg": 66727,
+          "count": 93
+        },
+        {
+          "hour": "2026-06-09T10:00",
+          "platform": "yanolja",
+          "avg": 50335,
+          "count": 8189
+        },
+        {
+          "hour": "2026-06-09T10:00",
+          "platform": "yeogi",
+          "avg": 64259,
+          "count": 182
+        },
+        {
+          "hour": "2026-06-09T11:00",
+          "platform": "yanolja",
+          "avg": 50286,
+          "count": 4040
+        },
+        {
+          "hour": "2026-06-09T11:00",
+          "platform": "yeogi",
+          "avg": 65810,
+          "count": 92
+        }
+      ]
+    },
+    "hotel": {
+      "platforms": {
+        "all": {
+          "avg": 122554,
+          "count": 6478,
+          "min": 25000,
+          "max": 1320000
+        },
+        "yanolja": {
+          "avg": 122554,
+          "count": 6478,
+          "min": 25000,
+          "max": 1320000
+        },
+        "yeogi": {
+          "avg": null,
+          "count": 0,
+          "min": null,
+          "max": null
+        }
+      },
+      "cities": [
+        {
+          "city": "경상",
+          "avg": 106093,
+          "count": 1151
+        },
+        {
+          "city": "서울",
+          "avg": 226935,
+          "count": 939
+        },
+        {
+          "city": "부산",
+          "avg": 108176,
+          "count": 837
+        },
+        {
+          "city": "강원",
+          "avg": 90280,
+          "count": 819
+        },
+        {
+          "city": "전라",
+          "avg": 83197,
+          "count": 743
+        },
+        {
+          "city": "제주",
+          "avg": 152046,
+          "count": 572
+        },
+        {
+          "city": "충청",
+          "avg": 109814,
+          "count": 564
+        },
+        {
+          "city": "경기",
+          "avg": 108788,
+          "count": 475
+        },
+        {
+          "city": "인천",
+          "avg": 84181,
+          "count": 378
+        }
+      ],
+      "hourlyTrend": [
+        {
+          "hour": "2026-06-09T06:00",
+          "platform": "yanolja",
+          "avg": 119413,
+          "count": 2350
+        },
+        {
+          "hour": "2026-06-09T07:00",
+          "platform": "yanolja",
+          "avg": 119856,
+          "count": 2315
+        },
+        {
+          "hour": "2026-06-09T08:00",
+          "platform": "yanolja",
+          "avg": 119903,
+          "count": 2309
+        },
+        {
+          "hour": "2026-06-09T09:00",
+          "platform": "yanolja",
+          "avg": 119835,
+          "count": 2225
+        },
+        {
+          "hour": "2026-06-09T10:00",
+          "platform": "yanolja",
+          "avg": 122093,
+          "count": 4386
+        },
+        {
+          "hour": "2026-06-09T11:00",
+          "platform": "yanolja",
+          "avg": 123519,
+          "count": 2092
+        }
+      ]
+    },
+    "pension": {
+      "platforms": {
+        "all": {
+          "avg": 113560,
+          "count": 16045,
+          "min": 14000,
+          "max": 980000
+        },
+        "yanolja": {
+          "avg": 113560,
+          "count": 16045,
+          "min": 14000,
+          "max": 980000
+        },
+        "yeogi": {
+          "avg": null,
+          "count": 0,
+          "min": null,
+          "max": null
+        }
+      },
+      "cities": [
+        {
+          "city": "강원",
+          "avg": 109137,
+          "count": 3269
+        },
+        {
+          "city": "가평",
+          "avg": 109288,
+          "count": 1897
+        },
+        {
+          "city": "경북",
+          "avg": 112690,
+          "count": 1674
+        },
+        {
+          "city": "전남",
+          "avg": 117417,
+          "count": 1543
+        },
+        {
+          "city": "경남",
+          "avg": 106252,
+          "count": 1454
+        },
+        {
+          "city": "충남",
+          "avg": 90507,
+          "count": 1398
+        },
+        {
+          "city": "경기",
+          "avg": 144447,
+          "count": 1275
+        },
+        {
+          "city": "인천",
+          "avg": 118925,
+          "count": 1001
+        },
+        {
+          "city": "제주",
+          "avg": 129392,
+          "count": 940
+        },
+        {
+          "city": "전북",
+          "avg": 107974,
+          "count": 890
+        },
+        {
+          "city": "충북",
+          "avg": 122438,
+          "count": 704
+        }
+      ],
+      "hourlyTrend": [
+        {
+          "hour": "2026-06-09T06:00",
+          "platform": "yanolja",
+          "avg": 113054,
+          "count": 5602
+        },
+        {
+          "hour": "2026-06-09T07:00",
+          "platform": "yanolja",
+          "avg": 114183,
+          "count": 5656
+        },
+        {
+          "hour": "2026-06-09T08:00",
+          "platform": "yanolja",
+          "avg": 113032,
+          "count": 5277
+        },
+        {
+          "hour": "2026-06-09T09:00",
+          "platform": "yanolja",
+          "avg": 113744,
+          "count": 5385
+        },
+        {
+          "hour": "2026-06-09T10:00",
+          "platform": "yanolja",
+          "avg": 113973,
+          "count": 10574
+        },
+        {
+          "hour": "2026-06-09T11:00",
+          "platform": "yanolja",
+          "avg": 112761,
+          "count": 5471
+        }
+      ]
+    },
+    "guesthouse": {
+      "platforms": {
+        "all": {
+          "avg": null,
+          "count": 0,
+          "min": null,
+          "max": null
+        },
+        "yanolja": {
+          "avg": null,
+          "count": 0,
+          "min": null,
+          "max": null
+        },
+        "yeogi": {
+          "avg": null,
+          "count": 0,
+          "min": null,
+          "max": null
+        }
+      },
+      "cities": [],
+      "hourlyTrend": []
+    }
+  }
+}

@@ -210,8 +210,61 @@ function pruneOld(days = 30) {
   return info.changes;
 }
 
+/**
+ * Vercel 대시보드용 JSON 내보내기
+ * - 최근 2시간 배치 기준 통계
+ * - 최근 24시간 시간별 트렌드
+ */
+function exportDashboardData() {
+  const since2h  = new Date(Date.now() -  2 * 3600 * 1000).toISOString();
+  const since24h = new Date(Date.now() - 24 * 3600 * 1000).toISOString();
+  const types    = ['motel', 'hotel', 'pension', 'guesthouse'];
+
+  const result = { updatedAt: new Date().toISOString(), types: {} };
+
+  for (const type of types) {
+    // 플랫폼별 통계
+    const platforms = {};
+    for (const plat of ['all', 'yanolja', 'yeogi']) {
+      const platClause = plat !== 'all' ? `AND platform = '${plat}'` : '';
+      platforms[plat] = db.prepare(`
+        SELECT ROUND(AVG(price)) AS avg, COUNT(*) AS count,
+               MIN(price) AS min, MAX(price) AS max
+        FROM prices
+        WHERE accommodation_type = ? AND scraped_at >= ? ${platClause}
+      `).get(type, since2h) || { avg: null, count: 0, min: null, max: null };
+    }
+
+    // 도시별 평균 (최근 2h)
+    const cities = db.prepare(`
+      SELECT region_city AS city,
+             ROUND(AVG(price)) AS avg, COUNT(*) AS count
+      FROM prices
+      WHERE accommodation_type = ? AND scraped_at >= ?
+      GROUP BY region_city
+      ORDER BY count DESC
+    `).all(type, since2h);
+
+    // 24시간 시간별 트렌드
+    const hourlyTrend = db.prepare(`
+      SELECT strftime('%Y-%m-%dT%H:00', scraped_at) AS hour,
+             platform,
+             ROUND(AVG(price)) AS avg,
+             COUNT(*) AS count
+      FROM prices
+      WHERE accommodation_type = ? AND scraped_at >= ?
+      GROUP BY hour, platform
+      ORDER BY hour ASC
+    `).all(type, since24h);
+
+    result.types[type] = { platforms, cities, hourlyTrend };
+  }
+
+  return result;
+}
+
 module.exports = {
   db, saveResults,
   getTop3, getBottom3, getAverage, getHistory, getSummary, getOverview,
-  pruneOld,
+  exportDashboardData, pruneOld,
 };
