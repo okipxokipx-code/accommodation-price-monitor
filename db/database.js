@@ -268,14 +268,27 @@ function exportDashboardData() {
       ORDER BY city, district, hour ASC
     `).all(type, since24h);
 
-    // 구 단위에 플랫폼 + 트렌드 병합
+    // 구 단위 호텔명 기준 중복 제거 후 대표가 (최신 1건)
+    const districtTopRows = db.prepare(`
+      SELECT region_city AS city, region_district AS district,
+             hotel_name, MAX(price) AS price, platform
+      FROM prices
+      WHERE accommodation_type = ? AND scraped_at >= ?
+      GROUP BY region_city, region_district, hotel_name
+      ORDER BY region_city, region_district, price DESC
+    `).all(type, since2h);
+
+    // 구 단위에 플랫폼 + 트렌드 + 호텔 목록 병합
     const districtsWithDetail = districtRaw.map(d => {
       const plats = {};
       districtPlatRows
         .filter(r => r.city === d.city && r.district === d.district)
         .forEach(r => { plats[r.platform] = { avg: r.avg, count: r.count }; });
       const trend = districtTrendRows.filter(r => r.city === d.city && r.district === d.district);
-      return { ...d, platforms: plats, trend };
+      const allHotels = districtTopRows.filter(r => r.city === d.city && r.district === d.district);
+      const top5 = allHotels.slice(0, 5);
+      const bottom5 = [...allHotels].sort((a, b) => a.price - b.price).slice(0, 5);
+      return { ...d, platforms: plats, trend, top5, bottom5 };
     });
 
     // 시 단위로 그룹화 (districts 배열 포함)
