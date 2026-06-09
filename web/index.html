@@ -6,452 +6,344 @@
 <title>전국 숙박 객단가 모니터링</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <style>
-  :root {
-    --bg:#0f1117; --card:#1a1d27; --card2:#22263a;
-    --border:#2e3250; --accent:#4f6ef7; --accent2:#f76f4f;
-    --text:#e8eaf6; --muted:#7986cb; --green:#4caf50; --red:#f44336;
-  }
-  *{box-sizing:border-box;margin:0;padding:0;}
-  body{background:var(--bg);color:var(--text);font-family:'Apple SD Gothic Neo','Malgun Gothic',sans-serif;}
+:root {
+  --bg: #0f1117; --card: #1a1d27; --card2: #22263a;
+  --border: #2e3250; --accent: #4f6ef7;
+  --text: #e8eaf6; --muted: #7986cb;
+  --green: #4caf50; --red: #f44336; --orange: #ffc107;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--text); font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; }
 
-  header{background:var(--card);border-bottom:1px solid var(--border);padding:13px 18px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px;}
-  header h1{font-size:.98rem;font-weight:700;}
-  header h1 span{color:var(--accent);}
-  .update-info{font-size:.73rem;color:var(--muted);}
-  .status-dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:4px;background:var(--green);vertical-align:middle;}
-  .status-dot.stale{background:var(--red);animation:pulse 1.5s infinite;}
-  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+/* 헤더 */
+header {
+  background: var(--card); border-bottom: 1px solid var(--border);
+  padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+}
+header h1 { font-size: 1rem; font-weight: 700; }
+header h1 em { color: var(--accent); font-style: normal; }
+.upd { font-size: .73rem; color: var(--muted); }
+.dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--green); margin-right: 5px; vertical-align: middle; }
+.dot.stale { background: var(--red); animation: blink 1.4s infinite; }
+@keyframes blink { 0%,100%{opacity:1}50%{opacity:.3} }
 
-  .container{max-width:1300px;margin:0 auto;padding:14px 14px;}
-  .offline-banner{background:#3a1a1a;border:1px solid var(--red);border-radius:8px;padding:9px 13px;margin-bottom:11px;font-size:.82rem;color:#ff7070;display:none;}
+.wrap { max-width: 960px; margin: 0 auto; padding: 16px; }
 
-  /* 숙박 유형 탭 */
-  .type-tabs{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:12px;}
-  .type-tab{padding:6px 16px;border-radius:22px;border:1px solid var(--border);background:var(--card);cursor:pointer;font-size:.85rem;color:var(--muted);transition:all .18s;}
-  .type-tab.active{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600;}
+/* 숙박 유형 탭 */
+.type-row { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
+.type-btn {
+  padding: 7px 20px; border-radius: 24px; border: 1px solid var(--border);
+  background: var(--card); cursor: pointer; font-size: .88rem; color: var(--muted); transition: all .15s;
+}
+.type-btn.on { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 700; }
 
-  /* 플랫폼 탭 */
-  .plat-tabs{display:flex;gap:5px;margin-bottom:14px;}
-  .plat-tab{padding:4px 12px;border-radius:13px;border:1px solid var(--border);background:transparent;cursor:pointer;font-size:.78rem;color:var(--muted);transition:all .15s;}
-  .plat-tab.active{border-color:var(--text);color:var(--text);}
+/* 플랫폼 탭 */
+.plat-row { display: flex; gap: 5px; margin-bottom: 14px; }
+.plat-btn {
+  padding: 4px 13px; border-radius: 13px; border: 1px solid var(--border);
+  background: transparent; cursor: pointer; font-size: .78rem; color: var(--muted); transition: all .15s;
+}
+.plat-btn.on { border-color: var(--text); color: var(--text); }
 
-  /* 요약 카드 */
-  .stats-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:9px;margin-bottom:16px;}
-  .stat-card{background:var(--card);border:1px solid var(--border);border-radius:9px;padding:12px 14px;}
-  .stat-label{font-size:.7rem;color:var(--muted);margin-bottom:4px;}
-  .stat-value{font-size:1.3rem;font-weight:700;}
-  .stat-sub{font-size:.68rem;color:var(--muted);margin-top:3px;}
-  .stat-card.hl{border-color:var(--accent);}
-  .stat-card.hl .stat-value{color:var(--accent);}
+/* 지역 선택 스크롤 바 */
+.region-bar { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 8px; margin-bottom: 16px; scrollbar-width: thin; }
+.region-bar::-webkit-scrollbar { height: 4px; }
+.region-bar::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+.region-pill {
+  padding: 5px 14px; border-radius: 20px; border: 1px solid var(--border);
+  background: var(--card); cursor: pointer; font-size: .82rem; color: var(--muted);
+  white-space: nowrap; flex-shrink: 0; transition: all .13s;
+}
+.region-pill:hover { border-color: var(--accent); color: var(--text); }
+.region-pill.on { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
 
-  /* ── 지역 선택 패널 ── */
-  .region-panel{display:grid;grid-template-columns:110px 1fr;background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden;margin-bottom:16px;min-height:260px;}
+/* 메인 통계 3칸 */
+.stat3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 16px; }
+@media(max-width:480px){ .stat3 { grid-template-columns: 1fr 1fr; } }
+.stat-box { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+.stat-box.hl { border-color: var(--accent); background: linear-gradient(135deg,#1a1d27,#1e2240); }
+.stat-lbl { font-size: .7rem; color: var(--muted); margin-bottom: 5px; }
+.stat-val { font-size: 1.45rem; font-weight: 700; }
+.stat-sub { font-size: .68rem; color: var(--muted); margin-top: 4px; }
 
-  /* 좌측 시/도 목록 */
-  .city-list{background:var(--card2);border-right:1px solid var(--border);padding:6px 0;overflow-y:auto;max-height:320px;}
-  .city-list-item{padding:10px 14px;font-size:.85rem;color:var(--muted);cursor:pointer;border-left:3px solid transparent;transition:all .13s;white-space:nowrap;}
-  .city-list-item:hover{color:var(--text);background:rgba(79,110,247,.08);}
-  .city-list-item.active{color:var(--accent);font-weight:700;border-left-color:var(--accent);background:rgba(79,110,247,.1);}
+/* Top3 섹션 */
+.top3-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
+@media(max-width:520px){ .top3-wrap { grid-template-columns: 1fr; } }
+.top3-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 14px; }
+.top3-head { font-size: .78rem; font-weight: 700; margin-bottom: 11px; letter-spacing: .03em; }
+.top3-item { display: flex; align-items: center; gap: 9px; padding: 9px 0; border-bottom: 1px solid var(--border); }
+.top3-item:last-child { border-bottom: none; }
+.badge {
+  width: 24px; height: 24px; border-radius: 50%; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center; font-size: .72rem; font-weight: 700;
+}
+.badge.exp { background: rgba(244,67,54,.15); color: var(--red); }
+.badge.chp { background: rgba(76,175,80,.15); color: var(--green); }
+.hotel-info { flex: 1; min-width: 0; }
+.hotel-nm { font-size: .85rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hotel-pl { font-size: .66rem; color: var(--muted); margin-top: 2px; }
+.hotel-pr { font-size: .95rem; font-weight: 700; flex-shrink: 0; }
 
-  /* 우측 구 단위 목록 */
-  .district-panel{padding:10px 12px;overflow-y:auto;max-height:320px;}
-  .district-header{font-size:.72rem;color:var(--muted);font-weight:600;margin-bottom:8px;letter-spacing:.04em;}
+/* 24h 차트 */
+.chart-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 14px; margin-bottom: 16px; }
+.sec-title { font-size: .78rem; font-weight: 600; color: var(--muted); margin-bottom: 10px; }
+.chart-box { position: relative; height: 190px; }
 
-  .district-item{display:flex;align-items:center;justify-content:space-between;padding:9px 10px;border-radius:7px;cursor:pointer;border:1px solid transparent;margin-bottom:5px;transition:all .13s;}
-  .district-item:hover{background:rgba(79,110,247,.07);border-color:var(--border);}
-  .district-item.active{background:rgba(79,110,247,.15);border-color:var(--accent);}
-  .district-name{font-size:.85rem;}
-  .district-name small{display:block;font-size:.7rem;color:var(--muted);margin-top:1px;}
-  .district-avg{font-size:.9rem;font-weight:700;color:var(--accent);text-align:right;}
-  .district-count{font-size:.68rem;color:var(--muted);text-align:right;}
+/* 전국 도시 그리드 */
+.city-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px,1fr)); gap: 7px; }
+.city-card {
+  background: var(--card2); border: 1px solid var(--border); border-radius: 8px;
+  padding: 10px 12px; cursor: pointer; transition: border-color .13s;
+}
+.city-card:hover, .city-card.on { border-color: var(--accent); background: rgba(79,110,247,.1); }
+.city-nm { font-size: .74rem; color: var(--muted); margin-bottom: 3px; }
+.city-avg { font-size: .98rem; font-weight: 700; }
+.city-cnt { font-size: .68rem; color: var(--muted); }
 
-  /* 전국 전체 버튼 */
-  .nation-btn{display:flex;align-items:center;justify-content:space-between;padding:9px 10px;border-radius:7px;cursor:pointer;border:1px solid var(--border);margin-bottom:8px;background:var(--card2);transition:all .13s;}
-  .nation-btn:hover,.nation-btn.active{border-color:var(--accent);background:rgba(79,110,247,.1);}
-  .nation-btn .nb-label{font-size:.85rem;font-weight:600;}
-  .nation-btn .nb-avg{font-size:.9rem;font-weight:700;color:var(--accent);}
+/* 구 선택 */
+.district-wrap { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; margin-bottom: 14px; }
+.district-title { font-size: .72rem; color: var(--muted); font-weight: 600; margin-bottom: 8px; }
+.district-pills { display: flex; gap: 5px; flex-wrap: wrap; }
+.dist-pill {
+  padding: 4px 11px; border-radius: 16px; border: 1px solid var(--border);
+  background: transparent; cursor: pointer; font-size: .76rem; color: var(--muted); transition: all .13s; white-space: nowrap;
+}
+.dist-pill:hover { border-color: var(--accent); color: var(--text); }
+.dist-pill.on { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
 
-  /* 차트 */
-  .chart-panel{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px;margin-bottom:14px;}
-  .panel-title{font-size:.78rem;font-weight:600;color:var(--muted);margin-bottom:10px;}
-  .chart-wrap{position:relative;height:190px;}
-
-  /* 2컬럼 */
-  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px;}
-  @media(max-width:580px){.two-col{grid-template-columns:1fr;}}
-  .panel{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px;}
-
-  .ci{display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border);cursor:pointer;}
-  .ci:last-child{border-bottom:none;}
-  .ci:hover .ci-name{color:var(--accent);}
-  .ci-name{font-size:.83rem;}
-  .ci-avg{font-size:.85rem;font-weight:600;color:var(--accent);}
-  .ci-cnt{font-size:.68rem;color:var(--muted);}
-  .rank{font-size:.68rem;color:var(--muted);width:16px;flex-shrink:0;}
-
-  .loading{text-align:center;padding:50px;color:var(--muted);font-size:.88rem;}
-
-  /* 지역 요약 박스 */
-  .region-summary{background:linear-gradient(135deg,#1a1d27,#1e2240);border:1px solid var(--accent);border-radius:12px;padding:16px 18px;margin-bottom:14px;}
-  .region-summary-title{font-size:.8rem;color:var(--accent);font-weight:700;margin-bottom:12px;letter-spacing:.04em;}
-  .region-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px;}
-  .rs-card{background:rgba(255,255,255,.04);border-radius:8px;padding:10px 12px;text-align:center;}
-  .rs-label{font-size:.68rem;color:var(--muted);margin-bottom:4px;}
-  .rs-value{font-size:1.2rem;font-weight:700;}
-
-  /* Top3 테이블 */
-  .top3-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
-  @media(max-width:560px){.top3-grid{grid-template-columns:1fr;}}
-  .top3-box{background:rgba(255,255,255,.03);border-radius:8px;padding:12px;}
-  .top3-title{font-size:.72rem;font-weight:700;letter-spacing:.04em;margin-bottom:9px;display:flex;align-items:center;gap:5px;}
-  .top3-row{display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.06);}
-  .top3-row:last-child{border-bottom:none;}
-  .top3-rank{width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:700;flex-shrink:0;}
-  .top3-rank.expensive{background:rgba(244,67,54,.15);color:#f44336;}
-  .top3-rank.cheap{background:rgba(76,175,80,.15);color:#4caf50;}
-  .top3-info{flex:1;min-width:0;}
-  .top3-name{font-size:.84rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-  .top3-plat{font-size:.66rem;color:var(--muted);margin-top:1px;}
-  .top3-price{font-size:.95rem;font-weight:700;flex-shrink:0;}
+.empty { text-align: center; padding: 40px; color: var(--muted); font-size: .88rem; }
+.loading { text-align: center; padding: 60px; color: var(--muted); }
 </style>
 </head>
 <body>
 
 <header>
-  <h1>🏨 전국 숙박 <span>객단가</span> 모니터링</h1>
-  <div class="update-info">
-    <span class="status-dot" id="statusDot"></span>
-    <span id="updateTime">로딩 중...</span> · 매 시간 갱신
-  </div>
+  <h1>🏨 전국 숙박 <em>객단가</em> 모니터링</h1>
+  <div class="upd"><span class="dot" id="dot"></span><span id="upd">로딩 중...</span> · 매 시간 갱신</div>
 </header>
 
-<div class="container">
-  <div class="offline-banner" id="offlineBanner">⚠️ 마지막 갱신이 2시간 이상 지났습니다.</div>
-  <div id="mainContent" class="loading">데이터를 불러오는 중...</div>
+<div class="wrap">
+  <div id="app" class="loading">데이터 불러오는 중...</div>
 </div>
 
 <script>
-const DATA_URL='https://raw.githubusercontent.com/okipxokipx-code/accommodation-price-monitor/main/data-export/latest.json';
-const TYPE_LABELS={motel:'모텔',hotel:'호텔',pension:'펜션',guesthouse:'게스트하우스'};
-const PLAT_LABELS={all:'전체',yanolja:'야놀자',yeogi:'여기어때'};
-const CHART_COLORS={
-  yanolja:{line:'#4f6ef7',fill:'rgba(79,110,247,.12)'},
-  yeogi:  {line:'#f76f4f',fill:'rgba(247,111,79,.12)'},
-  all:    {line:'#7986cb',fill:'rgba(121,134,203,.12)'},
-};
+const DATA_URL = 'https://raw.githubusercontent.com/okipxokipx-code/accommodation-price-monitor/main/data-export/latest.json';
+const TYPE_LBL = { motel:'모텔', hotel:'호텔', pension:'펜션', guesthouse:'게스트하우스' };
+const PLAT_LBL = { all:'전체', yanolja:'야놀자', yeogi:'여기어때' };
+const PLAT_CLR = { yanolja:'#4f6ef7', yeogi:'#f76f4f', all:'#7986cb' };
+const PLAT_FILL = { yanolja:'rgba(79,110,247,.12)', yeogi:'rgba(247,111,79,.12)', all:'rgba(121,134,203,.12)' };
 
-let gData=null, gType='motel', gPlat='all', gCity='전국', gDistrict=null, trendChart=null;
+let D = null;
+let gType = 'motel', gPlat = 'all', gCity = '전국', gDist = null;
+let chart = null;
 
-const won=v=>v?Math.round(v).toLocaleString('ko-KR')+'원':'-';
-const cnt=v=>v?v.toLocaleString('ko-KR')+'건':'-';
+const won = v => v ? Math.round(v).toLocaleString('ko-KR') + '원' : '-';
+const cnt = v => v ? v.toLocaleString('ko-KR') + '건' : '-';
+const pc  = p => PLAT_CLR[p] || '#7986cb';
 
-// ── 메인 렌더 ─────────────────────────────────────────────
-function render(){
-  if(!gData) return;
-  const d=gData.types[gType];
+// ── 렌더 ────────────────────────────────────────────────────
+function render() {
+  if (!D) return;
+  const td = D.types[gType];
+  if (!td) return;
 
-  // 현재 선택 상태에 따른 통계
-  let stats, trend, title;
-  if(gCity==='전국'){
-    stats=d.platforms[gPlat];
-    trend=d.hourlyTrend;
-    title='전국 전체';
-  } else if(gDistrict){
-    const cObj=d.cities.find(c=>c.city===gCity);
-    const dObj=cObj?.districts?.find(dd=>dd.district===gDistrict);
-    stats=getStats(dObj, gPlat);
-    trend=dObj?.trend||[];
-    title=`${gCity} · ${gDistrict}`;
-  } else {
-    const cObj=d.cities.find(c=>c.city===gCity);
-    stats=getStats(cObj, gPlat);
-    trend=cObj?.trend||[];
-    title=gCity+' 전체';
-  }
+  // 현재 선택 소스
+  const cityObj = td.cities.find(c => c.city === gCity);
+  const distObj = gDist ? cityObj?.districts?.find(d => d.district === gDist) : null;
+  const src     = distObj || cityObj;    // null 이면 전국 뷰
+  const isNation = !src;
 
-  document.getElementById('mainContent').innerHTML=`
+  // 통계 (플랫폼 필터 적용)
+  const stats = isNation
+    ? td.platforms[gPlat]
+    : (gPlat === 'all' ? src : { avg: src.platforms?.[gPlat]?.avg, count: src.platforms?.[gPlat]?.count, min: src.min, max: src.max });
+
+  const top3 = src?.top3   || [];
+  const bot3 = src?.bottom3 || [];
+  const trend = src?.trend  || td.hourlyTrend;
+  const titleLoc = distObj ? `${gCity} · ${gDist}` : gCity === '전국' ? '전국 전체' : gCity;
+
+  document.getElementById('app').innerHTML = `
     <!-- 숙박 유형 탭 -->
-    <div class="type-tabs">
-      ${Object.entries(TYPE_LABELS).map(([k,v])=>
-        `<div class="type-tab ${k===gType?'active':''}" onclick="setType('${k}')">${v}</div>`
+    <div class="type-row">
+      ${Object.entries(TYPE_LBL).map(([k,v]) =>
+        `<div class="type-btn ${k===gType?'on':''}" onclick="setType('${k}')">${v}</div>`
       ).join('')}
     </div>
 
     <!-- 플랫폼 탭 -->
-    <div class="plat-tabs">
-      ${Object.entries(PLAT_LABELS).map(([k,v])=>
-        `<div class="plat-tab ${k===gPlat?'active':''}" onclick="setPlat('${k}')">${v}</div>`
+    <div class="plat-row">
+      ${Object.entries(PLAT_LBL).map(([k,v]) =>
+        `<div class="plat-btn ${k===gPlat?'on':''}" onclick="setPlat('${k}')">${v}</div>`
       ).join('')}
     </div>
 
-    <!-- 지역 선택 패널 -->
-    <div class="region-panel">
-      <div class="city-list">
-        <div class="city-list-item ${'전국'===gCity?'active':''}" onclick="selectCity('전국')">전국 전체</div>
-        ${d.cities.map(c=>
-          `<div class="city-list-item ${c.city===gCity?'active':''}" onclick="selectCity('${c.city}')">${c.city}</div>`
+    <!-- 지역 선택 바 -->
+    <div class="region-bar">
+      <div class="region-pill ${'전국'===gCity?'on':''}" onclick="setCity('전국')">📊 전국 전체</div>
+      ${td.cities.map(c =>
+        `<div class="region-pill ${c.city===gCity?'on':''}" onclick="setCity('${c.city}')">${c.city}</div>`
+      ).join('')}
+    </div>
+
+    <!-- 구 단위 선택 (도시 선택 시) -->
+    ${cityObj ? `
+    <div class="district-wrap">
+      <div class="district-title">📍 ${gCity} 세부 지역</div>
+      <div class="district-pills">
+        <div class="dist-pill ${!gDist?'on':''}" onclick="setDist(null)">${gCity} 전체</div>
+        ${(cityObj.districts||[]).map(d =>
+          `<div class="dist-pill ${d.district===gDist?'on':''}" onclick="setDist('${d.district.replace(/'/g,"\\'")}')">${d.district}</div>`
         ).join('')}
       </div>
-      <div class="district-panel">
-        ${renderDistrictPanel(d)}
-      </div>
-    </div>
+    </div>` : ''}
 
-    <!-- ① 지역 선택 시: 평균/최고/최저 + Top3/Bottom3 -->
-    ${!isNation ? renderRegionSummary(d, stats) : `
-    <!-- ② 전국 뷰: 간단 통계 + 지역 순위 -->
-    <div class="stats-row">
-      <div class="stat-card hl">
-        <div class="stat-label">전국 평균 객단가</div>
-        <div class="stat-value">${won(stats?.avg)}</div>
+    <!-- 핵심 통계 3칸 -->
+    <div class="stat3">
+      <div class="stat-box hl">
+        <div class="stat-lbl">📍 ${titleLoc} 평균 객단가</div>
+        <div class="stat-val" style="color:var(--accent)">${won(stats?.avg)}</div>
         <div class="stat-sub">수집 ${cnt(stats?.count)}</div>
       </div>
-      <div class="stat-card">
-        <div class="stat-label">전국 최저가</div>
-        <div class="stat-value" style="color:var(--green);font-size:1.15rem">${won(stats?.min)}</div>
+      <div class="stat-box">
+        <div class="stat-lbl">최고가</div>
+        <div class="stat-val" style="color:var(--red)">${won(stats?.max)}</div>
+        <div class="stat-sub">해당 지역 기준</div>
       </div>
-      <div class="stat-card">
-        <div class="stat-label">전국 최고가</div>
-        <div class="stat-value" style="color:var(--red);font-size:1.15rem">${won(stats?.max)}</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-label">수집 지역</div>
-        <div class="stat-value" style="font-size:1.2rem">${d.cities.length}<span style="font-size:.85rem;color:var(--muted)">개</span></div>
+      <div class="stat-box">
+        <div class="stat-lbl">최저가</div>
+        <div class="stat-val" style="color:var(--green)">${won(stats?.min)}</div>
+        <div class="stat-sub">해당 지역 기준</div>
       </div>
     </div>
-    <div class="two-col">
-      <div class="panel">
-        <div class="panel-title">💰 비싼 지역 TOP 10</div>
-        ${topDistricts(d,'desc')}
-      </div>
-      <div class="panel">
-        <div class="panel-title">💸 저렴한 지역 TOP 10</div>
-        ${topDistricts(d,'asc')}
-      </div>
-    </div>`}
 
-    <!-- 트렌드 차트 -->
-    <div class="chart-panel">
-      <div class="panel-title">📈 24시간 트렌드 — ${title}</div>
-      <div class="chart-wrap"><canvas id="trendChart"></canvas></div>
+    <!-- Top3 / Bottom3 (지역 선택 시) -->
+    ${!isNation && (top3.length || bot3.length) ? `
+    <div class="top3-wrap">
+      <div class="top3-card">
+        <div class="top3-head" style="color:var(--red)">💰 최고가 TOP 3</div>
+        ${top3.length ? top3.map((h,i) => `
+          <div class="top3-item">
+            <div class="badge exp">${i+1}</div>
+            <div class="hotel-info">
+              <div class="hotel-nm" title="${h.hotel_name}">${h.hotel_name}</div>
+              <div class="hotel-pl" style="color:${pc(h.platform)}">${PLAT_LBL[h.platform]||h.platform}</div>
+            </div>
+            <div class="hotel-pr" style="color:var(--red)">${won(h.price)}</div>
+          </div>`).join('') : '<div class="empty">데이터 없음</div>'}
+      </div>
+      <div class="top3-card">
+        <div class="top3-head" style="color:var(--green)">💸 최저가 TOP 3</div>
+        ${bot3.length ? bot3.map((h,i) => `
+          <div class="top3-item">
+            <div class="badge chp">${i+1}</div>
+            <div class="hotel-info">
+              <div class="hotel-nm" title="${h.hotel_name}">${h.hotel_name}</div>
+              <div class="hotel-pl" style="color:${pc(h.platform)}">${PLAT_LBL[h.platform]||h.platform}</div>
+            </div>
+            <div class="hotel-pr" style="color:var(--green)">${won(h.price)}</div>
+          </div>`).join('') : '<div class="empty">데이터 없음</div>'}
+      </div>
+    </div>` : ''}
+
+    <!-- 24시간 트렌드 차트 -->
+    <div class="chart-card">
+      <div class="sec-title">📈 24시간 객단가 트렌드 — ${titleLoc}</div>
+      <div class="chart-box"><canvas id="chart"></canvas></div>
     </div>
+
+    <!-- 전국 뷰: 도시 그리드 -->
+    ${isNation ? `
+    <div class="chart-card">
+      <div class="sec-title">🗺️ 전국 도시별 평균 객단가 — ${TYPE_LBL[gType]}</div>
+      <div class="city-grid">
+        ${td.cities.map(c => `
+          <div class="city-card ${c.city===gCity?'on':''}" onclick="setCity('${c.city}')">
+            <div class="city-nm">${c.city}</div>
+            <div class="city-avg">${won(c.avg)}</div>
+            <div class="city-cnt">${cnt(c.count)}</div>
+          </div>`).join('')}
+      </div>
+    </div>` : ''}
   `;
 
-  renderChart(trend);
+  drawChart(trend);
 }
 
-// 플랫폼별 통계 렌더
-function renderPlatStats(obj){
-  if(!obj) return '';
-  const p=obj.platforms||{};
-  return ['yanolja','yeogi'].filter(k=>p[k]).map(k=>`
-    <div style="display:flex;justify-content:space-between;align-items:center">
-      <span style="font-size:.7rem;color:var(--muted)">${PLAT_LABELS[k]}</span>
-      <span style="font-size:.78rem;font-weight:600;color:${k==='yanolja'?'#4f6ef7':'#f76f4f'}">${won(p[k].avg)}</span>
-    </div>
-  `).join('');
-}
+// ── 차트 ────────────────────────────────────────────────────
+function drawChart(rows) {
+  const ctx = document.getElementById('chart');
+  if (!ctx) return;
+  if (chart) { chart.destroy(); chart = null; }
+  if (!rows?.length) return;
 
-// 구 패널 렌더
-function renderDistrictPanel(d){
-  if(gCity==='전국'){
-    return `<div class="district-header">시/도를 선택하면 세부 지역이 표시됩니다</div>
-      <div class="nation-btn active">
-        <span class="nb-label">📊 전국 전체</span>
-        <div><div class="nb-avg">${won(d.platforms.all?.avg)}</div><div class="ci-cnt">${cnt(d.platforms.all?.count)}</div></div>
-      </div>
-      ${d.cities.map(c=>`
-        <div class="nation-btn" onclick="selectCity('${c.city}')">
-          <span class="nb-label">${c.city}</span>
-          <div><div class="nb-avg">${won(c.avg)}</div><div class="ci-cnt">${cnt(c.count)}</div></div>
-        </div>
-      `).join('')}`;
-  }
-
-  const cObj=d.cities.find(c=>c.city===gCity);
-  if(!cObj||!cObj.districts?.length){
-    return `<div class="district-header">수집된 세부 지역 없음</div>`;
-  }
-
-  return `
-    <div class="district-header">${gCity} 세부 지역 (${cObj.districts.length}개)</div>
-    <div class="district-item ${!gDistrict?'active':''}" onclick="selectDistrict(null)">
-      <div class="district-name">${gCity} 전체<small>모든 구 통합</small></div>
-      <div style="text-align:right">
-        <div class="district-avg">${won(cObj.avg)}</div>
-        <div class="district-count">${cnt(cObj.count)}</div>
-      </div>
-    </div>
-    ${cObj.districts.map(dd=>`
-      <div class="district-item ${dd.district===gDistrict?'active':''}" onclick="selectDistrict('${dd.district.replace(/'/g,"\\'")}')">
-        <div class="district-name">${dd.district}</div>
-        <div style="text-align:right">
-          <div class="district-avg">${won(dd.avg)}</div>
-          <div class="district-count">${cnt(dd.count)}</div>
-        </div>
-      </div>
-    `).join('')}
-  `;
-}
-
-// 지역 선택 시 요약 (평균/최고/최저 + Top3/Bottom3)
-function renderRegionSummary(d, stats){
-  const cObj=d.cities.find(c=>c.city===gCity);
-  if(!cObj) return '';
-  const dObj=gDistrict ? cObj.districts?.find(dd=>dd.district===gDistrict) : null;
-  const src=dObj||cObj;
-  const top3=src?.top3||[], bot3=src?.bottom3||[];
-  const platColor=p=>p==='yanolja'?'#4f6ef7':'#f76f4f';
-  const platLabel=p=>PLAT_LABELS[p]||p;
-
-  const top3Rows=top3.map((h,i)=>`
-    <div class="top3-row">
-      <div class="top3-rank expensive">${i+1}</div>
-      <div class="top3-info">
-        <div class="top3-name" title="${h.hotel_name}">${h.hotel_name}</div>
-        <div class="top3-plat" style="color:${platColor(h.platform)}">${platLabel(h.platform)}</div>
-      </div>
-      <div class="top3-price" style="color:#f44336">${won(h.price)}</div>
-    </div>`).join('');
-
-  const bot3Rows=bot3.map((h,i)=>`
-    <div class="top3-row">
-      <div class="top3-rank cheap">${i+1}</div>
-      <div class="top3-info">
-        <div class="top3-name" title="${h.hotel_name}">${h.hotel_name}</div>
-        <div class="top3-plat" style="color:${platColor(h.platform)}">${platLabel(h.platform)}</div>
-      </div>
-      <div class="top3-price" style="color:#4caf50">${won(h.price)}</div>
-    </div>`).join('');
-
-  const locLabel=gDistrict?`${gCity} · ${gDistrict}`:gCity;
-
-  return `
-  <div class="region-summary">
-    <div class="region-summary-title">📍 ${locLabel} ${TYPE_LABELS[gType]} 현황</div>
-    <div class="region-stats">
-      <div class="rs-card">
-        <div class="rs-label">평균 객단가</div>
-        <div class="rs-value" style="color:var(--accent)">${won(stats?.avg)}</div>
-        <div style="font-size:.66rem;color:var(--muted);margin-top:3px">${cnt(stats?.count)}</div>
-      </div>
-      <div class="rs-card">
-        <div class="rs-label">최고가</div>
-        <div class="rs-value" style="color:#f44336">${won(stats?.max)}</div>
-      </div>
-      <div class="rs-card">
-        <div class="rs-label">최저가</div>
-        <div class="rs-value" style="color:#4caf50">${won(stats?.min)}</div>
-      </div>
-    </div>
-    <div class="top3-grid">
-      <div class="top3-box">
-        <div class="top3-title"><span style="color:#f44336">💰</span> 최고가 TOP 3</div>
-        ${top3Rows||'<div style="color:var(--muted);font-size:.8rem">데이터 없음</div>'}
-      </div>
-      <div class="top3-box">
-        <div class="top3-title"><span style="color:#4caf50">💸</span> 최저가 TOP 3</div>
-        ${bot3Rows||'<div style="color:var(--muted);font-size:.8rem">데이터 없음</div>'}
-      </div>
-    </div>
-  </div>`;
-}
-
-// 전국 TOP 지역 (구 단위)
-function topDistricts(d, dir){
-  const all=[];
-  d.cities.forEach(c=>c.districts?.forEach(dd=>all.push({...dd,cityLabel:c.city})));
-  const sorted=all.filter(x=>x.avg).sort((a,b)=>dir==='desc'?b.avg-a.avg:a.avg-b.avg).slice(0,10);
-  if(!sorted.length) return '<div style="color:var(--muted);font-size:.82rem;padding:5px">데이터 없음</div>';
-  return sorted.map((x,i)=>`
-    <div class="ci" onclick="selectCity('${x.city}');selectDistrict('${x.district.replace(/'/g,"\\'")}')">
-      <div style="display:flex;align-items:center;gap:5px">
-        <span class="rank">${i+1}</span>
-        <span class="ci-name">${x.cityLabel} ${x.district}</span>
-      </div>
-      <div style="text-align:right">
-        <div class="ci-avg">${won(x.avg)}</div>
-        <div class="ci-cnt">${cnt(x.count)}</div>
-      </div>
-    </div>
-  `).join('');
-}
-
-function getStats(obj, plat){
-  if(!obj) return {avg:null,count:0,min:null,max:null};
-  if(plat==='all') return obj;
-  const p=obj.platforms?.[plat];
-  return {avg:p?.avg,count:p?.count,min:obj.min,max:obj.max};
-}
-
-function renderChart(rows){
-  const ctx=document.getElementById('trendChart');
-  if(!ctx) return;
-  if(trendChart){trendChart.destroy();trendChart=null;}
-  if(!rows?.length){
-    ctx.parentElement.innerHTML+='<div style="text-align:center;padding:28px;color:var(--muted);font-size:.8rem">트렌드 데이터 없음</div>';
-    return;
-  }
-  const platMap={};
-  rows.forEach(r=>{
-    if(!platMap[r.platform]) platMap[r.platform]={};
-    platMap[r.platform][r.hour]=r.avg;
+  const byPlat = {};
+  rows.forEach(r => {
+    if (!byPlat[r.platform]) byPlat[r.platform] = {};
+    byPlat[r.platform][r.hour] = r.avg;
   });
-  const allHours=[...new Set(rows.map(r=>r.hour))].sort();
-  const labels=allHours.map(h=>h.slice(11,16));
-  const datasets=Object.keys(platMap).map(plat=>({
-    label:PLAT_LABELS[plat]||plat,
-    data:allHours.map(h=>platMap[plat][h]||null),
-    borderColor:CHART_COLORS[plat]?.line||'#7986cb',
-    backgroundColor:CHART_COLORS[plat]?.fill||'rgba(121,134,203,.1)',
-    fill:true,tension:.4,pointRadius:3,spanGaps:false,
-  }));
-  trendChart=new Chart(ctx,{
-    type:'line',data:{labels,datasets},
-    options:{
-      responsive:true,maintainAspectRatio:false,
-      plugins:{
-        legend:{labels:{color:'#7986cb',font:{size:11}}},
-        tooltip:{callbacks:{label:c=>` ${c.dataset.label}: ${won(c.raw)}`}}
+  const hours = [...new Set(rows.map(r => r.hour))].sort();
+  const labels = hours.map(h => h.slice(11, 16));
+
+  chart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels,
+      datasets: Object.keys(byPlat).map(p => ({
+        label: PLAT_LBL[p] || p,
+        data: hours.map(h => byPlat[p][h] || null),
+        borderColor: PLAT_CLR[p] || '#7986cb',
+        backgroundColor: PLAT_FILL[p] || 'rgba(121,134,203,.1)',
+        fill: true, tension: .4, pointRadius: 3, spanGaps: false,
+      }))
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { labels: { color: '#7986cb', font: { size: 11 } } },
+        tooltip: { callbacks: { label: c => ` ${c.dataset.label}: ${won(c.raw)}` } }
       },
-      scales:{
-        x:{ticks:{color:'#7986cb',font:{size:10}},grid:{color:'#2e3250'}},
-        y:{ticks:{color:'#7986cb',font:{size:10},callback:v=>(v/10000).toFixed(0)+'만'},grid:{color:'#2e3250'}}
+      scales: {
+        x: { ticks: { color:'#7986cb', font:{size:10} }, grid: { color:'#2e3250' } },
+        y: { ticks: { color:'#7986cb', font:{size:10}, callback: v => (v/10000).toFixed(0)+'만' }, grid: { color:'#2e3250' } }
       }
     }
   });
 }
 
-function setType(t){gType=t;gCity='전국';gDistrict=null;render();}
-function setPlat(p){gPlat=p;render();}
-function selectCity(c){gCity=c;gDistrict=null;render();}
-function selectDistrict(d){gDistrict=d;render();}
+// ── 이벤트 ───────────────────────────────────────────────────
+function setType(t) { gType = t; gCity = '전국'; gDist = null; render(); }
+function setPlat(p) { gPlat = p; render(); }
+function setCity(c) { gCity = c; gDist = null; render(); }
+function setDist(d)  { gDist = d; render(); }
 
-// ── 데이터 로드 ─────────────────────────────────────────────
-async function loadData(){
-  try{
-    const res=await fetch(DATA_URL+'?t='+Date.now());
-    if(!res.ok) throw new Error('HTTP '+res.status);
-    gData=await res.json();
-    const ua=new Date(gData.updatedAt);
-    const diff=Math.round((Date.now()-ua)/60000);
-    const ts=ua.toLocaleString('ko-KR',{timeZone:'Asia/Seoul',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'});
-    document.getElementById('statusDot').classList.toggle('stale',diff>120);
-    document.getElementById('offlineBanner').style.display=diff>120?'block':'none';
-    document.getElementById('updateTime').textContent=`마지막 갱신: ${ts} (${diff<60?diff+'분 전':Math.floor(diff/60)+'시간 전'})`;
+// ── 데이터 로드 ──────────────────────────────────────────────
+async function load() {
+  try {
+    const res = await fetch(DATA_URL + '?_=' + Date.now());
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    D = await res.json();
+
+    const ua = new Date(D.updatedAt);
+    const diff = Math.round((Date.now() - ua) / 60000);
+    const ts = ua.toLocaleString('ko-KR', { timeZone:'Asia/Seoul', month:'numeric', day:'numeric', hour:'2-digit', minute:'2-digit' });
+    const stale = diff > 120;
+    document.getElementById('dot').classList.toggle('stale', stale);
+    document.getElementById('upd').textContent = `${ts} 갱신 (${diff < 60 ? diff+'분 전' : Math.floor(diff/60)+'시간 전'})`;
+
     render();
-  }catch(err){
-    document.getElementById('mainContent').innerHTML=`
-      <div style="text-align:center;padding:50px;color:var(--red)">
-        <div style="font-size:1.6rem;margin-bottom:8px">⚠️</div>
-        <div>데이터를 불러오지 못했습니다</div>
-        <div style="font-size:.75rem;color:var(--muted);margin-top:5px">${err.message}</div>
-        <button onclick="loadData()" style="margin-top:12px;padding:7px 16px;background:var(--accent);color:#fff;border:none;border-radius:8px;cursor:pointer">다시 시도</button>
+  } catch(e) {
+    document.getElementById('app').innerHTML = `
+      <div style="text-align:center;padding:60px;color:var(--red)">
+        ⚠️ 데이터 로드 실패<br>
+        <small style="color:var(--muted)">${e.message}</small><br>
+        <button onclick="load()" style="margin-top:14px;padding:8px 20px;background:var(--accent);color:#fff;border:none;border-radius:8px;cursor:pointer">다시 시도</button>
       </div>`;
   }
 }
-loadData();
-setInterval(loadData,5*60*1000);
+
+load();
+setInterval(load, 5 * 60 * 1000);
 </script>
 </body>
 </html>
