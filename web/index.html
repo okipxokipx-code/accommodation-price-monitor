@@ -206,51 +206,62 @@ function render() {
         <div class="stat-sub">수집 ${cnt(stats?.count)}</div>
       </div>
       <div class="stat-box">
-        <div class="stat-lbl">최고가</div>
+        <div class="stat-lbl">🔴 최고가</div>
         <div class="stat-val" style="color:var(--red)">${won(stats?.max)}</div>
-        ${isNation && stats?.topHotel ? `
-          <div style="margin-top:6px;font-size:.78rem;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis" title="${stats.topHotel.hotel_name}">${stats.topHotel.hotel_name}</div>
-          <div style="font-size:.68rem;color:var(--muted)">${stats.topHotel.city} · <span style="color:${pc(stats.topHotel.platform)}">${PLAT_LBL[stats.topHotel.platform]}</span></div>
-        ` : `<div class="stat-sub">해당 지역 기준</div>`}
+        ${(() => {
+          const h = isNation ? stats?.topHotel : top3[0];
+          if (!h) return '<div class="stat-sub">데이터 없음</div>';
+          const loc = h.city ? (h.district && h.district !== h.city ? `${h.city} ${h.district}` : h.city) : '';
+          return `<div style="margin-top:6px;font-size:.8rem;font-weight:600;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis" title="${h.hotel_name}">${h.hotel_name}</div>
+          <div style="font-size:.7rem;color:var(--muted);margin-top:2px">${loc ? loc + ' · ' : ''}<span style="color:${pc(h.platform)}">${PLAT_LBL[h.platform]||h.platform}</span></div>`;
+        })()}
       </div>
       <div class="stat-box">
-        <div class="stat-lbl">최저가</div>
+        <div class="stat-lbl">🟢 최저가</div>
         <div class="stat-val" style="color:var(--green)">${won(stats?.min)}</div>
-        ${isNation && stats?.botHotel ? `
-          <div style="margin-top:6px;font-size:.78rem;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis" title="${stats.botHotel.hotel_name}">${stats.botHotel.hotel_name}</div>
-          <div style="font-size:.68rem;color:var(--muted)">${stats.botHotel.city} · <span style="color:${pc(stats.botHotel.platform)}">${PLAT_LBL[stats.botHotel.platform]}</span></div>
-        ` : `<div class="stat-sub">해당 지역 기준</div>`}
+        ${(() => {
+          const h = isNation ? stats?.botHotel : bot3[0];
+          if (!h) return '<div class="stat-sub">데이터 없음</div>';
+          const loc = h.city ? (h.district && h.district !== h.city ? `${h.city} ${h.district}` : h.city) : '';
+          return `<div style="margin-top:6px;font-size:.8rem;font-weight:600;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis" title="${h.hotel_name}">${h.hotel_name}</div>
+          <div style="font-size:.7rem;color:var(--muted);margin-top:2px">${loc ? loc + ' · ' : ''}<span style="color:${pc(h.platform)}">${PLAT_LBL[h.platform]||h.platform}</span></div>`;
+        })()}
       </div>
     </div>
 
-    <!-- Top3 / Bottom3 (지역 선택 시) -->
-    ${!isNation && (top3.length || bot3.length) ? `
+    <!-- Top3 / Bottom3 (항상 표시) -->
+    ${(() => {
+      // 전국: 모든 도시 top3/bottom3 풀을 합쳐 전국 순위 도출
+      const fullTop3 = isNation
+        ? td.cities.flatMap(c => (c.top3||[]))
+            .sort((a,b) => b.price - a.price).slice(0,3)
+        : top3;
+      const fullBot3 = isNation
+        ? td.cities.flatMap(c => (c.bottom3||[]))
+            .sort((a,b) => a.price - b.price).slice(0,3)
+        : bot3;
+      if (!fullTop3.length && !fullBot3.length) return '';
+      const hotelRow = (h, i, clr) => `
+        <div class="top3-item">
+          <div class="badge ${clr==='red'?'exp':'chp'}">${i+1}</div>
+          <div class="hotel-info">
+            <div class="hotel-nm" title="${h.hotel_name}">${h.hotel_name}</div>
+            <div class="hotel-pl">${h.city?`<span style="color:var(--muted)">${h.city}</span> · `:''}<span style="color:${pc(h.platform)}">${PLAT_LBL[h.platform]||h.platform}</span></div>
+          </div>
+          <div class="hotel-pr" style="color:var(--${clr})">${won(h.price)}</div>
+        </div>`;
+      return `
     <div class="top3-wrap">
       <div class="top3-card">
         <div class="top3-head" style="color:var(--red)">💰 최고가 TOP 3</div>
-        ${top3.length ? top3.map((h,i) => `
-          <div class="top3-item">
-            <div class="badge exp">${i+1}</div>
-            <div class="hotel-info">
-              <div class="hotel-nm" title="${h.hotel_name}">${h.hotel_name}</div>
-              <div class="hotel-pl" style="color:${pc(h.platform)}">${PLAT_LBL[h.platform]||h.platform}</div>
-            </div>
-            <div class="hotel-pr" style="color:var(--red)">${won(h.price)}</div>
-          </div>`).join('') : '<div class="empty">데이터 없음</div>'}
+        ${fullTop3.length ? fullTop3.map((h,i)=>hotelRow(h,i,'red')).join('') : '<div class="empty">데이터 없음</div>'}
       </div>
       <div class="top3-card">
         <div class="top3-head" style="color:var(--green)">💸 최저가 TOP 3</div>
-        ${bot3.length ? bot3.map((h,i) => `
-          <div class="top3-item">
-            <div class="badge chp">${i+1}</div>
-            <div class="hotel-info">
-              <div class="hotel-nm" title="${h.hotel_name}">${h.hotel_name}</div>
-              <div class="hotel-pl" style="color:${pc(h.platform)}">${PLAT_LBL[h.platform]||h.platform}</div>
-            </div>
-            <div class="hotel-pr" style="color:var(--green)">${won(h.price)}</div>
-          </div>`).join('') : '<div class="empty">데이터 없음</div>'}
+        ${fullBot3.length ? fullBot3.map((h,i)=>hotelRow(h,i,'green')).join('') : '<div class="empty">데이터 없음</div>'}
       </div>
-    </div>` : ''}
+    </div>`;
+    })()}
 
     <!-- 24시간 트렌드 차트 -->
     <div class="chart-card">
