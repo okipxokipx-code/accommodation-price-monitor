@@ -1,41 +1,41 @@
 {
-  "updatedAt": "2026-06-09T22:10:42.586Z",
+  "updatedAt": "2026-06-09T23:10:40.484Z",
   "types": {
     "motel": {
       "platforms": {
         "all": {
-          "avg": 50972,
-          "count": 8797,
+          "avg": 50961,
+          "count": 8807,
           "min": 8000,
           "max": 389000
         },
         "yanolja": {
-          "avg": 50505,
-          "count": 8609,
+          "avg": 50490,
+          "count": 8619,
           "min": 8000,
           "max": 389000
         },
         "yeogi": {
-          "avg": 72375,
+          "avg": 72529,
           "count": 188,
-          "min": 31000,
+          "min": 32000,
           "max": 256002
         }
       },
       "cities": [
         {
           "city": "서울",
-          "avg": 58618,
-          "count": 2441,
+          "avg": 58676,
+          "count": 2445,
           "min": 18000,
           "max": 389000,
           "platforms": {
             "yanolja": {
-              "avg": 57470,
-              "count": 2253
+              "avg": 57522,
+              "count": 2257
             },
             "yeogi": {
-              "avg": 72375,
+              "avg": 72529,
               "count": 188
             }
           },
@@ -221,23 +221,37 @@
               "platform": "yeogi",
               "avg": 72502,
               "count": 94
+            },
+            {
+              "city": "서울",
+              "hour": "2026-06-09T23:00",
+              "platform": "yanolja",
+              "avg": 57568,
+              "count": 1130
+            },
+            {
+              "city": "서울",
+              "hour": "2026-06-09T23:00",
+              "platform": "yeogi",
+              "avg": 72556,
+              "count": 94
             }
           ],
           "districts": [
             {
               "city": "서울",
               "district": "영등포/여의도",
-              "avg": 51542,
+              "avg": 51622,
               "count": 226,
               "min": 18000,
               "max": 220000,
               "platforms": {
                 "yanolja": {
-                  "avg": 51157,
+                  "avg": 51147,
                   "count": 188
                 },
                 "yeogi": {
-                  "avg": 53447,
+                  "avg": 53973,
                   "count": 38
                 }
               },
@@ -433,19 +447,35 @@
                   "platform": "yeogi",
                   "avg": 53921,
                   "count": 19
+                },
+                {
+                  "city": "서울",
+                  "district": "영등포/여의도",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 51083,
+                  "count": 94
+                },
+                {
+                  "city": "서울",
+                  "district": "영등포/여의도",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yeogi",
+                  "avg": 54026,
+                  "count": 19
                 }
               ]
             },
             {
               "city": "서울",
               "district": "신촌/홍대/합정",
-              "avg": 62648,
+              "avg": 63050,
               "count": 184,
               "min": 37000,
               "max": 210000,
               "platforms": {
                 "yanolja": {
-                  "avg": 62648,
+                  "avg": 63050,
                   "count": 184
                 }
               },
@@ -585,19 +615,27 @@
                   "platform": "yanolja",
                   "avg": 62702,
                   "count": 92
+                },
+                {
+                  "city": "서울",
+                  "district": "신촌/홍대/합정",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 63398,
+                  "count": 92
                 }
               ]
             },
             {
               "city": "서울",
               "district": "강남/역삼/삼성/논현",
-              "avg": 84081,
+              "avg": 84509,
               "count": 180,
               "min": 30000,
               "max": 198000,
               "platforms": {
                 "yanolja": {
-                  "avg": 84074,
+                  "avg": 84624,
                   "count": 140
                 },
                 "yeogi": {
@@ -797,20 +835,36 @@
                   "platform": "yeogi",
                   "avg": 84104,
                   "count": 20
+                },
+                {
+                  "city": "서울",
+                  "district": "강남/역삼/삼성/논현",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 85146,
+                  "count": 70
+                },
+                {
+                  "city": "서울",
+                  "district": "강남/역삼/삼성/논현",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yeogi",
+                  "avg": 84104,
+                  "count": 20
                 }
               ]
             },
             {
               "city": "서울",
               "district": "화곡/까치산/양천/목동",
-              "avg": 44940,
-              "count": 164,
+              "avg": 45086,
+              "count": 165,
               "min": 29750,
               "max": 85000,
               "platforms": {
                 "yanolja": {
-                  "avg": 44940,
-                  "count": 164
+                  "avg": 45086,
+                  "count": 165
                 }
               },
               "trend": [
@@ -933,20 +987,28 @@
                   "platform": "yanolja",
                   "avg": 45001,
                   "count": 82
+                },
+                {
+                  "city": "서울",
+                  "district": "화곡/까치산/양천/목동",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 45170,
+                  "count": 83
                 }
               ]
             },
             {
               "city": "서울",
               "district": "신림/서울대/사당/동작",
-              "avg": 62965,
-              "count": 164,
+              "avg": 62741,
+              "count": 165,
               "min": 22000,
               "max": 389000,
               "platforms": {
                 "yanolja": {
-                  "avg": 62965,
-                  "count": 164
+                  "avg": 62741,
+                  "count": 165
                 }
               },
               "trend": [
@@ -1085,23 +1147,31 @@
                   "platform": "yanolja",
                   "avg": 62928,
                   "count": 82
+                },
+                {
+                  "city": "서울",
+                  "district": "신림/서울대/사당/동작",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 62555,
+                  "count": 83
                 }
               ]
             },
             {
               "city": "서울",
               "district": "잠실/방이",
-              "avg": 58381,
+              "avg": 58721,
               "count": 150,
               "min": 22000,
               "max": 180000,
               "platforms": {
                 "yanolja": {
-                  "avg": 58727,
+                  "avg": 59155,
                   "count": 110
                 },
                 "yeogi": {
-                  "avg": 57430,
+                  "avg": 57530,
                   "count": 40
                 }
               },
@@ -1313,19 +1383,35 @@
                   "platform": "yeogi",
                   "avg": 57455,
                   "count": 20
+                },
+                {
+                  "city": "서울",
+                  "district": "잠실/방이",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 59209,
+                  "count": 55
+                },
+                {
+                  "city": "서울",
+                  "district": "잠실/방이",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yeogi",
+                  "avg": 57605,
+                  "count": 20
                 }
               ]
             },
             {
               "city": "서울",
               "district": "종로/대학로/동묘앞역",
-              "avg": 66208,
+              "avg": 67890,
               "count": 132,
               "min": 25000,
               "max": 140000,
               "platforms": {
                 "yanolja": {
-                  "avg": 66208,
+                  "avg": 67890,
                   "count": 132
                 }
               },
@@ -1465,19 +1551,27 @@
                   "platform": "yanolja",
                   "avg": 67134,
                   "count": 66
+                },
+                {
+                  "city": "서울",
+                  "district": "종로/대학로/동묘앞역",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 68646,
+                  "count": 66
                 }
               ]
             },
             {
               "city": "서울",
               "district": "수유/미아",
-              "avg": 41847,
+              "avg": 41879,
               "count": 124,
               "min": 20000,
               "max": 120000,
               "platforms": {
                 "yanolja": {
-                  "avg": 41847,
+                  "avg": 41879,
                   "count": 124
                 }
               },
@@ -1593,20 +1687,28 @@
                   "platform": "yanolja",
                   "avg": 41879,
                   "count": 62
+                },
+                {
+                  "city": "서울",
+                  "district": "수유/미아",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 41879,
+                  "count": 62
                 }
               ]
             },
             {
               "city": "서울",
               "district": "구로/금천/오류/신도림",
-              "avg": 48542,
-              "count": 120,
+              "avg": 48719,
+              "count": 121,
               "min": 30000,
               "max": 72000,
               "platforms": {
                 "yanolja": {
-                  "avg": 48542,
-                  "count": 120
+                  "avg": 48719,
+                  "count": 121
                 }
               },
               "trend": [
@@ -1745,19 +1847,27 @@
                   "platform": "yanolja",
                   "avg": 48542,
                   "count": 60
+                },
+                {
+                  "city": "서울",
+                  "district": "구로/금천/오류/신도림",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 48894,
+                  "count": 61
                 }
               ]
             },
             {
               "city": "서울",
               "district": "연신내/불광/응암",
-              "avg": 47837,
+              "avg": 47856,
               "count": 104,
               "min": 31500,
               "max": 115000,
               "platforms": {
                 "yanolja": {
-                  "avg": 47837,
+                  "avg": 47856,
                   "count": 104
                 }
               },
@@ -1897,19 +2007,27 @@
                   "platform": "yanolja",
                   "avg": 47817,
                   "count": 52
+                },
+                {
+                  "city": "서울",
+                  "district": "연신내/불광/응암",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 47894,
+                  "count": 52
                 }
               ]
             },
             {
               "city": "서울",
               "district": "천호/길동/둔촌",
-              "avg": 42664,
+              "avg": 42716,
               "count": 98,
               "min": 27000,
               "max": 88000,
               "platforms": {
                 "yanolja": {
-                  "avg": 42664,
+                  "avg": 42716,
                   "count": 98
                 }
               },
@@ -2049,19 +2167,27 @@
                   "platform": "yanolja",
                   "avg": 42664,
                   "count": 49
+                },
+                {
+                  "city": "서울",
+                  "district": "천호/길동/둔촌",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 42767,
+                  "count": 49
                 }
               ]
             },
             {
               "city": "서울",
               "district": "태릉/노원/도봉/창동",
-              "avg": 45315,
+              "avg": 45421,
               "count": 94,
               "min": 28000,
               "max": 90000,
               "platforms": {
                 "yanolja": {
-                  "avg": 45315,
+                  "avg": 45421,
                   "count": 94
                 }
               },
@@ -2177,20 +2303,28 @@
                   "platform": "yanolja",
                   "avg": 45421,
                   "count": 47
+                },
+                {
+                  "city": "서울",
+                  "district": "태릉/노원/도봉/창동",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 45421,
+                  "count": 47
                 }
               ]
             },
             {
               "city": "서울",
               "district": "건대/군자/구의",
-              "avg": 63896,
-              "count": 91,
+              "avg": 63788,
+              "count": 92,
               "min": 28000,
               "max": 243000,
               "platforms": {
                 "yanolja": {
-                  "avg": 63896,
-                  "count": 91
+                  "avg": 63788,
+                  "count": 92
                 }
               },
               "trend": [
@@ -2305,13 +2439,21 @@
                   "platform": "yanolja",
                   "avg": 63745,
                   "count": 46
+                },
+                {
+                  "city": "서울",
+                  "district": "건대/군자/구의",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 63832,
+                  "count": 46
                 }
               ]
             },
             {
               "city": "서울",
               "district": "잠실새내/신천/종합운동장",
-              "avg": 52543,
+              "avg": 52555,
               "count": 88,
               "min": 35000,
               "max": 90000,
@@ -2321,7 +2463,7 @@
                   "count": 56
                 },
                 "yeogi": {
-                  "avg": 50182,
+                  "avg": 50213,
                   "count": 32
                 }
               },
@@ -2517,19 +2659,35 @@
                   "platform": "yeogi",
                   "avg": 50213,
                   "count": 16
+                },
+                {
+                  "city": "서울",
+                  "district": "잠실새내/신천/종합운동장",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 53893,
+                  "count": 28
+                },
+                {
+                  "city": "서울",
+                  "district": "잠실새내/신천/종합운동장",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yeogi",
+                  "avg": 50213,
+                  "count": 16
                 }
               ]
             },
             {
               "city": "서울",
               "district": "동대문/을지로/충무로/신당",
-              "avg": 83410,
+              "avg": 81410,
               "count": 82,
               "min": 40000,
               "max": 186820,
               "platforms": {
                 "yanolja": {
-                  "avg": 83410,
+                  "avg": 81410,
                   "count": 82
                 }
               },
@@ -2661,23 +2819,31 @@
                   "platform": "yanolja",
                   "avg": 83410,
                   "count": 41
+                },
+                {
+                  "city": "서울",
+                  "district": "동대문/을지로/충무로/신당",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 79410,
+                  "count": 41
                 }
               ]
             },
             {
               "city": "서울",
               "district": "서초/신사/방배",
-              "avg": 93533,
+              "avg": 93297,
               "count": 78,
               "min": 45000,
               "max": 256002,
               "platforms": {
                 "yanolja": {
-                  "avg": 74681,
+                  "avg": 74122,
                   "count": 40
                 },
                 "yeogi": {
-                  "avg": 113377,
+                  "avg": 113481,
                   "count": 38
                 }
               },
@@ -2873,19 +3039,35 @@
                   "platform": "yeogi",
                   "avg": 113481,
                   "count": 19
+                },
+                {
+                  "city": "서울",
+                  "district": "서초/신사/방배",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 74122,
+                  "count": 20
+                },
+                {
+                  "city": "서울",
+                  "district": "서초/신사/방배",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yeogi",
+                  "avg": 113481,
+                  "count": 19
                 }
               ]
             },
             {
               "city": "서울",
               "district": "상봉/중랑/면목",
-              "avg": 42988,
+              "avg": 43009,
               "count": 78,
               "min": 26250,
               "max": 58500,
               "platforms": {
                 "yanolja": {
-                  "avg": 42988,
+                  "avg": 43009,
                   "count": 78
                 }
               },
@@ -3017,19 +3199,27 @@
                   "platform": "yanolja",
                   "avg": 43009,
                   "count": 39
+                },
+                {
+                  "city": "서울",
+                  "district": "상봉/중랑/면목",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 43009,
+                  "count": 39
                 }
               ]
             },
             {
               "city": "서울",
               "district": "이태원/용산/서울역/명동",
-              "avg": 93561,
+              "avg": 91132,
               "count": 70,
               "min": 32000,
               "max": 185000,
               "platforms": {
                 "yanolja": {
-                  "avg": 93561,
+                  "avg": 91132,
                   "count": 70
                 }
               },
@@ -3169,19 +3359,27 @@
                   "platform": "yanolja",
                   "avg": 91132,
                   "count": 35
+                },
+                {
+                  "city": "서울",
+                  "district": "이태원/용산/서울역/명동",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 91132,
+                  "count": 35
                 }
               ]
             },
             {
               "city": "서울",
               "district": "왕십리/성수/금호",
-              "avg": 47226,
+              "avg": 47387,
               "count": 62,
               "min": 22000,
               "max": 77000,
               "platforms": {
                 "yanolja": {
-                  "avg": 47226,
+                  "avg": 47387,
                   "count": 62
                 }
               },
@@ -3313,19 +3511,27 @@
                   "platform": "yanolja",
                   "avg": 47226,
                   "count": 31
+                },
+                {
+                  "city": "서울",
+                  "district": "왕십리/성수/금호",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 47548,
+                  "count": 31
                 }
               ]
             },
             {
               "city": "서울",
               "district": "성신여대/성북/월곡",
-              "avg": 49339,
+              "avg": 49946,
               "count": 56,
               "min": 35000,
-              "max": 63000,
+              "max": 70000,
               "platforms": {
                 "yanolja": {
-                  "avg": 49339,
+                  "avg": 49946,
                   "count": 56
                 }
               },
@@ -3448,6 +3654,14 @@
                   "hour": "2026-06-09T22:00",
                   "platform": "yanolja",
                   "avg": 49518,
+                  "count": 28
+                },
+                {
+                  "city": "서울",
+                  "district": "성신여대/성북/월곡",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 50375,
                   "count": 28
                 }
               ]
@@ -3574,6 +3788,14 @@
                   "city": "서울",
                   "district": "회기/고려대/청량리",
                   "hour": "2026-06-09T22:00",
+                  "platform": "yanolja",
+                  "avg": 57635,
+                  "count": 26
+                },
+                {
+                  "city": "서울",
+                  "district": "회기/고려대/청량리",
+                  "hour": "2026-06-09T23:00",
                   "platform": "yanolja",
                   "avg": 57635,
                   "count": 26
@@ -3721,6 +3943,14 @@
                   "platform": "yanolja",
                   "avg": 45232,
                   "count": 22
+                },
+                {
+                  "city": "서울",
+                  "district": "장안동/답십리",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 45232,
+                  "count": 22
                 }
               ]
             }
@@ -3728,13 +3958,13 @@
         },
         {
           "city": "부산",
-          "avg": 48880,
+          "avg": 48832,
           "count": 1888,
           "min": 20000,
           "max": 190000,
           "platforms": {
             "yanolja": {
-              "avg": 48880,
+              "avg": 48832,
               "count": 1888
             }
           },
@@ -3850,19 +4080,26 @@
               "platform": "yanolja",
               "avg": 48825,
               "count": 944
+            },
+            {
+              "city": "부산",
+              "hour": "2026-06-09T23:00",
+              "platform": "yanolja",
+              "avg": 48838,
+              "count": 944
             }
           ],
           "districts": [
             {
               "city": "부산",
               "district": "서면/양정/초읍",
-              "avg": 45960,
+              "avg": 46216,
               "count": 252,
               "min": 20000,
               "max": 120000,
               "platforms": {
                 "yanolja": {
-                  "avg": 45960,
+                  "avg": 46216,
                   "count": 252
                 }
               },
@@ -3994,19 +4231,27 @@
                   "platform": "yanolja",
                   "avg": 45960,
                   "count": 126
+                },
+                {
+                  "city": "부산",
+                  "district": "서면/양정/초읍",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 46472,
+                  "count": 126
                 }
               ]
             },
             {
               "city": "부산",
               "district": "남포동/중앙동/태종대/영도",
-              "avg": 49207,
+              "avg": 49194,
               "count": 234,
               "min": 25000,
               "max": 190000,
               "platforms": {
                 "yanolja": {
-                  "avg": 49207,
+                  "avg": 49194,
                   "count": 234
                 }
               },
@@ -4122,19 +4367,27 @@
                   "platform": "yanolja",
                   "avg": 49207,
                   "count": 117
+                },
+                {
+                  "city": "부산",
+                  "district": "남포동/중앙동/태종대/영도",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 49182,
+                  "count": 117
                 }
               ]
             },
             {
               "city": "부산",
               "district": "해운대/센텀시티/재송",
-              "avg": 61894,
+              "avg": 61606,
               "count": 194,
               "min": 25000,
               "max": 174000,
               "platforms": {
                 "yanolja": {
-                  "avg": 61894,
+                  "avg": 61606,
                   "count": 194
                 }
               },
@@ -4266,19 +4519,27 @@
                   "platform": "yanolja",
                   "avg": 61740,
                   "count": 97
+                },
+                {
+                  "city": "부산",
+                  "district": "해운대/센텀시티/재송",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 61472,
+                  "count": 97
                 }
               ]
             },
             {
               "city": "부산",
               "district": "동래/사직/부산대/구서",
-              "avg": 42599,
+              "avg": 42491,
               "count": 180,
-              "min": 20000,
+              "min": 20500,
               "max": 110000,
               "platforms": {
                 "yanolja": {
-                  "avg": 42599,
+                  "avg": 42491,
                   "count": 180
                 }
               },
@@ -4394,19 +4655,27 @@
                   "platform": "yanolja",
                   "avg": 42621,
                   "count": 90
+                },
+                {
+                  "city": "부산",
+                  "district": "동래/사직/부산대/구서",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 42360,
+                  "count": 90
                 }
               ]
             },
             {
               "city": "부산",
               "district": "송정/기장/정관",
-              "avg": 53375,
+              "avg": 53380,
               "count": 178,
               "min": 24000,
               "max": 190000,
               "platforms": {
                 "yanolja": {
-                  "avg": 53375,
+                  "avg": 53380,
                   "count": 178
                 }
               },
@@ -4522,19 +4791,27 @@
                   "platform": "yanolja",
                   "avg": 53375,
                   "count": 89
+                },
+                {
+                  "city": "부산",
+                  "district": "송정/기장/정관",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 53386,
+                  "count": 89
                 }
               ]
             },
             {
               "city": "부산",
               "district": "하단/명지/강서",
-              "avg": 48707,
+              "avg": 48592,
               "count": 174,
               "min": 22000,
-              "max": 100000,
+              "max": 90000,
               "platforms": {
                 "yanolja": {
-                  "avg": 48707,
+                  "avg": 48592,
                   "count": 174
                 }
               },
@@ -4650,19 +4927,27 @@
                   "platform": "yanolja",
                   "avg": 48557,
                   "count": 87
+                },
+                {
+                  "city": "부산",
+                  "district": "하단/명지/강서",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 48626,
+                  "count": 87
                 }
               ]
             },
             {
               "city": "부산",
               "district": "광안리/수영",
-              "avg": 57108,
+              "avg": 57234,
               "count": 158,
               "min": 20500,
               "max": 169000,
               "platforms": {
                 "yanolja": {
-                  "avg": 57108,
+                  "avg": 57234,
                   "count": 158
                 }
               },
@@ -4778,20 +5063,28 @@
                   "platform": "yanolja",
                   "avg": 57234,
                   "count": 79
+                },
+                {
+                  "city": "부산",
+                  "district": "광안리/수영",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 57234,
+                  "count": 79
                 }
               ]
             },
             {
               "city": "부산",
               "district": "사상/엄궁/학장",
-              "avg": 39515,
-              "count": 149,
+              "avg": 39419,
+              "count": 150,
               "min": 21900,
               "max": 69000,
               "platforms": {
                 "yanolja": {
-                  "avg": 39515,
-                  "count": 149
+                  "avg": 39419,
+                  "count": 150
                 }
               },
               "trend": [
@@ -4922,19 +5215,27 @@
                   "platform": "yanolja",
                   "avg": 39425,
                   "count": 75
+                },
+                {
+                  "city": "부산",
+                  "district": "사상/엄궁/학장",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 39412,
+                  "count": 75
                 }
               ]
             },
             {
               "city": "부산",
               "district": "부산역/범일동/부산진역",
-              "avg": 50088,
+              "avg": 50039,
               "count": 104,
               "min": 28000,
               "max": 150000,
               "platforms": {
                 "yanolja": {
-                  "avg": 50088,
+                  "avg": 50039,
                   "count": 104
                 }
               },
@@ -5066,19 +5367,27 @@
                   "platform": "yanolja",
                   "avg": 50088,
                   "count": 52
+                },
+                {
+                  "city": "부산",
+                  "district": "부산역/범일동/부산진역",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 49991,
+                  "count": 52
                 }
               ]
             },
             {
               "city": "부산",
               "district": "덕천/화명/구포",
-              "avg": 43774,
+              "avg": 43394,
               "count": 100,
               "min": 27500,
               "max": 188000,
               "platforms": {
                 "yanolja": {
-                  "avg": 43774,
+                  "avg": 43394,
                   "count": 100
                 }
               },
@@ -5210,6 +5519,14 @@
                   "platform": "yanolja",
                   "avg": 43394,
                   "count": 50
+                },
+                {
+                  "city": "부산",
+                  "district": "덕천/화명/구포",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 43394,
+                  "count": 50
                 }
               ]
             },
@@ -5338,20 +5655,28 @@
                   "platform": "yanolja",
                   "avg": 39651,
                   "count": 44
+                },
+                {
+                  "city": "부산",
+                  "district": "경성대/대연/용호동",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 39651,
+                  "count": 44
                 }
               ]
             },
             {
               "city": "부산",
               "district": "연산/토곡",
-              "avg": 46120,
-              "count": 77,
+              "avg": 45934,
+              "count": 76,
               "min": 22000,
               "max": 100000,
               "platforms": {
                 "yanolja": {
-                  "avg": 46120,
-                  "count": 77
+                  "avg": 45934,
+                  "count": 76
                 }
               },
               "trend": [
@@ -5482,6 +5807,14 @@
                   "platform": "yanolja",
                   "avg": 45934,
                   "count": 38
+                },
+                {
+                  "city": "부산",
+                  "district": "연산/토곡",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 45934,
+                  "count": 38
                 }
               ]
             }
@@ -5489,14 +5822,14 @@
         },
         {
           "city": "인천",
-          "avg": 40540,
-          "count": 798,
+          "avg": 40562,
+          "count": 799,
           "min": 21250,
           "max": 100000,
           "platforms": {
             "yanolja": {
-              "avg": 40540,
-              "count": 798
+              "avg": 40562,
+              "count": 799
             }
           },
           "trend": [
@@ -5611,6 +5944,13 @@
               "platform": "yanolja",
               "avg": 40550,
               "count": 399
+            },
+            {
+              "city": "인천",
+              "hour": "2026-06-09T23:00",
+              "platform": "yanolja",
+              "avg": 40574,
+              "count": 400
             }
           ],
           "districts": [
@@ -5755,6 +6095,14 @@
                   "platform": "yanolja",
                   "avg": 34634,
                   "count": 90
+                },
+                {
+                  "city": "인천",
+                  "district": "부평",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 34634,
+                  "count": 90
                 }
               ]
             },
@@ -5883,19 +6231,27 @@
                   "platform": "yanolja",
                   "avg": 42824,
                   "count": 79
+                },
+                {
+                  "city": "인천",
+                  "district": "서구(석남/검단)",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 42824,
+                  "count": 79
                 }
               ]
             },
             {
               "city": "인천",
               "district": "인천공항/영종도",
-              "avg": 52012,
+              "avg": 52440,
               "count": 126,
               "min": 32000,
               "max": 95000,
               "platforms": {
                 "yanolja": {
-                  "avg": 52012,
+                  "avg": 52440,
                   "count": 126
                 }
               },
@@ -6011,20 +6367,28 @@
                   "platform": "yanolja",
                   "avg": 52044,
                   "count": 63
+                },
+                {
+                  "city": "인천",
+                  "district": "인천공항/영종도",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 52837,
+                  "count": 63
                 }
               ]
             },
             {
               "city": "인천",
               "district": "주안",
-              "avg": 32845,
-              "count": 122,
+              "avg": 32830,
+              "count": 123,
               "min": 22000,
               "max": 70000,
               "platforms": {
                 "yanolja": {
-                  "avg": 32845,
-                  "count": 122
+                  "avg": 32830,
+                  "count": 123
                 }
               },
               "trend": [
@@ -6139,19 +6503,27 @@
                   "platform": "yanolja",
                   "avg": 32845,
                   "count": 61
+                },
+                {
+                  "city": "인천",
+                  "district": "주안",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 32815,
+                  "count": 62
                 }
               ]
             },
             {
               "city": "인천",
               "district": "구월/소래포구",
-              "avg": 42877,
+              "avg": 42627,
               "count": 108,
               "min": 25000,
               "max": 84000,
               "platforms": {
                 "yanolja": {
-                  "avg": 42877,
+                  "avg": 42627,
                   "count": 108
                 }
               },
@@ -6266,6 +6638,14 @@
                   "hour": "2026-06-09T22:00",
                   "platform": "yanolja",
                   "avg": 42914,
+                  "count": 54
+                },
+                {
+                  "city": "인천",
+                  "district": "구월/소래포구",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 42340,
                   "count": 54
                 }
               ]
@@ -6395,6 +6775,14 @@
                   "platform": "yanolja",
                   "avg": 39992,
                   "count": 52
+                },
+                {
+                  "city": "인천",
+                  "district": "송도/연수",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 39992,
+                  "count": 52
                 }
               ]
             }
@@ -6402,13 +6790,13 @@
         },
         {
           "city": "광주",
-          "avg": 50406,
+          "avg": 50427,
           "count": 694,
           "min": 22000,
           "max": 159000,
           "platforms": {
             "yanolja": {
-              "avg": 50406,
+              "avg": 50427,
               "count": 694
             }
           },
@@ -6524,19 +6912,26 @@
               "platform": "yanolja",
               "avg": 50391,
               "count": 347
+            },
+            {
+              "city": "광주",
+              "hour": "2026-06-09T23:00",
+              "platform": "yanolja",
+              "avg": 50464,
+              "count": 347
             }
           ],
           "districts": [
             {
               "city": "광주",
               "district": "서구/남구",
-              "avg": 50406,
+              "avg": 50427,
               "count": 694,
               "min": 22000,
               "max": 159000,
               "platforms": {
                 "yanolja": {
-                  "avg": 50406,
+                  "avg": 50427,
                   "count": 694
                 }
               },
@@ -6668,6 +7063,14 @@
                   "platform": "yanolja",
                   "avg": 50391,
                   "count": 347
+                },
+                {
+                  "city": "광주",
+                  "district": "서구/남구",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 50464,
+                  "count": 347
                 }
               ]
             }
@@ -6675,14 +7078,14 @@
         },
         {
           "city": "대전",
-          "avg": 54192,
-          "count": 570,
+          "avg": 53679,
+          "count": 572,
           "min": 17000,
           "max": 260000,
           "platforms": {
             "yanolja": {
-              "avg": 54192,
-              "count": 570
+              "avg": 53679,
+              "count": 572
             }
           },
           "trend": [
@@ -6797,19 +7200,26 @@
               "platform": "yanolja",
               "avg": 53662,
               "count": 286
+            },
+            {
+              "city": "대전",
+              "hour": "2026-06-09T23:00",
+              "platform": "yanolja",
+              "avg": 53697,
+              "count": 286
             }
           ],
           "districts": [
             {
               "city": "대전",
               "district": "유성구",
-              "avg": 64785,
+              "avg": 62366,
               "count": 174,
               "min": 27000,
               "max": 240000,
               "platforms": {
                 "yanolja": {
-                  "avg": 64785,
+                  "avg": 62366,
                   "count": 174
                 }
               },
@@ -6940,6 +7350,14 @@
                   "hour": "2026-06-09T22:00",
                   "platform": "yanolja",
                   "avg": 62308,
+                  "count": 87
+                },
+                {
+                  "city": "대전",
+                  "district": "유성구",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 62423,
                   "count": 87
                 }
               ]
@@ -7085,19 +7503,27 @@
                   "platform": "yanolja",
                   "avg": 52784,
                   "count": 76
+                },
+                {
+                  "city": "대전",
+                  "district": "중구(은행/대흥)",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 52784,
+                  "count": 76
                 }
               ]
             },
             {
               "city": "대전",
               "district": "동구(용전/복합터미널)",
-              "avg": 44257,
+              "avg": 44225,
               "count": 126,
               "min": 25000,
               "max": 150000,
               "platforms": {
                 "yanolja": {
-                  "avg": 44257,
+                  "avg": 44225,
                   "count": 126
                 }
               },
@@ -7229,20 +7655,28 @@
                   "platform": "yanolja",
                   "avg": 44225,
                   "count": 63
+                },
+                {
+                  "city": "대전",
+                  "district": "동구(용전/복합터미널)",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 44225,
+                  "count": 63
                 }
               ]
             },
             {
               "city": "대전",
               "district": "서구(둔산/용문)",
-              "avg": 50995,
-              "count": 118,
+              "avg": 52145,
+              "count": 120,
               "min": 30000,
               "max": 140000,
               "platforms": {
                 "yanolja": {
-                  "avg": 50995,
-                  "count": 118
+                  "avg": 52145,
+                  "count": 120
                 }
               },
               "trend": [
@@ -7373,6 +7807,14 @@
                   "platform": "yanolja",
                   "avg": 52145,
                   "count": 60
+                },
+                {
+                  "city": "대전",
+                  "district": "서구(둔산/용문)",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 52145,
+                  "count": 60
                 }
               ]
             }
@@ -7380,13 +7822,13 @@
         },
         {
           "city": "울산",
-          "avg": 50445,
+          "avg": 50588,
           "count": 568,
           "min": 23000,
           "max": 135000,
           "platforms": {
             "yanolja": {
-              "avg": 50445,
+              "avg": 50588,
               "count": 568
             }
           },
@@ -7502,19 +7944,26 @@
               "platform": "yanolja",
               "avg": 50480,
               "count": 284
+            },
+            {
+              "city": "울산",
+              "hour": "2026-06-09T23:00",
+              "platform": "yanolja",
+              "avg": 50695,
+              "count": 284
             }
           ],
           "districts": [
             {
               "city": "울산",
               "district": "남구/중구(삼산/성남)",
-              "avg": 49694,
+              "avg": 49955,
               "count": 306,
               "min": 25000,
               "max": 118000,
               "platforms": {
                 "yanolja": {
-                  "avg": 49694,
+                  "avg": 49955,
                   "count": 306
                 }
               },
@@ -7646,19 +8095,27 @@
                   "platform": "yanolja",
                   "avg": 49759,
                   "count": 153
+                },
+                {
+                  "city": "울산",
+                  "district": "남구/중구(삼산/성남)",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 50151,
+                  "count": 153
                 }
               ]
             },
             {
               "city": "울산",
               "district": "동구/북구/울주군",
-              "avg": 51323,
+              "avg": 51326,
               "count": 262,
               "min": 23000,
               "max": 135000,
               "platforms": {
                 "yanolja": {
-                  "avg": 51323,
+                  "avg": 51326,
                   "count": 262
                 }
               },
@@ -7774,6 +8231,14 @@
                   "platform": "yanolja",
                   "avg": 51323,
                   "count": 131
+                },
+                {
+                  "city": "울산",
+                  "district": "동구/북구/울주군",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 51330,
+                  "count": 131
                 }
               ]
             }
@@ -7781,13 +8246,13 @@
         },
         {
           "city": "수원",
-          "avg": 39204,
+          "avg": 39215,
           "count": 538,
           "min": 20000,
           "max": 243000,
           "platforms": {
             "yanolja": {
-              "avg": 39204,
+              "avg": 39215,
               "count": 538
             }
           },
@@ -7903,19 +8368,26 @@
               "platform": "yanolja",
               "avg": 39217,
               "count": 269
+            },
+            {
+              "city": "수원",
+              "hour": "2026-06-09T23:00",
+              "platform": "yanolja",
+              "avg": 39212,
+              "count": 269
             }
           ],
           "districts": [
             {
               "city": "수원",
               "district": "수원역/장안구",
-              "avg": 40471,
+              "avg": 40524,
               "count": 228,
               "min": 21250,
               "max": 243000,
               "platforms": {
                 "yanolja": {
-                  "avg": 40471,
+                  "avg": 40524,
                   "count": 228
                 }
               },
@@ -8046,6 +8518,14 @@
                   "hour": "2026-06-09T22:00",
                   "platform": "yanolja",
                   "avg": 40515,
+                  "count": 114
+                },
+                {
+                  "city": "수원",
+                  "district": "수원역/장안구",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 40533,
                   "count": 114
                 }
               ]
@@ -8191,19 +8671,27 @@
                   "platform": "yanolja",
                   "avg": 36002,
                   "count": 93
+                },
+                {
+                  "city": "수원",
+                  "district": "인계동/나혜석거리",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 36031,
+                  "count": 93
                 }
               ]
             },
             {
               "city": "수원",
               "district": "시청/영통/권선",
-              "avg": 41653,
+              "avg": 41605,
               "count": 124,
               "min": 25000,
               "max": 85000,
               "platforms": {
                 "yanolja": {
-                  "avg": 41653,
+                  "avg": 41605,
                   "count": 124
                 }
               },
@@ -8319,6 +8807,14 @@
                   "platform": "yanolja",
                   "avg": 41653,
                   "count": 62
+                },
+                {
+                  "city": "수원",
+                  "district": "시청/영통/권선",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 41556,
+                  "count": 62
                 }
               ]
             }
@@ -8326,13 +8822,13 @@
         },
         {
           "city": "창원",
-          "avg": 44211,
+          "avg": 44271,
           "count": 408,
           "min": 20000,
           "max": 149900,
           "platforms": {
             "yanolja": {
-              "avg": 44211,
+              "avg": 44271,
               "count": 408
             }
           },
@@ -8434,19 +8930,26 @@
               "platform": "yanolja",
               "avg": 44211,
               "count": 204
+            },
+            {
+              "city": "창원",
+              "hour": "2026-06-09T23:00",
+              "platform": "yanolja",
+              "avg": 44330,
+              "count": 204
             }
           ],
           "districts": [
             {
               "city": "창원",
               "district": "상남동/창원시청",
-              "avg": 45932,
+              "avg": 45995,
               "count": 210,
               "min": 25000,
               "max": 149900,
               "platforms": {
                 "yanolja": {
-                  "avg": 45932,
+                  "avg": 45995,
                   "count": 210
                 }
               },
@@ -8562,19 +9065,27 @@
                   "platform": "yanolja",
                   "avg": 45932,
                   "count": 105
+                },
+                {
+                  "city": "창원",
+                  "district": "상남동/창원시청",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 46058,
+                  "count": 105
                 }
               ]
             },
             {
               "city": "창원",
               "district": "마산",
-              "avg": 42386,
+              "avg": 42442,
               "count": 198,
               "min": 20000,
               "max": 70000,
               "platforms": {
                 "yanolja": {
-                  "avg": 42386,
+                  "avg": 42442,
                   "count": 198
                 }
               },
@@ -8690,6 +9201,14 @@
                   "platform": "yanolja",
                   "avg": 42386,
                   "count": 99
+                },
+                {
+                  "city": "창원",
+                  "district": "마산",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 42498,
+                  "count": 99
                 }
               ]
             }
@@ -8697,13 +9216,13 @@
         },
         {
           "city": "대구",
-          "avg": 53301,
+          "avg": 53311,
           "count": 394,
           "min": 27000,
           "max": 123000,
           "platforms": {
             "yanolja": {
-              "avg": 53301,
+              "avg": 53311,
               "count": 394
             }
           },
@@ -8819,19 +9338,26 @@
               "platform": "yanolja",
               "avg": 53296,
               "count": 197
+            },
+            {
+              "city": "대구",
+              "hour": "2026-06-09T23:00",
+              "platform": "yanolja",
+              "avg": 53326,
+              "count": 197
             }
           ],
           "districts": [
             {
               "city": "대구",
               "district": "동대구역/신천동/수성못",
-              "avg": 54458,
+              "avg": 54486,
               "count": 216,
               "min": 30000,
               "max": 114000,
               "platforms": {
                 "yanolja": {
-                  "avg": 54458,
+                  "avg": 54486,
                   "count": 216
                 }
               },
@@ -8963,19 +9489,27 @@
                   "platform": "yanolja",
                   "avg": 54458,
                   "count": 108
+                },
+                {
+                  "city": "대구",
+                  "district": "동대구역/신천동/수성못",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 54514,
+                  "count": 108
                 }
               ]
             },
             {
               "city": "대구",
               "district": "동성로/서문시장/대구역/경북대",
-              "avg": 51897,
+              "avg": 51885,
               "count": 178,
               "min": 27000,
               "max": 123000,
               "platforms": {
                 "yanolja": {
-                  "avg": 51897,
+                  "avg": 51885,
                   "count": 178
                 }
               },
@@ -9107,6 +9641,14 @@
                   "platform": "yanolja",
                   "avg": 51885,
                   "count": 89
+                },
+                {
+                  "city": "대구",
+                  "district": "동성로/서문시장/대구역/경북대",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 51885,
+                  "count": 89
                 }
               ]
             }
@@ -9114,14 +9656,14 @@
         },
         {
           "city": "제주",
-          "avg": 49907,
-          "count": 314,
+          "avg": 49646,
+          "count": 317,
           "min": 8000,
           "max": 295000,
           "platforms": {
             "yanolja": {
-              "avg": 49907,
-              "count": 314
+              "avg": 49646,
+              "count": 317
             }
           },
           "trend": [
@@ -9222,19 +9764,26 @@
               "platform": "yanolja",
               "avg": 49907,
               "count": 157
+            },
+            {
+              "city": "제주",
+              "hour": "2026-06-09T23:00",
+              "platform": "yanolja",
+              "avg": 49390,
+              "count": 160
             }
           ],
           "districts": [
             {
               "city": "제주",
               "district": "서귀포시/중문",
-              "avg": 58913,
+              "avg": 58687,
               "count": 124,
               "min": 27000,
               "max": 295000,
               "platforms": {
                 "yanolja": {
-                  "avg": 58913,
+                  "avg": 58687,
                   "count": 124
                 }
               },
@@ -9350,20 +9899,28 @@
                   "platform": "yanolja",
                   "avg": 58913,
                   "count": 62
+                },
+                {
+                  "city": "제주",
+                  "district": "서귀포시/중문",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 58461,
+                  "count": 62
                 }
               ]
             },
             {
               "city": "제주",
               "district": "제주공항 동부(제주시청/탑동)",
-              "avg": 42812,
-              "count": 96,
+              "avg": 43060,
+              "count": 98,
               "min": 8000,
               "max": 89000,
               "platforms": {
                 "yanolja": {
-                  "avg": 42812,
-                  "count": 96
+                  "avg": 43060,
+                  "count": 98
                 }
               },
               "trend": [
@@ -9478,20 +10035,28 @@
                   "platform": "yanolja",
                   "avg": 42812,
                   "count": 48
+                },
+                {
+                  "city": "제주",
+                  "district": "제주공항 동부(제주시청/탑동)",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 43299,
+                  "count": 50
                 }
               ]
             },
             {
               "city": "제주",
               "district": "제주공항 서부(연동/노형)",
-              "avg": 45273,
-              "count": 94,
+              "avg": 44638,
+              "count": 95,
               "min": 18900,
               "max": 140000,
               "platforms": {
                 "yanolja": {
-                  "avg": 45273,
-                  "count": 94
+                  "avg": 44638,
+                  "count": 95
                 }
               },
               "trend": [
@@ -9606,6 +10171,14 @@
                   "platform": "yanolja",
                   "avg": 45273,
                   "count": 47
+                },
+                {
+                  "city": "제주",
+                  "district": "제주공항 서부(연동/노형)",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 44017,
+                  "count": 48
                 }
               ]
             }
@@ -9613,13 +10186,13 @@
         },
         {
           "city": "고양",
-          "avg": 56261,
+          "avg": 56554,
           "count": 184,
           "min": 20000,
           "max": 125000,
           "platforms": {
             "yanolja": {
-              "avg": 56261,
+              "avg": 56554,
               "count": 184
             }
           },
@@ -9721,19 +10294,26 @@
               "platform": "yanolja",
               "avg": 56370,
               "count": 92
+            },
+            {
+              "city": "고양",
+              "hour": "2026-06-09T23:00",
+              "platform": "yanolja",
+              "avg": 56739,
+              "count": 92
             }
           ],
           "districts": [
             {
               "city": "고양",
               "district": "일산/고양",
-              "avg": 56261,
+              "avg": 56554,
               "count": 184,
               "min": 20000,
               "max": 125000,
               "platforms": {
                 "yanolja": {
-                  "avg": 56261,
+                  "avg": 56554,
                   "count": 184
                 }
               },
@@ -9848,6 +10428,14 @@
                   "hour": "2026-06-09T22:00",
                   "platform": "yanolja",
                   "avg": 56370,
+                  "count": 92
+                },
+                {
+                  "city": "고양",
+                  "district": "일산/고양",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 56739,
                   "count": 92
                 }
               ]
@@ -10011,20 +10599,32 @@
           "platform": "yeogi",
           "avg": 72502,
           "count": 94
+        },
+        {
+          "hour": "2026-06-09T23:00",
+          "platform": "yanolja",
+          "avg": 50515,
+          "count": 4313
+        },
+        {
+          "hour": "2026-06-09T23:00",
+          "platform": "yeogi",
+          "avg": 72556,
+          "count": 94
         }
       ]
     },
     "hotel": {
       "platforms": {
         "all": {
-          "avg": 124054,
-          "count": 4615,
+          "avg": 124299,
+          "count": 4595,
           "min": 25000,
           "max": 1704500
         },
         "yanolja": {
-          "avg": 124054,
-          "count": 4615,
+          "avg": 124299,
+          "count": 4595,
           "min": 25000,
           "max": 1704500
         },
@@ -10038,13 +10638,13 @@
       "cities": [
         {
           "city": "경상",
-          "avg": 104641,
+          "avg": 104723,
           "count": 782,
           "min": 30000,
           "max": 1239700,
           "platforms": {
             "yanolja": {
-              "avg": 104641,
+              "avg": 104723,
               "count": 782
             }
           },
@@ -10160,19 +10760,26 @@
               "platform": "yanolja",
               "avg": 104680,
               "count": 391
+            },
+            {
+              "city": "경상",
+              "hour": "2026-06-09T23:00",
+              "platform": "yanolja",
+              "avg": 104767,
+              "count": 391
             }
           ],
           "districts": [
             {
               "city": "경상",
               "district": "창원/마산/진해/김해",
-              "avg": 81816,
+              "avg": 81810,
               "count": 158,
               "min": 40000,
               "max": 230000,
               "platforms": {
                 "yanolja": {
-                  "avg": 81816,
+                  "avg": 81810,
                   "count": 158
                 }
               },
@@ -10304,19 +10911,27 @@
                   "platform": "yanolja",
                   "avg": 81816,
                   "count": 79
+                },
+                {
+                  "city": "경상",
+                  "district": "창원/마산/진해/김해",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 81803,
+                  "count": 79
                 }
               ]
             },
             {
               "city": "경상",
               "district": "경주",
-              "avg": 109561,
+              "avg": 109684,
               "count": 146,
               "min": 45000,
               "max": 461000,
               "platforms": {
                 "yanolja": {
-                  "avg": 109561,
+                  "avg": 109684,
                   "count": 146
                 }
               },
@@ -10432,19 +11047,27 @@
                   "platform": "yanolja",
                   "avg": 109684,
                   "count": 73
+                },
+                {
+                  "city": "경상",
+                  "district": "경주",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 109684,
+                  "count": 73
                 }
               ]
             },
             {
               "city": "경상",
               "district": "거제/통영",
-              "avg": 99561,
+              "avg": 99728,
               "count": 126,
               "min": 40000,
               "max": 494000,
               "platforms": {
                 "yanolja": {
-                  "avg": 99561,
+                  "avg": 99728,
                   "count": 126
                 }
               },
@@ -10560,19 +11183,27 @@
                   "platform": "yanolja",
                   "avg": 99561,
                   "count": 63
+                },
+                {
+                  "city": "경상",
+                  "district": "거제/통영",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 99895,
+                  "count": 63
                 }
               ]
             },
             {
               "city": "경상",
               "district": "울산/양산/밀양",
-              "avg": 92181,
+              "avg": 92470,
               "count": 104,
               "min": 40000,
               "max": 250000,
               "platforms": {
                 "yanolja": {
-                  "avg": 92181,
+                  "avg": 92470,
                   "count": 104
                 }
               },
@@ -10687,6 +11318,14 @@
                   "hour": "2026-06-09T22:00",
                   "platform": "yanolja",
                   "avg": 92373,
+                  "count": 52
+                },
+                {
+                  "city": "경상",
+                  "district": "울산/양산/밀양",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 92566,
                   "count": 52
                 }
               ]
@@ -10832,19 +11471,27 @@
                   "platform": "yanolja",
                   "avg": 114260,
                   "count": 48
+                },
+                {
+                  "city": "경상",
+                  "district": "대구/구미/안동/문경",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 114260,
+                  "count": 48
                 }
               ]
             },
             {
               "city": "경상",
               "district": "포항/영덕/울진",
-              "avg": 125588,
+              "avg": 125478,
               "count": 82,
               "min": 30000,
               "max": 1239700,
               "platforms": {
                 "yanolja": {
-                  "avg": 125588,
+                  "avg": 125478,
                   "count": 82
                 }
               },
@@ -10960,19 +11607,27 @@
                   "platform": "yanolja",
                   "avg": 125429,
                   "count": 41
+                },
+                {
+                  "city": "경상",
+                  "district": "포항/영덕/울진",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 125527,
+                  "count": 41
                 }
               ]
             },
             {
               "city": "경상",
               "district": "남해/사천/하동/진주",
-              "avg": 135829,
+              "avg": 135900,
               "count": 70,
               "min": 50000,
               "max": 709000,
               "platforms": {
                 "yanolja": {
-                  "avg": 135829,
+                  "avg": 135900,
                   "count": 70
                 }
               },
@@ -11088,6 +11743,14 @@
                   "platform": "yanolja",
                   "avg": 135900,
                   "count": 35
+                },
+                {
+                  "city": "경상",
+                  "district": "남해/사천/하동/진주",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 135900,
+                  "count": 35
                 }
               ]
             }
@@ -11095,14 +11758,14 @@
         },
         {
           "city": "부산",
-          "avg": 106552,
-          "count": 645,
+          "avg": 107205,
+          "count": 626,
           "min": 25000,
           "max": 484000,
           "platforms": {
             "yanolja": {
-              "avg": 106552,
-              "count": 645
+              "avg": 107205,
+              "count": 626
             }
           },
           "trend": [
@@ -11217,147 +11880,26 @@
               "platform": "yanolja",
               "avg": 106449,
               "count": 322
+            },
+            {
+              "city": "부산",
+              "hour": "2026-06-09T23:00",
+              "platform": "yanolja",
+              "avg": 108007,
+              "count": 304
             }
           ],
           "districts": [
             {
               "city": "부산",
-              "district": "서면/연산/범일",
-              "avg": 90425,
-              "count": 125,
-              "min": 25000,
-              "max": 242000,
-              "platforms": {
-                "yanolja": {
-                  "avg": 90425,
-                  "count": 125
-                }
-              },
-              "trend": [
-                {
-                  "city": "부산",
-                  "district": "서면/연산/범일",
-                  "hour": "2026-06-09T06:00",
-                  "platform": "yanolja",
-                  "avg": 91153,
-                  "count": 56
-                },
-                {
-                  "city": "부산",
-                  "district": "서면/연산/범일",
-                  "hour": "2026-06-09T07:00",
-                  "platform": "yanolja",
-                  "avg": 91153,
-                  "count": 56
-                },
-                {
-                  "city": "부산",
-                  "district": "서면/연산/범일",
-                  "hour": "2026-06-09T08:00",
-                  "platform": "yanolja",
-                  "avg": 92162,
-                  "count": 52
-                },
-                {
-                  "city": "부산",
-                  "district": "서면/연산/범일",
-                  "hour": "2026-06-09T09:00",
-                  "platform": "yanolja",
-                  "avg": 92341,
-                  "count": 53
-                },
-                {
-                  "city": "부산",
-                  "district": "서면/연산/범일",
-                  "hour": "2026-06-09T10:00",
-                  "platform": "yanolja",
-                  "avg": 92106,
-                  "count": 102
-                },
-                {
-                  "city": "부산",
-                  "district": "서면/연산/범일",
-                  "hour": "2026-06-09T11:00",
-                  "platform": "yanolja",
-                  "avg": 93865,
-                  "count": 49
-                },
-                {
-                  "city": "부산",
-                  "district": "서면/연산/범일",
-                  "hour": "2026-06-09T13:00",
-                  "platform": "yanolja",
-                  "avg": 98684,
-                  "count": 46
-                },
-                {
-                  "city": "부산",
-                  "district": "서면/연산/범일",
-                  "hour": "2026-06-09T14:00",
-                  "platform": "yanolja",
-                  "avg": 100438,
-                  "count": 45
-                },
-                {
-                  "city": "부산",
-                  "district": "서면/연산/범일",
-                  "hour": "2026-06-09T15:00",
-                  "platform": "yanolja",
-                  "avg": 93843,
-                  "count": 30
-                },
-                {
-                  "city": "부산",
-                  "district": "서면/연산/범일",
-                  "hour": "2026-06-09T16:00",
-                  "platform": "yanolja",
-                  "avg": 96451,
-                  "count": 25
-                },
-                {
-                  "city": "부산",
-                  "district": "서면/연산/범일",
-                  "hour": "2026-06-09T19:00",
-                  "platform": "yanolja",
-                  "avg": 90158,
-                  "count": 63
-                },
-                {
-                  "city": "부산",
-                  "district": "서면/연산/범일",
-                  "hour": "2026-06-09T20:00",
-                  "platform": "yanolja",
-                  "avg": 90237,
-                  "count": 63
-                },
-                {
-                  "city": "부산",
-                  "district": "서면/연산/범일",
-                  "hour": "2026-06-09T21:00",
-                  "platform": "yanolja",
-                  "avg": 90237,
-                  "count": 63
-                },
-                {
-                  "city": "부산",
-                  "district": "서면/연산/범일",
-                  "hour": "2026-06-09T22:00",
-                  "platform": "yanolja",
-                  "avg": 90616,
-                  "count": 62
-                }
-              ]
-            },
-            {
-              "city": "부산",
               "district": "해운대/마린시티",
-              "avg": 166782,
+              "avg": 166894,
               "count": 122,
               "min": 49000,
               "max": 484000,
               "platforms": {
                 "yanolja": {
-                  "avg": 166782,
+                  "avg": 166894,
                   "count": 122
                 }
               },
@@ -11473,19 +12015,27 @@
                   "platform": "yanolja",
                   "avg": 166894,
                   "count": 61
+                },
+                {
+                  "city": "부산",
+                  "district": "해운대/마린시티",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 166894,
+                  "count": 61
                 }
               ]
             },
             {
               "city": "부산",
               "district": "자갈치/남포동/영도",
-              "avg": 81656,
+              "avg": 81240,
               "count": 108,
               "min": 37060,
               "max": 211760,
               "platforms": {
                 "yanolja": {
-                  "avg": 81656,
+                  "avg": 81240,
                   "count": 108
                 }
               },
@@ -11617,19 +12167,163 @@
                   "platform": "yanolja",
                   "avg": 81656,
                   "count": 54
+                },
+                {
+                  "city": "부산",
+                  "district": "자갈치/남포동/영도",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 80824,
+                  "count": 54
+                }
+              ]
+            },
+            {
+              "city": "부산",
+              "district": "서면/연산/범일",
+              "avg": 93861,
+              "count": 106,
+              "min": 25000,
+              "max": 242000,
+              "platforms": {
+                "yanolja": {
+                  "avg": 93861,
+                  "count": 106
+                }
+              },
+              "trend": [
+                {
+                  "city": "부산",
+                  "district": "서면/연산/범일",
+                  "hour": "2026-06-09T06:00",
+                  "platform": "yanolja",
+                  "avg": 91153,
+                  "count": 56
+                },
+                {
+                  "city": "부산",
+                  "district": "서면/연산/범일",
+                  "hour": "2026-06-09T07:00",
+                  "platform": "yanolja",
+                  "avg": 91153,
+                  "count": 56
+                },
+                {
+                  "city": "부산",
+                  "district": "서면/연산/범일",
+                  "hour": "2026-06-09T08:00",
+                  "platform": "yanolja",
+                  "avg": 92162,
+                  "count": 52
+                },
+                {
+                  "city": "부산",
+                  "district": "서면/연산/범일",
+                  "hour": "2026-06-09T09:00",
+                  "platform": "yanolja",
+                  "avg": 92341,
+                  "count": 53
+                },
+                {
+                  "city": "부산",
+                  "district": "서면/연산/범일",
+                  "hour": "2026-06-09T10:00",
+                  "platform": "yanolja",
+                  "avg": 92106,
+                  "count": 102
+                },
+                {
+                  "city": "부산",
+                  "district": "서면/연산/범일",
+                  "hour": "2026-06-09T11:00",
+                  "platform": "yanolja",
+                  "avg": 93865,
+                  "count": 49
+                },
+                {
+                  "city": "부산",
+                  "district": "서면/연산/범일",
+                  "hour": "2026-06-09T13:00",
+                  "platform": "yanolja",
+                  "avg": 98684,
+                  "count": 46
+                },
+                {
+                  "city": "부산",
+                  "district": "서면/연산/범일",
+                  "hour": "2026-06-09T14:00",
+                  "platform": "yanolja",
+                  "avg": 100438,
+                  "count": 45
+                },
+                {
+                  "city": "부산",
+                  "district": "서면/연산/범일",
+                  "hour": "2026-06-09T15:00",
+                  "platform": "yanolja",
+                  "avg": 93843,
+                  "count": 30
+                },
+                {
+                  "city": "부산",
+                  "district": "서면/연산/범일",
+                  "hour": "2026-06-09T16:00",
+                  "platform": "yanolja",
+                  "avg": 96451,
+                  "count": 25
+                },
+                {
+                  "city": "부산",
+                  "district": "서면/연산/범일",
+                  "hour": "2026-06-09T19:00",
+                  "platform": "yanolja",
+                  "avg": 90158,
+                  "count": 63
+                },
+                {
+                  "city": "부산",
+                  "district": "서면/연산/범일",
+                  "hour": "2026-06-09T20:00",
+                  "platform": "yanolja",
+                  "avg": 90237,
+                  "count": 63
+                },
+                {
+                  "city": "부산",
+                  "district": "서면/연산/범일",
+                  "hour": "2026-06-09T21:00",
+                  "platform": "yanolja",
+                  "avg": 90237,
+                  "count": 63
+                },
+                {
+                  "city": "부산",
+                  "district": "서면/연산/범일",
+                  "hour": "2026-06-09T22:00",
+                  "platform": "yanolja",
+                  "avg": 90616,
+                  "count": 62
+                },
+                {
+                  "city": "부산",
+                  "district": "서면/연산/범일",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 98434,
+                  "count": 44
                 }
               ]
             },
             {
               "city": "부산",
               "district": "광안리/경성대",
-              "avg": 103851,
+              "avg": 103059,
               "count": 96,
               "min": 40000,
               "max": 389000,
               "platforms": {
                 "yanolja": {
-                  "avg": 103851,
+                  "avg": 103059,
                   "count": 96
                 }
               },
@@ -11745,19 +12439,27 @@
                   "platform": "yanolja",
                   "avg": 103851,
                   "count": 48
+                },
+                {
+                  "city": "부산",
+                  "district": "광안리/경성대",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 102267,
+                  "count": 48
                 }
               ]
             },
             {
               "city": "부산",
               "district": "사상/강서/김해공항/하단",
-              "avg": 77275,
+              "avg": 76942,
               "count": 90,
               "min": 40000,
               "max": 188100,
               "platforms": {
                 "yanolja": {
-                  "avg": 77275,
+                  "avg": 76942,
                   "count": 90
                 }
               },
@@ -11873,19 +12575,27 @@
                   "platform": "yanolja",
                   "avg": 76942,
                   "count": 45
+                },
+                {
+                  "city": "부산",
+                  "district": "사상/강서/김해공항/하단",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 76942,
+                  "count": 45
                 }
               ]
             },
             {
               "city": "부산",
               "district": "부산역",
-              "avg": 109491,
+              "avg": 108722,
               "count": 52,
               "min": 55000,
               "max": 168240,
               "platforms": {
                 "yanolja": {
-                  "avg": 109491,
+                  "avg": 108722,
                   "count": 52
                 }
               },
@@ -12017,19 +12727,27 @@
                   "platform": "yanolja",
                   "avg": 109491,
                   "count": 26
+                },
+                {
+                  "city": "부산",
+                  "district": "부산역",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 107952,
+                  "count": 26
                 }
               ]
             },
             {
               "city": "부산",
               "district": "벡스코/센텀시티",
-              "avg": 114692,
+              "avg": 114913,
               "count": 26,
               "min": 55000,
               "max": 190009,
               "platforms": {
                 "yanolja": {
-                  "avg": 114692,
+                  "avg": 114913,
                   "count": 26
                 }
               },
@@ -12145,19 +12863,27 @@
                   "platform": "yanolja",
                   "avg": 114692,
                   "count": 13
+                },
+                {
+                  "city": "부산",
+                  "district": "벡스코/센텀시티",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 115134,
+                  "count": 13
                 }
               ]
             },
             {
               "city": "부산",
               "district": "동래/온천/금정구",
-              "avg": 102181,
+              "avg": 98719,
               "count": 26,
               "min": 53000,
               "max": 400000,
               "platforms": {
                 "yanolja": {
-                  "avg": 102181,
+                  "avg": 98719,
                   "count": 26
                 }
               },
@@ -12273,6 +12999,14 @@
                   "platform": "yanolja",
                   "avg": 98719,
                   "count": 13
+                },
+                {
+                  "city": "부산",
+                  "district": "동래/온천/금정구",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 98719,
+                  "count": 13
                 }
               ]
             }
@@ -12280,14 +13014,14 @@
         },
         {
           "city": "서울",
-          "avg": 241540,
-          "count": 614,
+          "avg": 241288,
+          "count": 617,
           "min": 35000,
           "max": 1210000,
           "platforms": {
             "yanolja": {
-              "avg": 241540,
-              "count": 614
+              "avg": 241288,
+              "count": 617
             }
           },
           "trend": [
@@ -12402,20 +13136,27 @@
               "platform": "yanolja",
               "avg": 241988,
               "count": 307
+            },
+            {
+              "city": "서울",
+              "hour": "2026-06-09T23:00",
+              "platform": "yanolja",
+              "avg": 240595,
+              "count": 310
             }
           ],
           "districts": [
             {
               "city": "서울",
               "district": "강남/역삼/삼성",
-              "avg": 314124,
-              "count": 102,
-              "min": 100000,
+              "avg": 312588,
+              "count": 104,
+              "min": 90000,
               "max": 1210000,
               "platforms": {
                 "yanolja": {
-                  "avg": 314124,
-                  "count": 102
+                  "avg": 312588,
+                  "count": 104
                 }
               },
               "trend": [
@@ -12530,20 +13271,28 @@
                   "platform": "yanolja",
                   "avg": 315301,
                   "count": 51
+                },
+                {
+                  "city": "서울",
+                  "district": "강남/역삼/삼성",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 309977,
+                  "count": 53
                 }
               ]
             },
             {
               "city": "서울",
               "district": "종로/인사동",
-              "avg": 208648,
-              "count": 80,
+              "avg": 206306,
+              "count": 81,
               "min": 65000,
               "max": 580800,
               "platforms": {
                 "yanolja": {
-                  "avg": 208648,
-                  "count": 80
+                  "avg": 206306,
+                  "count": 81
                 }
               },
               "trend": [
@@ -12658,20 +13407,28 @@
                   "platform": "yanolja",
                   "avg": 208712,
                   "count": 40
+                },
+                {
+                  "city": "서울",
+                  "district": "종로/인사동",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 203959,
+                  "count": 41
                 }
               ]
             },
             {
               "city": "서울",
               "district": "홍대/합정/마포/서대문",
-              "avg": 221268,
-              "count": 74,
+              "avg": 221156,
+              "count": 76,
               "min": 65000,
               "max": 823600,
               "platforms": {
                 "yanolja": {
-                  "avg": 221268,
-                  "count": 74
+                  "avg": 221156,
+                  "count": 76
                 }
               },
               "trend": [
@@ -12786,19 +13543,27 @@
                   "platform": "yanolja",
                   "avg": 222209,
                   "count": 38
+                },
+                {
+                  "city": "서울",
+                  "district": "홍대/합정/마포/서대문",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 220103,
+                  "count": 38
                 }
               ]
             },
             {
               "city": "서울",
               "district": "을지로/명동/중구/동대문",
-              "avg": 285854,
+              "avg": 285697,
               "count": 64,
               "min": 70000,
               "max": 1100000,
               "platforms": {
                 "yanolja": {
-                  "avg": 285854,
+                  "avg": 285697,
                   "count": 64
                 }
               },
@@ -12914,19 +13679,27 @@
                   "platform": "yanolja",
                   "avg": 285854,
                   "count": 32
+                },
+                {
+                  "city": "서울",
+                  "district": "을지로/명동/중구/동대문",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 285541,
+                  "count": 32
                 }
               ]
             },
             {
               "city": "서울",
               "district": "신사/청담/압구정",
-              "avg": 344673,
+              "avg": 346609,
               "count": 56,
               "min": 100000,
               "max": 1100000,
               "platforms": {
                 "yanolja": {
-                  "avg": 344673,
+                  "avg": 346609,
                   "count": 56
                 }
               },
@@ -13041,6 +13814,14 @@
                   "hour": "2026-06-09T22:00",
                   "platform": "yanolja",
                   "avg": 346815,
+                  "count": 28
+                },
+                {
+                  "city": "서울",
+                  "district": "신사/청담/압구정",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 346403,
                   "count": 28
                 }
               ]
@@ -13183,6 +13964,14 @@
                   "city": "서울",
                   "district": "잠실/송파/강동",
                   "hour": "2026-06-09T22:00",
+                  "platform": "yanolja",
+                  "avg": 164918,
+                  "count": 24
+                },
+                {
+                  "city": "서울",
+                  "district": "잠실/송파/강동",
+                  "hour": "2026-06-09T23:00",
                   "platform": "yanolja",
                   "avg": 164918,
                   "count": 24
@@ -13330,19 +14119,27 @@
                   "platform": "yanolja",
                   "avg": 88404,
                   "count": 24
+                },
+                {
+                  "city": "서울",
+                  "district": "성북/강북/노원/도봉",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 88404,
+                  "count": 24
                 }
               ]
             },
             {
               "city": "서울",
               "district": "서초/교대/사당",
-              "avg": 161788,
+              "avg": 162893,
               "count": 38,
               "min": 79800,
               "max": 338065,
               "platforms": {
                 "yanolja": {
-                  "avg": 161788,
+                  "avg": 162893,
                   "count": 38
                 }
               },
@@ -13457,6 +14254,14 @@
                   "hour": "2026-06-09T22:00",
                   "platform": "yanolja",
                   "avg": 161788,
+                  "count": 19
+                },
+                {
+                  "city": "서울",
+                  "district": "서초/교대/사당",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 163998,
                   "count": 19
                 }
               ]
@@ -13586,19 +14391,27 @@
                   "platform": "yanolja",
                   "avg": 303428,
                   "count": 17
+                },
+                {
+                  "city": "서울",
+                  "district": "서울역/이태원/용산",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 303428,
+                  "count": 17
                 }
               ]
             },
             {
               "city": "서울",
               "district": "건대입구/성수/왕십리",
-              "avg": 300290,
+              "avg": 304607,
               "count": 28,
               "min": 65000,
               "max": 750200,
               "platforms": {
                 "yanolja": {
-                  "avg": 300290,
+                  "avg": 304607,
                   "count": 28
                 }
               },
@@ -13730,19 +14543,27 @@
                   "platform": "yanolja",
                   "avg": 304607,
                   "count": 14
+                },
+                {
+                  "city": "서울",
+                  "district": "건대입구/성수/왕십리",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 304607,
+                  "count": 14
                 }
               ]
             },
             {
               "city": "서울",
               "district": "영등포역",
-              "avg": 133706,
+              "avg": 133179,
               "count": 26,
               "min": 65000,
               "max": 435600,
               "platforms": {
                 "yanolja": {
-                  "avg": 133706,
+                  "avg": 133179,
                   "count": 26
                 }
               },
@@ -13858,20 +14679,28 @@
                   "platform": "yanolja",
                   "avg": 133518,
                   "count": 13
+                },
+                {
+                  "city": "서울",
+                  "district": "영등포역",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 132841,
+                  "count": 13
                 }
               ]
             },
             {
               "city": "서울",
               "district": "여의도",
-              "avg": 318400,
-              "count": 16,
+              "avg": 321043,
+              "count": 14,
               "min": 105000,
               "max": 678400,
               "platforms": {
                 "yanolja": {
-                  "avg": 318400,
-                  "count": 16
+                  "avg": 321043,
+                  "count": 14
                 }
               },
               "trend": [
@@ -13986,6 +14815,14 @@
                   "platform": "yanolja",
                   "avg": 321043,
                   "count": 7
+                },
+                {
+                  "city": "서울",
+                  "district": "여의도",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 321043,
+                  "count": 7
                 }
               ]
             }
@@ -13993,13 +14830,13 @@
         },
         {
           "city": "전라",
-          "avg": 79355,
+          "avg": 79348,
           "count": 605,
           "min": 35000,
           "max": 215000,
           "platforms": {
             "yanolja": {
-              "avg": 79355,
+              "avg": 79348,
               "count": 605
             }
           },
@@ -14115,6 +14952,13 @@
               "platform": "yanolja",
               "avg": 79346,
               "count": 302
+            },
+            {
+              "city": "전라",
+              "hour": "2026-06-09T23:00",
+              "platform": "yanolja",
+              "avg": 79350,
+              "count": 303
             }
           ],
           "districts": [
@@ -14243,19 +15087,27 @@
                   "platform": "yanolja",
                   "avg": 72985,
                   "count": 80
+                },
+                {
+                  "city": "전라",
+                  "district": "여수",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 72985,
+                  "count": 80
                 }
               ]
             },
             {
               "city": "전라",
               "district": "광주/나주/함평",
-              "avg": 83361,
+              "avg": 83220,
               "count": 142,
               "min": 36000,
               "max": 200000,
               "platforms": {
                 "yanolja": {
-                  "avg": 83361,
+                  "avg": 83220,
                   "count": 142
                 }
               },
@@ -14387,19 +15239,27 @@
                   "platform": "yanolja",
                   "avg": 83361,
                   "count": 71
+                },
+                {
+                  "city": "전라",
+                  "district": "광주/나주/함평",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 83079,
+                  "count": 71
                 }
               ]
             },
             {
               "city": "전라",
               "district": "전주/완주",
-              "avg": 73855,
+              "avg": 73888,
               "count": 122,
               "min": 40000,
               "max": 195100,
               "platforms": {
                 "yanolja": {
-                  "avg": 73855,
+                  "avg": 73888,
                   "count": 122
                 }
               },
@@ -14523,20 +15383,28 @@
                   "platform": "yanolja",
                   "avg": 73855,
                   "count": 61
+                },
+                {
+                  "city": "전라",
+                  "district": "전주/완주",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 73920,
+                  "count": 61
                 }
               ]
             },
             {
               "city": "전라",
               "district": "목포/신안/해남",
-              "avg": 83889,
-              "count": 119,
+              "avg": 83740,
+              "count": 118,
               "min": 35000,
               "max": 171800,
               "platforms": {
                 "yanolja": {
-                  "avg": 83889,
-                  "count": 119
+                  "avg": 83740,
+                  "count": 118
                 }
               },
               "trend": [
@@ -14659,20 +15527,28 @@
                   "platform": "yanolja",
                   "avg": 83880,
                   "count": 59
+                },
+                {
+                  "city": "전라",
+                  "district": "목포/신안/해남",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 83600,
+                  "count": 59
                 }
               ]
             },
             {
               "city": "전라",
               "district": "순천/광양/담양",
-              "avg": 88744,
-              "count": 62,
+              "avg": 89130,
+              "count": 63,
               "min": 43000,
               "max": 166000,
               "platforms": {
                 "yanolja": {
-                  "avg": 88744,
-                  "count": 62
+                  "avg": 89130,
+                  "count": 63
                 }
               },
               "trend": [
@@ -14787,6 +15663,14 @@
                   "platform": "yanolja",
                   "avg": 88744,
                   "count": 31
+                },
+                {
+                  "city": "전라",
+                  "district": "순천/광양/담양",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 89505,
+                  "count": 32
                 }
               ]
             }
@@ -14794,13 +15678,13 @@
         },
         {
           "city": "강원",
-          "avg": 88430,
+          "avg": 88655,
           "count": 564,
           "min": 38000,
           "max": 418000,
           "platforms": {
             "yanolja": {
-              "avg": 88430,
+              "avg": 88655,
               "count": 564
             }
           },
@@ -14916,19 +15800,26 @@
               "platform": "yanolja",
               "avg": 88430,
               "count": 282
+            },
+            {
+              "city": "강원",
+              "hour": "2026-06-09T23:00",
+              "platform": "yanolja",
+              "avg": 88880,
+              "count": 282
             }
           ],
           "districts": [
             {
               "city": "강원",
               "district": "속초/고성",
-              "avg": 85893,
+              "avg": 85942,
               "count": 144,
               "min": 38000,
               "max": 310000,
               "platforms": {
                 "yanolja": {
-                  "avg": 85893,
+                  "avg": 85942,
                   "count": 144
                 }
               },
@@ -15060,19 +15951,27 @@
                   "platform": "yanolja",
                   "avg": 85893,
                   "count": 72
+                },
+                {
+                  "city": "강원",
+                  "district": "속초/고성",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 85990,
+                  "count": 72
                 }
               ]
             },
             {
               "city": "강원",
               "district": "강릉",
-              "avg": 102483,
+              "avg": 102565,
               "count": 122,
               "min": 45000,
               "max": 418000,
               "platforms": {
                 "yanolja": {
-                  "avg": 102483,
+                  "avg": 102565,
                   "count": 122
                 }
               },
@@ -15187,6 +16086,14 @@
                   "hour": "2026-06-09T22:00",
                   "platform": "yanolja",
                   "avg": 102483,
+                  "count": 61
+                },
+                {
+                  "city": "강원",
+                  "district": "강릉",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 102647,
                   "count": 61
                 }
               ]
@@ -15332,6 +16239,14 @@
                   "platform": "yanolja",
                   "avg": 82608,
                   "count": 45
+                },
+                {
+                  "city": "강원",
+                  "district": "양양",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 82608,
+                  "count": 45
                 }
               ]
             },
@@ -15460,19 +16375,27 @@
                   "platform": "yanolja",
                   "avg": 87495,
                   "count": 42
+                },
+                {
+                  "city": "강원",
+                  "district": "평창/정선/영월",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 87495,
+                  "count": 42
                 }
               ]
             },
             {
               "city": "강원",
               "district": "춘천/인제/철원",
-              "avg": 79581,
+              "avg": 80956,
               "count": 80,
               "min": 49000,
               "max": 240000,
               "platforms": {
                 "yanolja": {
-                  "avg": 79581,
+                  "avg": 80956,
                   "count": 80
                 }
               },
@@ -15587,6 +16510,14 @@
                   "hour": "2026-06-09T22:00",
                   "platform": "yanolja",
                   "avg": 79581,
+                  "count": 40
+                },
+                {
+                  "city": "강원",
+                  "district": "춘천/인제/철원",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 82331,
                   "count": 40
                 }
               ]
@@ -15716,6 +16647,14 @@
                   "platform": "yanolja",
                   "avg": 87550,
                   "count": 22
+                },
+                {
+                  "city": "강원",
+                  "district": "동해/삼척/태백",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 87550,
+                  "count": 22
                 }
               ]
             }
@@ -15723,14 +16662,14 @@
         },
         {
           "city": "충청",
-          "avg": 98335,
-          "count": 444,
+          "avg": 98333,
+          "count": 443,
           "min": 35000,
           "max": 640000,
           "platforms": {
             "yanolja": {
-              "avg": 98335,
-              "count": 444
+              "avg": 98333,
+              "count": 443
             }
           },
           "trend": [
@@ -15845,20 +16784,27 @@
               "platform": "yanolja",
               "avg": 98042,
               "count": 222
+            },
+            {
+              "city": "충청",
+              "hour": "2026-06-09T23:00",
+              "platform": "yanolja",
+              "avg": 98626,
+              "count": 221
             }
           ],
           "districts": [
             {
               "city": "충청",
               "district": "대전/세종",
-              "avg": 103230,
-              "count": 134,
+              "avg": 102428,
+              "count": 133,
               "min": 45000,
               "max": 286000,
               "platforms": {
                 "yanolja": {
-                  "avg": 103230,
-                  "count": 134
+                  "avg": 102428,
+                  "count": 133
                 }
               },
               "trend": [
@@ -15973,19 +16919,27 @@
                   "platform": "yanolja",
                   "avg": 102260,
                   "count": 67
+                },
+                {
+                  "city": "충청",
+                  "district": "대전/세종",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 102598,
+                  "count": 66
                 }
               ]
             },
             {
               "city": "충청",
               "district": "천안/아산/도고",
-              "avg": 77455,
+              "avg": 77513,
               "count": 102,
               "min": 35000,
               "max": 210000,
               "platforms": {
                 "yanolja": {
-                  "avg": 77455,
+                  "avg": 77513,
                   "count": 102
                 }
               },
@@ -16100,6 +17054,14 @@
                   "hour": "2026-06-09T22:00",
                   "platform": "yanolja",
                   "avg": 77455,
+                  "count": 51
+                },
+                {
+                  "city": "충청",
+                  "district": "천안/아산/도고",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 77572,
                   "count": 51
                 }
               ]
@@ -16229,19 +17191,27 @@
                   "platform": "yanolja",
                   "avg": 92952,
                   "count": 29
+                },
+                {
+                  "city": "충청",
+                  "district": "청주/음성/진천",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 92952,
+                  "count": 29
                 }
               ]
             },
             {
               "city": "충청",
               "district": "보령/대천/부여/공주",
-              "avg": 110559,
+              "avg": 110555,
               "count": 58,
               "min": 50000,
               "max": 320000,
               "platforms": {
                 "yanolja": {
-                  "avg": 110559,
+                  "avg": 110555,
                   "count": 58
                 }
               },
@@ -16373,19 +17343,27 @@
                   "platform": "yanolja",
                   "avg": 110555,
                   "count": 29
+                },
+                {
+                  "city": "충청",
+                  "district": "보령/대천/부여/공주",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 110555,
+                  "count": 29
                 }
               ]
             },
             {
               "city": "충청",
               "district": "충주/제천/단양",
-              "avg": 101267,
+              "avg": 103454,
               "count": 48,
               "min": 44000,
               "max": 254000,
               "platforms": {
                 "yanolja": {
-                  "avg": 101267,
+                  "avg": 103454,
                   "count": 48
                 }
               },
@@ -16500,6 +17478,14 @@
                   "hour": "2026-06-09T22:00",
                   "platform": "yanolja",
                   "avg": 101267,
+                  "count": 24
+                },
+                {
+                  "city": "충청",
+                  "district": "충주/제천/단양",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 105642,
                   "count": 24
                 }
               ]
@@ -16629,6 +17615,14 @@
                   "platform": "yanolja",
                   "avg": 119615,
                   "count": 22
+                },
+                {
+                  "city": "충청",
+                  "district": "당진/덕산/태안/안면도",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 119615,
+                  "count": 22
                 }
               ]
             }
@@ -16636,14 +17630,14 @@
         },
         {
           "city": "제주",
-          "avg": 194831,
-          "count": 358,
+          "avg": 194910,
+          "count": 357,
           "min": 25000,
           "max": 1704500,
           "platforms": {
             "yanolja": {
-              "avg": 194831,
-              "count": 358
+              "avg": 194910,
+              "count": 357
             }
           },
           "trend": [
@@ -16758,19 +17752,26 @@
               "platform": "yanolja",
               "avg": 194831,
               "count": 179
+            },
+            {
+              "city": "제주",
+              "hour": "2026-06-09T23:00",
+              "platform": "yanolja",
+              "avg": 194988,
+              "count": 178
             }
           ],
           "districts": [
             {
               "city": "제주",
               "district": "애월/한림/협재",
-              "avg": 107071,
+              "avg": 106965,
               "count": 94,
               "min": 25000,
               "max": 305150,
               "platforms": {
                 "yanolja": {
-                  "avg": 107071,
+                  "avg": 106965,
                   "count": 94
                 }
               },
@@ -16902,19 +17903,27 @@
                   "platform": "yanolja",
                   "avg": 107071,
                   "count": 47
+                },
+                {
+                  "city": "제주",
+                  "district": "애월/한림/협재",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 106858,
+                  "count": 47
                 }
               ]
             },
             {
               "city": "제주",
               "district": "서귀포시/모슬포",
-              "avg": 178080,
+              "avg": 177600,
               "count": 68,
               "min": 34650,
               "max": 1320000,
               "platforms": {
                 "yanolja": {
-                  "avg": 178080,
+                  "avg": 177600,
                   "count": 68
                 }
               },
@@ -17030,19 +18039,27 @@
                   "platform": "yanolja",
                   "avg": 178080,
                   "count": 34
+                },
+                {
+                  "city": "제주",
+                  "district": "서귀포시/모슬포",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 177121,
+                  "count": 34
                 }
               ]
             },
             {
               "city": "제주",
               "district": "중문",
-              "avg": 366584,
+              "avg": 366854,
               "count": 62,
               "min": 44400,
               "max": 1704500,
               "platforms": {
                 "yanolja": {
-                  "avg": 366584,
+                  "avg": 366854,
                   "count": 62
                 }
               },
@@ -17158,19 +18175,27 @@
                   "platform": "yanolja",
                   "avg": 366584,
                   "count": 31
+                },
+                {
+                  "city": "제주",
+                  "district": "중문",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 367123,
+                  "count": 31
                 }
               ]
             },
             {
               "city": "제주",
               "district": "표선/성산",
-              "avg": 185401,
+              "avg": 185134,
               "count": 60,
               "min": 40000,
               "max": 1600000,
               "platforms": {
                 "yanolja": {
-                  "avg": 185401,
+                  "avg": 185134,
                   "count": 60
                 }
               },
@@ -17286,20 +18311,28 @@
                   "platform": "yanolja",
                   "avg": 185401,
                   "count": 30
+                },
+                {
+                  "city": "제주",
+                  "district": "표선/성산",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 184868,
+                  "count": 30
                 }
               ]
             },
             {
               "city": "제주",
               "district": "제주시/제주국제공항",
-              "avg": 198065,
-              "count": 54,
+              "avg": 199443,
+              "count": 53,
               "min": 42000,
               "max": 668800,
               "platforms": {
                 "yanolja": {
-                  "avg": 198065,
-                  "count": 54
+                  "avg": 199443,
+                  "count": 53
                 }
               },
               "trend": [
@@ -17414,6 +18447,14 @@
                   "platform": "yanolja",
                   "avg": 198065,
                   "count": 27
+                },
+                {
+                  "city": "제주",
+                  "district": "제주시/제주국제공항",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 200875,
+                  "count": 26
                 }
               ]
             },
@@ -17542,6 +18583,14 @@
                   "platform": "yanolja",
                   "avg": 151385,
                   "count": 10
+                },
+                {
+                  "city": "제주",
+                  "district": "함덕/김녕/세화",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 151385,
+                  "count": 10
                 }
               ]
             }
@@ -17549,14 +18598,14 @@
         },
         {
           "city": "경기",
-          "avg": 109113,
-          "count": 336,
+          "avg": 108928,
+          "count": 335,
           "min": 30000,
           "max": 616000,
           "platforms": {
             "yanolja": {
-              "avg": 109113,
-              "count": 336
+              "avg": 108928,
+              "count": 335
             }
           },
           "trend": [
@@ -17657,19 +18706,26 @@
               "platform": "yanolja",
               "avg": 109109,
               "count": 168
+            },
+            {
+              "city": "경기",
+              "hour": "2026-06-09T23:00",
+              "platform": "yanolja",
+              "avg": 108746,
+              "count": 167
             }
           ],
           "districts": [
             {
               "city": "경기",
               "district": "수원/화성",
-              "avg": 95923,
+              "avg": 95911,
               "count": 100,
               "min": 30000,
               "max": 308000,
               "platforms": {
                 "yanolja": {
-                  "avg": 95923,
+                  "avg": 95911,
                   "count": 100
                 }
               },
@@ -17785,19 +18841,27 @@
                   "platform": "yanolja",
                   "avg": 95911,
                   "count": 50
+                },
+                {
+                  "city": "경기",
+                  "district": "수원/화성",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 95911,
+                  "count": 50
                 }
               ]
             },
             {
               "city": "경기",
               "district": "용인/동탄",
-              "avg": 94534,
+              "avg": 94531,
               "count": 72,
               "min": 50000,
               "max": 262000,
               "platforms": {
                 "yanolja": {
-                  "avg": 94534,
+                  "avg": 94531,
                   "count": 72
                 }
               },
@@ -17913,20 +18977,28 @@
                   "platform": "yanolja",
                   "avg": 94531,
                   "count": 36
+                },
+                {
+                  "city": "경기",
+                  "district": "용인/동탄",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 94531,
+                  "count": 36
                 }
               ]
             },
             {
               "city": "경기",
               "district": "고양/파주/김포",
-              "avg": 98488,
-              "count": 66,
+              "avg": 97392,
+              "count": 65,
               "min": 40000,
               "max": 305000,
               "platforms": {
                 "yanolja": {
-                  "avg": 98488,
-                  "count": 66
+                  "avg": 97392,
+                  "count": 65
                 }
               },
               "trend": [
@@ -18041,6 +19113,14 @@
                   "platform": "yanolja",
                   "avg": 98488,
                   "count": 33
+                },
+                {
+                  "city": "경기",
+                  "district": "고양/파주/김포",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 96262,
+                  "count": 32
                 }
               ]
             },
@@ -18166,6 +19246,14 @@
                   "city": "경기",
                   "district": "남양주/구리/성남/분당",
                   "hour": "2026-06-09T22:00",
+                  "platform": "yanolja",
+                  "avg": 149310,
+                  "count": 27
+                },
+                {
+                  "city": "경기",
+                  "district": "남양주/구리/성남/분당",
+                  "hour": "2026-06-09T23:00",
                   "platform": "yanolja",
                   "avg": 149310,
                   "count": 27
@@ -18297,6 +19385,14 @@
                   "platform": "yanolja",
                   "avg": 129551,
                   "count": 22
+                },
+                {
+                  "city": "경기",
+                  "district": "가평/청평/양평",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 129551,
+                  "count": 22
                 }
               ]
             }
@@ -18304,14 +19400,14 @@
         },
         {
           "city": "인천",
-          "avg": 96218,
-          "count": 267,
+          "avg": 96372,
+          "count": 266,
           "min": 34000,
           "max": 799992,
           "platforms": {
             "yanolja": {
-              "avg": 96218,
-              "count": 267
+              "avg": 96372,
+              "count": 266
             }
           },
           "trend": [
@@ -18426,19 +19522,26 @@
               "platform": "yanolja",
               "avg": 96203,
               "count": 133
+            },
+            {
+              "city": "인천",
+              "hour": "2026-06-09T23:00",
+              "platform": "yanolja",
+              "avg": 96541,
+              "count": 133
             }
           ],
           "districts": [
             {
               "city": "인천",
               "district": "영종도/월미도",
-              "avg": 62428,
+              "avg": 62426,
               "count": 108,
               "min": 34000,
               "max": 160000,
               "platforms": {
                 "yanolja": {
-                  "avg": 62428,
+                  "avg": 62426,
                   "count": 108
                 }
               },
@@ -18570,19 +19673,27 @@
                   "platform": "yanolja",
                   "avg": 62428,
                   "count": 54
+                },
+                {
+                  "city": "인천",
+                  "district": "영종도/월미도",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 62425,
+                  "count": 54
                 }
               ]
             },
             {
               "city": "인천",
               "district": "송도/소래포구",
-              "avg": 103405,
+              "avg": 103401,
               "count": 80,
               "min": 34900,
               "max": 799992,
               "platforms": {
                 "yanolja": {
-                  "avg": 103405,
+                  "avg": 103401,
                   "count": 80
                 }
               },
@@ -18698,20 +19809,28 @@
                   "platform": "yanolja",
                   "avg": 103402,
                   "count": 40
+                },
+                {
+                  "city": "인천",
+                  "district": "송도/소래포구",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 103400,
+                  "count": 40
                 }
               ]
             },
             {
               "city": "인천",
               "district": "인천국제공항/강화/을왕리",
-              "avg": 135133,
-              "count": 79,
+              "avg": 136163,
+              "count": 78,
               "min": 35000,
               "max": 748000,
               "platforms": {
                 "yanolja": {
-                  "avg": 135133,
-                  "count": 79
+                  "avg": 136163,
+                  "count": 78
                 }
               },
               "trend": [
@@ -18826,6 +19945,14 @@
                   "platform": "yanolja",
                   "avg": 135582,
                   "count": 39
+                },
+                {
+                  "city": "인천",
+                  "district": "인천국제공항/강화/을왕리",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 136744,
+                  "count": 39
                 }
               ]
             }
@@ -18928,20 +20055,26 @@
           "platform": "yanolja",
           "avg": 124094,
           "count": 2306
+        },
+        {
+          "hour": "2026-06-09T23:00",
+          "platform": "yanolja",
+          "avg": 124506,
+          "count": 2289
         }
       ]
     },
     "pension": {
       "platforms": {
         "all": {
-          "avg": 113801,
-          "count": 11655,
+          "avg": 113742,
+          "count": 11520,
           "min": 14000,
           "max": 980000
         },
         "yanolja": {
-          "avg": 113801,
-          "count": 11655,
+          "avg": 113742,
+          "count": 11520,
           "min": 14000,
           "max": 980000
         },
@@ -18955,14 +20088,14 @@
       "cities": [
         {
           "city": "강원",
-          "avg": 103602,
-          "count": 2188,
+          "avg": 103928,
+          "count": 2130,
           "min": 14000,
           "max": 600000,
           "platforms": {
             "yanolja": {
-              "avg": 103602,
-              "count": 2188
+              "avg": 103928,
+              "count": 2130
             }
           },
           "trend": [
@@ -19063,19 +20196,26 @@
               "platform": "yanolja",
               "avg": 103513,
               "count": 1093
+            },
+            {
+              "city": "강원",
+              "hour": "2026-06-09T23:00",
+              "platform": "yanolja",
+              "avg": 104366,
+              "count": 1037
             }
           ],
           "districts": [
             {
               "city": "강원",
               "district": "강릉(경포대/안목해변)",
-              "avg": 104428,
+              "avg": 104575,
               "count": 342,
               "min": 24000,
               "max": 490000,
               "platforms": {
                 "yanolja": {
-                  "avg": 104428,
+                  "avg": 104575,
                   "count": 342
                 }
               },
@@ -19191,148 +20331,28 @@
                   "platform": "yanolja",
                   "avg": 104428,
                   "count": 171
-                }
-              ]
-            },
-            {
-              "city": "강원",
-              "district": "속초/고성",
-              "avg": 90728,
-              "count": 284,
-              "min": 33000,
-              "max": 300000,
-              "platforms": {
-                "yanolja": {
-                  "avg": 90728,
-                  "count": 284
-                }
-              },
-              "trend": [
-                {
-                  "city": "강원",
-                  "district": "속초/고성",
-                  "hour": "2026-06-09T06:00",
-                  "platform": "yanolja",
-                  "avg": 93676,
-                  "count": 150
                 },
                 {
                   "city": "강원",
-                  "district": "속초/고성",
-                  "hour": "2026-06-09T07:00",
+                  "district": "강릉(경포대/안목해변)",
+                  "hour": "2026-06-09T23:00",
                   "platform": "yanolja",
-                  "avg": 93609,
-                  "count": 150
-                },
-                {
-                  "city": "강원",
-                  "district": "속초/고성",
-                  "hour": "2026-06-09T08:00",
-                  "platform": "yanolja",
-                  "avg": 93889,
-                  "count": 150
-                },
-                {
-                  "city": "강원",
-                  "district": "속초/고성",
-                  "hour": "2026-06-09T09:00",
-                  "platform": "yanolja",
-                  "avg": 95459,
-                  "count": 147
-                },
-                {
-                  "city": "강원",
-                  "district": "속초/고성",
-                  "hour": "2026-06-09T10:00",
-                  "platform": "yanolja",
-                  "avg": 95510,
-                  "count": 290
-                },
-                {
-                  "city": "강원",
-                  "district": "속초/고성",
-                  "hour": "2026-06-09T11:00",
-                  "platform": "yanolja",
-                  "avg": 95510,
-                  "count": 145
-                },
-                {
-                  "city": "강원",
-                  "district": "속초/고성",
-                  "hour": "2026-06-09T13:00",
-                  "platform": "yanolja",
-                  "avg": 95528,
-                  "count": 142
-                },
-                {
-                  "city": "강원",
-                  "district": "속초/고성",
-                  "hour": "2026-06-09T14:00",
-                  "platform": "yanolja",
-                  "avg": 95709,
-                  "count": 141
-                },
-                {
-                  "city": "강원",
-                  "district": "속초/고성",
-                  "hour": "2026-06-09T15:00",
-                  "platform": "yanolja",
-                  "avg": 66167,
-                  "count": 6
-                },
-                {
-                  "city": "강원",
-                  "district": "속초/고성",
-                  "hour": "2026-06-09T16:00",
-                  "platform": "yanolja",
-                  "avg": 66167,
-                  "count": 6
-                },
-                {
-                  "city": "강원",
-                  "district": "속초/고성",
-                  "hour": "2026-06-09T19:00",
-                  "platform": "yanolja",
-                  "avg": 92724,
-                  "count": 104
-                },
-                {
-                  "city": "강원",
-                  "district": "속초/고성",
-                  "hour": "2026-06-09T20:00",
-                  "platform": "yanolja",
-                  "avg": 90728,
-                  "count": 142
-                },
-                {
-                  "city": "강원",
-                  "district": "속초/고성",
-                  "hour": "2026-06-09T21:00",
-                  "platform": "yanolja",
-                  "avg": 90728,
-                  "count": 142
-                },
-                {
-                  "city": "강원",
-                  "district": "속초/고성",
-                  "hour": "2026-06-09T22:00",
-                  "platform": "yanolja",
-                  "avg": 90728,
-                  "count": 142
+                  "avg": 104721,
+                  "count": 171
                 }
               ]
             },
             {
               "city": "강원",
               "district": "강릉(사천/정동진/주문진)",
-              "avg": 110901,
-              "count": 266,
+              "avg": 110389,
+              "count": 264,
               "min": 31000,
               "max": 600000,
               "platforms": {
                 "yanolja": {
-                  "avg": 110901,
-                  "count": 266
+                  "avg": 110389,
+                  "count": 264
                 }
               },
               "trend": [
@@ -19447,147 +20467,163 @@
                   "platform": "yanolja",
                   "avg": 110521,
                   "count": 132
+                },
+                {
+                  "city": "강원",
+                  "district": "강릉(사천/정동진/주문진)",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 110257,
+                  "count": 132
                 }
               ]
             },
             {
               "city": "강원",
-              "district": "동해/삼척",
-              "avg": 105238,
-              "count": 236,
-              "min": 49900,
-              "max": 340000,
+              "district": "속초/고성",
+              "avg": 91455,
+              "count": 246,
+              "min": 33000,
+              "max": 300000,
               "platforms": {
                 "yanolja": {
-                  "avg": 105238,
-                  "count": 236
+                  "avg": 91455,
+                  "count": 246
                 }
               },
               "trend": [
                 {
                   "city": "강원",
-                  "district": "동해/삼척",
+                  "district": "속초/고성",
                   "hour": "2026-06-09T06:00",
                   "platform": "yanolja",
-                  "avg": 108894,
-                  "count": 110
+                  "avg": 93676,
+                  "count": 150
                 },
                 {
                   "city": "강원",
-                  "district": "동해/삼척",
+                  "district": "속초/고성",
                   "hour": "2026-06-09T07:00",
                   "platform": "yanolja",
-                  "avg": 108894,
-                  "count": 110
+                  "avg": 93609,
+                  "count": 150
                 },
                 {
                   "city": "강원",
-                  "district": "동해/삼척",
+                  "district": "속초/고성",
                   "hour": "2026-06-09T08:00",
                   "platform": "yanolja",
-                  "avg": 109481,
-                  "count": 110
+                  "avg": 93889,
+                  "count": 150
                 },
                 {
                   "city": "강원",
-                  "district": "동해/삼척",
+                  "district": "속초/고성",
                   "hour": "2026-06-09T09:00",
                   "platform": "yanolja",
-                  "avg": 109141,
-                  "count": 106
+                  "avg": 95459,
+                  "count": 147
                 },
                 {
                   "city": "강원",
-                  "district": "동해/삼척",
+                  "district": "속초/고성",
                   "hour": "2026-06-09T10:00",
                   "platform": "yanolja",
-                  "avg": 113635,
-                  "count": 175
+                  "avg": 95510,
+                  "count": 290
                 },
                 {
                   "city": "강원",
-                  "district": "동해/삼척",
+                  "district": "속초/고성",
                   "hour": "2026-06-09T11:00",
                   "platform": "yanolja",
-                  "avg": 109216,
+                  "avg": 95510,
+                  "count": 145
+                },
+                {
+                  "city": "강원",
+                  "district": "속초/고성",
+                  "hour": "2026-06-09T13:00",
+                  "platform": "yanolja",
+                  "avg": 95528,
+                  "count": 142
+                },
+                {
+                  "city": "강원",
+                  "district": "속초/고성",
+                  "hour": "2026-06-09T14:00",
+                  "platform": "yanolja",
+                  "avg": 95709,
+                  "count": 141
+                },
+                {
+                  "city": "강원",
+                  "district": "속초/고성",
+                  "hour": "2026-06-09T15:00",
+                  "platform": "yanolja",
+                  "avg": 66167,
+                  "count": 6
+                },
+                {
+                  "city": "강원",
+                  "district": "속초/고성",
+                  "hour": "2026-06-09T16:00",
+                  "platform": "yanolja",
+                  "avg": 66167,
+                  "count": 6
+                },
+                {
+                  "city": "강원",
+                  "district": "속초/고성",
+                  "hour": "2026-06-09T19:00",
+                  "platform": "yanolja",
+                  "avg": 92724,
                   "count": 104
                 },
                 {
                   "city": "강원",
-                  "district": "동해/삼척",
-                  "hour": "2026-06-09T13:00",
-                  "platform": "yanolja",
-                  "avg": 109458,
-                  "count": 101
-                },
-                {
-                  "city": "강원",
-                  "district": "동해/삼척",
-                  "hour": "2026-06-09T14:00",
-                  "platform": "yanolja",
-                  "avg": 109458,
-                  "count": 101
-                },
-                {
-                  "city": "강원",
-                  "district": "동해/삼척",
-                  "hour": "2026-06-09T15:00",
-                  "platform": "yanolja",
-                  "avg": 85962,
-                  "count": 13
-                },
-                {
-                  "city": "강원",
-                  "district": "동해/삼척",
-                  "hour": "2026-06-09T16:00",
-                  "platform": "yanolja",
-                  "avg": 85962,
-                  "count": 13
-                },
-                {
-                  "city": "강원",
-                  "district": "동해/삼척",
-                  "hour": "2026-06-09T19:00",
-                  "platform": "yanolja",
-                  "avg": 105379,
-                  "count": 118
-                },
-                {
-                  "city": "강원",
-                  "district": "동해/삼척",
+                  "district": "속초/고성",
                   "hour": "2026-06-09T20:00",
                   "platform": "yanolja",
-                  "avg": 110021,
-                  "count": 81
+                  "avg": 90728,
+                  "count": 142
                 },
                 {
                   "city": "강원",
-                  "district": "동해/삼척",
+                  "district": "속초/고성",
                   "hour": "2026-06-09T21:00",
                   "platform": "yanolja",
-                  "avg": 105238,
-                  "count": 118
+                  "avg": 90728,
+                  "count": 142
                 },
                 {
                   "city": "강원",
-                  "district": "동해/삼척",
+                  "district": "속초/고성",
                   "hour": "2026-06-09T22:00",
                   "platform": "yanolja",
-                  "avg": 105238,
-                  "count": 118
+                  "avg": 90728,
+                  "count": 142
+                },
+                {
+                  "city": "강원",
+                  "district": "속초/고성",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 92448,
+                  "count": 104
                 }
               ]
             },
             {
               "city": "강원",
               "district": "양양",
-              "avg": 87582,
+              "avg": 87539,
               "count": 230,
               "min": 33300,
               "max": 555000,
               "platforms": {
                 "yanolja": {
-                  "avg": 87582,
+                  "avg": 87539,
                   "count": 230
                 }
               },
@@ -19703,6 +20739,150 @@
                   "platform": "yanolja",
                   "avg": 87608,
                   "count": 115
+                },
+                {
+                  "city": "강원",
+                  "district": "양양",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 87469,
+                  "count": 115
+                }
+              ]
+            },
+            {
+              "city": "강원",
+              "district": "동해/삼척",
+              "avg": 106566,
+              "count": 218,
+              "min": 49900,
+              "max": 340000,
+              "platforms": {
+                "yanolja": {
+                  "avg": 106566,
+                  "count": 218
+                }
+              },
+              "trend": [
+                {
+                  "city": "강원",
+                  "district": "동해/삼척",
+                  "hour": "2026-06-09T06:00",
+                  "platform": "yanolja",
+                  "avg": 108894,
+                  "count": 110
+                },
+                {
+                  "city": "강원",
+                  "district": "동해/삼척",
+                  "hour": "2026-06-09T07:00",
+                  "platform": "yanolja",
+                  "avg": 108894,
+                  "count": 110
+                },
+                {
+                  "city": "강원",
+                  "district": "동해/삼척",
+                  "hour": "2026-06-09T08:00",
+                  "platform": "yanolja",
+                  "avg": 109481,
+                  "count": 110
+                },
+                {
+                  "city": "강원",
+                  "district": "동해/삼척",
+                  "hour": "2026-06-09T09:00",
+                  "platform": "yanolja",
+                  "avg": 109141,
+                  "count": 106
+                },
+                {
+                  "city": "강원",
+                  "district": "동해/삼척",
+                  "hour": "2026-06-09T10:00",
+                  "platform": "yanolja",
+                  "avg": 113635,
+                  "count": 175
+                },
+                {
+                  "city": "강원",
+                  "district": "동해/삼척",
+                  "hour": "2026-06-09T11:00",
+                  "platform": "yanolja",
+                  "avg": 109216,
+                  "count": 104
+                },
+                {
+                  "city": "강원",
+                  "district": "동해/삼척",
+                  "hour": "2026-06-09T13:00",
+                  "platform": "yanolja",
+                  "avg": 109458,
+                  "count": 101
+                },
+                {
+                  "city": "강원",
+                  "district": "동해/삼척",
+                  "hour": "2026-06-09T14:00",
+                  "platform": "yanolja",
+                  "avg": 109458,
+                  "count": 101
+                },
+                {
+                  "city": "강원",
+                  "district": "동해/삼척",
+                  "hour": "2026-06-09T15:00",
+                  "platform": "yanolja",
+                  "avg": 85962,
+                  "count": 13
+                },
+                {
+                  "city": "강원",
+                  "district": "동해/삼척",
+                  "hour": "2026-06-09T16:00",
+                  "platform": "yanolja",
+                  "avg": 85962,
+                  "count": 13
+                },
+                {
+                  "city": "강원",
+                  "district": "동해/삼척",
+                  "hour": "2026-06-09T19:00",
+                  "platform": "yanolja",
+                  "avg": 105379,
+                  "count": 118
+                },
+                {
+                  "city": "강원",
+                  "district": "동해/삼척",
+                  "hour": "2026-06-09T20:00",
+                  "platform": "yanolja",
+                  "avg": 110021,
+                  "count": 81
+                },
+                {
+                  "city": "강원",
+                  "district": "동해/삼척",
+                  "hour": "2026-06-09T21:00",
+                  "platform": "yanolja",
+                  "avg": 105238,
+                  "count": 118
+                },
+                {
+                  "city": "강원",
+                  "district": "동해/삼척",
+                  "hour": "2026-06-09T22:00",
+                  "platform": "yanolja",
+                  "avg": 105238,
+                  "count": 118
+                },
+                {
+                  "city": "강원",
+                  "district": "동해/삼척",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 108133,
+                  "count": 100
                 }
               ]
             },
@@ -19828,6 +21008,14 @@
                   "city": "강원",
                   "district": "춘천/강촌",
                   "hour": "2026-06-09T22:00",
+                  "platform": "yanolja",
+                  "avg": 123252,
+                  "count": 103
+                },
+                {
+                  "city": "강원",
+                  "district": "춘천/강촌",
+                  "hour": "2026-06-09T23:00",
                   "platform": "yanolja",
                   "avg": 123252,
                   "count": 103
@@ -19959,19 +21147,27 @@
                   "platform": "yanolja",
                   "avg": 98135,
                   "count": 90
+                },
+                {
+                  "city": "강원",
+                  "district": "평창",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 98135,
+                  "count": 90
                 }
               ]
             },
             {
               "city": "강원",
               "district": "홍천",
-              "avg": 124069,
+              "avg": 123311,
               "count": 162,
               "min": 40000,
               "max": 340000,
               "platforms": {
                 "yanolja": {
-                  "avg": 124069,
+                  "avg": 123311,
                   "count": 162
                 }
               },
@@ -20086,6 +21282,14 @@
                   "hour": "2026-06-09T22:00",
                   "platform": "yanolja",
                   "avg": 123547,
+                  "count": 81
+                },
+                {
+                  "city": "강원",
+                  "district": "홍천",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 123075,
                   "count": 81
                 }
               ]
@@ -20212,6 +21416,14 @@
                   "city": "강원",
                   "district": "철원/인제/화천",
                   "hour": "2026-06-09T22:00",
+                  "platform": "yanolja",
+                  "avg": 91803,
+                  "count": 76
+                },
+                {
+                  "city": "강원",
+                  "district": "철원/인제/화천",
+                  "hour": "2026-06-09T23:00",
                   "platform": "yanolja",
                   "avg": 91803,
                   "count": 76
@@ -20343,6 +21555,14 @@
                   "platform": "yanolja",
                   "avg": 104712,
                   "count": 65
+                },
+                {
+                  "city": "강원",
+                  "district": "횡성/영월/정선",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 104712,
+                  "count": 65
                 }
               ]
             }
@@ -20350,13 +21570,13 @@
         },
         {
           "city": "경북",
-          "avg": 117663,
+          "avg": 117701,
           "count": 1392,
           "min": 15000,
           "max": 450000,
           "platforms": {
             "yanolja": {
-              "avg": 117663,
+              "avg": 117701,
               "count": 1392
             }
           },
@@ -20471,6 +21691,13 @@
               "hour": "2026-06-09T22:00",
               "platform": "yanolja",
               "avg": 117664,
+              "count": 696
+            },
+            {
+              "city": "경북",
+              "hour": "2026-06-09T23:00",
+              "platform": "yanolja",
+              "avg": 117737,
               "count": 696
             }
           ],
@@ -20600,6 +21827,14 @@
                   "platform": "yanolja",
                   "avg": 143326,
                   "count": 177
+                },
+                {
+                  "city": "경북",
+                  "district": "문경/안동/상주/영주",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 143326,
+                  "count": 177
                 }
               ]
             },
@@ -20725,6 +21960,14 @@
                   "city": "경북",
                   "district": "포항",
                   "hour": "2026-06-09T22:00",
+                  "platform": "yanolja",
+                  "avg": 122571,
+                  "count": 154
+                },
+                {
+                  "city": "경북",
+                  "district": "포항",
+                  "hour": "2026-06-09T23:00",
                   "platform": "yanolja",
                   "avg": 122571,
                   "count": 154
@@ -20872,19 +22115,27 @@
                   "platform": "yanolja",
                   "avg": 109487,
                   "count": 136
+                },
+                {
+                  "city": "경북",
+                  "district": "경주(황리단길/보문)",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 109487,
+                  "count": 136
                 }
               ]
             },
             {
               "city": "경북",
               "district": "경주(감포/불국사)",
-              "avg": 95495,
+              "avg": 95671,
               "count": 254,
               "min": 32000,
               "max": 450000,
               "platforms": {
                 "yanolja": {
-                  "avg": 95495,
+                  "avg": 95671,
                   "count": 254
                 }
               },
@@ -21000,19 +22251,27 @@
                   "platform": "yanolja",
                   "avg": 95505,
                   "count": 127
+                },
+                {
+                  "city": "경북",
+                  "district": "경주(감포/불국사)",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 95836,
+                  "count": 127
                 }
               ]
             },
             {
               "city": "경북",
               "district": "영덕/울진",
-              "avg": 104221,
+              "avg": 104260,
               "count": 204,
               "min": 15000,
               "max": 320000,
               "platforms": {
                 "yanolja": {
-                  "avg": 104221,
+                  "avg": 104260,
                   "count": 204
                 }
               },
@@ -21144,6 +22403,14 @@
                   "platform": "yanolja",
                   "avg": 104216,
                   "count": 102
+                },
+                {
+                  "city": "경북",
+                  "district": "영덕/울진",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 104304,
+                  "count": 102
                 }
               ]
             }
@@ -21151,14 +22418,14 @@
         },
         {
           "city": "경남",
-          "avg": 107125,
-          "count": 1255,
+          "avg": 105465,
+          "count": 1180,
           "min": 27000,
-          "max": 649000,
+          "max": 550000,
           "platforms": {
             "yanolja": {
-              "avg": 107125,
-              "count": 1255
+              "avg": 105465,
+              "count": 1180
             }
           },
           "trend": [
@@ -21273,147 +22540,26 @@
               "platform": "yanolja",
               "avg": 105612,
               "count": 609
+            },
+            {
+              "city": "경남",
+              "hour": "2026-06-09T23:00",
+              "platform": "yanolja",
+              "avg": 105308,
+              "count": 571
             }
           ],
           "districts": [
             {
               "city": "경남",
-              "district": "거제도 북부(매미성)",
-              "avg": 109655,
-              "count": 287,
-              "min": 33100,
-              "max": 649000,
-              "platforms": {
-                "yanolja": {
-                  "avg": 109655,
-                  "count": 287
-                }
-              },
-              "trend": [
-                {
-                  "city": "경남",
-                  "district": "거제도 북부(매미성)",
-                  "hour": "2026-06-09T06:00",
-                  "platform": "yanolja",
-                  "avg": 108305,
-                  "count": 139
-                },
-                {
-                  "city": "경남",
-                  "district": "거제도 북부(매미성)",
-                  "hour": "2026-06-09T07:00",
-                  "platform": "yanolja",
-                  "avg": 108305,
-                  "count": 139
-                },
-                {
-                  "city": "경남",
-                  "district": "거제도 북부(매미성)",
-                  "hour": "2026-06-09T08:00",
-                  "platform": "yanolja",
-                  "avg": 108337,
-                  "count": 139
-                },
-                {
-                  "city": "경남",
-                  "district": "거제도 북부(매미성)",
-                  "hour": "2026-06-09T09:00",
-                  "platform": "yanolja",
-                  "avg": 105328,
-                  "count": 102
-                },
-                {
-                  "city": "경남",
-                  "district": "거제도 북부(매미성)",
-                  "hour": "2026-06-09T10:00",
-                  "platform": "yanolja",
-                  "avg": 106641,
-                  "count": 223
-                },
-                {
-                  "city": "경남",
-                  "district": "거제도 북부(매미성)",
-                  "hour": "2026-06-09T11:00",
-                  "platform": "yanolja",
-                  "avg": 108027,
-                  "count": 139
-                },
-                {
-                  "city": "경남",
-                  "district": "거제도 북부(매미성)",
-                  "hour": "2026-06-09T13:00",
-                  "platform": "yanolja",
-                  "avg": 107985,
-                  "count": 135
-                },
-                {
-                  "city": "경남",
-                  "district": "거제도 북부(매미성)",
-                  "hour": "2026-06-09T14:00",
-                  "platform": "yanolja",
-                  "avg": 106077,
-                  "count": 84
-                },
-                {
-                  "city": "경남",
-                  "district": "거제도 북부(매미성)",
-                  "hour": "2026-06-09T15:00",
-                  "platform": "yanolja",
-                  "avg": 122729,
-                  "count": 7
-                },
-                {
-                  "city": "경남",
-                  "district": "거제도 북부(매미성)",
-                  "hour": "2026-06-09T16:00",
-                  "platform": "yanolja",
-                  "avg": 122729,
-                  "count": 7
-                },
-                {
-                  "city": "경남",
-                  "district": "거제도 북부(매미성)",
-                  "hour": "2026-06-09T19:00",
-                  "platform": "yanolja",
-                  "avg": 115055,
-                  "count": 162
-                },
-                {
-                  "city": "경남",
-                  "district": "거제도 북부(매미성)",
-                  "hour": "2026-06-09T20:00",
-                  "platform": "yanolja",
-                  "avg": 115055,
-                  "count": 162
-                },
-                {
-                  "city": "경남",
-                  "district": "거제도 북부(매미성)",
-                  "hour": "2026-06-09T21:00",
-                  "platform": "yanolja",
-                  "avg": 115055,
-                  "count": 162
-                },
-                {
-                  "city": "경남",
-                  "district": "거제도 북부(매미성)",
-                  "hour": "2026-06-09T22:00",
-                  "platform": "yanolja",
-                  "avg": 102656,
-                  "count": 125
-                }
-              ]
-            },
-            {
-              "city": "경남",
               "district": "거제도 남부(바람의언덕)",
-              "avg": 86907,
+              "avg": 86961,
               "count": 260,
               "min": 28000,
               "max": 265000,
               "platforms": {
                 "yanolja": {
-                  "avg": 86907,
+                  "avg": 86961,
                   "count": 260
                 }
               },
@@ -21528,6 +22674,14 @@
                   "hour": "2026-06-09T22:00",
                   "platform": "yanolja",
                   "avg": 86907,
+                  "count": 130
+                },
+                {
+                  "city": "경남",
+                  "district": "거제도 남부(바람의언덕)",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 87015,
                   "count": 130
                 }
               ]
@@ -21665,20 +22819,164 @@
                   "platform": "yanolja",
                   "avg": 87933,
                   "count": 120
+                },
+                {
+                  "city": "경남",
+                  "district": "통영",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 87933,
+                  "count": 120
+                }
+              ]
+            },
+            {
+              "city": "경남",
+              "district": "거제도 북부(매미성)",
+              "avg": 101941,
+              "count": 213,
+              "min": 33100,
+              "max": 305000,
+              "platforms": {
+                "yanolja": {
+                  "avg": 101941,
+                  "count": 213
+                }
+              },
+              "trend": [
+                {
+                  "city": "경남",
+                  "district": "거제도 북부(매미성)",
+                  "hour": "2026-06-09T06:00",
+                  "platform": "yanolja",
+                  "avg": 108305,
+                  "count": 139
+                },
+                {
+                  "city": "경남",
+                  "district": "거제도 북부(매미성)",
+                  "hour": "2026-06-09T07:00",
+                  "platform": "yanolja",
+                  "avg": 108305,
+                  "count": 139
+                },
+                {
+                  "city": "경남",
+                  "district": "거제도 북부(매미성)",
+                  "hour": "2026-06-09T08:00",
+                  "platform": "yanolja",
+                  "avg": 108337,
+                  "count": 139
+                },
+                {
+                  "city": "경남",
+                  "district": "거제도 북부(매미성)",
+                  "hour": "2026-06-09T09:00",
+                  "platform": "yanolja",
+                  "avg": 105328,
+                  "count": 102
+                },
+                {
+                  "city": "경남",
+                  "district": "거제도 북부(매미성)",
+                  "hour": "2026-06-09T10:00",
+                  "platform": "yanolja",
+                  "avg": 106641,
+                  "count": 223
+                },
+                {
+                  "city": "경남",
+                  "district": "거제도 북부(매미성)",
+                  "hour": "2026-06-09T11:00",
+                  "platform": "yanolja",
+                  "avg": 108027,
+                  "count": 139
+                },
+                {
+                  "city": "경남",
+                  "district": "거제도 북부(매미성)",
+                  "hour": "2026-06-09T13:00",
+                  "platform": "yanolja",
+                  "avg": 107985,
+                  "count": 135
+                },
+                {
+                  "city": "경남",
+                  "district": "거제도 북부(매미성)",
+                  "hour": "2026-06-09T14:00",
+                  "platform": "yanolja",
+                  "avg": 106077,
+                  "count": 84
+                },
+                {
+                  "city": "경남",
+                  "district": "거제도 북부(매미성)",
+                  "hour": "2026-06-09T15:00",
+                  "platform": "yanolja",
+                  "avg": 122729,
+                  "count": 7
+                },
+                {
+                  "city": "경남",
+                  "district": "거제도 북부(매미성)",
+                  "hour": "2026-06-09T16:00",
+                  "platform": "yanolja",
+                  "avg": 122729,
+                  "count": 7
+                },
+                {
+                  "city": "경남",
+                  "district": "거제도 북부(매미성)",
+                  "hour": "2026-06-09T19:00",
+                  "platform": "yanolja",
+                  "avg": 115055,
+                  "count": 162
+                },
+                {
+                  "city": "경남",
+                  "district": "거제도 북부(매미성)",
+                  "hour": "2026-06-09T20:00",
+                  "platform": "yanolja",
+                  "avg": 115055,
+                  "count": 162
+                },
+                {
+                  "city": "경남",
+                  "district": "거제도 북부(매미성)",
+                  "hour": "2026-06-09T21:00",
+                  "platform": "yanolja",
+                  "avg": 115055,
+                  "count": 162
+                },
+                {
+                  "city": "경남",
+                  "district": "거제도 북부(매미성)",
+                  "hour": "2026-06-09T22:00",
+                  "platform": "yanolja",
+                  "avg": 102656,
+                  "count": 125
+                },
+                {
+                  "city": "경남",
+                  "district": "거제도 북부(매미성)",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 100925,
+                  "count": 88
                 }
               ]
             },
             {
               "city": "경남",
               "district": "남해",
-              "avg": 124547,
-              "count": 184,
+              "avg": 123861,
+              "count": 183,
               "min": 50000,
               "max": 300000,
               "platforms": {
                 "yanolja": {
-                  "avg": 124547,
-                  "count": 184
+                  "avg": 123861,
+                  "count": 183
                 }
               },
               "trend": [
@@ -21809,6 +23107,14 @@
                   "platform": "yanolja",
                   "avg": 124547,
                   "count": 92
+                },
+                {
+                  "city": "경남",
+                  "district": "남해",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 123168,
+                  "count": 91
                 }
               ]
             },
@@ -21934,6 +23240,14 @@
                   "city": "경남",
                   "district": "밀양/양산/김해/창원",
                   "hour": "2026-06-09T22:00",
+                  "platform": "yanolja",
+                  "avg": 129135,
+                  "count": 75
+                },
+                {
+                  "city": "경남",
+                  "district": "밀양/양산/김해/창원",
+                  "hour": "2026-06-09T23:00",
                   "platform": "yanolja",
                   "avg": 129135,
                   "count": 75
@@ -22065,6 +23379,14 @@
                   "platform": "yanolja",
                   "avg": 126752,
                   "count": 67
+                },
+                {
+                  "city": "경남",
+                  "district": "사천/산청/하동/합천",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 126752,
+                  "count": 67
                 }
               ]
             }
@@ -22072,14 +23394,14 @@
         },
         {
           "city": "가평",
-          "avg": 101510,
-          "count": 1106,
-          "min": 33900,
+          "avg": 101628,
+          "count": 1104,
+          "min": 39000,
           "max": 650000,
           "platforms": {
             "yanolja": {
-              "avg": 101510,
-              "count": 1106
+              "avg": 101628,
+              "count": 1104
             }
           },
           "trend": [
@@ -22180,19 +23502,26 @@
               "platform": "yanolja",
               "avg": 101566,
               "count": 553
+            },
+            {
+              "city": "가평",
+              "hour": "2026-06-09T23:00",
+              "platform": "yanolja",
+              "avg": 101691,
+              "count": 551
             }
           ],
           "districts": [
             {
               "city": "가평",
               "district": "자라섬/북면",
-              "avg": 92336,
+              "avg": 92451,
               "count": 366,
-              "min": 33900,
+              "min": 39000,
               "max": 605000,
               "platforms": {
                 "yanolja": {
-                  "avg": 92336,
+                  "avg": 92451,
                   "count": 366
                 }
               },
@@ -22308,20 +23637,28 @@
                   "platform": "yanolja",
                   "avg": 92451,
                   "count": 183
+                },
+                {
+                  "city": "가평",
+                  "district": "자라섬/북면",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 92451,
+                  "count": 183
                 }
               ]
             },
             {
               "city": "가평",
               "district": "남이섬/가평읍",
-              "avg": 97721,
-              "count": 282,
+              "avg": 97847,
+              "count": 280,
               "min": 40000,
               "max": 650000,
               "platforms": {
                 "yanolja": {
-                  "avg": 97721,
-                  "count": 282
+                  "avg": 97847,
+                  "count": 280
                 }
               },
               "trend": [
@@ -22436,19 +23773,27 @@
                   "platform": "yanolja",
                   "avg": 97792,
                   "count": 141
+                },
+                {
+                  "city": "가평",
+                  "district": "남이섬/가평읍",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 97903,
+                  "count": 139
                 }
               ]
             },
             {
               "city": "가평",
               "district": "청평/설악/쁘띠프랑스",
-              "avg": 112278,
+              "avg": 112478,
               "count": 230,
               "min": 39000,
               "max": 544000,
               "platforms": {
                 "yanolja": {
-                  "avg": 112278,
+                  "avg": 112478,
                   "count": 230
                 }
               },
@@ -22563,6 +23908,14 @@
                   "hour": "2026-06-09T22:00",
                   "platform": "yanolja",
                   "avg": 112278,
+                  "count": 115
+                },
+                {
+                  "city": "가평",
+                  "district": "청평/설악/쁘띠프랑스",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 112678,
                   "count": 115
                 }
               ]
@@ -22692,6 +24045,14 @@
                   "platform": "yanolja",
                   "avg": 110059,
                   "count": 114
+                },
+                {
+                  "city": "가평",
+                  "district": "아침고요수목원/상면",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 110059,
+                  "count": 114
                 }
               ]
             }
@@ -22699,14 +24060,14 @@
         },
         {
           "city": "전남",
-          "avg": 119309,
-          "count": 1084,
+          "avg": 119244,
+          "count": 1083,
           "min": 20000,
           "max": 780000,
           "platforms": {
             "yanolja": {
-              "avg": 119309,
-              "count": 1084
+              "avg": 119244,
+              "count": 1083
             }
           },
           "trend": [
@@ -22807,20 +24168,27 @@
               "platform": "yanolja",
               "avg": 119302,
               "count": 542
+            },
+            {
+              "city": "전남",
+              "hour": "2026-06-09T23:00",
+              "platform": "yanolja",
+              "avg": 119186,
+              "count": 541
             }
           ],
           "districts": [
             {
               "city": "전남",
               "district": "여수(돌산/금오도)",
-              "avg": 126234,
-              "count": 370,
+              "avg": 126096,
+              "count": 369,
               "min": 20000,
               "max": 780000,
               "platforms": {
                 "yanolja": {
-                  "avg": 126234,
-                  "count": 370
+                  "avg": 126096,
+                  "count": 369
                 }
               },
               "trend": [
@@ -22935,19 +24303,27 @@
                   "platform": "yanolja",
                   "avg": 126234,
                   "count": 185
+                },
+                {
+                  "city": "전남",
+                  "district": "여수(돌산/금오도)",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 125957,
+                  "count": 184
                 }
               ]
             },
             {
               "city": "전남",
               "district": "여수(엑스포/화양)",
-              "avg": 123230,
+              "avg": 123187,
               "count": 294,
               "min": 31000,
               "max": 700000,
               "platforms": {
                 "yanolja": {
-                  "avg": 123230,
+                  "avg": 123187,
                   "count": 294
                 }
               },
@@ -23062,6 +24438,14 @@
                   "hour": "2026-06-09T22:00",
                   "platform": "yanolja",
                   "avg": 123203,
+                  "count": 147
+                },
+                {
+                  "city": "전남",
+                  "district": "여수(엑스포/화양)",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 123172,
                   "count": 147
                 }
               ]
@@ -23188,6 +24572,14 @@
                   "city": "전남",
                   "district": "순천/구례",
                   "hour": "2026-06-09T22:00",
+                  "platform": "yanolja",
+                  "avg": 97155,
+                  "count": 83
+                },
+                {
+                  "city": "전남",
+                  "district": "순천/구례",
+                  "hour": "2026-06-09T23:00",
                   "platform": "yanolja",
                   "avg": 97155,
                   "count": 83
@@ -23319,6 +24711,14 @@
                   "platform": "yanolja",
                   "avg": 130860,
                   "count": 64
+                },
+                {
+                  "city": "전남",
+                  "district": "담양/곡성/장성",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 130860,
+                  "count": 64
                 }
               ]
             },
@@ -23447,6 +24847,14 @@
                   "platform": "yanolja",
                   "avg": 107279,
                   "count": 63
+                },
+                {
+                  "city": "전남",
+                  "district": "무안/해남/완도",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 107279,
+                  "count": 63
                 }
               ]
             }
@@ -23454,13 +24862,13 @@
         },
         {
           "city": "인천",
-          "avg": 119560,
+          "avg": 119613,
           "count": 928,
           "min": 24000,
           "max": 600000,
           "platforms": {
             "yanolja": {
-              "avg": 119560,
+              "avg": 119613,
               "count": 928
             }
           },
@@ -23561,6 +24969,13 @@
               "hour": "2026-06-09T22:00",
               "platform": "yanolja",
               "avg": 119560,
+              "count": 464
+            },
+            {
+              "city": "인천",
+              "hour": "2026-06-09T23:00",
+              "platform": "yanolja",
+              "avg": 119667,
               "count": 464
             }
           ],
@@ -23690,19 +25105,27 @@
                   "platform": "yanolja",
                   "avg": 119468,
                   "count": 241
+                },
+                {
+                  "city": "인천",
+                  "district": "강화도/석모도",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 119468,
+                  "count": 241
                 }
               ]
             },
             {
               "city": "인천",
               "district": "대부도/영흥도/선재도",
-              "avg": 132658,
+              "avg": 132872,
               "count": 234,
               "min": 39990,
               "max": 500000,
               "platforms": {
                 "yanolja": {
-                  "avg": 132658,
+                  "avg": 132872,
                   "count": 234
                 }
               },
@@ -23817,6 +25240,14 @@
                   "hour": "2026-06-09T22:00",
                   "platform": "yanolja",
                   "avg": 132658,
+                  "count": 117
+                },
+                {
+                  "city": "인천",
+                  "district": "대부도/영흥도/선재도",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 133086,
                   "count": 117
                 }
               ]
@@ -23946,6 +25377,14 @@
                   "platform": "yanolja",
                   "avg": 105311,
                   "count": 106
+                },
+                {
+                  "city": "인천",
+                  "district": "을왕리/영종도",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 105311,
+                  "count": 106
                 }
               ]
             }
@@ -23953,14 +25392,14 @@
         },
         {
           "city": "충남",
-          "avg": 95986,
-          "count": 850,
+          "avg": 95706,
+          "count": 868,
           "min": 26000,
           "max": 420000,
           "platforms": {
             "yanolja": {
-              "avg": 95986,
-              "count": 850
+              "avg": 95706,
+              "count": 868
             }
           },
           "trend": [
@@ -24075,6 +25514,13 @@
               "platform": "yanolja",
               "avg": 96009,
               "count": 416
+            },
+            {
+              "city": "충남",
+              "hour": "2026-06-09T23:00",
+              "platform": "yanolja",
+              "avg": 95428,
+              "count": 452
             }
           ],
           "districts": [
@@ -24219,20 +25665,28 @@
                   "platform": "yanolja",
                   "avg": 93729,
                   "count": 111
+                },
+                {
+                  "city": "충남",
+                  "district": "태안(안면도/꽃지)",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 93729,
+                  "count": 111
                 }
               ]
             },
             {
               "city": "충남",
               "district": "태안(만리포/청포대)",
-              "avg": 94283,
-              "count": 202,
-              "min": 35900,
+              "avg": 93317,
+              "count": 220,
+              "min": 30000,
               "max": 330000,
               "platforms": {
                 "yanolja": {
-                  "avg": 94283,
-                  "count": 202
+                  "avg": 93317,
+                  "count": 220
                 }
               },
               "trend": [
@@ -24347,6 +25801,14 @@
                   "platform": "yanolja",
                   "avg": 94218,
                   "count": 92
+                },
+                {
+                  "city": "충남",
+                  "district": "태안(만리포/청포대)",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 92669,
+                  "count": 128
                 }
               ]
             },
@@ -24472,6 +25934,14 @@
                   "city": "충남",
                   "district": "보령/대천해수욕장",
                   "hour": "2026-06-09T22:00",
+                  "platform": "yanolja",
+                  "avg": 57936,
+                  "count": 85
+                },
+                {
+                  "city": "충남",
+                  "district": "보령/대천해수욕장",
+                  "hour": "2026-06-09T23:00",
                   "platform": "yanolja",
                   "avg": 57936,
                   "count": 85
@@ -24603,6 +26073,14 @@
                   "platform": "yanolja",
                   "avg": 127190,
                   "count": 80
+                },
+                {
+                  "city": "충남",
+                  "district": "부여/논산/공주/아산",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 127190,
+                  "count": 80
                 }
               ]
             },
@@ -24731,6 +26209,14 @@
                   "platform": "yanolja",
                   "avg": 120165,
                   "count": 48
+                },
+                {
+                  "city": "충남",
+                  "district": "당진/서천/서산/예산",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 120165,
+                  "count": 48
                 }
               ]
             }
@@ -24738,13 +26224,13 @@
         },
         {
           "city": "경기",
-          "avg": 143919,
+          "avg": 143929,
           "count": 808,
           "min": 30000,
           "max": 980000,
           "platforms": {
             "yanolja": {
-              "avg": 143919,
+              "avg": 143929,
               "count": 808
             }
           },
@@ -24859,6 +26345,13 @@
               "hour": "2026-06-09T22:00",
               "platform": "yanolja",
               "avg": 143919,
+              "count": 404
+            },
+            {
+              "city": "경기",
+              "hour": "2026-06-09T23:00",
+              "platform": "yanolja",
+              "avg": 143939,
               "count": 404
             }
           ],
@@ -24988,19 +26481,27 @@
                   "platform": "yanolja",
                   "avg": 98560,
                   "count": 112
+                },
+                {
+                  "city": "경기",
+                  "district": "포천",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 98560,
+                  "count": 112
                 }
               ]
             },
             {
               "city": "경기",
               "district": "양평/용문",
-              "avg": 154237,
+              "avg": 154275,
               "count": 210,
               "min": 34000,
               "max": 733000,
               "platforms": {
                 "yanolja": {
-                  "avg": 154237,
+                  "avg": 154275,
                   "count": 210
                 }
               },
@@ -25132,6 +26633,14 @@
                   "platform": "yanolja",
                   "avg": 154237,
                   "count": 105
+                },
+                {
+                  "city": "경기",
+                  "district": "양평/용문",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 154313,
+                  "count": 105
                 }
               ]
             },
@@ -25257,6 +26766,14 @@
                   "city": "경기",
                   "district": "파주/양주/연천",
                   "hour": "2026-06-09T22:00",
+                  "platform": "yanolja",
+                  "avg": 142780,
+                  "count": 69
+                },
+                {
+                  "city": "경기",
+                  "district": "파주/양주/연천",
+                  "hour": "2026-06-09T23:00",
                   "platform": "yanolja",
                   "avg": 142780,
                   "count": 69
@@ -25388,6 +26905,14 @@
                   "platform": "yanolja",
                   "avg": 152034,
                   "count": 61
+                },
+                {
+                  "city": "경기",
+                  "district": "용인/여주/화성/이천",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 152034,
+                  "count": 61
                 }
               ]
             },
@@ -25516,6 +27041,14 @@
                   "platform": "yanolja",
                   "avg": 206732,
                   "count": 57
+                },
+                {
+                  "city": "경기",
+                  "district": "남양주",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 206732,
+                  "count": 57
                 }
               ]
             }
@@ -25523,14 +27056,14 @@
         },
         {
           "city": "제주",
-          "avg": 127191,
-          "count": 734,
+          "avg": 127265,
+          "count": 718,
           "min": 16200,
           "max": 700000,
           "platforms": {
             "yanolja": {
-              "avg": 127191,
-              "count": 734
+              "avg": 127265,
+              "count": 718
             }
           },
           "trend": [
@@ -25645,20 +27178,27 @@
               "platform": "yanolja",
               "avg": 127087,
               "count": 366
+            },
+            {
+              "city": "제주",
+              "hour": "2026-06-09T23:00",
+              "platform": "yanolja",
+              "avg": 127449,
+              "count": 352
             }
           ],
           "districts": [
             {
               "city": "제주",
               "district": "제주시 서부(공항/애월/협재)",
-              "avg": 133144,
-              "count": 266,
+              "avg": 132865,
+              "count": 264,
               "min": 35000,
               "max": 700000,
               "platforms": {
                 "yanolja": {
-                  "avg": 133144,
-                  "count": 266
+                  "avg": 132865,
+                  "count": 264
                 }
               },
               "trend": [
@@ -25772,6 +27312,14 @@
                   "hour": "2026-06-09T22:00",
                   "platform": "yanolja",
                   "avg": 132903,
+                  "count": 132
+                },
+                {
+                  "city": "제주",
+                  "district": "제주시 서부(공항/애월/협재)",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 132827,
                   "count": 132
                 }
               ]
@@ -25909,20 +27457,28 @@
                   "platform": "yanolja",
                   "avg": 132634,
                   "count": 90
+                },
+                {
+                  "city": "제주",
+                  "district": "제주시 동부(조천/구좌/우도)",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 132634,
+                  "count": 90
                 }
               ]
             },
             {
               "city": "제주",
               "district": "서귀포 서부(중문/안덕/대정)",
-              "avg": 110688,
-              "count": 160,
+              "avg": 110055,
+              "count": 146,
               "min": 21000,
               "max": 365000,
               "platforms": {
                 "yanolja": {
-                  "avg": 110688,
-                  "count": 160
+                  "avg": 110055,
+                  "count": 146
                 }
               },
               "trend": [
@@ -26053,6 +27609,14 @@
                   "platform": "yanolja",
                   "avg": 110688,
                   "count": 80
+                },
+                {
+                  "city": "제주",
+                  "district": "서귀포 서부(중문/안덕/대정)",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 109288,
+                  "count": 66
                 }
               ]
             },
@@ -26181,6 +27745,14 @@
                   "platform": "yanolja",
                   "avg": 127793,
                   "count": 64
+                },
+                {
+                  "city": "제주",
+                  "district": "서귀포 동부(성산/표선/남원)",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 127793,
+                  "count": 64
                 }
               ]
             }
@@ -26188,14 +27760,14 @@
         },
         {
           "city": "전북",
-          "avg": 107802,
-          "count": 662,
+          "avg": 107844,
+          "count": 661,
           "min": 30000,
           "max": 780000,
           "platforms": {
             "yanolja": {
-              "avg": 107802,
-              "count": 662
+              "avg": 107844,
+              "count": 661
             }
           },
           "trend": [
@@ -26296,6 +27868,13 @@
               "platform": "yanolja",
               "avg": 107802,
               "count": 331
+            },
+            {
+              "city": "전북",
+              "hour": "2026-06-09T23:00",
+              "platform": "yanolja",
+              "avg": 107886,
+              "count": 330
             }
           ],
           "districts": [
@@ -26421,6 +28000,14 @@
                   "city": "전북",
                   "district": "무주",
                   "hour": "2026-06-09T22:00",
+                  "platform": "yanolja",
+                  "avg": 112514,
+                  "count": 97
+                },
+                {
+                  "city": "전북",
+                  "district": "무주",
+                  "hour": "2026-06-09T23:00",
                   "platform": "yanolja",
                   "avg": 112514,
                   "count": 97
@@ -26552,20 +28139,28 @@
                   "platform": "yanolja",
                   "avg": 92619,
                   "count": 94
+                },
+                {
+                  "city": "전북",
+                  "district": "전주",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 92619,
+                  "count": 94
                 }
               ]
             },
             {
               "city": "전북",
               "district": "고창/남원/완주",
-              "avg": 125796,
-              "count": 146,
+              "avg": 126112,
+              "count": 145,
               "min": 50000,
               "max": 450000,
               "platforms": {
                 "yanolja": {
-                  "avg": 125796,
-                  "count": 146
+                  "avg": 126112,
+                  "count": 145
                 }
               },
               "trend": [
@@ -26680,6 +28275,14 @@
                   "platform": "yanolja",
                   "avg": 125796,
                   "count": 73
+                },
+                {
+                  "city": "전북",
+                  "district": "고창/남원/완주",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 126432,
+                  "count": 72
                 }
               ]
             },
@@ -26808,6 +28411,14 @@
                   "platform": "yanolja",
                   "avg": 102676,
                   "count": 67
+                },
+                {
+                  "city": "전북",
+                  "district": "부안(변산반도)",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 102676,
+                  "count": 67
                 }
               ]
             }
@@ -26920,6 +28531,13 @@
             {
               "city": "충북",
               "hour": "2026-06-09T22:00",
+              "platform": "yanolja",
+              "avg": 133159,
+              "count": 324
+            },
+            {
+              "city": "충북",
+              "hour": "2026-06-09T23:00",
               "platform": "yanolja",
               "avg": 133159,
               "count": 324
@@ -27051,6 +28669,14 @@
                   "platform": "yanolja",
                   "avg": 153290,
                   "count": 131
+                },
+                {
+                  "city": "충북",
+                  "district": "괴산/보은/청주",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 153290,
+                  "count": 131
                 }
               ]
             },
@@ -27176,6 +28802,14 @@
                   "city": "충북",
                   "district": "단양",
                   "hour": "2026-06-09T22:00",
+                  "platform": "yanolja",
+                  "avg": 101113,
+                  "count": 107
+                },
+                {
+                  "city": "충북",
+                  "district": "단양",
+                  "hour": "2026-06-09T23:00",
                   "platform": "yanolja",
                   "avg": 101113,
                   "count": 107
@@ -27307,6 +28941,14 @@
                   "platform": "yanolja",
                   "avg": 142366,
                   "count": 86
+                },
+                {
+                  "city": "충북",
+                  "district": "제천/충주",
+                  "hour": "2026-06-09T23:00",
+                  "platform": "yanolja",
+                  "avg": 142366,
+                  "count": 86
                 }
               ]
             }
@@ -27409,6 +29051,12 @@
           "platform": "yanolja",
           "avg": 113673,
           "count": 5798
+        },
+        {
+          "hour": "2026-06-09T23:00",
+          "platform": "yanolja",
+          "avg": 113812,
+          "count": 5722
         }
       ]
     },
