@@ -14,10 +14,18 @@ const YEOGI_TYPE = {
 };
 
 const PRICE_LIMITS = {
-  motel:      { min: 5000,  max: 500000  },
-  hotel:      { min: 20000, max: 2000000 },
+  motel:      { min: 15000, max: 150000  },  // 모텔은 15만원 상한 (호텔 혼입 방지)
+  hotel:      { min: 30000, max: 2000000 },
   pension:    { min: 10000, max: 1500000 },
   guesthouse: { min: 5000,  max: 300000  },
+};
+
+// Schema.org @type → 허용 숙박 유형 매핑 (소문자)
+const ALLOWED_SCHEMA_TYPES = {
+  motel:      ['motel', 'lodgingbusiness', ''],   // 명시 없으면 허용
+  hotel:      ['hotel', 'lodgingbusiness', ''],
+  pension:    ['bedandbreakfast', 'lodgingbusiness', 'vacationrental', ''],
+  guesthouse: ['hostel', 'lodgingbusiness', ''],
 };
 
 function getTodayCheckout() {
@@ -101,6 +109,14 @@ async function extractFromJsonLd(page, city, district, accommodationType, scrape
         for (const item of items) {
           const hotel = item.item ?? item;
           if (!hotel) continue;
+
+          // @type 체크: 명시된 경우 허용 목록과 대조
+          const schemaType = (hotel['@type'] || '').toLowerCase();
+          const allowed = ALLOWED_SCHEMA_TYPES[accommodationType] || [''];
+          if (schemaType && !allowed.includes(schemaType)) {
+            continue; // 예: 모텔 검색에서 @type=Hotel 이면 제외
+          }
+
           const name = hotel.name;
           const priceText = hotel.priceRange ?? '';
           // "1박 기준 62,000원" → 62000
