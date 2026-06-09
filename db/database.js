@@ -235,7 +235,59 @@ function exportDashboardData() {
       `).get(type, since2h) || { avg: null, count: 0, min: null, max: null };
     }
 
-    // 도시별 평균 + min/max (최근 2h)
+    // ── 구 단위 통계 (최근 2h) ─────────────────────────────
+    const districtRaw = db.prepare(`
+      SELECT region_city AS city, region_district AS district,
+             ROUND(AVG(price)) AS avg, COUNT(*) AS count,
+             MIN(price) AS min, MAX(price) AS max
+      FROM prices
+      WHERE accommodation_type = ? AND scraped_at >= ?
+      GROUP BY region_city, region_district
+      ORDER BY region_city, count DESC
+    `).all(type, since2h);
+
+    // 구 단위 × 플랫폼별 (최근 2h)
+    const districtPlatRows = db.prepare(`
+      SELECT region_city AS city, region_district AS district, platform,
+             ROUND(AVG(price)) AS avg, COUNT(*) AS count
+      FROM prices
+      WHERE accommodation_type = ? AND scraped_at >= ?
+      GROUP BY region_city, region_district, platform
+    `).all(type, since2h);
+
+    // 구 단위 × 시간별 트렌드 (24h)
+    const districtTrendRows = db.prepare(`
+      SELECT region_city AS city, region_district AS district,
+             strftime('%Y-%m-%dT%H:00', scraped_at) AS hour,
+             platform,
+             ROUND(AVG(price)) AS avg,
+             COUNT(*) AS count
+      FROM prices
+      WHERE accommodation_type = ? AND scraped_at >= ?
+      GROUP BY region_city, region_district, hour, platform
+      ORDER BY city, district, hour ASC
+    `).all(type, since24h);
+
+    // 구 단위에 플랫폼 + 트렌드 병합
+    const districtsWithDetail = districtRaw.map(d => {
+      const plats = {};
+      districtPlatRows
+        .filter(r => r.city === d.city && r.district === d.district)
+        .forEach(r => { plats[r.platform] = { avg: r.avg, count: r.count }; });
+      const trend = districtTrendRows.filter(r => r.city === d.city && r.district === d.district);
+      return { ...d, platforms: plats, trend };
+    });
+
+    // 시 단위로 그룹화 (districts 배열 포함)
+    const cityMap = {};
+    districtsWithDetail.forEach(d => {
+      if (!cityMap[d.city]) {
+        cityMap[d.city] = { city: d.city, avg: 0, count: 0, min: null, max: null, platforms: {}, trend: [], districts: [] };
+      }
+      cityMap[d.city].districts.push(d);
+    });
+
+    // 시 단위 집계
     const citiesRaw = db.prepare(`
       SELECT region_city AS city,
              ROUND(AVG(price)) AS avg, COUNT(*) AS count,
@@ -246,7 +298,6 @@ function exportDashboardData() {
       ORDER BY count DESC
     `).all(type, since2h);
 
-    // 도시별 × 플랫폼별 (최근 2h)
     const cityPlatRows = db.prepare(`
       SELECT region_city AS city, platform,
              ROUND(AVG(price)) AS avg, COUNT(*) AS count
@@ -255,35 +306,30 @@ function exportDashboardData() {
       GROUP BY region_city, platform
     `).all(type, since2h);
 
-    // 도시별 × 시간별 트렌드 (24h)
     const cityTrendRows = db.prepare(`
       SELECT region_city AS city,
              strftime('%Y-%m-%dT%H:00', scraped_at) AS hour,
              platform,
-             ROUND(AVG(price)) AS avg,
-             COUNT(*) AS count
+             ROUND(AVG(price)) AS avg, COUNT(*) AS count
       FROM prices
       WHERE accommodation_type = ? AND scraped_at >= ?
       GROUP BY region_city, hour, platform
       ORDER BY city, hour ASC
     `).all(type, since24h);
 
-    // 도시 객체에 플랫폼별 데이터 + 트렌드 병합
     const cities = citiesRaw.map(c => {
       const plats = {};
-      cityPlatRows.filter(r => r.city === c.city).forEach(r => {
-        plats[r.platform] = { avg: r.avg, count: r.count };
-      });
+      cityPlatRows.filter(r => r.city === c.city).forEach(r => { plats[r.platform] = { avg: r.avg, count: r.count }; });
       const trend = cityTrendRows.filter(r => r.city === c.city);
-      return { ...c, platforms: plats, trend };
+      const districts = (cityMap[c.city]?.districts) || [];
+      return { ...c, platforms: plats, trend, districts };
     });
 
-    // 전국 시간별 트렌드 (기존)
+    // 전국 시간별 트렌드
     const hourlyTrend = db.prepare(`
       SELECT strftime('%Y-%m-%dT%H:00', scraped_at) AS hour,
              platform,
-             ROUND(AVG(price)) AS avg,
-             COUNT(*) AS count
+             ROUND(AVG(price)) AS avg, COUNT(*) AS count
       FROM prices
       WHERE accommodation_type = ? AND scraped_at >= ?
       GROUP BY hour, platform
