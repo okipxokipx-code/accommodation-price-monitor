@@ -223,16 +223,34 @@ function exportDashboardData() {
   const result = { updatedAt: new Date().toISOString(), types: {} };
 
   for (const type of types) {
-    // 플랫폼별 통계
+    // 플랫폼별 통계 + 전국 최고가/최저가 호텔 정보
     const platforms = {};
     for (const plat of ['all', 'yanolja', 'yeogi']) {
       const platClause = plat !== 'all' ? `AND platform = '${plat}'` : '';
-      platforms[plat] = db.prepare(`
+      const base = db.prepare(`
         SELECT ROUND(AVG(price)) AS avg, COUNT(*) AS count,
                MIN(price) AS min, MAX(price) AS max
         FROM prices
         WHERE accommodation_type = ? AND scraped_at >= ? ${platClause}
       `).get(type, since2h) || { avg: null, count: 0, min: null, max: null };
+
+      // 전국 최고가 호텔
+      const topHotel = db.prepare(`
+        SELECT hotel_name, price, region_city AS city, region_district AS district, platform
+        FROM prices
+        WHERE accommodation_type = ? AND scraped_at >= ? ${platClause}
+        ORDER BY price DESC LIMIT 1
+      `).get(type, since2h);
+
+      // 전국 최저가 호텔
+      const botHotel = db.prepare(`
+        SELECT hotel_name, price, region_city AS city, region_district AS district, platform
+        FROM prices
+        WHERE accommodation_type = ? AND scraped_at >= ? ${platClause}
+        ORDER BY price ASC LIMIT 1
+      `).get(type, since2h);
+
+      platforms[plat] = { ...base, topHotel: topHotel || null, botHotel: botHotel || null };
     }
 
     // ── 구 단위 통계 (최근 2h) ─────────────────────────────

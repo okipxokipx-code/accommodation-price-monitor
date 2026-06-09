@@ -208,12 +208,18 @@ function render() {
       <div class="stat-box">
         <div class="stat-lbl">최고가</div>
         <div class="stat-val" style="color:var(--red)">${won(stats?.max)}</div>
-        <div class="stat-sub">해당 지역 기준</div>
+        ${isNation && stats?.topHotel ? `
+          <div style="margin-top:6px;font-size:.78rem;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis" title="${stats.topHotel.hotel_name}">${stats.topHotel.hotel_name}</div>
+          <div style="font-size:.68rem;color:var(--muted)">${stats.topHotel.city} · <span style="color:${pc(stats.topHotel.platform)}">${PLAT_LBL[stats.topHotel.platform]}</span></div>
+        ` : `<div class="stat-sub">해당 지역 기준</div>`}
       </div>
       <div class="stat-box">
         <div class="stat-lbl">최저가</div>
         <div class="stat-val" style="color:var(--green)">${won(stats?.min)}</div>
-        <div class="stat-sub">해당 지역 기준</div>
+        ${isNation && stats?.botHotel ? `
+          <div style="margin-top:6px;font-size:.78rem;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis" title="${stats.botHotel.hotel_name}">${stats.botHotel.hotel_name}</div>
+          <div style="font-size:.68rem;color:var(--muted)">${stats.botHotel.city} · <span style="color:${pc(stats.botHotel.platform)}">${PLAT_LBL[stats.botHotel.platform]}</span></div>
+        ` : `<div class="stat-sub">해당 지역 기준</div>`}
       </div>
     </div>
 
