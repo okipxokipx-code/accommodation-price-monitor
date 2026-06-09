@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-06-09T13:29:53.441Z",
+  "updatedAt": "2026-06-09T13:33:52.070Z",
   "types": {
     "motel": {
       "platforms": {
         "all": {
-          "avg": 51121,
-          "count": 4692,
+          "avg": 50884,
+          "count": 4602,
           "min": 8000,
           "max": 400000,
           "topHotel": {
@@ -44,41 +44,25 @@
           }
         },
         "yeogi": {
-          "avg": 63237,
-          "count": 90,
-          "min": 32500,
-          "max": 200000,
-          "topHotel": {
-            "hotel_name": "강남 THE HOTEL 1997",
-            "price": 200000,
-            "city": "서울",
-            "district": "강남/역삼/삼성/논현",
-            "platform": "yeogi"
-          },
-          "botHotel": {
-            "hotel_name": "영등포 더 문",
-            "price": 32500,
-            "city": "서울",
-            "district": "영등포/여의도",
-            "platform": "yeogi"
-          }
+          "avg": null,
+          "count": 0,
+          "min": null,
+          "max": null,
+          "topHotel": null,
+          "botHotel": null
         }
       },
       "cities": [
         {
           "city": "서울",
-          "avg": 55196,
-          "count": 1932,
+          "avg": 54803,
+          "count": 1842,
           "min": 25000,
           "max": 300000,
           "platforms": {
             "yanolja": {
               "avg": 54803,
               "count": 1842
-            },
-            "yeogi": {
-              "avg": 63237,
-              "count": 90
             }
           },
           "trend": [
@@ -137,31 +121,20 @@
               "platform": "yanolja",
               "avg": 54402,
               "count": 1064
-            },
-            {
-              "city": "서울",
-              "hour": "2026-06-09T13:00",
-              "platform": "yeogi",
-              "avg": 63237,
-              "count": 90
             }
           ],
           "districts": [
             {
               "city": "서울",
               "district": "영등포/여의도",
-              "avg": 49121,
-              "count": 201,
+              "avg": 49010,
+              "count": 182,
               "min": 30000,
               "max": 149000,
               "platforms": {
                 "yanolja": {
                   "avg": 49010,
                   "count": 182
-                },
-                "yeogi": {
-                  "avg": 50178,
-                  "count": 19
                 }
               },
               "trend": [
@@ -228,14 +201,6 @@
                   "platform": "yanolja",
                   "avg": 49036,
                   "count": 91
-                },
-                {
-                  "city": "서울",
-                  "district": "영등포/여의도",
-                  "hour": "2026-06-09T13:00",
-                  "platform": "yeogi",
-                  "avg": 50178,
-                  "count": 19
                 }
               ],
               "top3": [
@@ -256,9 +221,9 @@
                 {
                   "city": "서울",
                   "district": "영등포/여의도",
-                  "hotel_name": "페어필드 바이 메리어트 서울",
-                  "price": 127780,
-                  "platform": "yeogi"
+                  "hotel_name": "여의도 컴포트 인",
+                  "price": 110000,
+                  "platform": "yanolja"
                 }
               ],
               "bottom3": [
@@ -666,18 +631,14 @@
             {
               "city": "서울",
               "district": "강남/역삼/삼성/논현",
-              "avg": 81091,
-              "count": 147,
+              "avg": 80940,
+              "count": 128,
               "min": 45000,
               "max": 300000,
               "platforms": {
                 "yanolja": {
                   "avg": 80940,
                   "count": 128
-                },
-                "yeogi": {
-                  "avg": 82113,
-                  "count": 19
                 }
               },
               "trend": [
@@ -744,14 +705,6 @@
                   "platform": "yanolja",
                   "avg": 81910,
                   "count": 63
-                },
-                {
-                  "city": "서울",
-                  "district": "강남/역삼/삼성/논현",
-                  "hour": "2026-06-09T13:00",
-                  "platform": "yeogi",
-                  "avg": 82113,
-                  "count": 19
                 }
               ],
               "top3": [
@@ -772,9 +725,9 @@
                 {
                   "city": "서울",
                   "district": "강남/역삼/삼성/논현",
-                  "hotel_name": "강남 THE HOTEL 1997",
-                  "price": 200000,
-                  "platform": "yeogi"
+                  "hotel_name": "강남 호텔 더 디자이너스 리즈 프리미어",
+                  "price": 180000,
+                  "platform": "yanolja"
                 }
               ],
               "bottom3": [
@@ -795,147 +748,9 @@
                 {
                   "city": "서울",
                   "district": "강남/역삼/삼성/논현",
-                  "hotel_name": "역삼 린",
-                  "price": 54700,
-                  "platform": "yeogi"
-                }
-              ]
-            },
-            {
-              "city": "서울",
-              "district": "잠실/방이",
-              "avg": 58090,
-              "count": 126,
-              "min": 35000,
-              "max": 130000,
-              "platforms": {
-                "yanolja": {
-                  "avg": 59471,
-                  "count": 106
-                },
-                "yeogi": {
-                  "avg": 50770,
-                  "count": 20
-                }
-              },
-              "trend": [
-                {
-                  "city": "서울",
-                  "district": "잠실/방이",
-                  "hour": "2026-06-09T06:00",
-                  "platform": "yanolja",
-                  "avg": 60086,
-                  "count": 110
-                },
-                {
-                  "city": "서울",
-                  "district": "잠실/방이",
-                  "hour": "2026-06-09T07:00",
-                  "platform": "yanolja",
-                  "avg": 60068,
-                  "count": 55
-                },
-                {
-                  "city": "서울",
-                  "district": "잠실/방이",
-                  "hour": "2026-06-09T08:00",
-                  "platform": "yanolja",
-                  "avg": 58937,
-                  "count": 55
-                },
-                {
-                  "city": "서울",
-                  "district": "잠실/방이",
-                  "hour": "2026-06-09T09:00",
-                  "platform": "yanolja",
-                  "avg": 58355,
-                  "count": 55
-                },
-                {
-                  "city": "서울",
-                  "district": "잠실/방이",
-                  "hour": "2026-06-09T10:00",
-                  "platform": "yanolja",
-                  "avg": 59707,
-                  "count": 110
-                },
-                {
-                  "city": "서울",
-                  "district": "잠실/방이",
-                  "hour": "2026-06-09T11:00",
-                  "platform": "yanolja",
-                  "avg": 58017,
-                  "count": 55
-                },
-                {
-                  "city": "서울",
-                  "district": "잠실/방이",
-                  "hour": "2026-06-09T12:00",
-                  "platform": "yanolja",
-                  "avg": 59339,
-                  "count": 53
-                },
-                {
-                  "city": "서울",
-                  "district": "잠실/방이",
-                  "hour": "2026-06-09T13:00",
-                  "platform": "yanolja",
-                  "avg": 59603,
-                  "count": 53
-                },
-                {
-                  "city": "서울",
-                  "district": "잠실/방이",
-                  "hour": "2026-06-09T13:00",
-                  "platform": "yeogi",
-                  "avg": 50770,
-                  "count": 20
-                }
-              ],
-              "top3": [
-                {
-                  "city": "서울",
-                  "district": "잠실/방이",
-                  "hotel_name": "잠실 코너호텔(CORNER HOTEL)",
-                  "price": 130000,
+                  "hotel_name": "역삼 XYM",
+                  "price": 54800,
                   "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "잠실/방이",
-                  "hotel_name": "잠실 동그라미",
-                  "price": 129000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "잠실/방이",
-                  "hotel_name": "잠실 오로시에 관광호텔 - Orosie",
-                  "price": 122000,
-                  "platform": "yanolja"
-                }
-              ],
-              "bottom3": [
-                {
-                  "city": "서울",
-                  "district": "잠실/방이",
-                  "hotel_name": "잠실 하오",
-                  "price": 35000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "잠실/방이",
-                  "hotel_name": "잠실 NU호텔-종합운동장점",
-                  "price": 35500,
-                  "platform": "yeogi"
-                },
-                {
-                  "city": "서울",
-                  "district": "잠실/방이",
-                  "hotel_name": "신천 라몬",
-                  "price": 35500,
-                  "platform": "yeogi"
                 }
               ]
             },
@@ -1193,6 +1008,132 @@
             },
             {
               "city": "서울",
+              "district": "잠실/방이",
+              "avg": 59471,
+              "count": 106,
+              "min": 35000,
+              "max": 130000,
+              "platforms": {
+                "yanolja": {
+                  "avg": 59471,
+                  "count": 106
+                }
+              },
+              "trend": [
+                {
+                  "city": "서울",
+                  "district": "잠실/방이",
+                  "hour": "2026-06-09T06:00",
+                  "platform": "yanolja",
+                  "avg": 60086,
+                  "count": 110
+                },
+                {
+                  "city": "서울",
+                  "district": "잠실/방이",
+                  "hour": "2026-06-09T07:00",
+                  "platform": "yanolja",
+                  "avg": 60068,
+                  "count": 55
+                },
+                {
+                  "city": "서울",
+                  "district": "잠실/방이",
+                  "hour": "2026-06-09T08:00",
+                  "platform": "yanolja",
+                  "avg": 58937,
+                  "count": 55
+                },
+                {
+                  "city": "서울",
+                  "district": "잠실/방이",
+                  "hour": "2026-06-09T09:00",
+                  "platform": "yanolja",
+                  "avg": 58355,
+                  "count": 55
+                },
+                {
+                  "city": "서울",
+                  "district": "잠실/방이",
+                  "hour": "2026-06-09T10:00",
+                  "platform": "yanolja",
+                  "avg": 59707,
+                  "count": 110
+                },
+                {
+                  "city": "서울",
+                  "district": "잠실/방이",
+                  "hour": "2026-06-09T11:00",
+                  "platform": "yanolja",
+                  "avg": 58017,
+                  "count": 55
+                },
+                {
+                  "city": "서울",
+                  "district": "잠실/방이",
+                  "hour": "2026-06-09T12:00",
+                  "platform": "yanolja",
+                  "avg": 59339,
+                  "count": 53
+                },
+                {
+                  "city": "서울",
+                  "district": "잠실/방이",
+                  "hour": "2026-06-09T13:00",
+                  "platform": "yanolja",
+                  "avg": 59603,
+                  "count": 53
+                }
+              ],
+              "top3": [
+                {
+                  "city": "서울",
+                  "district": "잠실/방이",
+                  "hotel_name": "잠실 코너호텔(CORNER HOTEL)",
+                  "price": 130000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "잠실/방이",
+                  "hotel_name": "잠실 동그라미",
+                  "price": 129000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "잠실/방이",
+                  "hotel_name": "잠실 오로시에 관광호텔 - Orosie",
+                  "price": 122000,
+                  "platform": "yanolja"
+                }
+              ],
+              "bottom3": [
+                {
+                  "city": "서울",
+                  "district": "잠실/방이",
+                  "hotel_name": "잠실 하오",
+                  "price": 35000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "잠실/방이",
+                  "hotel_name": "잠실 초이스 모텔",
+                  "price": 38250,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "잠실/방이",
+                  "hotel_name": "잠실 자자호텔",
+                  "price": 38900,
+                  "platform": "yanolja"
+                }
+              ]
+            },
+            {
+              "city": "서울",
               "district": "연신내/불광/응암",
               "avg": 45240,
               "count": 104,
@@ -1439,144 +1380,6 @@
                   "district": "천호/길동/둔촌",
                   "hotel_name": "천호 밀레오",
                   "price": 30000,
-                  "platform": "yanolja"
-                }
-              ]
-            },
-            {
-              "city": "서울",
-              "district": "잠실새내/신천/종합운동장",
-              "avg": 44214,
-              "count": 72,
-              "min": 35000,
-              "max": 80000,
-              "platforms": {
-                "yanolja": {
-                  "avg": 44018,
-                  "count": 56
-                },
-                "yeogi": {
-                  "avg": 44901,
-                  "count": 16
-                }
-              },
-              "trend": [
-                {
-                  "city": "서울",
-                  "district": "잠실새내/신천/종합운동장",
-                  "hour": "2026-06-09T06:00",
-                  "platform": "yanolja",
-                  "avg": 49857,
-                  "count": 56
-                },
-                {
-                  "city": "서울",
-                  "district": "잠실새내/신천/종합운동장",
-                  "hour": "2026-06-09T07:00",
-                  "platform": "yanolja",
-                  "avg": 49464,
-                  "count": 28
-                },
-                {
-                  "city": "서울",
-                  "district": "잠실새내/신천/종합운동장",
-                  "hour": "2026-06-09T08:00",
-                  "platform": "yanolja",
-                  "avg": 49464,
-                  "count": 28
-                },
-                {
-                  "city": "서울",
-                  "district": "잠실새내/신천/종합운동장",
-                  "hour": "2026-06-09T09:00",
-                  "platform": "yanolja",
-                  "avg": 48571,
-                  "count": 28
-                },
-                {
-                  "city": "서울",
-                  "district": "잠실새내/신천/종합운동장",
-                  "hour": "2026-06-09T10:00",
-                  "platform": "yanolja",
-                  "avg": 46357,
-                  "count": 56
-                },
-                {
-                  "city": "서울",
-                  "district": "잠실새내/신천/종합운동장",
-                  "hour": "2026-06-09T11:00",
-                  "platform": "yanolja",
-                  "avg": 44250,
-                  "count": 28
-                },
-                {
-                  "city": "서울",
-                  "district": "잠실새내/신천/종합운동장",
-                  "hour": "2026-06-09T12:00",
-                  "platform": "yanolja",
-                  "avg": 43750,
-                  "count": 28
-                },
-                {
-                  "city": "서울",
-                  "district": "잠실새내/신천/종합운동장",
-                  "hour": "2026-06-09T13:00",
-                  "platform": "yanolja",
-                  "avg": 44286,
-                  "count": 28
-                },
-                {
-                  "city": "서울",
-                  "district": "잠실새내/신천/종합운동장",
-                  "hour": "2026-06-09T13:00",
-                  "platform": "yeogi",
-                  "avg": 44901,
-                  "count": 16
-                }
-              ],
-              "top3": [
-                {
-                  "city": "서울",
-                  "district": "잠실새내/신천/종합운동장",
-                  "hotel_name": "잠실 스테이 호텔(JS STAY)",
-                  "price": 80000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "잠실새내/신천/종합운동장",
-                  "hotel_name": "신천(잠실새내) 호텔 더 캐슬",
-                  "price": 79410,
-                  "platform": "yeogi"
-                },
-                {
-                  "city": "서울",
-                  "district": "잠실새내/신천/종합운동장",
-                  "hotel_name": "신천 호텔 더 캐슬-잠실새내점",
-                  "price": 64000,
-                  "platform": "yeogi"
-                }
-              ],
-              "bottom3": [
-                {
-                  "city": "서울",
-                  "district": "잠실새내/신천/종합운동장",
-                  "hotel_name": "신천 하루",
-                  "price": 35000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "잠실새내/신천/종합운동장",
-                  "hotel_name": "신천 플러스",
-                  "price": 35000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "잠실새내/신천/종합운동장",
-                  "hotel_name": "신천 반",
-                  "price": 35000,
                   "platform": "yanolja"
                 }
               ]
@@ -1953,138 +1756,126 @@
             },
             {
               "city": "서울",
-              "district": "서초/신사/방배",
-              "avg": 77676,
+              "district": "잠실새내/신천/종합운동장",
+              "avg": 44018,
               "count": 56,
-              "min": 45000,
-              "max": 176428,
+              "min": 35000,
+              "max": 80000,
               "platforms": {
                 "yanolja": {
-                  "avg": 72647,
-                  "count": 40
-                },
-                "yeogi": {
-                  "avg": 90249,
-                  "count": 16
+                  "avg": 44018,
+                  "count": 56
                 }
               },
               "trend": [
                 {
                   "city": "서울",
-                  "district": "서초/신사/방배",
+                  "district": "잠실새내/신천/종합운동장",
                   "hour": "2026-06-09T06:00",
                   "platform": "yanolja",
-                  "avg": 73322,
-                  "count": 40
+                  "avg": 49857,
+                  "count": 56
                 },
                 {
                   "city": "서울",
-                  "district": "서초/신사/방배",
+                  "district": "잠실새내/신천/종합운동장",
                   "hour": "2026-06-09T07:00",
                   "platform": "yanolja",
-                  "avg": 73172,
-                  "count": 20
+                  "avg": 49464,
+                  "count": 28
                 },
                 {
                   "city": "서울",
-                  "district": "서초/신사/방배",
+                  "district": "잠실새내/신천/종합운동장",
                   "hour": "2026-06-09T08:00",
                   "platform": "yanolja",
-                  "avg": 73472,
-                  "count": 20
+                  "avg": 49464,
+                  "count": 28
                 },
                 {
                   "city": "서울",
-                  "district": "서초/신사/방배",
+                  "district": "잠실새내/신천/종합운동장",
                   "hour": "2026-06-09T09:00",
                   "platform": "yanolja",
-                  "avg": 73022,
-                  "count": 20
+                  "avg": 48571,
+                  "count": 28
                 },
                 {
                   "city": "서울",
-                  "district": "서초/신사/방배",
+                  "district": "잠실새내/신천/종합운동장",
                   "hour": "2026-06-09T10:00",
                   "platform": "yanolja",
-                  "avg": 72972,
-                  "count": 40
+                  "avg": 46357,
+                  "count": 56
                 },
                 {
                   "city": "서울",
-                  "district": "서초/신사/방배",
+                  "district": "잠실새내/신천/종합운동장",
                   "hour": "2026-06-09T11:00",
                   "platform": "yanolja",
-                  "avg": 72972,
-                  "count": 20
+                  "avg": 44250,
+                  "count": 28
                 },
                 {
                   "city": "서울",
-                  "district": "서초/신사/방배",
+                  "district": "잠실새내/신천/종합운동장",
                   "hour": "2026-06-09T12:00",
                   "platform": "yanolja",
-                  "avg": 72472,
-                  "count": 20
+                  "avg": 43750,
+                  "count": 28
                 },
                 {
                   "city": "서울",
-                  "district": "서초/신사/방배",
+                  "district": "잠실새내/신천/종합운동장",
                   "hour": "2026-06-09T13:00",
                   "platform": "yanolja",
-                  "avg": 72822,
-                  "count": 20
-                },
-                {
-                  "city": "서울",
-                  "district": "서초/신사/방배",
-                  "hour": "2026-06-09T13:00",
-                  "platform": "yeogi",
-                  "avg": 90249,
-                  "count": 16
+                  "avg": 44286,
+                  "count": 28
                 }
               ],
               "top3": [
                 {
                   "city": "서울",
-                  "district": "서초/신사/방배",
-                  "hotel_name": "★당일특가★ 신라스테이 서초",
-                  "price": 176428,
-                  "platform": "yeogi"
+                  "district": "잠실새내/신천/종합운동장",
+                  "hotel_name": "잠실 스테이 호텔(JS STAY)",
+                  "price": 80000,
+                  "platform": "yanolja"
                 },
                 {
                   "city": "서울",
-                  "district": "서초/신사/방배",
-                  "hotel_name": "오라카이 청계산 호텔, BW 프리미어 컬렉션",
-                  "price": 144760,
-                  "platform": "yeogi"
+                  "district": "잠실새내/신천/종합운동장",
+                  "hotel_name": "신천(잠실새내) 호텔 더 캐슬",
+                  "price": 67500,
+                  "platform": "yanolja"
                 },
                 {
                   "city": "서울",
-                  "district": "서초/신사/방배",
-                  "hotel_name": "소설 호텔",
-                  "price": 125000,
-                  "platform": "yeogi"
+                  "district": "잠실새내/신천/종합운동장",
+                  "hotel_name": "신천(잠실새내) FORESTAR 2호점 (포레스타2)",
+                  "price": 53000,
+                  "platform": "yanolja"
                 }
               ],
               "bottom3": [
                 {
                   "city": "서울",
-                  "district": "서초/신사/방배",
-                  "hotel_name": "방배 M",
-                  "price": 45000,
+                  "district": "잠실새내/신천/종합운동장",
+                  "hotel_name": "신천 하루",
+                  "price": 35000,
                   "platform": "yanolja"
                 },
                 {
                   "city": "서울",
-                  "district": "서초/신사/방배",
-                  "hotel_name": "서초 유원호텔",
-                  "price": 55300,
-                  "platform": "yeogi"
+                  "district": "잠실새내/신천/종합운동장",
+                  "hotel_name": "신천 플러스",
+                  "price": 35000,
+                  "platform": "yanolja"
                 },
                 {
                   "city": "서울",
-                  "district": "서초/신사/방배",
-                  "hotel_name": "서초 유원호텔 남부터미널",
-                  "price": 58800,
+                  "district": "잠실새내/신천/종합운동장",
+                  "hotel_name": "신천 반",
+                  "price": 35000,
                   "platform": "yanolja"
                 }
               ]
@@ -2321,6 +2112,132 @@
                   "district": "태릉/노원/도봉/창동",
                   "hotel_name": "노원 에이플러스 무인텔",
                   "price": 33000,
+                  "platform": "yanolja"
+                }
+              ]
+            },
+            {
+              "city": "서울",
+              "district": "서초/신사/방배",
+              "avg": 72647,
+              "count": 40,
+              "min": 45000,
+              "max": 90000,
+              "platforms": {
+                "yanolja": {
+                  "avg": 72647,
+                  "count": 40
+                }
+              },
+              "trend": [
+                {
+                  "city": "서울",
+                  "district": "서초/신사/방배",
+                  "hour": "2026-06-09T06:00",
+                  "platform": "yanolja",
+                  "avg": 73322,
+                  "count": 40
+                },
+                {
+                  "city": "서울",
+                  "district": "서초/신사/방배",
+                  "hour": "2026-06-09T07:00",
+                  "platform": "yanolja",
+                  "avg": 73172,
+                  "count": 20
+                },
+                {
+                  "city": "서울",
+                  "district": "서초/신사/방배",
+                  "hour": "2026-06-09T08:00",
+                  "platform": "yanolja",
+                  "avg": 73472,
+                  "count": 20
+                },
+                {
+                  "city": "서울",
+                  "district": "서초/신사/방배",
+                  "hour": "2026-06-09T09:00",
+                  "platform": "yanolja",
+                  "avg": 73022,
+                  "count": 20
+                },
+                {
+                  "city": "서울",
+                  "district": "서초/신사/방배",
+                  "hour": "2026-06-09T10:00",
+                  "platform": "yanolja",
+                  "avg": 72972,
+                  "count": 40
+                },
+                {
+                  "city": "서울",
+                  "district": "서초/신사/방배",
+                  "hour": "2026-06-09T11:00",
+                  "platform": "yanolja",
+                  "avg": 72972,
+                  "count": 20
+                },
+                {
+                  "city": "서울",
+                  "district": "서초/신사/방배",
+                  "hour": "2026-06-09T12:00",
+                  "platform": "yanolja",
+                  "avg": 72472,
+                  "count": 20
+                },
+                {
+                  "city": "서울",
+                  "district": "서초/신사/방배",
+                  "hour": "2026-06-09T13:00",
+                  "platform": "yanolja",
+                  "avg": 72822,
+                  "count": 20
+                }
+              ],
+              "top3": [
+                {
+                  "city": "서울",
+                  "district": "서초/신사/방배",
+                  "hotel_name": "서초 호텔 브릭",
+                  "price": 90000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "서초/신사/방배",
+                  "hotel_name": "서초 제이에스 (JS) 호텔",
+                  "price": 90000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "서초/신사/방배",
+                  "hotel_name": "논현 호텔 앳 강남 서울",
+                  "price": 90000,
+                  "platform": "yanolja"
+                }
+              ],
+              "bottom3": [
+                {
+                  "city": "서울",
+                  "district": "서초/신사/방배",
+                  "hotel_name": "방배 M",
+                  "price": 45000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "서초/신사/방배",
+                  "hotel_name": "서초 유원호텔 남부터미널",
+                  "price": 58800,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "서초/신사/방배",
+                  "hotel_name": "신사 리츠",
+                  "price": 60000,
                   "platform": "yanolja"
                 }
               ]
@@ -8314,12 +8231,6 @@
           "platform": "yanolja",
           "avg": 49975,
           "count": 3824
-        },
-        {
-          "hour": "2026-06-09T13:00",
-          "platform": "yeogi",
-          "avg": 63237,
-          "count": 90
         }
       ]
     },
