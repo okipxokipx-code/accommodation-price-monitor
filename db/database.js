@@ -235,17 +235,50 @@ function exportDashboardData() {
       `).get(type, since2h) || { avg: null, count: 0, min: null, max: null };
     }
 
-    // 도시별 평균 (최근 2h)
-    const cities = db.prepare(`
+    // 도시별 평균 + min/max (최근 2h)
+    const citiesRaw = db.prepare(`
       SELECT region_city AS city,
-             ROUND(AVG(price)) AS avg, COUNT(*) AS count
+             ROUND(AVG(price)) AS avg, COUNT(*) AS count,
+             MIN(price) AS min, MAX(price) AS max
       FROM prices
       WHERE accommodation_type = ? AND scraped_at >= ?
       GROUP BY region_city
       ORDER BY count DESC
     `).all(type, since2h);
 
-    // 24시간 시간별 트렌드
+    // 도시별 × 플랫폼별 (최근 2h)
+    const cityPlatRows = db.prepare(`
+      SELECT region_city AS city, platform,
+             ROUND(AVG(price)) AS avg, COUNT(*) AS count
+      FROM prices
+      WHERE accommodation_type = ? AND scraped_at >= ?
+      GROUP BY region_city, platform
+    `).all(type, since2h);
+
+    // 도시별 × 시간별 트렌드 (24h)
+    const cityTrendRows = db.prepare(`
+      SELECT region_city AS city,
+             strftime('%Y-%m-%dT%H:00', scraped_at) AS hour,
+             platform,
+             ROUND(AVG(price)) AS avg,
+             COUNT(*) AS count
+      FROM prices
+      WHERE accommodation_type = ? AND scraped_at >= ?
+      GROUP BY region_city, hour, platform
+      ORDER BY city, hour ASC
+    `).all(type, since24h);
+
+    // 도시 객체에 플랫폼별 데이터 + 트렌드 병합
+    const cities = citiesRaw.map(c => {
+      const plats = {};
+      cityPlatRows.filter(r => r.city === c.city).forEach(r => {
+        plats[r.platform] = { avg: r.avg, count: r.count };
+      });
+      const trend = cityTrendRows.filter(r => r.city === c.city);
+      return { ...c, platforms: plats, trend };
+    });
+
+    // 전국 시간별 트렌드 (기존)
     const hourlyTrend = db.prepare(`
       SELECT strftime('%Y-%m-%dT%H:00', scraped_at) AS hour,
              platform,
