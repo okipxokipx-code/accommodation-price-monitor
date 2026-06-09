@@ -1,23 +1,23 @@
 {
-  "updatedAt": "2026-06-09T12:15:06.586Z",
+  "updatedAt": "2026-06-09T12:22:08.022Z",
   "types": {
     "motel": {
       "platforms": {
         "all": {
-          "avg": 50628,
-          "count": 8302,
+          "avg": 51144,
+          "count": 9170,
           "min": 8000,
           "max": 400000
         },
         "yanolja": {
-          "avg": 50302,
-          "count": 8119,
+          "avg": 50743,
+          "count": 8897,
           "min": 8000,
           "max": 400000
         },
         "yeogi": {
-          "avg": 65083,
-          "count": 183,
+          "avg": 64201,
+          "count": 273,
           "min": 32000,
           "max": 209000
         }
@@ -25,18 +25,18 @@
       "cities": [
         {
           "city": "서울",
-          "avg": 55247,
-          "count": 2383,
+          "avg": 55470,
+          "count": 3251,
           "min": 20000,
           "max": 300000,
           "platforms": {
             "yanolja": {
-              "avg": 54428,
-              "count": 2200
+              "avg": 54670,
+              "count": 2978
             },
             "yeogi": {
-              "avg": 65083,
-              "count": 183
+              "avg": 64201,
+              "count": 273
             }
           },
           "trend": [
@@ -123,24 +123,38 @@
               "platform": "yeogi",
               "avg": 65810,
               "count": 92
+            },
+            {
+              "city": "서울",
+              "hour": "2026-06-09T12:00",
+              "platform": "yanolja",
+              "avg": 55352,
+              "count": 778
+            },
+            {
+              "city": "서울",
+              "hour": "2026-06-09T12:00",
+              "platform": "yeogi",
+              "avg": 62409,
+              "count": 90
             }
           ],
           "districts": [
             {
               "city": "서울",
               "district": "영등포/여의도",
-              "avg": 51554,
-              "count": 221,
+              "avg": 50864,
+              "count": 331,
               "min": 30000,
               "max": 209000,
               "platforms": {
                 "yanolja": {
-                  "avg": 49523,
-                  "count": 182
+                  "avg": 49344,
+                  "count": 273
                 },
                 "yeogi": {
-                  "avg": 61034,
-                  "count": 39
+                  "avg": 58021,
+                  "count": 58
                 }
               },
               "trend": [
@@ -239,24 +253,40 @@
                   "platform": "yeogi",
                   "avg": 64620,
                   "count": 20
+                },
+                {
+                  "city": "서울",
+                  "district": "영등포/여의도",
+                  "hour": "2026-06-09T12:00",
+                  "platform": "yanolja",
+                  "avg": 48985,
+                  "count": 91
+                },
+                {
+                  "city": "서울",
+                  "district": "영등포/여의도",
+                  "hour": "2026-06-09T12:00",
+                  "platform": "yeogi",
+                  "avg": 51836,
+                  "count": 19
                 }
               ]
             },
             {
               "city": "서울",
               "district": "강남/역삼/삼성/논현",
-              "avg": 81072,
-              "count": 174,
+              "avg": 80731,
+              "count": 258,
               "min": 45000,
               "max": 300000,
               "platforms": {
                 "yanolja": {
-                  "avg": 79953,
-                  "count": 134
+                  "avg": 79968,
+                  "count": 199
                 },
                 "yeogi": {
-                  "avg": 84820,
-                  "count": 40
+                  "avg": 83304,
+                  "count": 59
                 }
               },
               "trend": [
@@ -355,20 +385,36 @@
                   "platform": "yeogi",
                   "avg": 85208,
                   "count": 20
+                },
+                {
+                  "city": "서울",
+                  "district": "강남/역삼/삼성/논현",
+                  "hour": "2026-06-09T12:00",
+                  "platform": "yanolja",
+                  "avg": 79999,
+                  "count": 65
+                },
+                {
+                  "city": "서울",
+                  "district": "강남/역삼/삼성/논현",
+                  "hour": "2026-06-09T12:00",
+                  "platform": "yeogi",
+                  "avg": 80113,
+                  "count": 19
                 }
               ]
             },
             {
               "city": "서울",
               "district": "신촌/홍대/합정",
-              "avg": 54394,
-              "count": 173,
+              "avg": 54063,
+              "count": 257,
               "min": 33000,
               "max": 165000,
               "platforms": {
                 "yanolja": {
-                  "avg": 54394,
-                  "count": 173
+                  "avg": 54063,
+                  "count": 257
                 }
               },
               "trend": [
@@ -419,20 +465,28 @@
                   "platform": "yanolja",
                   "avg": 52819,
                   "count": 85
+                },
+                {
+                  "city": "서울",
+                  "district": "신촌/홍대/합정",
+                  "hour": "2026-06-09T12:00",
+                  "platform": "yanolja",
+                  "avg": 53380,
+                  "count": 84
                 }
               ]
             },
             {
               "city": "서울",
               "district": "신림/서울대/사당/동작",
-              "avg": 58201,
-              "count": 169,
-              "min": 32560,
+              "avg": 57874,
+              "count": 254,
+              "min": 27000,
               "max": 300000,
               "platforms": {
                 "yanolja": {
-                  "avg": 58201,
-                  "count": 169
+                  "avg": 57874,
+                  "count": 254
                 }
               },
               "trend": [
@@ -483,20 +537,28 @@
                   "platform": "yanolja",
                   "avg": 58135,
                   "count": 84
+                },
+                {
+                  "city": "서울",
+                  "district": "신림/서울대/사당/동작",
+                  "hour": "2026-06-09T12:00",
+                  "platform": "yanolja",
+                  "avg": 57224,
+                  "count": 85
                 }
               ]
             },
             {
               "city": "서울",
               "district": "화곡/까치산/양천/목동",
-              "avg": 44723,
-              "count": 161,
+              "avg": 44465,
+              "count": 239,
               "min": 22000,
               "max": 77000,
               "platforms": {
                 "yanolja": {
-                  "avg": 44723,
-                  "count": 161
+                  "avg": 44465,
+                  "count": 239
                 }
               },
               "trend": [
@@ -547,24 +609,32 @@
                   "platform": "yanolja",
                   "avg": 44791,
                   "count": 78
+                },
+                {
+                  "city": "서울",
+                  "district": "화곡/까치산/양천/목동",
+                  "hour": "2026-06-09T12:00",
+                  "platform": "yanolja",
+                  "avg": 43932,
+                  "count": 78
                 }
               ]
             },
             {
               "city": "서울",
               "district": "잠실/방이",
-              "avg": 56339,
-              "count": 150,
+              "avg": 56707,
+              "count": 223,
               "min": 35000,
               "max": 162000,
               "platforms": {
                 "yanolja": {
-                  "avg": 58597,
-                  "count": 110
+                  "avg": 58838,
+                  "count": 163
                 },
                 "yeogi": {
-                  "avg": 50128,
-                  "count": 40
+                  "avg": 50918,
+                  "count": 60
                 }
               },
               "trend": [
@@ -663,6 +733,442 @@
                   "platform": "yeogi",
                   "avg": 50100,
                   "count": 20
+                },
+                {
+                  "city": "서울",
+                  "district": "잠실/방이",
+                  "hour": "2026-06-09T12:00",
+                  "platform": "yanolja",
+                  "avg": 59339,
+                  "count": 53
+                },
+                {
+                  "city": "서울",
+                  "district": "잠실/방이",
+                  "hour": "2026-06-09T12:00",
+                  "platform": "yeogi",
+                  "avg": 52500,
+                  "count": 20
+                }
+              ]
+            },
+            {
+              "city": "서울",
+              "district": "구로/금천/오류/신도림",
+              "avg": 47361,
+              "count": 180,
+              "min": 30000,
+              "max": 100000,
+              "platforms": {
+                "yanolja": {
+                  "avg": 47361,
+                  "count": 180
+                }
+              },
+              "trend": [
+                {
+                  "city": "서울",
+                  "district": "구로/금천/오류/신도림",
+                  "hour": "2026-06-09T06:00",
+                  "platform": "yanolja",
+                  "avg": 48527,
+                  "count": 125
+                },
+                {
+                  "city": "서울",
+                  "district": "구로/금천/오류/신도림",
+                  "hour": "2026-06-09T07:00",
+                  "platform": "yanolja",
+                  "avg": 48797,
+                  "count": 62
+                },
+                {
+                  "city": "서울",
+                  "district": "구로/금천/오류/신도림",
+                  "hour": "2026-06-09T08:00",
+                  "platform": "yanolja",
+                  "avg": 48797,
+                  "count": 62
+                },
+                {
+                  "city": "서울",
+                  "district": "구로/금천/오류/신도림",
+                  "hour": "2026-06-09T09:00",
+                  "platform": "yanolja",
+                  "avg": 48636,
+                  "count": 62
+                },
+                {
+                  "city": "서울",
+                  "district": "구로/금천/오류/신도림",
+                  "hour": "2026-06-09T10:00",
+                  "platform": "yanolja",
+                  "avg": 47626,
+                  "count": 120
+                },
+                {
+                  "city": "서울",
+                  "district": "구로/금천/오류/신도림",
+                  "hour": "2026-06-09T11:00",
+                  "platform": "yanolja",
+                  "avg": 47819,
+                  "count": 60
+                },
+                {
+                  "city": "서울",
+                  "district": "구로/금천/오류/신도림",
+                  "hour": "2026-06-09T12:00",
+                  "platform": "yanolja",
+                  "avg": 47003,
+                  "count": 60
+                }
+              ]
+            },
+            {
+              "city": "서울",
+              "district": "종로/대학로/동묘앞역",
+              "avg": 66100,
+              "count": 169,
+              "min": 34500,
+              "max": 200000,
+              "platforms": {
+                "yanolja": {
+                  "avg": 66100,
+                  "count": 169
+                }
+              },
+              "trend": [
+                {
+                  "city": "서울",
+                  "district": "종로/대학로/동묘앞역",
+                  "hour": "2026-06-09T06:00",
+                  "platform": "yanolja",
+                  "avg": 67039,
+                  "count": 128
+                },
+                {
+                  "city": "서울",
+                  "district": "종로/대학로/동묘앞역",
+                  "hour": "2026-06-09T07:00",
+                  "platform": "yanolja",
+                  "avg": 68346,
+                  "count": 64
+                },
+                {
+                  "city": "서울",
+                  "district": "종로/대학로/동묘앞역",
+                  "hour": "2026-06-09T08:00",
+                  "platform": "yanolja",
+                  "avg": 67480,
+                  "count": 65
+                },
+                {
+                  "city": "서울",
+                  "district": "종로/대학로/동묘앞역",
+                  "hour": "2026-06-09T09:00",
+                  "platform": "yanolja",
+                  "avg": 67158,
+                  "count": 59
+                },
+                {
+                  "city": "서울",
+                  "district": "종로/대학로/동묘앞역",
+                  "hour": "2026-06-09T10:00",
+                  "platform": "yanolja",
+                  "avg": 66787,
+                  "count": 114
+                },
+                {
+                  "city": "서울",
+                  "district": "종로/대학로/동묘앞역",
+                  "hour": "2026-06-09T11:00",
+                  "platform": "yanolja",
+                  "avg": 66473,
+                  "count": 57
+                },
+                {
+                  "city": "서울",
+                  "district": "종로/대학로/동묘앞역",
+                  "hour": "2026-06-09T12:00",
+                  "platform": "yanolja",
+                  "avg": 65440,
+                  "count": 55
+                }
+              ]
+            },
+            {
+              "city": "서울",
+              "district": "연신내/불광/응암",
+              "avg": 44590,
+              "count": 156,
+              "min": 32000,
+              "max": 77000,
+              "platforms": {
+                "yanolja": {
+                  "avg": 44590,
+                  "count": 156
+                }
+              },
+              "trend": [
+                {
+                  "city": "서울",
+                  "district": "연신내/불광/응암",
+                  "hour": "2026-06-09T06:00",
+                  "platform": "yanolja",
+                  "avg": 45245,
+                  "count": 106
+                },
+                {
+                  "city": "서울",
+                  "district": "연신내/불광/응암",
+                  "hour": "2026-06-09T07:00",
+                  "platform": "yanolja",
+                  "avg": 45321,
+                  "count": 53
+                },
+                {
+                  "city": "서울",
+                  "district": "연신내/불광/응암",
+                  "hour": "2026-06-09T08:00",
+                  "platform": "yanolja",
+                  "avg": 45113,
+                  "count": 53
+                },
+                {
+                  "city": "서울",
+                  "district": "연신내/불광/응암",
+                  "hour": "2026-06-09T09:00",
+                  "platform": "yanolja",
+                  "avg": 44981,
+                  "count": 52
+                },
+                {
+                  "city": "서울",
+                  "district": "연신내/불광/응암",
+                  "hour": "2026-06-09T10:00",
+                  "platform": "yanolja",
+                  "avg": 44596,
+                  "count": 104
+                },
+                {
+                  "city": "서울",
+                  "district": "연신내/불광/응암",
+                  "hour": "2026-06-09T11:00",
+                  "platform": "yanolja",
+                  "avg": 44750,
+                  "count": 52
+                },
+                {
+                  "city": "서울",
+                  "district": "연신내/불광/응암",
+                  "hour": "2026-06-09T12:00",
+                  "platform": "yanolja",
+                  "avg": 44346,
+                  "count": 52
+                }
+              ]
+            },
+            {
+              "city": "서울",
+              "district": "천호/길동/둔촌",
+              "avg": 42370,
+              "count": 144,
+              "min": 30000,
+              "max": 88000,
+              "platforms": {
+                "yanolja": {
+                  "avg": 42370,
+                  "count": 144
+                }
+              },
+              "trend": [
+                {
+                  "city": "서울",
+                  "district": "천호/길동/둔촌",
+                  "hour": "2026-06-09T06:00",
+                  "platform": "yanolja",
+                  "avg": 44483,
+                  "count": 98
+                },
+                {
+                  "city": "서울",
+                  "district": "천호/길동/둔촌",
+                  "hour": "2026-06-09T07:00",
+                  "platform": "yanolja",
+                  "avg": 44585,
+                  "count": 49
+                },
+                {
+                  "city": "서울",
+                  "district": "천호/길동/둔촌",
+                  "hour": "2026-06-09T08:00",
+                  "platform": "yanolja",
+                  "avg": 44157,
+                  "count": 49
+                },
+                {
+                  "city": "서울",
+                  "district": "천호/길동/둔촌",
+                  "hour": "2026-06-09T09:00",
+                  "platform": "yanolja",
+                  "avg": 42259,
+                  "count": 47
+                },
+                {
+                  "city": "서울",
+                  "district": "천호/길동/둔촌",
+                  "hour": "2026-06-09T10:00",
+                  "platform": "yanolja",
+                  "avg": 41998,
+                  "count": 96
+                },
+                {
+                  "city": "서울",
+                  "district": "천호/길동/둔촌",
+                  "hour": "2026-06-09T11:00",
+                  "platform": "yanolja",
+                  "avg": 42227,
+                  "count": 48
+                },
+                {
+                  "city": "서울",
+                  "district": "천호/길동/둔촌",
+                  "hour": "2026-06-09T12:00",
+                  "platform": "yanolja",
+                  "avg": 42968,
+                  "count": 48
+                }
+              ]
+            },
+            {
+              "city": "서울",
+              "district": "잠실새내/신천/종합운동장",
+              "avg": 44395,
+              "count": 132,
+              "min": 35000,
+              "max": 80000,
+              "platforms": {
+                "yanolja": {
+                  "avg": 44571,
+                  "count": 84
+                },
+                "yeogi": {
+                  "avg": 44086,
+                  "count": 48
+                }
+              },
+              "trend": [
+                {
+                  "city": "서울",
+                  "district": "잠실새내/신천/종합운동장",
+                  "hour": "2026-06-09T06:00",
+                  "platform": "yanolja",
+                  "avg": 49857,
+                  "count": 56
+                },
+                {
+                  "city": "서울",
+                  "district": "잠실새내/신천/종합운동장",
+                  "hour": "2026-06-09T06:00",
+                  "platform": "yeogi",
+                  "avg": 47276,
+                  "count": 16
+                },
+                {
+                  "city": "서울",
+                  "district": "잠실새내/신천/종합운동장",
+                  "hour": "2026-06-09T07:00",
+                  "platform": "yanolja",
+                  "avg": 49464,
+                  "count": 28
+                },
+                {
+                  "city": "서울",
+                  "district": "잠실새내/신천/종합운동장",
+                  "hour": "2026-06-09T07:00",
+                  "platform": "yeogi",
+                  "avg": 46963,
+                  "count": 16
+                },
+                {
+                  "city": "서울",
+                  "district": "잠실새내/신천/종합운동장",
+                  "hour": "2026-06-09T08:00",
+                  "platform": "yanolja",
+                  "avg": 49464,
+                  "count": 28
+                },
+                {
+                  "city": "서울",
+                  "district": "잠실새내/신천/종합운동장",
+                  "hour": "2026-06-09T08:00",
+                  "platform": "yeogi",
+                  "avg": 46026,
+                  "count": 16
+                },
+                {
+                  "city": "서울",
+                  "district": "잠실새내/신천/종합운동장",
+                  "hour": "2026-06-09T09:00",
+                  "platform": "yanolja",
+                  "avg": 48571,
+                  "count": 28
+                },
+                {
+                  "city": "서울",
+                  "district": "잠실새내/신천/종합운동장",
+                  "hour": "2026-06-09T09:00",
+                  "platform": "yeogi",
+                  "avg": 45526,
+                  "count": 16
+                },
+                {
+                  "city": "서울",
+                  "district": "잠실새내/신천/종합운동장",
+                  "hour": "2026-06-09T10:00",
+                  "platform": "yanolja",
+                  "avg": 46357,
+                  "count": 56
+                },
+                {
+                  "city": "서울",
+                  "district": "잠실새내/신천/종합운동장",
+                  "hour": "2026-06-09T10:00",
+                  "platform": "yeogi",
+                  "avg": 44351,
+                  "count": 32
+                },
+                {
+                  "city": "서울",
+                  "district": "잠실새내/신천/종합운동장",
+                  "hour": "2026-06-09T11:00",
+                  "platform": "yanolja",
+                  "avg": 44250,
+                  "count": 28
+                },
+                {
+                  "city": "서울",
+                  "district": "잠실새내/신천/종합운동장",
+                  "hour": "2026-06-09T11:00",
+                  "platform": "yeogi",
+                  "avg": 43382,
+                  "count": 16
+                },
+                {
+                  "city": "서울",
+                  "district": "잠실새내/신천/종합운동장",
+                  "hour": "2026-06-09T12:00",
+                  "platform": "yanolja",
+                  "avg": 43750,
+                  "count": 28
+                },
+                {
+                  "city": "서울",
+                  "district": "잠실새내/신천/종합운동장",
+                  "hour": "2026-06-09T12:00",
+                  "platform": "yeogi",
+                  "avg": 44244,
+                  "count": 16
                 }
               ]
             },
@@ -732,257 +1238,205 @@
             },
             {
               "city": "서울",
-              "district": "구로/금천/오류/신도림",
-              "avg": 47540,
-              "count": 120,
-              "min": 30000,
-              "max": 100000,
+              "district": "서초/신사/방배",
+              "avg": 78184,
+              "count": 108,
+              "min": 45000,
+              "max": 144760,
               "platforms": {
                 "yanolja": {
-                  "avg": 47540,
-                  "count": 120
-                }
-              },
-              "trend": [
-                {
-                  "city": "서울",
-                  "district": "구로/금천/오류/신도림",
-                  "hour": "2026-06-09T06:00",
-                  "platform": "yanolja",
-                  "avg": 48527,
-                  "count": 125
-                },
-                {
-                  "city": "서울",
-                  "district": "구로/금천/오류/신도림",
-                  "hour": "2026-06-09T07:00",
-                  "platform": "yanolja",
-                  "avg": 48797,
-                  "count": 62
-                },
-                {
-                  "city": "서울",
-                  "district": "구로/금천/오류/신도림",
-                  "hour": "2026-06-09T08:00",
-                  "platform": "yanolja",
-                  "avg": 48797,
-                  "count": 62
-                },
-                {
-                  "city": "서울",
-                  "district": "구로/금천/오류/신도림",
-                  "hour": "2026-06-09T09:00",
-                  "platform": "yanolja",
-                  "avg": 48636,
-                  "count": 62
-                },
-                {
-                  "city": "서울",
-                  "district": "구로/금천/오류/신도림",
-                  "hour": "2026-06-09T10:00",
-                  "platform": "yanolja",
-                  "avg": 47626,
-                  "count": 120
-                },
-                {
-                  "city": "서울",
-                  "district": "구로/금천/오류/신도림",
-                  "hour": "2026-06-09T11:00",
-                  "platform": "yanolja",
-                  "avg": 47819,
+                  "avg": 72805,
                   "count": 60
-                }
-              ]
-            },
-            {
-              "city": "서울",
-              "district": "종로/대학로/동묘앞역",
-              "avg": 66419,
-              "count": 114,
-              "min": 34500,
-              "max": 200000,
-              "platforms": {
-                "yanolja": {
-                  "avg": 66419,
-                  "count": 114
-                }
-              },
-              "trend": [
-                {
-                  "city": "서울",
-                  "district": "종로/대학로/동묘앞역",
-                  "hour": "2026-06-09T06:00",
-                  "platform": "yanolja",
-                  "avg": 67039,
-                  "count": 128
                 },
-                {
-                  "city": "서울",
-                  "district": "종로/대학로/동묘앞역",
-                  "hour": "2026-06-09T07:00",
-                  "platform": "yanolja",
-                  "avg": 68346,
-                  "count": 64
-                },
-                {
-                  "city": "서울",
-                  "district": "종로/대학로/동묘앞역",
-                  "hour": "2026-06-09T08:00",
-                  "platform": "yanolja",
-                  "avg": 67480,
-                  "count": 65
-                },
-                {
-                  "city": "서울",
-                  "district": "종로/대학로/동묘앞역",
-                  "hour": "2026-06-09T09:00",
-                  "platform": "yanolja",
-                  "avg": 67158,
-                  "count": 59
-                },
-                {
-                  "city": "서울",
-                  "district": "종로/대학로/동묘앞역",
-                  "hour": "2026-06-09T10:00",
-                  "platform": "yanolja",
-                  "avg": 66787,
-                  "count": 114
-                },
-                {
-                  "city": "서울",
-                  "district": "종로/대학로/동묘앞역",
-                  "hour": "2026-06-09T11:00",
-                  "platform": "yanolja",
-                  "avg": 66473,
-                  "count": 57
-                }
-              ]
-            },
-            {
-              "city": "서울",
-              "district": "연신내/불광/응암",
-              "avg": 44712,
-              "count": 104,
-              "min": 33000,
-              "max": 70000,
-              "platforms": {
-                "yanolja": {
-                  "avg": 44712,
-                  "count": 104
-                }
-              },
-              "trend": [
-                {
-                  "city": "서울",
-                  "district": "연신내/불광/응암",
-                  "hour": "2026-06-09T06:00",
-                  "platform": "yanolja",
-                  "avg": 45245,
-                  "count": 106
-                },
-                {
-                  "city": "서울",
-                  "district": "연신내/불광/응암",
-                  "hour": "2026-06-09T07:00",
-                  "platform": "yanolja",
-                  "avg": 45321,
-                  "count": 53
-                },
-                {
-                  "city": "서울",
-                  "district": "연신내/불광/응암",
-                  "hour": "2026-06-09T08:00",
-                  "platform": "yanolja",
-                  "avg": 45113,
-                  "count": 53
-                },
-                {
-                  "city": "서울",
-                  "district": "연신내/불광/응암",
-                  "hour": "2026-06-09T09:00",
-                  "platform": "yanolja",
-                  "avg": 44981,
-                  "count": 52
-                },
-                {
-                  "city": "서울",
-                  "district": "연신내/불광/응암",
-                  "hour": "2026-06-09T10:00",
-                  "platform": "yanolja",
-                  "avg": 44596,
-                  "count": 104
-                },
-                {
-                  "city": "서울",
-                  "district": "연신내/불광/응암",
-                  "hour": "2026-06-09T11:00",
-                  "platform": "yanolja",
-                  "avg": 44750,
-                  "count": 52
-                }
-              ]
-            },
-            {
-              "city": "서울",
-              "district": "천호/길동/둔촌",
-              "avg": 42070,
-              "count": 96,
-              "min": 30000,
-              "max": 88000,
-              "platforms": {
-                "yanolja": {
-                  "avg": 42070,
-                  "count": 96
-                }
-              },
-              "trend": [
-                {
-                  "city": "서울",
-                  "district": "천호/길동/둔촌",
-                  "hour": "2026-06-09T06:00",
-                  "platform": "yanolja",
-                  "avg": 44483,
-                  "count": 98
-                },
-                {
-                  "city": "서울",
-                  "district": "천호/길동/둔촌",
-                  "hour": "2026-06-09T07:00",
-                  "platform": "yanolja",
-                  "avg": 44585,
-                  "count": 49
-                },
-                {
-                  "city": "서울",
-                  "district": "천호/길동/둔촌",
-                  "hour": "2026-06-09T08:00",
-                  "platform": "yanolja",
-                  "avg": 44157,
-                  "count": 49
-                },
-                {
-                  "city": "서울",
-                  "district": "천호/길동/둔촌",
-                  "hour": "2026-06-09T09:00",
-                  "platform": "yanolja",
-                  "avg": 42259,
-                  "count": 47
-                },
-                {
-                  "city": "서울",
-                  "district": "천호/길동/둔촌",
-                  "hour": "2026-06-09T10:00",
-                  "platform": "yanolja",
-                  "avg": 41998,
-                  "count": 96
-                },
-                {
-                  "city": "서울",
-                  "district": "천호/길동/둔촌",
-                  "hour": "2026-06-09T11:00",
-                  "platform": "yanolja",
-                  "avg": 42227,
+                "yeogi": {
+                  "avg": 84908,
                   "count": 48
+                }
+              },
+              "trend": [
+                {
+                  "city": "서울",
+                  "district": "서초/신사/방배",
+                  "hour": "2026-06-09T06:00",
+                  "platform": "yanolja",
+                  "avg": 73322,
+                  "count": 40
+                },
+                {
+                  "city": "서울",
+                  "district": "서초/신사/방배",
+                  "hour": "2026-06-09T06:00",
+                  "platform": "yeogi",
+                  "avg": 93089,
+                  "count": 36
+                },
+                {
+                  "city": "서울",
+                  "district": "서초/신사/방배",
+                  "hour": "2026-06-09T07:00",
+                  "platform": "yanolja",
+                  "avg": 73172,
+                  "count": 20
+                },
+                {
+                  "city": "서울",
+                  "district": "서초/신사/방배",
+                  "hour": "2026-06-09T07:00",
+                  "platform": "yeogi",
+                  "avg": 93089,
+                  "count": 18
+                },
+                {
+                  "city": "서울",
+                  "district": "서초/신사/방배",
+                  "hour": "2026-06-09T08:00",
+                  "platform": "yanolja",
+                  "avg": 73472,
+                  "count": 20
+                },
+                {
+                  "city": "서울",
+                  "district": "서초/신사/방배",
+                  "hour": "2026-06-09T08:00",
+                  "platform": "yeogi",
+                  "avg": 88530,
+                  "count": 17
+                },
+                {
+                  "city": "서울",
+                  "district": "서초/신사/방배",
+                  "hour": "2026-06-09T09:00",
+                  "platform": "yanolja",
+                  "avg": 73022,
+                  "count": 20
+                },
+                {
+                  "city": "서울",
+                  "district": "서초/신사/방배",
+                  "hour": "2026-06-09T09:00",
+                  "platform": "yeogi",
+                  "avg": 87389,
+                  "count": 17
+                },
+                {
+                  "city": "서울",
+                  "district": "서초/신사/방배",
+                  "hour": "2026-06-09T10:00",
+                  "platform": "yanolja",
+                  "avg": 72972,
+                  "count": 40
+                },
+                {
+                  "city": "서울",
+                  "district": "서초/신사/방배",
+                  "hour": "2026-06-09T10:00",
+                  "platform": "yeogi",
+                  "avg": 85273,
+                  "count": 32
+                },
+                {
+                  "city": "서울",
+                  "district": "서초/신사/방배",
+                  "hour": "2026-06-09T11:00",
+                  "platform": "yanolja",
+                  "avg": 72972,
+                  "count": 20
+                },
+                {
+                  "city": "서울",
+                  "district": "서초/신사/방배",
+                  "hour": "2026-06-09T11:00",
+                  "platform": "yeogi",
+                  "avg": 85116,
+                  "count": 16
+                },
+                {
+                  "city": "서울",
+                  "district": "서초/신사/방배",
+                  "hour": "2026-06-09T12:00",
+                  "platform": "yanolja",
+                  "avg": 72472,
+                  "count": 20
+                },
+                {
+                  "city": "서울",
+                  "district": "서초/신사/방배",
+                  "hour": "2026-06-09T12:00",
+                  "platform": "yeogi",
+                  "avg": 84491,
+                  "count": 16
+                }
+              ]
+            },
+            {
+              "city": "서울",
+              "district": "이태원/용산/서울역/명동",
+              "avg": 86639,
+              "count": 100,
+              "min": 32000,
+              "max": 235000,
+              "platforms": {
+                "yanolja": {
+                  "avg": 86639,
+                  "count": 100
+                }
+              },
+              "trend": [
+                {
+                  "city": "서울",
+                  "district": "이태원/용산/서울역/명동",
+                  "hour": "2026-06-09T06:00",
+                  "platform": "yanolja",
+                  "avg": 84546,
+                  "count": 74
+                },
+                {
+                  "city": "서울",
+                  "district": "이태원/용산/서울역/명동",
+                  "hour": "2026-06-09T07:00",
+                  "platform": "yanolja",
+                  "avg": 85344,
+                  "count": 37
+                },
+                {
+                  "city": "서울",
+                  "district": "이태원/용산/서울역/명동",
+                  "hour": "2026-06-09T08:00",
+                  "platform": "yanolja",
+                  "avg": 85951,
+                  "count": 36
+                },
+                {
+                  "city": "서울",
+                  "district": "이태원/용산/서울역/명동",
+                  "hour": "2026-06-09T09:00",
+                  "platform": "yanolja",
+                  "avg": 86089,
+                  "count": 36
+                },
+                {
+                  "city": "서울",
+                  "district": "이태원/용산/서울역/명동",
+                  "hour": "2026-06-09T10:00",
+                  "platform": "yanolja",
+                  "avg": 86908,
+                  "count": 71
+                },
+                {
+                  "city": "서울",
+                  "district": "이태원/용산/서울역/명동",
+                  "hour": "2026-06-09T11:00",
+                  "platform": "yanolja",
+                  "avg": 86892,
+                  "count": 35
+                },
+                {
+                  "city": "서울",
+                  "district": "이태원/용산/서울역/명동",
+                  "hour": "2026-06-09T12:00",
+                  "platform": "yanolja",
+                  "avg": 85714,
+                  "count": 30
                 }
               ]
             },
@@ -1116,117 +1570,73 @@
             },
             {
               "city": "서울",
-              "district": "잠실새내/신천/종합운동장",
-              "avg": 44628,
+              "district": "성신여대/성북/월곡",
+              "avg": 50344,
               "count": 88,
-              "min": 35000,
-              "max": 80000,
+              "min": 34000,
+              "max": 70000,
               "platforms": {
                 "yanolja": {
-                  "avg": 44982,
-                  "count": 56
-                },
-                "yeogi": {
-                  "avg": 44007,
-                  "count": 32
+                  "avg": 50344,
+                  "count": 88
                 }
               },
               "trend": [
                 {
                   "city": "서울",
-                  "district": "잠실새내/신천/종합운동장",
+                  "district": "성신여대/성북/월곡",
                   "hour": "2026-06-09T06:00",
                   "platform": "yanolja",
-                  "avg": 49857,
-                  "count": 56
+                  "avg": 49225,
+                  "count": 60
                 },
                 {
                   "city": "서울",
-                  "district": "잠실새내/신천/종합운동장",
-                  "hour": "2026-06-09T06:00",
-                  "platform": "yeogi",
-                  "avg": 47276,
-                  "count": 16
-                },
-                {
-                  "city": "서울",
-                  "district": "잠실새내/신천/종합운동장",
+                  "district": "성신여대/성북/월곡",
                   "hour": "2026-06-09T07:00",
                   "platform": "yanolja",
-                  "avg": 49464,
-                  "count": 28
+                  "avg": 49225,
+                  "count": 30
                 },
                 {
                   "city": "서울",
-                  "district": "잠실새내/신천/종합운동장",
-                  "hour": "2026-06-09T07:00",
-                  "platform": "yeogi",
-                  "avg": 46963,
-                  "count": 16
-                },
-                {
-                  "city": "서울",
-                  "district": "잠실새내/신천/종합운동장",
+                  "district": "성신여대/성북/월곡",
                   "hour": "2026-06-09T08:00",
                   "platform": "yanolja",
-                  "avg": 49464,
-                  "count": 28
+                  "avg": 49492,
+                  "count": 30
                 },
                 {
                   "city": "서울",
-                  "district": "잠실새내/신천/종합운동장",
-                  "hour": "2026-06-09T08:00",
-                  "platform": "yeogi",
-                  "avg": 46026,
-                  "count": 16
-                },
-                {
-                  "city": "서울",
-                  "district": "잠실새내/신천/종합운동장",
+                  "district": "성신여대/성북/월곡",
                   "hour": "2026-06-09T09:00",
                   "platform": "yanolja",
-                  "avg": 48571,
-                  "count": 28
+                  "avg": 49558,
+                  "count": 30
                 },
                 {
                   "city": "서울",
-                  "district": "잠실새내/신천/종합운동장",
-                  "hour": "2026-06-09T09:00",
-                  "platform": "yeogi",
-                  "avg": 45526,
-                  "count": 16
-                },
-                {
-                  "city": "서울",
-                  "district": "잠실새내/신천/종합운동장",
+                  "district": "성신여대/성북/월곡",
                   "hour": "2026-06-09T10:00",
                   "platform": "yanolja",
-                  "avg": 46357,
-                  "count": 56
+                  "avg": 50558,
+                  "count": 60
                 },
                 {
                   "city": "서울",
-                  "district": "잠실새내/신천/종합운동장",
-                  "hour": "2026-06-09T10:00",
-                  "platform": "yeogi",
-                  "avg": 44351,
-                  "count": 32
-                },
-                {
-                  "city": "서울",
-                  "district": "잠실새내/신천/종합운동장",
+                  "district": "성신여대/성북/월곡",
                   "hour": "2026-06-09T11:00",
                   "platform": "yanolja",
-                  "avg": 44250,
-                  "count": 28
+                  "avg": 50371,
+                  "count": 29
                 },
                 {
                   "city": "서울",
-                  "district": "잠실새내/신천/종합운동장",
-                  "hour": "2026-06-09T11:00",
-                  "platform": "yeogi",
-                  "avg": 43382,
-                  "count": 16
+                  "district": "성신여대/성북/월곡",
+                  "hour": "2026-06-09T12:00",
+                  "platform": "yanolja",
+                  "avg": 50095,
+                  "count": 29
                 }
               ]
             },
@@ -1355,250 +1765,6 @@
                   "platform": "yanolja",
                   "avg": 65468,
                   "count": 37
-                }
-              ]
-            },
-            {
-              "city": "서울",
-              "district": "서초/신사/방배",
-              "avg": 78369,
-              "count": 72,
-              "min": 45000,
-              "max": 144760,
-              "platforms": {
-                "yanolja": {
-                  "avg": 72972,
-                  "count": 40
-                },
-                "yeogi": {
-                  "avg": 85116,
-                  "count": 32
-                }
-              },
-              "trend": [
-                {
-                  "city": "서울",
-                  "district": "서초/신사/방배",
-                  "hour": "2026-06-09T06:00",
-                  "platform": "yanolja",
-                  "avg": 73322,
-                  "count": 40
-                },
-                {
-                  "city": "서울",
-                  "district": "서초/신사/방배",
-                  "hour": "2026-06-09T06:00",
-                  "platform": "yeogi",
-                  "avg": 93089,
-                  "count": 36
-                },
-                {
-                  "city": "서울",
-                  "district": "서초/신사/방배",
-                  "hour": "2026-06-09T07:00",
-                  "platform": "yanolja",
-                  "avg": 73172,
-                  "count": 20
-                },
-                {
-                  "city": "서울",
-                  "district": "서초/신사/방배",
-                  "hour": "2026-06-09T07:00",
-                  "platform": "yeogi",
-                  "avg": 93089,
-                  "count": 18
-                },
-                {
-                  "city": "서울",
-                  "district": "서초/신사/방배",
-                  "hour": "2026-06-09T08:00",
-                  "platform": "yanolja",
-                  "avg": 73472,
-                  "count": 20
-                },
-                {
-                  "city": "서울",
-                  "district": "서초/신사/방배",
-                  "hour": "2026-06-09T08:00",
-                  "platform": "yeogi",
-                  "avg": 88530,
-                  "count": 17
-                },
-                {
-                  "city": "서울",
-                  "district": "서초/신사/방배",
-                  "hour": "2026-06-09T09:00",
-                  "platform": "yanolja",
-                  "avg": 73022,
-                  "count": 20
-                },
-                {
-                  "city": "서울",
-                  "district": "서초/신사/방배",
-                  "hour": "2026-06-09T09:00",
-                  "platform": "yeogi",
-                  "avg": 87389,
-                  "count": 17
-                },
-                {
-                  "city": "서울",
-                  "district": "서초/신사/방배",
-                  "hour": "2026-06-09T10:00",
-                  "platform": "yanolja",
-                  "avg": 72972,
-                  "count": 40
-                },
-                {
-                  "city": "서울",
-                  "district": "서초/신사/방배",
-                  "hour": "2026-06-09T10:00",
-                  "platform": "yeogi",
-                  "avg": 85273,
-                  "count": 32
-                },
-                {
-                  "city": "서울",
-                  "district": "서초/신사/방배",
-                  "hour": "2026-06-09T11:00",
-                  "platform": "yanolja",
-                  "avg": 72972,
-                  "count": 20
-                },
-                {
-                  "city": "서울",
-                  "district": "서초/신사/방배",
-                  "hour": "2026-06-09T11:00",
-                  "platform": "yeogi",
-                  "avg": 85116,
-                  "count": 16
-                }
-              ]
-            },
-            {
-              "city": "서울",
-              "district": "이태원/용산/서울역/명동",
-              "avg": 87035,
-              "count": 70,
-              "min": 32000,
-              "max": 235000,
-              "platforms": {
-                "yanolja": {
-                  "avg": 87035,
-                  "count": 70
-                }
-              },
-              "trend": [
-                {
-                  "city": "서울",
-                  "district": "이태원/용산/서울역/명동",
-                  "hour": "2026-06-09T06:00",
-                  "platform": "yanolja",
-                  "avg": 84546,
-                  "count": 74
-                },
-                {
-                  "city": "서울",
-                  "district": "이태원/용산/서울역/명동",
-                  "hour": "2026-06-09T07:00",
-                  "platform": "yanolja",
-                  "avg": 85344,
-                  "count": 37
-                },
-                {
-                  "city": "서울",
-                  "district": "이태원/용산/서울역/명동",
-                  "hour": "2026-06-09T08:00",
-                  "platform": "yanolja",
-                  "avg": 85951,
-                  "count": 36
-                },
-                {
-                  "city": "서울",
-                  "district": "이태원/용산/서울역/명동",
-                  "hour": "2026-06-09T09:00",
-                  "platform": "yanolja",
-                  "avg": 86089,
-                  "count": 36
-                },
-                {
-                  "city": "서울",
-                  "district": "이태원/용산/서울역/명동",
-                  "hour": "2026-06-09T10:00",
-                  "platform": "yanolja",
-                  "avg": 86908,
-                  "count": 71
-                },
-                {
-                  "city": "서울",
-                  "district": "이태원/용산/서울역/명동",
-                  "hour": "2026-06-09T11:00",
-                  "platform": "yanolja",
-                  "avg": 86892,
-                  "count": 35
-                }
-              ]
-            },
-            {
-              "city": "서울",
-              "district": "성신여대/성북/월곡",
-              "avg": 50466,
-              "count": 59,
-              "min": 34000,
-              "max": 70000,
-              "platforms": {
-                "yanolja": {
-                  "avg": 50466,
-                  "count": 59
-                }
-              },
-              "trend": [
-                {
-                  "city": "서울",
-                  "district": "성신여대/성북/월곡",
-                  "hour": "2026-06-09T06:00",
-                  "platform": "yanolja",
-                  "avg": 49225,
-                  "count": 60
-                },
-                {
-                  "city": "서울",
-                  "district": "성신여대/성북/월곡",
-                  "hour": "2026-06-09T07:00",
-                  "platform": "yanolja",
-                  "avg": 49225,
-                  "count": 30
-                },
-                {
-                  "city": "서울",
-                  "district": "성신여대/성북/월곡",
-                  "hour": "2026-06-09T08:00",
-                  "platform": "yanolja",
-                  "avg": 49492,
-                  "count": 30
-                },
-                {
-                  "city": "서울",
-                  "district": "성신여대/성북/월곡",
-                  "hour": "2026-06-09T09:00",
-                  "platform": "yanolja",
-                  "avg": 49558,
-                  "count": 30
-                },
-                {
-                  "city": "서울",
-                  "district": "성신여대/성북/월곡",
-                  "hour": "2026-06-09T10:00",
-                  "platform": "yanolja",
-                  "avg": 50558,
-                  "count": 60
-                },
-                {
-                  "city": "서울",
-                  "district": "성신여대/성북/월곡",
-                  "hour": "2026-06-09T11:00",
-                  "platform": "yanolja",
-                  "avg": 50371,
-                  "count": 29
                 }
               ]
             },
@@ -4763,6 +4929,18 @@
           "platform": "yeogi",
           "avg": 65810,
           "count": 92
+        },
+        {
+          "hour": "2026-06-09T12:00",
+          "platform": "yanolja",
+          "avg": 55352,
+          "count": 778
+        },
+        {
+          "hour": "2026-06-09T12:00",
+          "platform": "yeogi",
+          "avg": 62409,
+          "count": 90
         }
       ]
     },
