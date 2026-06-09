@@ -91,15 +91,28 @@
 
   .loading{text-align:center;padding:50px;color:var(--muted);font-size:.88rem;}
 
-  /* 호텔 목록 */
-  .hotel-section{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px;}
-  @media(max-width:580px){.hotel-section{grid-template-columns:1fr;}}
-  .hotel-item{display:flex;align-items:center;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--border);}
-  .hotel-item:last-child{border-bottom:none;}
-  .hotel-name{font-size:.82rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:200px;}
-  .hotel-price{font-size:.85rem;font-weight:700;flex-shrink:0;margin-left:8px;}
-  .hotel-plat{font-size:.66rem;color:var(--muted);flex-shrink:0;}
-  .hotel-rank{font-size:.68rem;color:var(--muted);width:16px;flex-shrink:0;}
+  /* 지역 요약 박스 */
+  .region-summary{background:linear-gradient(135deg,#1a1d27,#1e2240);border:1px solid var(--accent);border-radius:12px;padding:16px 18px;margin-bottom:14px;}
+  .region-summary-title{font-size:.8rem;color:var(--accent);font-weight:700;margin-bottom:12px;letter-spacing:.04em;}
+  .region-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px;}
+  .rs-card{background:rgba(255,255,255,.04);border-radius:8px;padding:10px 12px;text-align:center;}
+  .rs-label{font-size:.68rem;color:var(--muted);margin-bottom:4px;}
+  .rs-value{font-size:1.2rem;font-weight:700;}
+
+  /* Top3 테이블 */
+  .top3-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  @media(max-width:560px){.top3-grid{grid-template-columns:1fr;}}
+  .top3-box{background:rgba(255,255,255,.03);border-radius:8px;padding:12px;}
+  .top3-title{font-size:.72rem;font-weight:700;letter-spacing:.04em;margin-bottom:9px;display:flex;align-items:center;gap:5px;}
+  .top3-row{display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.06);}
+  .top3-row:last-child{border-bottom:none;}
+  .top3-rank{width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:700;flex-shrink:0;}
+  .top3-rank.expensive{background:rgba(244,67,54,.15);color:#f44336;}
+  .top3-rank.cheap{background:rgba(76,175,80,.15);color:#4caf50;}
+  .top3-info{flex:1;min-width:0;}
+  .top3-name{font-size:.84rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .top3-plat{font-size:.66rem;color:var(--muted);margin-top:1px;}
+  .top3-price{font-size:.95rem;font-weight:700;flex-shrink:0;}
 </style>
 </head>
 <body>
@@ -171,58 +184,41 @@ function render(){
       ).join('')}
     </div>
 
-    <!-- 요약 카드 -->
-    <div class="stats-row">
-      <div class="stat-card hl">
-        <div class="stat-label">📍 ${title}</div>
-        <div class="stat-value">${won(stats?.avg)}</div>
-        <div class="stat-sub">수집 ${cnt(stats?.count)}</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-label">최저가</div>
-        <div class="stat-value" style="color:var(--green);font-size:1.15rem">${won(stats?.min)}</div>
-        <div class="stat-sub">해당 지역 기준</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-label">최고가</div>
-        <div class="stat-value" style="color:var(--red);font-size:1.15rem">${won(stats?.max)}</div>
-        <div class="stat-sub">해당 지역 기준</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-label">수집 플랫폼</div>
-        <div style="margin-top:4px;display:flex;flex-direction:column;gap:4px">
-          ${renderPlatStats(gCity==='전국'?d.platforms:d.cities.find(c=>c.city===gCity)?.districts?.find(dd=>dd.district===gDistrict)||d.cities.find(c=>c.city===gCity))}
-        </div>
-      </div>
-    </div>
-
     <!-- 지역 선택 패널 -->
     <div class="region-panel">
-      <!-- 좌: 시/도 -->
       <div class="city-list">
         <div class="city-list-item ${'전국'===gCity?'active':''}" onclick="selectCity('전국')">전국 전체</div>
         ${d.cities.map(c=>
           `<div class="city-list-item ${c.city===gCity?'active':''}" onclick="selectCity('${c.city}')">${c.city}</div>`
         ).join('')}
       </div>
-
-      <!-- 우: 구 단위 -->
       <div class="district-panel">
         ${renderDistrictPanel(d)}
       </div>
     </div>
 
-    <!-- 트렌드 차트 -->
-    <div class="chart-panel">
-      <div class="panel-title">📈 24시간 트렌드 — ${title}</div>
-      <div class="chart-wrap"><canvas id="trendChart"></canvas></div>
+    <!-- ① 지역 선택 시: 평균/최고/최저 + Top3/Bottom3 -->
+    ${!isNation ? renderRegionSummary(d, stats) : `
+    <!-- ② 전국 뷰: 간단 통계 + 지역 순위 -->
+    <div class="stats-row">
+      <div class="stat-card hl">
+        <div class="stat-label">전국 평균 객단가</div>
+        <div class="stat-value">${won(stats?.avg)}</div>
+        <div class="stat-sub">수집 ${cnt(stats?.count)}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">전국 최저가</div>
+        <div class="stat-value" style="color:var(--green);font-size:1.15rem">${won(stats?.min)}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">전국 최고가</div>
+        <div class="stat-value" style="color:var(--red);font-size:1.15rem">${won(stats?.max)}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">수집 지역</div>
+        <div class="stat-value" style="font-size:1.2rem">${d.cities.length}<span style="font-size:.85rem;color:var(--muted)">개</span></div>
+      </div>
     </div>
-
-    <!-- 도시 or 구 선택 시: 호텔 Top/Bottom 목록 -->
-    ${gCity !== '전국' ? renderHotelLists(d) : ''}
-
-    <!-- 전국 뷰일 때: 비싼/저렴 TOP10 -->
-    ${gCity==='전국'?`
     <div class="two-col">
       <div class="panel">
         <div class="panel-title">💰 비싼 지역 TOP 10</div>
@@ -232,7 +228,13 @@ function render(){
         <div class="panel-title">💸 저렴한 지역 TOP 10</div>
         ${topDistricts(d,'asc')}
       </div>
-    </div>`:''}
+    </div>`}
+
+    <!-- 트렌드 차트 -->
+    <div class="chart-panel">
+      <div class="panel-title">📈 24시간 트렌드 — ${title}</div>
+      <div class="chart-wrap"><canvas id="trendChart"></canvas></div>
+    </div>
   `;
 
   renderChart(trend);
@@ -292,38 +294,67 @@ function renderDistrictPanel(d){
   `;
 }
 
-// 호텔 Top/Bottom 목록 렌더
-function renderHotelLists(d){
+// 지역 선택 시 요약 (평균/최고/최저 + Top3/Bottom3)
+function renderRegionSummary(d, stats){
   const cObj=d.cities.find(c=>c.city===gCity);
   if(!cObj) return '';
-  // 구 선택 시 → 구 데이터 / 도시만 선택 시 → 도시 통합 데이터
-  const dObj=gDistrict ? cObj?.districts?.find(dd=>dd.district===gDistrict) : null;
-  const src=dObj || cObj;
-  const top=src?.top5||[], bot=src?.bottom5||[];
-  if(!top.length && !bot.length) return '';
+  const dObj=gDistrict ? cObj.districts?.find(dd=>dd.district===gDistrict) : null;
+  const src=dObj||cObj;
+  const top3=src?.top3||[], bot3=src?.bottom3||[];
   const platColor=p=>p==='yanolja'?'#4f6ef7':'#f76f4f';
-  const hotelItem=(h,i)=>`
-    <div class="hotel-item">
-      <div style="display:flex;align-items:center;gap:4px;min-width:0">
-        <span class="hotel-rank">${i+1}</span>
-        <span class="hotel-name" title="${h.hotel_name}">${h.hotel_name}</span>
+  const platLabel=p=>PLAT_LABELS[p]||p;
+
+  const top3Rows=top3.map((h,i)=>`
+    <div class="top3-row">
+      <div class="top3-rank expensive">${i+1}</div>
+      <div class="top3-info">
+        <div class="top3-name" title="${h.hotel_name}">${h.hotel_name}</div>
+        <div class="top3-plat" style="color:${platColor(h.platform)}">${platLabel(h.platform)}</div>
       </div>
-      <div style="display:flex;align-items:center;gap:6px;flex-shrink:0">
-        <span class="hotel-plat" style="color:${platColor(h.platform)}">${PLAT_LABELS[h.platform]||h.platform}</span>
-        <span class="hotel-price" style="color:${top.includes(h)?'var(--red)':'var(--green)'}">${won(h.price)}</span>
+      <div class="top3-price" style="color:#f44336">${won(h.price)}</div>
+    </div>`).join('');
+
+  const bot3Rows=bot3.map((h,i)=>`
+    <div class="top3-row">
+      <div class="top3-rank cheap">${i+1}</div>
+      <div class="top3-info">
+        <div class="top3-name" title="${h.hotel_name}">${h.hotel_name}</div>
+        <div class="top3-plat" style="color:${platColor(h.platform)}">${platLabel(h.platform)}</div>
       </div>
-    </div>`;
+      <div class="top3-price" style="color:#4caf50">${won(h.price)}</div>
+    </div>`).join('');
+
+  const locLabel=gDistrict?`${gCity} · ${gDistrict}`:gCity;
+
   return `
-    <div class="hotel-section">
-      <div class="panel">
-        <div class="panel-title">💰 비싼 숙소 TOP ${top.length}</div>
-        ${top.map((h,i)=>hotelItem(h,i)).join('')}
+  <div class="region-summary">
+    <div class="region-summary-title">📍 ${locLabel} ${TYPE_LABELS[gType]} 현황</div>
+    <div class="region-stats">
+      <div class="rs-card">
+        <div class="rs-label">평균 객단가</div>
+        <div class="rs-value" style="color:var(--accent)">${won(stats?.avg)}</div>
+        <div style="font-size:.66rem;color:var(--muted);margin-top:3px">${cnt(stats?.count)}</div>
       </div>
-      <div class="panel">
-        <div class="panel-title">💸 저렴한 숙소 TOP ${bot.length}</div>
-        ${bot.map((h,i)=>hotelItem(h,i)).join('')}
+      <div class="rs-card">
+        <div class="rs-label">최고가</div>
+        <div class="rs-value" style="color:#f44336">${won(stats?.max)}</div>
       </div>
-    </div>`;
+      <div class="rs-card">
+        <div class="rs-label">최저가</div>
+        <div class="rs-value" style="color:#4caf50">${won(stats?.min)}</div>
+      </div>
+    </div>
+    <div class="top3-grid">
+      <div class="top3-box">
+        <div class="top3-title"><span style="color:#f44336">💰</span> 최고가 TOP 3</div>
+        ${top3Rows||'<div style="color:var(--muted);font-size:.8rem">데이터 없음</div>'}
+      </div>
+      <div class="top3-box">
+        <div class="top3-title"><span style="color:#4caf50">💸</span> 최저가 TOP 3</div>
+        ${bot3Rows||'<div style="color:var(--muted);font-size:.8rem">데이터 없음</div>'}
+      </div>
+    </div>
+  </div>`;
 }
 
 // 전국 TOP 지역 (구 단위)

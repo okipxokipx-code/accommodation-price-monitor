@@ -286,9 +286,9 @@ function exportDashboardData() {
         .forEach(r => { plats[r.platform] = { avg: r.avg, count: r.count }; });
       const trend = districtTrendRows.filter(r => r.city === d.city && r.district === d.district);
       const allHotels = districtTopRows.filter(r => r.city === d.city && r.district === d.district);
-      const top5 = allHotels.slice(0, 5);
-      const bottom5 = [...allHotels].sort((a, b) => a.price - b.price).slice(0, 5);
-      return { ...d, platforms: plats, trend, top5, bottom5 };
+      const top3 = allHotels.slice(0, 3);
+      const bottom3 = [...allHotels].sort((a, b) => a.price - b.price).slice(0, 3);
+      return { ...d, platforms: plats, trend, top3, bottom3 };
     });
 
     // 시 단위로 그룹화 (districts 배열 포함)
@@ -311,8 +311,8 @@ function exportDashboardData() {
     `).all(type, since2h);
     Object.keys(cityMap).forEach(city => {
       const rows = cityTopRows.filter(r => r.city === city);
-      cityMap[city].top5    = rows.slice(0, 5);
-      cityMap[city].bottom5 = [...rows].sort((a, b) => a.price - b.price).slice(0, 5);
+      cityMap[city].top3    = rows.slice(0, 3);
+      cityMap[city].bottom3 = [...rows].sort((a, b) => a.price - b.price).slice(0, 3);
     });
 
     // 시 단위 집계
@@ -350,9 +350,9 @@ function exportDashboardData() {
       cityPlatRows.filter(r => r.city === c.city).forEach(r => { plats[r.platform] = { avg: r.avg, count: r.count }; });
       const trend    = cityTrendRows.filter(r => r.city === c.city);
       const districts = (cityMap[c.city]?.districts) || [];
-      const top5     = cityMap[c.city]?.top5    || [];
-      const bottom5  = cityMap[c.city]?.bottom5 || [];
-      return { ...c, platforms: plats, trend, districts, top5, bottom5 };
+      const top3     = cityMap[c.city]?.top3    || [];
+      const bottom3  = cityMap[c.city]?.bottom3 || [];
+      return { ...c, platforms: plats, trend, districts, top3, bottom3 };
     });
 
     // 전국 시간별 트렌드
