@@ -1,17 +1,17 @@
 {
-  "updatedAt": "2026-06-09T12:23:22.474Z",
+  "updatedAt": "2026-06-09T12:26:17.882Z",
   "types": {
     "motel": {
       "platforms": {
         "all": {
-          "avg": 51144,
-          "count": 9170,
+          "avg": 51206,
+          "count": 7180,
           "min": 8000,
           "max": 400000
         },
         "yanolja": {
-          "avg": 50743,
-          "count": 8897,
+          "avg": 50692,
+          "count": 6907,
           "min": 8000,
           "max": 400000
         },
@@ -25,14 +25,14 @@
       "cities": [
         {
           "city": "서울",
-          "avg": 55470,
-          "count": 3251,
+          "avg": 55988,
+          "count": 2145,
           "min": 20000,
           "max": 300000,
           "platforms": {
             "yanolja": {
-              "avg": 54670,
-              "count": 2978
+              "avg": 54790,
+              "count": 1872
             },
             "yeogi": {
               "avg": 64201,
@@ -143,14 +143,14 @@
             {
               "city": "서울",
               "district": "영등포/여의도",
-              "avg": 50864,
-              "count": 331,
+              "avg": 51297,
+              "count": 240,
               "min": 30000,
               "max": 209000,
               "platforms": {
                 "yanolja": {
-                  "avg": 49344,
-                  "count": 273
+                  "avg": 49155,
+                  "count": 182
                 },
                 "yeogi": {
                   "avg": 58021,
@@ -296,16 +296,16 @@
                 {
                   "city": "서울",
                   "district": "영등포/여의도",
-                  "hotel_name": "여의도 컴포트 인",
-                  "price": 130000,
-                  "platform": "yanolja"
+                  "hotel_name": "페어필드 바이 메리어트 서울",
+                  "price": 127780,
+                  "platform": "yeogi"
                 },
                 {
                   "city": "서울",
                   "district": "영등포/여의도",
-                  "hotel_name": "페어필드 바이 메리어트 서울",
-                  "price": 127780,
-                  "platform": "yeogi"
+                  "hotel_name": "여의도 컴포트 인",
+                  "price": 120000,
+                  "platform": "yanolja"
                 }
               ],
               "bottom5": [
@@ -349,14 +349,14 @@
             {
               "city": "서울",
               "district": "강남/역삼/삼성/논현",
-              "avg": 80731,
-              "count": 258,
+              "avg": 81384,
+              "count": 191,
               "min": 45000,
               "max": 300000,
               "platforms": {
                 "yanolja": {
-                  "avg": 79968,
-                  "count": 199
+                  "avg": 80525,
+                  "count": 132
                 },
                 "yeogi": {
                   "avg": 83304,
@@ -555,14 +555,14 @@
             {
               "city": "서울",
               "district": "신촌/홍대/합정",
-              "avg": 54063,
-              "count": 257,
+              "avg": 53098,
+              "count": 169,
               "min": 33000,
-              "max": 165000,
+              "max": 160000,
               "platforms": {
                 "yanolja": {
-                  "avg": 54063,
-                  "count": 257
+                  "avg": 53098,
+                  "count": 169
                 }
               },
               "trend": [
@@ -627,13 +627,6 @@
                 {
                   "city": "서울",
                   "district": "신촌/홍대/합정",
-                  "hotel_name": "홍대 아늑호텔",
-                  "price": 165000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "신촌/홍대/합정",
                   "hotel_name": "신촌 메이븐호텔",
                   "price": 160000,
                   "platform": "yanolja"
@@ -658,21 +651,28 @@
                   "hotel_name": "홍대 마포 스테이",
                   "price": 100000,
                   "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "신촌/홍대/합정",
+                  "hotel_name": "합정 써클호텔",
+                  "price": 94000,
+                  "platform": "yanolja"
                 }
               ],
               "bottom5": [
                 {
                   "city": "서울",
                   "district": "신촌/홍대/합정",
-                  "hotel_name": "신촌 피오나",
-                  "price": 34000,
+                  "hotel_name": "신촌 성도",
+                  "price": 33000,
                   "platform": "yanolja"
                 },
                 {
                   "city": "서울",
                   "district": "신촌/홍대/합정",
-                  "hotel_name": "신촌 성도",
-                  "price": 35000,
+                  "hotel_name": "신촌 피오나",
+                  "price": 34000,
                   "platform": "yanolja"
                 },
                 {
@@ -701,14 +701,14 @@
             {
               "city": "서울",
               "district": "신림/서울대/사당/동작",
-              "avg": 57874,
-              "count": 254,
+              "avg": 57677,
+              "count": 169,
               "min": 27000,
               "max": 300000,
               "platforms": {
                 "yanolja": {
-                  "avg": 57874,
-                  "count": 254
+                  "avg": 57677,
+                  "count": 169
                 }
               },
               "trend": [
@@ -846,161 +846,15 @@
             },
             {
               "city": "서울",
-              "district": "화곡/까치산/양천/목동",
-              "avg": 44465,
-              "count": 239,
-              "min": 22000,
-              "max": 77000,
-              "platforms": {
-                "yanolja": {
-                  "avg": 44465,
-                  "count": 239
-                }
-              },
-              "trend": [
-                {
-                  "city": "서울",
-                  "district": "화곡/까치산/양천/목동",
-                  "hour": "2026-06-09T06:00",
-                  "platform": "yanolja",
-                  "avg": 44363,
-                  "count": 168
-                },
-                {
-                  "city": "서울",
-                  "district": "화곡/까치산/양천/목동",
-                  "hour": "2026-06-09T07:00",
-                  "platform": "yanolja",
-                  "avg": 44685,
-                  "count": 84
-                },
-                {
-                  "city": "서울",
-                  "district": "화곡/까치산/양천/목동",
-                  "hour": "2026-06-09T08:00",
-                  "platform": "yanolja",
-                  "avg": 44536,
-                  "count": 84
-                },
-                {
-                  "city": "서울",
-                  "district": "화곡/까치산/양천/목동",
-                  "hour": "2026-06-09T09:00",
-                  "platform": "yanolja",
-                  "avg": 44940,
-                  "count": 84
-                },
-                {
-                  "city": "서울",
-                  "district": "화곡/까치산/양천/목동",
-                  "hour": "2026-06-09T10:00",
-                  "platform": "yanolja",
-                  "avg": 44573,
-                  "count": 166
-                },
-                {
-                  "city": "서울",
-                  "district": "화곡/까치산/양천/목동",
-                  "hour": "2026-06-09T11:00",
-                  "platform": "yanolja",
-                  "avg": 44791,
-                  "count": 78
-                },
-                {
-                  "city": "서울",
-                  "district": "화곡/까치산/양천/목동",
-                  "hour": "2026-06-09T12:00",
-                  "platform": "yanolja",
-                  "avg": 43932,
-                  "count": 78
-                }
-              ],
-              "top5": [
-                {
-                  "city": "서울",
-                  "district": "화곡/까치산/양천/목동",
-                  "hotel_name": "화곡 월호재",
-                  "price": 77000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "화곡/까치산/양천/목동",
-                  "hotel_name": "화곡 브라운도트 강서구청점(무인)",
-                  "price": 75000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "화곡/까치산/양천/목동",
-                  "hotel_name": "화곡 드림 스테이",
-                  "price": 70000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "화곡/까치산/양천/목동",
-                  "hotel_name": "발산 골든호텔",
-                  "price": 70000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "화곡/까치산/양천/목동",
-                  "hotel_name": "발산 스테이쉼",
-                  "price": 62500,
-                  "platform": "yanolja"
-                }
-              ],
-              "bottom5": [
-                {
-                  "city": "서울",
-                  "district": "화곡/까치산/양천/목동",
-                  "hotel_name": "강서(김포공항) SIMPLE STAY",
-                  "price": 22000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "화곡/까치산/양천/목동",
-                  "hotel_name": "화곡 쟈스민",
-                  "price": 27000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "화곡/까치산/양천/목동",
-                  "hotel_name": "화곡 팰리스",
-                  "price": 30000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "화곡/까치산/양천/목동",
-                  "hotel_name": "화곡 탑",
-                  "price": 30000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "화곡/까치산/양천/목동",
-                  "hotel_name": "화곡 리치",
-                  "price": 30000,
-                  "platform": "yanolja"
-                }
-              ]
-            },
-            {
-              "city": "서울",
               "district": "잠실/방이",
-              "avg": 56707,
-              "count": 223,
+              "avg": 55899,
+              "count": 168,
               "min": 35000,
-              "max": 162000,
+              "max": 130000,
               "platforms": {
                 "yanolja": {
-                  "avg": 58838,
-                  "count": 163
+                  "avg": 58666,
+                  "count": 108
                 },
                 "yeogi": {
                   "avg": 50918,
@@ -1125,13 +979,6 @@
                 {
                   "city": "서울",
                   "district": "잠실/방이",
-                  "hotel_name": "잠실 오로시에 관광호텔 - Orosie",
-                  "price": 162000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "잠실/방이",
                   "hotel_name": "잠실 코너호텔(CORNER HOTEL)",
                   "price": 130000,
                   "platform": "yanolja"
@@ -1149,6 +996,13 @@
                   "hotel_name": "잠실 코너",
                   "price": 122000,
                   "platform": "yeogi"
+                },
+                {
+                  "city": "서울",
+                  "district": "잠실/방이",
+                  "hotel_name": "잠실 오로시에 관광호텔 - Orosie",
+                  "price": 122000,
+                  "platform": "yanolja"
                 },
                 {
                   "city": "서울",
@@ -1198,15 +1052,161 @@
             },
             {
               "city": "서울",
+              "district": "화곡/까치산/양천/목동",
+              "avg": 44362,
+              "count": 156,
+              "min": 27000,
+              "max": 77000,
+              "platforms": {
+                "yanolja": {
+                  "avg": 44362,
+                  "count": 156
+                }
+              },
+              "trend": [
+                {
+                  "city": "서울",
+                  "district": "화곡/까치산/양천/목동",
+                  "hour": "2026-06-09T06:00",
+                  "platform": "yanolja",
+                  "avg": 44363,
+                  "count": 168
+                },
+                {
+                  "city": "서울",
+                  "district": "화곡/까치산/양천/목동",
+                  "hour": "2026-06-09T07:00",
+                  "platform": "yanolja",
+                  "avg": 44685,
+                  "count": 84
+                },
+                {
+                  "city": "서울",
+                  "district": "화곡/까치산/양천/목동",
+                  "hour": "2026-06-09T08:00",
+                  "platform": "yanolja",
+                  "avg": 44536,
+                  "count": 84
+                },
+                {
+                  "city": "서울",
+                  "district": "화곡/까치산/양천/목동",
+                  "hour": "2026-06-09T09:00",
+                  "platform": "yanolja",
+                  "avg": 44940,
+                  "count": 84
+                },
+                {
+                  "city": "서울",
+                  "district": "화곡/까치산/양천/목동",
+                  "hour": "2026-06-09T10:00",
+                  "platform": "yanolja",
+                  "avg": 44573,
+                  "count": 166
+                },
+                {
+                  "city": "서울",
+                  "district": "화곡/까치산/양천/목동",
+                  "hour": "2026-06-09T11:00",
+                  "platform": "yanolja",
+                  "avg": 44791,
+                  "count": 78
+                },
+                {
+                  "city": "서울",
+                  "district": "화곡/까치산/양천/목동",
+                  "hour": "2026-06-09T12:00",
+                  "platform": "yanolja",
+                  "avg": 43932,
+                  "count": 78
+                }
+              ],
+              "top5": [
+                {
+                  "city": "서울",
+                  "district": "화곡/까치산/양천/목동",
+                  "hotel_name": "화곡 월호재",
+                  "price": 77000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "화곡/까치산/양천/목동",
+                  "hotel_name": "화곡 브라운도트 강서구청점(무인)",
+                  "price": 75000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "화곡/까치산/양천/목동",
+                  "hotel_name": "화곡 드림 스테이",
+                  "price": 70000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "화곡/까치산/양천/목동",
+                  "hotel_name": "발산 스테이쉼",
+                  "price": 62500,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "화곡/까치산/양천/목동",
+                  "hotel_name": "화곡 테마",
+                  "price": 60000,
+                  "platform": "yanolja"
+                }
+              ],
+              "bottom5": [
+                {
+                  "city": "서울",
+                  "district": "화곡/까치산/양천/목동",
+                  "hotel_name": "화곡 쟈스민",
+                  "price": 27000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "화곡/까치산/양천/목동",
+                  "hotel_name": "화곡 팰리스",
+                  "price": 30000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "화곡/까치산/양천/목동",
+                  "hotel_name": "화곡 탑",
+                  "price": 30000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "화곡/까치산/양천/목동",
+                  "hotel_name": "화곡 리치",
+                  "price": 30000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "화곡/까치산/양천/목동",
+                  "hotel_name": "화곡 러브레터",
+                  "price": 30000,
+                  "platform": "yanolja"
+                }
+              ]
+            },
+            {
+              "city": "서울",
               "district": "구로/금천/오류/신도림",
-              "avg": 47361,
-              "count": 180,
+              "avg": 47411,
+              "count": 120,
               "min": 30000,
               "max": 100000,
               "platforms": {
                 "yanolja": {
-                  "avg": 47361,
-                  "count": 180
+                  "avg": 47411,
+                  "count": 120
                 }
               },
               "trend": [
@@ -1345,14 +1345,14 @@
             {
               "city": "서울",
               "district": "종로/대학로/동묘앞역",
-              "avg": 66100,
-              "count": 169,
+              "avg": 65966,
+              "count": 112,
               "min": 34500,
               "max": 200000,
               "platforms": {
                 "yanolja": {
-                  "avg": 66100,
-                  "count": 169
+                  "avg": 65966,
+                  "count": 112
                 }
               },
               "trend": [
@@ -1490,307 +1490,15 @@
             },
             {
               "city": "서울",
-              "district": "연신내/불광/응암",
-              "avg": 44590,
-              "count": 156,
-              "min": 32000,
-              "max": 77000,
-              "platforms": {
-                "yanolja": {
-                  "avg": 44590,
-                  "count": 156
-                }
-              },
-              "trend": [
-                {
-                  "city": "서울",
-                  "district": "연신내/불광/응암",
-                  "hour": "2026-06-09T06:00",
-                  "platform": "yanolja",
-                  "avg": 45245,
-                  "count": 106
-                },
-                {
-                  "city": "서울",
-                  "district": "연신내/불광/응암",
-                  "hour": "2026-06-09T07:00",
-                  "platform": "yanolja",
-                  "avg": 45321,
-                  "count": 53
-                },
-                {
-                  "city": "서울",
-                  "district": "연신내/불광/응암",
-                  "hour": "2026-06-09T08:00",
-                  "platform": "yanolja",
-                  "avg": 45113,
-                  "count": 53
-                },
-                {
-                  "city": "서울",
-                  "district": "연신내/불광/응암",
-                  "hour": "2026-06-09T09:00",
-                  "platform": "yanolja",
-                  "avg": 44981,
-                  "count": 52
-                },
-                {
-                  "city": "서울",
-                  "district": "연신내/불광/응암",
-                  "hour": "2026-06-09T10:00",
-                  "platform": "yanolja",
-                  "avg": 44596,
-                  "count": 104
-                },
-                {
-                  "city": "서울",
-                  "district": "연신내/불광/응암",
-                  "hour": "2026-06-09T11:00",
-                  "platform": "yanolja",
-                  "avg": 44750,
-                  "count": 52
-                },
-                {
-                  "city": "서울",
-                  "district": "연신내/불광/응암",
-                  "hour": "2026-06-09T12:00",
-                  "platform": "yanolja",
-                  "avg": 44346,
-                  "count": 52
-                }
-              ],
-              "top5": [
-                {
-                  "city": "서울",
-                  "district": "연신내/불광/응암",
-                  "hotel_name": "불광 호텔 루136",
-                  "price": 77000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "연신내/불광/응암",
-                  "hotel_name": "불광 아늑 료칸 호텔",
-                  "price": 75000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "연신내/불광/응암",
-                  "hotel_name": "불광 벨라지오관광호텔",
-                  "price": 70000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "연신내/불광/응암",
-                  "hotel_name": "수색 안온 호스텔",
-                  "price": 69000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "연신내/불광/응암",
-                  "hotel_name": "은평 브릭스 호텔",
-                  "price": 65000,
-                  "platform": "yanolja"
-                }
-              ],
-              "bottom5": [
-                {
-                  "city": "서울",
-                  "district": "연신내/불광/응암",
-                  "hotel_name": "연신내 타오호텔",
-                  "price": 33000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "연신내/불광/응암",
-                  "hotel_name": "연신내 쏠",
-                  "price": 33000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "연신내/불광/응암",
-                  "hotel_name": "연신내 레스트(Rest)",
-                  "price": 33000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "연신내/불광/응암",
-                  "hotel_name": "연신내 레드",
-                  "price": 35000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "연신내/불광/응암",
-                  "hotel_name": "연신내 디스테이션(DS)",
-                  "price": 35000,
-                  "platform": "yanolja"
-                }
-              ]
-            },
-            {
-              "city": "서울",
-              "district": "천호/길동/둔촌",
-              "avg": 42370,
-              "count": 144,
-              "min": 30000,
-              "max": 88000,
-              "platforms": {
-                "yanolja": {
-                  "avg": 42370,
-                  "count": 144
-                }
-              },
-              "trend": [
-                {
-                  "city": "서울",
-                  "district": "천호/길동/둔촌",
-                  "hour": "2026-06-09T06:00",
-                  "platform": "yanolja",
-                  "avg": 44483,
-                  "count": 98
-                },
-                {
-                  "city": "서울",
-                  "district": "천호/길동/둔촌",
-                  "hour": "2026-06-09T07:00",
-                  "platform": "yanolja",
-                  "avg": 44585,
-                  "count": 49
-                },
-                {
-                  "city": "서울",
-                  "district": "천호/길동/둔촌",
-                  "hour": "2026-06-09T08:00",
-                  "platform": "yanolja",
-                  "avg": 44157,
-                  "count": 49
-                },
-                {
-                  "city": "서울",
-                  "district": "천호/길동/둔촌",
-                  "hour": "2026-06-09T09:00",
-                  "platform": "yanolja",
-                  "avg": 42259,
-                  "count": 47
-                },
-                {
-                  "city": "서울",
-                  "district": "천호/길동/둔촌",
-                  "hour": "2026-06-09T10:00",
-                  "platform": "yanolja",
-                  "avg": 41998,
-                  "count": 96
-                },
-                {
-                  "city": "서울",
-                  "district": "천호/길동/둔촌",
-                  "hour": "2026-06-09T11:00",
-                  "platform": "yanolja",
-                  "avg": 42227,
-                  "count": 48
-                },
-                {
-                  "city": "서울",
-                  "district": "천호/길동/둔촌",
-                  "hour": "2026-06-09T12:00",
-                  "platform": "yanolja",
-                  "avg": 42968,
-                  "count": 48
-                }
-              ],
-              "top5": [
-                {
-                  "city": "서울",
-                  "district": "천호/길동/둔촌",
-                  "hotel_name": "둔촌 발리 호텔",
-                  "price": 88000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "천호/길동/둔촌",
-                  "hotel_name": "천호 호텔 코드(Hotel Code)",
-                  "price": 56440,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "천호/길동/둔촌",
-                  "hotel_name": "길동 샘(SAM)",
-                  "price": 53000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "천호/길동/둔촌",
-                  "hotel_name": "천호 바고호텔",
-                  "price": 50000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "천호/길동/둔촌",
-                  "hotel_name": "천호 HOTEL 감",
-                  "price": 50000,
-                  "platform": "yanolja"
-                }
-              ],
-              "bottom5": [
-                {
-                  "city": "서울",
-                  "district": "천호/길동/둔촌",
-                  "hotel_name": "천호 캠프",
-                  "price": 30000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "천호/길동/둔촌",
-                  "hotel_name": "천호 밀레오",
-                  "price": 30000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "천호/길동/둔촌",
-                  "hotel_name": "천호 씨티",
-                  "price": 33000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "천호/길동/둔촌",
-                  "hotel_name": "길동 에스라인",
-                  "price": 34000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "천호/길동/둔촌",
-                  "hotel_name": "천호 펠리스",
-                  "price": 35000,
-                  "platform": "yanolja"
-                }
-              ]
-            },
-            {
-              "city": "서울",
               "district": "잠실새내/신천/종합운동장",
-              "avg": 44395,
-              "count": 132,
+              "avg": 44040,
+              "count": 104,
               "min": 35000,
               "max": 80000,
               "platforms": {
                 "yanolja": {
-                  "avg": 44571,
-                  "count": 84
+                  "avg": 44000,
+                  "count": 56
                 },
                 "yeogi": {
                   "avg": 44086,
@@ -1943,9 +1651,9 @@
                 {
                   "city": "서울",
                   "district": "잠실새내/신천/종합운동장",
-                  "hotel_name": "신천(잠실새내) 노블 스테이 호텔",
-                  "price": 50000,
-                  "platform": "yanolja"
+                  "hotel_name": "신천 칸",
+                  "price": 49000,
+                  "platform": "yeogi"
                 }
               ],
               "bottom5": [
@@ -1954,6 +1662,13 @@
                   "district": "잠실새내/신천/종합운동장",
                   "hotel_name": "신천 플러스",
                   "price": 35000,
+                  "platform": "yeogi"
+                },
+                {
+                  "city": "서울",
+                  "district": "잠실새내/신천/종합운동장",
+                  "hotel_name": "신천 반",
+                  "price": 35000,
                   "platform": "yanolja"
                 },
                 {
@@ -1961,6 +1676,13 @@
                   "district": "잠실새내/신천/종합운동장",
                   "hotel_name": "신천 마쯔&2060",
                   "price": 35000,
+                  "platform": "yeogi"
+                },
+                {
+                  "city": "서울",
+                  "district": "잠실새내/신천/종합운동장",
+                  "hotel_name": "신천 라몬",
+                  "price": 37000,
                   "platform": "yanolja"
                 },
                 {
@@ -1969,157 +1691,297 @@
                   "hotel_name": "신천 MW",
                   "price": 38000,
                   "platform": "yeogi"
-                },
-                {
-                  "city": "서울",
-                  "district": "잠실새내/신천/종합운동장",
-                  "hotel_name": "신천 하루",
-                  "price": 40000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "잠실새내/신천/종합운동장",
-                  "hotel_name": "신천 잠실 NU(엔유) HOTEL 종합운동장점",
-                  "price": 40000,
-                  "platform": "yanolja"
                 }
               ]
             },
             {
               "city": "서울",
-              "district": "수유/미아",
-              "avg": 40464,
-              "count": 124,
-              "min": 20000,
-              "max": 120000,
+              "district": "연신내/불광/응암",
+              "avg": 44548,
+              "count": 104,
+              "min": 32000,
+              "max": 77000,
               "platforms": {
                 "yanolja": {
-                  "avg": 40464,
-                  "count": 124
+                  "avg": 44548,
+                  "count": 104
                 }
               },
               "trend": [
                 {
                   "city": "서울",
-                  "district": "수유/미아",
+                  "district": "연신내/불광/응암",
                   "hour": "2026-06-09T06:00",
                   "platform": "yanolja",
-                  "avg": 41193,
-                  "count": 122
+                  "avg": 45245,
+                  "count": 106
                 },
                 {
                   "city": "서울",
-                  "district": "수유/미아",
+                  "district": "연신내/불광/응암",
                   "hour": "2026-06-09T07:00",
                   "platform": "yanolja",
-                  "avg": 41201,
-                  "count": 61
+                  "avg": 45321,
+                  "count": 53
                 },
                 {
                   "city": "서울",
-                  "district": "수유/미아",
+                  "district": "연신내/불광/응암",
                   "hour": "2026-06-09T08:00",
                   "platform": "yanolja",
-                  "avg": 41791,
-                  "count": 61
+                  "avg": 45113,
+                  "count": 53
                 },
                 {
                   "city": "서울",
-                  "district": "수유/미아",
+                  "district": "연신내/불광/응암",
                   "hour": "2026-06-09T09:00",
                   "platform": "yanolja",
-                  "avg": 42020,
-                  "count": 62
+                  "avg": 44981,
+                  "count": 52
                 },
                 {
                   "city": "서울",
-                  "district": "수유/미아",
+                  "district": "연신내/불광/응암",
                   "hour": "2026-06-09T10:00",
                   "platform": "yanolja",
-                  "avg": 40931,
-                  "count": 124
+                  "avg": 44596,
+                  "count": 104
                 },
                 {
                   "city": "서울",
-                  "district": "수유/미아",
+                  "district": "연신내/불광/응암",
                   "hour": "2026-06-09T11:00",
                   "platform": "yanolja",
-                  "avg": 40206,
-                  "count": 62
+                  "avg": 44750,
+                  "count": 52
+                },
+                {
+                  "city": "서울",
+                  "district": "연신내/불광/응암",
+                  "hour": "2026-06-09T12:00",
+                  "platform": "yanolja",
+                  "avg": 44346,
+                  "count": 52
                 }
               ],
               "top5": [
                 {
                   "city": "서울",
-                  "district": "수유/미아",
-                  "hotel_name": "수유 슬로우 서울 북한산점",
-                  "price": 120000,
+                  "district": "연신내/불광/응암",
+                  "hotel_name": "불광 호텔 루136",
+                  "price": 77000,
                   "platform": "yanolja"
                 },
                 {
                   "city": "서울",
-                  "district": "수유/미아",
-                  "hotel_name": "수유 호텔 우아한수유",
-                  "price": 89600,
+                  "district": "연신내/불광/응암",
+                  "hotel_name": "불광 아늑 료칸 호텔",
+                  "price": 75000,
                   "platform": "yanolja"
                 },
                 {
                   "city": "서울",
-                  "district": "수유/미아",
-                  "hotel_name": "수유 리치 다이아몬드",
+                  "district": "연신내/불광/응암",
+                  "hotel_name": "불광 벨라지오관광호텔",
+                  "price": 70000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "연신내/불광/응암",
+                  "hotel_name": "수색 안온 호스텔",
+                  "price": 69000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "연신내/불광/응암",
+                  "hotel_name": "은평 브릭스 호텔",
                   "price": 65000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "수유/미아",
-                  "hotel_name": "수유 호텔 클래시 HOTEL CLASSY",
-                  "price": 55000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "수유/미아",
-                  "hotel_name": "미아 담스",
-                  "price": 55000,
                   "platform": "yanolja"
                 }
               ],
               "bottom5": [
                 {
                   "city": "서울",
-                  "district": "수유/미아",
-                  "hotel_name": "미아 벌꿀",
-                  "price": 20000,
+                  "district": "연신내/불광/응암",
+                  "hotel_name": "연신내 타오호텔",
+                  "price": 33000,
                   "platform": "yanolja"
                 },
                 {
                   "city": "서울",
-                  "district": "수유/미아",
-                  "hotel_name": "수유 우이호텔 (B동)",
-                  "price": 25000,
+                  "district": "연신내/불광/응암",
+                  "hotel_name": "연신내 쏠",
+                  "price": 33000,
                   "platform": "yanolja"
                 },
                 {
                   "city": "서울",
-                  "district": "수유/미아",
-                  "hotel_name": "수유 호텔 365",
-                  "price": 29700,
+                  "district": "연신내/불광/응암",
+                  "hotel_name": "연신내 레스트(Rest)",
+                  "price": 33000,
                   "platform": "yanolja"
                 },
                 {
                   "city": "서울",
-                  "district": "수유/미아",
-                  "hotel_name": "수유 짝",
-                  "price": 29700,
+                  "district": "연신내/불광/응암",
+                  "hotel_name": "연신내 레드",
+                  "price": 35000,
                   "platform": "yanolja"
                 },
                 {
                   "city": "서울",
-                  "district": "수유/미아",
-                  "hotel_name": "미아 톰지",
-                  "price": 29750,
+                  "district": "연신내/불광/응암",
+                  "hotel_name": "연신내 디스테이션(DS)",
+                  "price": 35000,
+                  "platform": "yanolja"
+                }
+              ]
+            },
+            {
+              "city": "서울",
+              "district": "천호/길동/둔촌",
+              "avg": 42598,
+              "count": 96,
+              "min": 30000,
+              "max": 88000,
+              "platforms": {
+                "yanolja": {
+                  "avg": 42598,
+                  "count": 96
+                }
+              },
+              "trend": [
+                {
+                  "city": "서울",
+                  "district": "천호/길동/둔촌",
+                  "hour": "2026-06-09T06:00",
+                  "platform": "yanolja",
+                  "avg": 44483,
+                  "count": 98
+                },
+                {
+                  "city": "서울",
+                  "district": "천호/길동/둔촌",
+                  "hour": "2026-06-09T07:00",
+                  "platform": "yanolja",
+                  "avg": 44585,
+                  "count": 49
+                },
+                {
+                  "city": "서울",
+                  "district": "천호/길동/둔촌",
+                  "hour": "2026-06-09T08:00",
+                  "platform": "yanolja",
+                  "avg": 44157,
+                  "count": 49
+                },
+                {
+                  "city": "서울",
+                  "district": "천호/길동/둔촌",
+                  "hour": "2026-06-09T09:00",
+                  "platform": "yanolja",
+                  "avg": 42259,
+                  "count": 47
+                },
+                {
+                  "city": "서울",
+                  "district": "천호/길동/둔촌",
+                  "hour": "2026-06-09T10:00",
+                  "platform": "yanolja",
+                  "avg": 41998,
+                  "count": 96
+                },
+                {
+                  "city": "서울",
+                  "district": "천호/길동/둔촌",
+                  "hour": "2026-06-09T11:00",
+                  "platform": "yanolja",
+                  "avg": 42227,
+                  "count": 48
+                },
+                {
+                  "city": "서울",
+                  "district": "천호/길동/둔촌",
+                  "hour": "2026-06-09T12:00",
+                  "platform": "yanolja",
+                  "avg": 42968,
+                  "count": 48
+                }
+              ],
+              "top5": [
+                {
+                  "city": "서울",
+                  "district": "천호/길동/둔촌",
+                  "hotel_name": "둔촌 발리 호텔",
+                  "price": 88000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "천호/길동/둔촌",
+                  "hotel_name": "천호 호텔 코드(Hotel Code)",
+                  "price": 56440,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "천호/길동/둔촌",
+                  "hotel_name": "길동 샘(SAM)",
+                  "price": 53000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "천호/길동/둔촌",
+                  "hotel_name": "천호 바고호텔",
+                  "price": 50000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "천호/길동/둔촌",
+                  "hotel_name": "천호 HOTEL 감",
+                  "price": 50000,
+                  "platform": "yanolja"
+                }
+              ],
+              "bottom5": [
+                {
+                  "city": "서울",
+                  "district": "천호/길동/둔촌",
+                  "hotel_name": "천호 캠프",
+                  "price": 30000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "천호/길동/둔촌",
+                  "hotel_name": "천호 밀레오",
+                  "price": 30000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "천호/길동/둔촌",
+                  "hotel_name": "천호 씨티",
+                  "price": 33000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "천호/길동/둔촌",
+                  "hotel_name": "길동 에스라인",
+                  "price": 34000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "천호/길동/둔촌",
+                  "hotel_name": "천호 펠리스",
+                  "price": 35000,
                   "platform": "yanolja"
                 }
               ]
@@ -2127,14 +1989,14 @@
             {
               "city": "서울",
               "district": "서초/신사/방배",
-              "avg": 78184,
-              "count": 108,
+              "avg": 79369,
+              "count": 88,
               "min": 45000,
               "max": 144760,
               "platforms": {
                 "yanolja": {
-                  "avg": 72805,
-                  "count": 60
+                  "avg": 72722,
+                  "count": 40
                 },
                 "yeogi": {
                   "avg": 84908,
@@ -2333,14 +2195,14 @@
             {
               "city": "서울",
               "district": "이태원/용산/서울역/명동",
-              "avg": 86639,
-              "count": 100,
+              "avg": 86348,
+              "count": 65,
               "min": 32000,
               "max": 235000,
               "platforms": {
                 "yanolja": {
-                  "avg": 86639,
-                  "count": 100
+                  "avg": 86348,
+                  "count": 65
                 }
               },
               "trend": [
@@ -2478,15 +2340,299 @@
             },
             {
               "city": "서울",
+              "district": "수유/미아",
+              "avg": 40206,
+              "count": 62,
+              "min": 20000,
+              "max": 120000,
+              "platforms": {
+                "yanolja": {
+                  "avg": 40206,
+                  "count": 62
+                }
+              },
+              "trend": [
+                {
+                  "city": "서울",
+                  "district": "수유/미아",
+                  "hour": "2026-06-09T06:00",
+                  "platform": "yanolja",
+                  "avg": 41193,
+                  "count": 122
+                },
+                {
+                  "city": "서울",
+                  "district": "수유/미아",
+                  "hour": "2026-06-09T07:00",
+                  "platform": "yanolja",
+                  "avg": 41201,
+                  "count": 61
+                },
+                {
+                  "city": "서울",
+                  "district": "수유/미아",
+                  "hour": "2026-06-09T08:00",
+                  "platform": "yanolja",
+                  "avg": 41791,
+                  "count": 61
+                },
+                {
+                  "city": "서울",
+                  "district": "수유/미아",
+                  "hour": "2026-06-09T09:00",
+                  "platform": "yanolja",
+                  "avg": 42020,
+                  "count": 62
+                },
+                {
+                  "city": "서울",
+                  "district": "수유/미아",
+                  "hour": "2026-06-09T10:00",
+                  "platform": "yanolja",
+                  "avg": 40931,
+                  "count": 124
+                },
+                {
+                  "city": "서울",
+                  "district": "수유/미아",
+                  "hour": "2026-06-09T11:00",
+                  "platform": "yanolja",
+                  "avg": 40206,
+                  "count": 62
+                }
+              ],
+              "top5": [
+                {
+                  "city": "서울",
+                  "district": "수유/미아",
+                  "hotel_name": "수유 슬로우 서울 북한산점",
+                  "price": 120000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "수유/미아",
+                  "hotel_name": "수유 호텔 우아한수유",
+                  "price": 89600,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "수유/미아",
+                  "hotel_name": "수유 리치 다이아몬드",
+                  "price": 65000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "수유/미아",
+                  "hotel_name": "수유 호텔 클래시 HOTEL CLASSY",
+                  "price": 55000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "수유/미아",
+                  "hotel_name": "미아 담스",
+                  "price": 55000,
+                  "platform": "yanolja"
+                }
+              ],
+              "bottom5": [
+                {
+                  "city": "서울",
+                  "district": "수유/미아",
+                  "hotel_name": "미아 벌꿀",
+                  "price": 20000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "수유/미아",
+                  "hotel_name": "수유 우이호텔 (B동)",
+                  "price": 25000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "수유/미아",
+                  "hotel_name": "수유 호텔 365",
+                  "price": 29700,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "수유/미아",
+                  "hotel_name": "수유 짝",
+                  "price": 29700,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "수유/미아",
+                  "hotel_name": "미아 톰지",
+                  "price": 29750,
+                  "platform": "yanolja"
+                }
+              ]
+            },
+            {
+              "city": "서울",
+              "district": "성신여대/성북/월곡",
+              "avg": 50233,
+              "count": 58,
+              "min": 34000,
+              "max": 70000,
+              "platforms": {
+                "yanolja": {
+                  "avg": 50233,
+                  "count": 58
+                }
+              },
+              "trend": [
+                {
+                  "city": "서울",
+                  "district": "성신여대/성북/월곡",
+                  "hour": "2026-06-09T06:00",
+                  "platform": "yanolja",
+                  "avg": 49225,
+                  "count": 60
+                },
+                {
+                  "city": "서울",
+                  "district": "성신여대/성북/월곡",
+                  "hour": "2026-06-09T07:00",
+                  "platform": "yanolja",
+                  "avg": 49225,
+                  "count": 30
+                },
+                {
+                  "city": "서울",
+                  "district": "성신여대/성북/월곡",
+                  "hour": "2026-06-09T08:00",
+                  "platform": "yanolja",
+                  "avg": 49492,
+                  "count": 30
+                },
+                {
+                  "city": "서울",
+                  "district": "성신여대/성북/월곡",
+                  "hour": "2026-06-09T09:00",
+                  "platform": "yanolja",
+                  "avg": 49558,
+                  "count": 30
+                },
+                {
+                  "city": "서울",
+                  "district": "성신여대/성북/월곡",
+                  "hour": "2026-06-09T10:00",
+                  "platform": "yanolja",
+                  "avg": 50558,
+                  "count": 60
+                },
+                {
+                  "city": "서울",
+                  "district": "성신여대/성북/월곡",
+                  "hour": "2026-06-09T11:00",
+                  "platform": "yanolja",
+                  "avg": 50371,
+                  "count": 29
+                },
+                {
+                  "city": "서울",
+                  "district": "성신여대/성북/월곡",
+                  "hour": "2026-06-09T12:00",
+                  "platform": "yanolja",
+                  "avg": 50095,
+                  "count": 29
+                }
+              ],
+              "top5": [
+                {
+                  "city": "서울",
+                  "district": "성신여대/성북/월곡",
+                  "hotel_name": "성신여대역 우디(WOODY)",
+                  "price": 70000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "성신여대/성북/월곡",
+                  "hotel_name": "성신여대 브라운도트 성신여대점",
+                  "price": 60000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "성신여대/성북/월곡",
+                  "hotel_name": "성신여대역 더월(THE WALL)",
+                  "price": 55000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "성신여대/성북/월곡",
+                  "hotel_name": "성신여대역 Hotel The Artist (디 아티스트)",
+                  "price": 55000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "성신여대/성북/월곡",
+                  "hotel_name": "성신여대역 H Avenue (에이치 에비뉴)",
+                  "price": 55000,
+                  "platform": "yanolja"
+                }
+              ],
+              "bottom5": [
+                {
+                  "city": "서울",
+                  "district": "성신여대/성북/월곡",
+                  "hotel_name": "성북 W 미니호텔",
+                  "price": 34000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "성신여대/성북/월곡",
+                  "hotel_name": "성북(정릉) 머스트스테이 -웨이브",
+                  "price": 38250,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "성신여대/성북/월곡",
+                  "hotel_name": "성북(석계역) 리치",
+                  "price": 40000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "성신여대/성북/월곡",
+                  "hotel_name": "성북(보문동) 피아노",
+                  "price": 40000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "성신여대/성북/월곡",
+                  "hotel_name": "월곡 신화 무인텔",
+                  "price": 44000,
+                  "platform": "yanolja"
+                }
+              ]
+            },
+            {
+              "city": "서울",
               "district": "태릉/노원/도봉/창동",
-              "avg": 45585,
-              "count": 93,
+              "avg": 45591,
+              "count": 46,
               "min": 28000,
               "max": 90000,
               "platforms": {
                 "yanolja": {
-                  "avg": 45585,
-                  "count": 93
+                  "avg": 45591,
+                  "count": 46
                 }
               },
               "trend": [
@@ -2617,14 +2763,14 @@
             {
               "city": "서울",
               "district": "건대/군자/구의",
-              "avg": 62278,
-              "count": 90,
+              "avg": 64922,
+              "count": 45,
               "min": 40000,
               "max": 230000,
               "platforms": {
                 "yanolja": {
-                  "avg": 62278,
-                  "count": 90
+                  "avg": 64922,
+                  "count": 45
                 }
               },
               "trend": [
@@ -2754,161 +2900,15 @@
             },
             {
               "city": "서울",
-              "district": "성신여대/성북/월곡",
-              "avg": 50344,
-              "count": 88,
-              "min": 34000,
-              "max": 70000,
-              "platforms": {
-                "yanolja": {
-                  "avg": 50344,
-                  "count": 88
-                }
-              },
-              "trend": [
-                {
-                  "city": "서울",
-                  "district": "성신여대/성북/월곡",
-                  "hour": "2026-06-09T06:00",
-                  "platform": "yanolja",
-                  "avg": 49225,
-                  "count": 60
-                },
-                {
-                  "city": "서울",
-                  "district": "성신여대/성북/월곡",
-                  "hour": "2026-06-09T07:00",
-                  "platform": "yanolja",
-                  "avg": 49225,
-                  "count": 30
-                },
-                {
-                  "city": "서울",
-                  "district": "성신여대/성북/월곡",
-                  "hour": "2026-06-09T08:00",
-                  "platform": "yanolja",
-                  "avg": 49492,
-                  "count": 30
-                },
-                {
-                  "city": "서울",
-                  "district": "성신여대/성북/월곡",
-                  "hour": "2026-06-09T09:00",
-                  "platform": "yanolja",
-                  "avg": 49558,
-                  "count": 30
-                },
-                {
-                  "city": "서울",
-                  "district": "성신여대/성북/월곡",
-                  "hour": "2026-06-09T10:00",
-                  "platform": "yanolja",
-                  "avg": 50558,
-                  "count": 60
-                },
-                {
-                  "city": "서울",
-                  "district": "성신여대/성북/월곡",
-                  "hour": "2026-06-09T11:00",
-                  "platform": "yanolja",
-                  "avg": 50371,
-                  "count": 29
-                },
-                {
-                  "city": "서울",
-                  "district": "성신여대/성북/월곡",
-                  "hour": "2026-06-09T12:00",
-                  "platform": "yanolja",
-                  "avg": 50095,
-                  "count": 29
-                }
-              ],
-              "top5": [
-                {
-                  "city": "서울",
-                  "district": "성신여대/성북/월곡",
-                  "hotel_name": "성신여대역 우디(WOODY)",
-                  "price": 70000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "성신여대/성북/월곡",
-                  "hotel_name": "성신여대 브라운도트 성신여대점",
-                  "price": 60000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "성신여대/성북/월곡",
-                  "hotel_name": "성신여대역 더월(THE WALL)",
-                  "price": 55000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "성신여대/성북/월곡",
-                  "hotel_name": "성신여대역 Hotel The Artist (디 아티스트)",
-                  "price": 55000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "성신여대/성북/월곡",
-                  "hotel_name": "성신여대역 H Avenue (에이치 에비뉴)",
-                  "price": 55000,
-                  "platform": "yanolja"
-                }
-              ],
-              "bottom5": [
-                {
-                  "city": "서울",
-                  "district": "성신여대/성북/월곡",
-                  "hotel_name": "성북 W 미니호텔",
-                  "price": 34000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "성신여대/성북/월곡",
-                  "hotel_name": "성북(정릉) 머스트스테이 -웨이브",
-                  "price": 38250,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "성신여대/성북/월곡",
-                  "hotel_name": "성북(석계역) 리치",
-                  "price": 40000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "성신여대/성북/월곡",
-                  "hotel_name": "성북(석계역) 루미에르 나비 호텔",
-                  "price": 40000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "성신여대/성북/월곡",
-                  "hotel_name": "성북(보문동) 피아노",
-                  "price": 40000,
-                  "platform": "yanolja"
-                }
-              ]
-            },
-            {
-              "city": "서울",
               "district": "상봉/중랑/면목",
-              "avg": 41391,
-              "count": 76,
+              "avg": 41286,
+              "count": 38,
               "min": 26250,
               "max": 57000,
               "platforms": {
                 "yanolja": {
-                  "avg": 41391,
-                  "count": 76
+                  "avg": 41286,
+                  "count": 38
                 }
               },
               "trend": [
@@ -2979,13 +2979,6 @@
                 {
                   "city": "서울",
                   "district": "상봉/중랑/면목",
-                  "hotel_name": "상봉 주연62",
-                  "price": 50000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "상봉/중랑/면목",
                   "hotel_name": "사가정 로데오",
                   "price": 50000,
                   "platform": "yanolja"
@@ -2995,6 +2988,13 @@
                   "district": "상봉/중랑/면목",
                   "hotel_name": "망우 힐조 스테이",
                   "price": 50000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "상봉/중랑/면목",
+                  "hotel_name": "상봉 호텔스타",
+                  "price": 48000,
                   "platform": "yanolja"
                 }
               ],
@@ -3039,14 +3039,14 @@
             {
               "city": "서울",
               "district": "동대문/을지로/충무로/신당",
-              "avg": 66114,
-              "count": 76,
-              "min": 30000,
+              "avg": 65468,
+              "count": 37,
+              "min": 40000,
               "max": 186820,
               "platforms": {
                 "yanolja": {
-                  "avg": 66114,
-                  "count": 76
+                  "avg": 65468,
+                  "count": 37
                 }
               },
               "trend": [
@@ -3124,26 +3124,19 @@
                 {
                   "city": "서울",
                   "district": "동대문/을지로/충무로/신당",
-                  "hotel_name": "동대문 관광호텔 (Tourist Hotel)",
-                  "price": 113000,
+                  "hotel_name": "동대문역사문화공원역 라온",
+                  "price": 97000,
                   "platform": "yanolja"
                 },
                 {
                   "city": "서울",
                   "district": "동대문/을지로/충무로/신당",
-                  "hotel_name": "동대문역사문화공원역 라온",
-                  "price": 97000,
+                  "hotel_name": "종로(동대문) 시티데이즈 인 호텔",
+                  "price": 80000,
                   "platform": "yanolja"
                 }
               ],
               "bottom5": [
-                {
-                  "city": "서울",
-                  "district": "동대문/을지로/충무로/신당",
-                  "hotel_name": "명동(을지로) 호텔 베네",
-                  "price": 30000,
-                  "platform": "yanolja"
-                },
                 {
                   "city": "서울",
                   "district": "동대문/을지로/충무로/신당",
@@ -3156,6 +3149,13 @@
                   "district": "동대문/을지로/충무로/신당",
                   "hotel_name": "동대문 BM모텔",
                   "price": 40000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "동대문/을지로/충무로/신당",
+                  "hotel_name": "동대문역사문화공원역 호텔 클로이",
+                  "price": 43000,
                   "platform": "yanolja"
                 },
                 {
@@ -3177,14 +3177,14 @@
             {
               "city": "서울",
               "district": "왕십리/성수/금호",
-              "avg": 48270,
-              "count": 57,
+              "avg": 47283,
+              "count": 29,
               "min": 27000,
-              "max": 100000,
+              "max": 75000,
               "platforms": {
                 "yanolja": {
-                  "avg": 48270,
-                  "count": 57
+                  "avg": 47283,
+                  "count": 29
                 }
               },
               "trend": [
@@ -3241,13 +3241,6 @@
                 {
                   "city": "서울",
                   "district": "왕십리/성수/금호",
-                  "hotel_name": "건대 온재 스테이 성수",
-                  "price": 100000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "왕십리/성수/금호",
                   "hotel_name": "성수 인스피룸 성수",
                   "price": 75000,
                   "platform": "yanolja"
@@ -3272,6 +3265,13 @@
                   "hotel_name": "왕십리 FORESTAR (포레스타)",
                   "price": 55000,
                   "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "왕십리/성수/금호",
+                  "hotel_name": "건대 온재 스테이 성수",
+                  "price": 55000,
+                  "platform": "yanolja"
                 }
               ],
               "bottom5": [
@@ -3280,6 +3280,13 @@
                   "district": "왕십리/성수/금호",
                   "hotel_name": "왕십리 부르네",
                   "price": 27000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "왕십리/성수/금호",
+                  "hotel_name": "왕십리 파레스",
+                  "price": 35000,
                   "platform": "yanolja"
                 },
                 {
@@ -3302,27 +3309,20 @@
                   "hotel_name": "왕십리 현대모텔",
                   "price": 38000,
                   "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "왕십리/성수/금호",
-                  "hotel_name": "왕십리 스위트",
-                  "price": 38000,
-                  "platform": "yanolja"
                 }
               ]
             },
             {
               "city": "서울",
               "district": "회기/고려대/청량리",
-              "avg": 54295,
-              "count": 56,
+              "avg": 54036,
+              "count": 28,
               "min": 30000,
               "max": 142000,
               "platforms": {
                 "yanolja": {
-                  "avg": 54295,
-                  "count": 56
+                  "avg": 54036,
+                  "count": 28
                 }
               },
               "trend": [
@@ -3393,13 +3393,6 @@
                 {
                   "city": "서울",
                   "district": "회기/고려대/청량리",
-                  "hotel_name": "경희대 글램(GLAM)",
-                  "price": 56000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "서울",
-                  "district": "회기/고려대/청량리",
                   "hotel_name": "회기 휴젠",
                   "price": 55000,
                   "platform": "yanolja"
@@ -3408,6 +3401,13 @@
                   "city": "서울",
                   "district": "회기/고려대/청량리",
                   "hotel_name": "동대문 호헤시티(hohe city)",
+                  "price": 55000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "서울",
+                  "district": "회기/고려대/청량리",
+                  "hotel_name": "동대문 다락",
                   "price": 55000,
                   "platform": "yanolja"
                 }
@@ -3444,8 +3444,8 @@
                 {
                   "city": "서울",
                   "district": "회기/고려대/청량리",
-                  "hotel_name": "외대 이문",
-                  "price": 37000,
+                  "hotel_name": "외대 Life hotel Raha",
+                  "price": 36000,
                   "platform": "yanolja"
                 }
               ]
@@ -3453,14 +3453,14 @@
             {
               "city": "서울",
               "district": "장안동/답십리",
-              "avg": 45650,
-              "count": 40,
+              "avg": 46400,
+              "count": 20,
               "min": 35000,
               "max": 60000,
               "platforms": {
                 "yanolja": {
-                  "avg": 45650,
-                  "count": 40
+                  "avg": 46400,
+                  "count": 20
                 }
               },
               "trend": [
@@ -3588,18 +3588,82 @@
                 }
               ]
             }
+          ],
+          "top5": [
+            {
+              "city": "서울",
+              "hotel_name": "역삼 사월",
+              "price": 300000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "서울",
+              "hotel_name": "신림 TOP",
+              "price": 300000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "서울",
+              "hotel_name": "사당 스테이 패스포트 도쿄 료칸",
+              "price": 290000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "서울",
+              "hotel_name": "강남 더 호텔 1997",
+              "price": 250000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "서울",
+              "hotel_name": "이태원 스테이 패스포트 호텔 앤 스파",
+              "price": 235000,
+              "platform": "yanolja"
+            }
+          ],
+          "bottom5": [
+            {
+              "city": "서울",
+              "hotel_name": "미아 벌꿀",
+              "price": 20000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "서울",
+              "hotel_name": "수유 우이호텔 (B동)",
+              "price": 25000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "서울",
+              "hotel_name": "상봉 파레스",
+              "price": 26250,
+              "platform": "yanolja"
+            },
+            {
+              "city": "서울",
+              "hotel_name": "화곡 쟈스민",
+              "price": 27000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "서울",
+              "hotel_name": "왕십리 부르네",
+              "price": 27000,
+              "platform": "yanolja"
+            }
           ]
         },
         {
           "city": "부산",
-          "avg": 46633,
-          "count": 1773,
+          "avg": 46776,
+          "count": 889,
           "min": 19500,
           "max": 249000,
           "platforms": {
             "yanolja": {
-              "avg": 46633,
-              "count": 1773
+              "avg": 46776,
+              "count": 889
             }
           },
           "trend": [
@@ -3650,14 +3714,14 @@
             {
               "city": "부산",
               "district": "서면/양정/초읍",
-              "avg": 44237,
-              "count": 231,
+              "avg": 44351,
+              "count": 120,
               "min": 20900,
               "max": 200000,
               "platforms": {
                 "yanolja": {
-                  "avg": 44237,
-                  "count": 231
+                  "avg": 44351,
+                  "count": 120
                 }
               },
               "trend": [
@@ -3788,14 +3852,14 @@
             {
               "city": "부산",
               "district": "남포동/중앙동/태종대/영도",
-              "avg": 41703,
-              "count": 214,
+              "avg": 41540,
+              "count": 107,
               "min": 20000,
               "max": 100000,
               "platforms": {
                 "yanolja": {
-                  "avg": 41703,
-                  "count": 214
+                  "avg": 41540,
+                  "count": 107
                 }
               },
               "trend": [
@@ -3917,7 +3981,7 @@
                 {
                   "city": "부산",
                   "district": "남포동/중앙동/태종대/영도",
-                  "hotel_name": "부산 남포동 스테이",
+                  "hotel_name": "부산 남포동 호텔 MGM(자갈치역점)",
                   "price": 26000,
                   "platform": "yanolja"
                 }
@@ -3926,14 +3990,14 @@
             {
               "city": "부산",
               "district": "해운대/센텀시티/재송",
-              "avg": 54857,
-              "count": 178,
+              "avg": 54700,
+              "count": 89,
               "min": 25000,
               "max": 180000,
               "platforms": {
                 "yanolja": {
-                  "avg": 54857,
-                  "count": 178
+                  "avg": 54700,
+                  "count": 89
                 }
               },
               "trend": [
@@ -4041,6 +4105,13 @@
                 {
                   "city": "부산",
                   "district": "해운대/센텀시티/재송",
+                  "hotel_name": "부산 해운대 클리프 베이 호텔",
+                  "price": 29000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "부산",
+                  "district": "해운대/센텀시티/재송",
                   "hotel_name": "부산 해운대 리엔(LIEN) 호텔",
                   "price": 29000,
                   "platform": "yanolja"
@@ -4048,15 +4119,8 @@
                 {
                   "city": "부산",
                   "district": "해운대/센텀시티/재송",
-                  "hotel_name": "부산 해운대 오렌지(Orange)",
-                  "price": 30000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "부산",
-                  "district": "해운대/센텀시티/재송",
-                  "hotel_name": "부산 해운대 더베이 호텔",
-                  "price": 30000,
+                  "hotel_name": "부산 해운대 게리쿠퍼",
+                  "price": 29000,
                   "platform": "yanolja"
                 }
               ]
@@ -4064,14 +4128,14 @@
             {
               "city": "부산",
               "district": "동래/사직/부산대/구서",
-              "avg": 42799,
-              "count": 175,
+              "avg": 43190,
+              "count": 88,
               "min": 20000,
               "max": 123000,
               "platforms": {
                 "yanolja": {
-                  "avg": 42799,
-                  "count": 175
+                  "avg": 43190,
+                  "count": 88
                 }
               },
               "trend": [
@@ -4156,8 +4220,8 @@
                 {
                   "city": "부산",
                   "district": "동래/사직/부산대/구서",
-                  "hotel_name": "부산 구서동 브라운도트 구서역점",
-                  "price": 70400,
+                  "hotel_name": "부산 온천장 369",
+                  "price": 60000,
                   "platform": "yanolja"
                 }
               ],
@@ -4202,14 +4266,14 @@
             {
               "city": "부산",
               "district": "송정/기장/정관",
-              "avg": 54683,
-              "count": 173,
+              "avg": 55053,
+              "count": 87,
               "min": 27000,
               "max": 190000,
               "platforms": {
                 "yanolja": {
-                  "avg": 54683,
-                  "count": 173
+                  "avg": 55053,
+                  "count": 87
                 }
               },
               "trend": [
@@ -4310,6 +4374,13 @@
                 {
                   "city": "부산",
                   "district": "송정/기장/정관",
+                  "hotel_name": "부산 송정 감동 호텔",
+                  "price": 28000,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "부산",
+                  "district": "송정/기장/정관",
                   "hotel_name": "부산 기장 헤이데이 호텔",
                   "price": 29700,
                   "platform": "yanolja"
@@ -4327,27 +4398,20 @@
                   "hotel_name": "부산 송정 애플",
                   "price": 30000,
                   "platform": "yanolja"
-                },
-                {
-                  "city": "부산",
-                  "district": "송정/기장/정관",
-                  "hotel_name": "부산 송정 V",
-                  "price": 30000,
-                  "platform": "yanolja"
                 }
               ]
             },
             {
               "city": "부산",
               "district": "하단/명지/강서",
-              "avg": 49678,
-              "count": 168,
+              "avg": 50058,
+              "count": 84,
               "min": 29900,
-              "max": 100000,
+              "max": 90000,
               "platforms": {
                 "yanolja": {
-                  "avg": 49678,
-                  "count": 168
+                  "avg": 50058,
+                  "count": 84
                 }
               },
               "trend": [
@@ -4405,7 +4469,7 @@
                   "city": "부산",
                   "district": "하단/명지/강서",
                   "hotel_name": "부산 강서 신호동 더 브레인 호텔",
-                  "price": 100000,
+                  "price": 90000,
                   "platform": "yanolja"
                 },
                 {
@@ -4441,6 +4505,13 @@
                 {
                   "city": "부산",
                   "district": "하단/명지/강서",
+                  "hotel_name": "부산 하단 츄츄",
+                  "price": 29900,
+                  "platform": "yanolja"
+                },
+                {
+                  "city": "부산",
+                  "district": "하단/명지/강서",
                   "hotel_name": "부산 하단 그린힐",
                   "price": 30000,
                   "platform": "yanolja"
@@ -4465,27 +4536,20 @@
                   "hotel_name": "부산 하단 호텔 YAO(야오)",
                   "price": 32300,
                   "platform": "yanolja"
-                },
-                {
-                  "city": "부산",
-                  "district": "하단/명지/강서",
-                  "hotel_name": "부산 하단 파라다이스",
-                  "price": 32300,
-                  "platform": "yanolja"
                 }
               ]
             },
             {
               "city": "부산",
               "district": "사상/엄궁/학장",
-              "avg": 37995,
-              "count": 150,
+              "avg": 38122,
+              "count": 75,
               "min": 21900,
               "max": 128000,
               "platforms": {
                 "yanolja": {
-                  "avg": 37995,
-                  "count": 150
+                  "avg": 38122,
+                  "count": 75
                 }
               },
               "trend": [
@@ -4616,14 +4680,14 @@
             {
               "city": "부산",
               "district": "광안리/수영",
-              "avg": 59385,
-              "count": 124,
+              "avg": 59556,
+              "count": 61,
               "min": 20500,
               "max": 249000,
               "platforms": {
                 "yanolja": {
-                  "avg": 59385,
-                  "count": 124
+                  "avg": 59556,
+                  "count": 61
                 }
               },
               "trend": [
@@ -4738,14 +4802,14 @@
                 {
                   "city": "부산",
                   "district": "광안리/수영",
-                  "hotel_name": "부산 수영 타임",
-                  "price": 35000,
+                  "hotel_name": "부산 광안리 더반 스테이 호텔",
+                  "price": 32000,
                   "platform": "yanolja"
                 },
                 {
                   "city": "부산",
                   "district": "광안리/수영",
-                  "hotel_name": "부산 광안리 호텔 메종",
+                  "hotel_name": "부산 수영 타임",
                   "price": 35000,
                   "platform": "yanolja"
                 }
@@ -4754,14 +4818,14 @@
             {
               "city": "부산",
               "district": "덕천/화명/구포",
-              "avg": 42079,
-              "count": 100,
+              "avg": 42221,
+              "count": 50,
               "min": 19500,
               "max": 198000,
               "platforms": {
                 "yanolja": {
-                  "avg": 42079,
-                  "count": 100
+                  "avg": 42221,
+                  "count": 50
                 }
               },
               "trend": [
@@ -4856,7 +4920,7 @@
                   "city": "부산",
                   "district": "덕천/화명/구포",
                   "hotel_name": "부산 덕천 스카이",
-                  "price": 21200,
+                  "price": 19500,
                   "platform": "yanolja"
                 },
                 {
@@ -4892,14 +4956,14 @@
             {
               "city": "부산",
               "district": "부산역/범일동/부산진역",
-              "avg": 45082,
-              "count": 99,
-              "min": 22000,
+              "avg": 45282,
+              "count": 48,
+              "min": 25000,
               "max": 90000,
               "platforms": {
                 "yanolja": {
-                  "avg": 45082,
-                  "count": 99
+                  "avg": 45282,
+                  "count": 48
                 }
               },
               "trend": [
@@ -5000,13 +5064,6 @@
                 {
                   "city": "부산",
                   "district": "부산역/범일동/부산진역",
-                  "hotel_name": "부산역 진명 스테이",
-                  "price": 27000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "부산",
-                  "district": "부산역/범일동/부산진역",
                   "hotel_name": "부산역 모나코",
                   "price": 28000,
                   "platform": "yanolja"
@@ -5024,20 +5081,27 @@
                   "hotel_name": "부산역 호텔 102",
                   "price": 30000,
                   "platform": "yanolja"
+                },
+                {
+                  "city": "부산",
+                  "district": "부산역/범일동/부산진역",
+                  "hotel_name": "부산역 마리나 레지던스 호텔",
+                  "price": 34000,
+                  "platform": "yanolja"
                 }
               ]
             },
             {
               "city": "부산",
               "district": "경성대/대연/용호동",
-              "avg": 40822,
-              "count": 86,
+              "avg": 41338,
+              "count": 43,
               "min": 27000,
               "max": 70000,
               "platforms": {
                 "yanolja": {
-                  "avg": 40822,
-                  "count": 86
+                  "avg": 41338,
+                  "count": 43
                 }
               },
               "trend": [
@@ -5152,15 +5216,15 @@
                 {
                   "city": "부산",
                   "district": "경성대/대연/용호동",
-                  "hotel_name": "부산 용호동 서울",
-                  "price": 32000,
+                  "hotel_name": "부산 대연동 웰킨",
+                  "price": 31500,
                   "platform": "yanolja"
                 },
                 {
                   "city": "부산",
                   "district": "경성대/대연/용호동",
-                  "hotel_name": "부산 문현동 V",
-                  "price": 33000,
+                  "hotel_name": "부산 용호동 서울",
+                  "price": 32000,
                   "platform": "yanolja"
                 }
               ]
@@ -5168,14 +5232,14 @@
             {
               "city": "부산",
               "district": "연산/토곡",
-              "avg": 43085,
-              "count": 75,
+              "avg": 43235,
+              "count": 37,
               "min": 21000,
               "max": 110000,
               "platforms": {
                 "yanolja": {
-                  "avg": 43085,
-                  "count": 75
+                  "avg": 43235,
+                  "count": 37
                 }
               },
               "trend": [
@@ -5277,14 +5341,7 @@
                   "city": "부산",
                   "district": "연산/토곡",
                   "hotel_name": "부산 연산동 W",
-                  "price": 25000,
-                  "platform": "yanolja"
-                },
-                {
-                  "city": "부산",
-                  "district": "연산/토곡",
-                  "hotel_name": "부산 연산동 WABA",
-                  "price": 30000,
+                  "price": 23000,
                   "platform": "yanolja"
                 },
                 {
@@ -5300,8 +5357,79 @@
                   "hotel_name": "부산 연산 토곡 코지",
                   "price": 30000,
                   "platform": "yanolja"
+                },
+                {
+                  "city": "부산",
+                  "district": "연산/토곡",
+                  "hotel_name": "부산 연산동 The Lua(더루아)",
+                  "price": 31500,
+                  "platform": "yanolja"
                 }
               ]
+            }
+          ],
+          "top5": [
+            {
+              "city": "부산",
+              "hotel_name": "부산 광안리 더클럽호텔",
+              "price": 249000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "부산",
+              "hotel_name": "부산 서면 코지트리 호텔(서면점)",
+              "price": 200000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "부산",
+              "hotel_name": "부산 구포 덴바스타 키즈호텔",
+              "price": 198000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "부산",
+              "hotel_name": "부산 송정 솔스테이 풀빌라&료칸",
+              "price": 190000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "부산",
+              "hotel_name": "부산 해운대 쇼",
+              "price": 180000,
+              "platform": "yanolja"
+            }
+          ],
+          "bottom5": [
+            {
+              "city": "부산",
+              "hotel_name": "부산 덕천 스카이",
+              "price": 19500,
+              "platform": "yanolja"
+            },
+            {
+              "city": "부산",
+              "hotel_name": "부산 온천장 아라",
+              "price": 20000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "부산",
+              "hotel_name": "부산 온천장 샤인",
+              "price": 20000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "부산",
+              "hotel_name": "부산 보수동 빌리호텔 (남포점)",
+              "price": 20000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "부산",
+              "hotel_name": "부산 온천장 6번가",
+              "price": 20500,
+              "platform": "yanolja"
             }
           ]
         },
@@ -6190,6 +6318,70 @@
                 }
               ]
             }
+          ],
+          "top5": [
+            {
+              "city": "인천",
+              "hotel_name": "인천(을왕리) 더 프린스 호텔",
+              "price": 110000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "인천",
+              "hotel_name": "인천공항(운서동) 시애틀",
+              "price": 85000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "인천",
+              "hotel_name": "인천(구월동) 아늑 시그니처 호텔",
+              "price": 74000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "인천",
+              "hotel_name": "인천(소래포구) 글로스터 호텔 인천",
+              "price": 73800,
+              "platform": "yanolja"
+            },
+            {
+              "city": "인천",
+              "hotel_name": "인천(을왕리) 오션사이드호텔",
+              "price": 72000,
+              "platform": "yanolja"
+            }
+          ],
+          "bottom5": [
+            {
+              "city": "인천",
+              "hotel_name": "인천(호구포) 골드코스트 호텔",
+              "price": 17500,
+              "platform": "yanolja"
+            },
+            {
+              "city": "인천",
+              "hotel_name": "인천(주안) 브랜드",
+              "price": 21000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "인천",
+              "hotel_name": "인천(부평) 이오스",
+              "price": 21250,
+              "platform": "yanolja"
+            },
+            {
+              "city": "인천",
+              "hotel_name": "인천(부평) 호텔 휴",
+              "price": 22000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "인천",
+              "hotel_name": "인천(부평) 두루와 호텔(2호점)",
+              "price": 22000,
+              "platform": "yanolja"
+            }
           ]
         },
         {
@@ -6386,6 +6578,70 @@
                   "platform": "yanolja"
                 }
               ]
+            }
+          ],
+          "top5": [
+            {
+              "city": "광주",
+              "hotel_name": "대구 현풍 프라나 관광호텔(PRANA HOTEL)",
+              "price": 359000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "광주",
+              "hotel_name": "대구 동성로 HOTEL AU(에이유)",
+              "price": 163000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "광주",
+              "hotel_name": "대구 현풍 Hotel 노블(NOBLE)",
+              "price": 145000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "광주",
+              "hotel_name": "대구 동대구역 Eastern Hotel (이스턴호텔)",
+              "price": 144000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "광주",
+              "hotel_name": "대구 동성로 그리다 교동",
+              "price": 120000,
+              "platform": "yanolja"
+            }
+          ],
+          "bottom5": [
+            {
+              "city": "광주",
+              "hotel_name": "대구 이곡동 뷰",
+              "price": 20000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "광주",
+              "hotel_name": "대구 평리동 와",
+              "price": 25000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "광주",
+              "hotel_name": "대구 대구공항 엠모텔",
+              "price": 28450,
+              "platform": "yanolja"
+            },
+            {
+              "city": "광주",
+              "hotel_name": "대구 동촌 힐",
+              "price": 28500,
+              "platform": "yanolja"
+            },
+            {
+              "city": "광주",
+              "hotel_name": "대구 두류 아테네",
+              "price": 28900,
+              "platform": "yanolja"
             }
           ]
         },
@@ -6860,6 +7116,70 @@
                 }
               ]
             }
+          ],
+          "top5": [
+            {
+              "city": "수원",
+              "hotel_name": "수원 행궁동 레보라호텔 by아늑",
+              "price": 250000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "수원",
+              "hotel_name": "수원(영화동) 달빛여관",
+              "price": 243000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "수원",
+              "hotel_name": "수원역 에스스테이",
+              "price": 109000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "수원",
+              "hotel_name": "수원 벨라스위트 호텔",
+              "price": 90000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "수원",
+              "hotel_name": "수원역 아늑호텔",
+              "price": 70000,
+              "platform": "yanolja"
+            }
+          ],
+          "bottom5": [
+            {
+              "city": "수원",
+              "hotel_name": "수원(시청역) 엑스아이(Xi)",
+              "price": 20700,
+              "platform": "yanolja"
+            },
+            {
+              "city": "수원",
+              "hotel_name": "수원역 로데오 아이비",
+              "price": 20800,
+              "platform": "yanolja"
+            },
+            {
+              "city": "수원",
+              "hotel_name": "수원역 호텔 맘(MOM)",
+              "price": 21000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "수원",
+              "hotel_name": "수원역 제이(J)호텔",
+              "price": 22000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "수원",
+              "hotel_name": "수원역 라리아 수원",
+              "price": 22000,
+              "platform": "yanolja"
+            }
           ]
         },
         {
@@ -7194,6 +7514,70 @@
                   "platform": "yanolja"
                 }
               ]
+            }
+          ],
+          "top5": [
+            {
+              "city": "울산",
+              "hotel_name": "울산 진하 브라운도트 진하해수욕장점",
+              "price": 150000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "울산",
+              "hotel_name": "울산 삼산 HOTEL 휴연가 by 아늑",
+              "price": 148000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "울산",
+              "hotel_name": "울산 영남알프스 간월재 호텔",
+              "price": 110000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "울산",
+              "hotel_name": "울산 정자동 솔레이 호텔",
+              "price": 109000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "울산",
+              "hotel_name": "울산 신천동 호텔 바이브",
+              "price": 100000,
+              "platform": "yanolja"
+            }
+          ],
+          "bottom5": [
+            {
+              "city": "울산",
+              "hotel_name": "울산 중구 베니스",
+              "price": 25000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "울산",
+              "hotel_name": "울산 영남알프스 힐",
+              "price": 30000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "울산",
+              "hotel_name": "울산 영남알프스 샌디아온천",
+              "price": 30000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "울산",
+              "hotel_name": "울산 영남알프스 브이온천",
+              "price": 30000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "울산",
+              "hotel_name": "울산 영남알프스 MW",
+              "price": 30000,
+              "platform": "yanolja"
             }
           ]
         },
@@ -7806,6 +8190,70 @@
                 }
               ]
             }
+          ],
+          "top5": [
+            {
+              "city": "대전",
+              "hotel_name": "대전 유성 호텔 141",
+              "price": 400000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "대전",
+              "hotel_name": "대전 유성 아늑 료칸 호텔",
+              "price": 240000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "대전",
+              "hotel_name": "대전 아늑호텔 유성온천역점",
+              "price": 238000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "대전",
+              "hotel_name": "대전 유성 세르보",
+              "price": 200000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "대전",
+              "hotel_name": "대전 둔산 3월",
+              "price": 188000,
+              "platform": "yanolja"
+            }
+          ],
+          "bottom5": [
+            {
+              "city": "대전",
+              "hotel_name": "대전 용전 초이스",
+              "price": 25000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "대전",
+              "hotel_name": "대전 용전 룩(LOOK)",
+              "price": 27000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "대전",
+              "hotel_name": "대전 용전 보령모텔",
+              "price": 28000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "대전",
+              "hotel_name": "대전 용전 해피타워",
+              "price": 30000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "대전",
+              "hotel_name": "대전 용전 하이클래스",
+              "price": 30000,
+              "platform": "yanolja"
+            }
           ]
         },
         {
@@ -8141,6 +8589,70 @@
                 }
               ]
             }
+          ],
+          "top5": [
+            {
+              "city": "대구",
+              "hotel_name": "대구 동성로 HOTEL AU(에이유)",
+              "price": 163000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "대구",
+              "hotel_name": "대구 동대구역 Eastern Hotel (이스턴호텔)",
+              "price": 144000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "대구",
+              "hotel_name": "대구 동성로 그리다 교동",
+              "price": 120000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "대구",
+              "hotel_name": "대구 수성 더 아르코 호텔 라이온즈파크점",
+              "price": 94500,
+              "platform": "yanolja"
+            },
+            {
+              "city": "대구",
+              "hotel_name": "대구 동성로 호텔 노블스테이(Noblestay)",
+              "price": 92000,
+              "platform": "yanolja"
+            }
+          ],
+          "bottom5": [
+            {
+              "city": "대구",
+              "hotel_name": "대구 경북대 프렌즈",
+              "price": 20000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "대구",
+              "hotel_name": "대구 경북대 로즈",
+              "price": 24000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "대구",
+              "hotel_name": "대구 지산동 로잔",
+              "price": 30000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "대구",
+              "hotel_name": "대구 경북대 에코(ECO)",
+              "price": 30000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "대구",
+              "hotel_name": "대구 동성로 라온",
+              "price": 31000,
+              "platform": "yanolja"
+            }
           ]
         },
         {
@@ -8475,6 +8987,70 @@
                   "platform": "yanolja"
                 }
               ]
+            }
+          ],
+          "top5": [
+            {
+              "city": "창원",
+              "hotel_name": "창원 상남동 베스트루이스해밀턴 호텔",
+              "price": 299900,
+              "platform": "yanolja"
+            },
+            {
+              "city": "창원",
+              "hotel_name": "창원 상남동 까사데이",
+              "price": 75000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "창원",
+              "hotel_name": "창원 마산 스테이 공담",
+              "price": 73000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "창원",
+              "hotel_name": "창원 중앙동 호텔레오 중앙점",
+              "price": 70900,
+              "platform": "yanolja"
+            },
+            {
+              "city": "창원",
+              "hotel_name": "창원 중앙동 호텔티티(HOTEL T.T) 써밋",
+              "price": 70000,
+              "platform": "yanolja"
+            }
+          ],
+          "bottom5": [
+            {
+              "city": "창원",
+              "hotel_name": "창원 용호동 제타(ZETA)",
+              "price": 20000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "창원",
+              "hotel_name": "창원 마산 소풍",
+              "price": 20000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "창원",
+              "hotel_name": "창원 마산 리츠",
+              "price": 20000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "창원",
+              "hotel_name": "창원 마산 합성동 쁘띠호텔",
+              "price": 25000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "창원",
+              "hotel_name": "창원 마산 매일장",
+              "price": 25000,
+              "platform": "yanolja"
             }
           ]
         },
@@ -8949,6 +9525,70 @@
                 }
               ]
             }
+          ],
+          "top5": [
+            {
+              "city": "제주",
+              "hotel_name": "서귀포 사계 메종산방",
+              "price": 295000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "제주",
+              "hotel_name": "제주 보보스",
+              "price": 175000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "제주",
+              "hotel_name": "제주 더제이드 호텔",
+              "price": 155300,
+              "platform": "yanolja"
+            },
+            {
+              "city": "제주",
+              "hotel_name": "서귀포 중문 씨앤비호텔 코지앤부띠끄",
+              "price": 154000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "제주",
+              "hotel_name": "제주 신제주 노블레스 호텔",
+              "price": 130000,
+              "platform": "yanolja"
+            }
+          ],
+          "bottom5": [
+            {
+              "city": "제주",
+              "hotel_name": "제주 한라",
+              "price": 8000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "제주",
+              "hotel_name": "제주 린든",
+              "price": 8000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "제주",
+              "hotel_name": "서귀포 록산모텔",
+              "price": 27000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "제주",
+              "hotel_name": "서귀포 한두모텔",
+              "price": 30000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "제주",
+              "hotel_name": "서귀포 월라산스테이",
+              "price": 33000,
+              "platform": "yanolja"
+            }
           ]
         },
         {
@@ -9145,6 +9785,70 @@
                   "platform": "yanolja"
                 }
               ]
+            }
+          ],
+          "top5": [
+            {
+              "city": "고양",
+              "hotel_name": "일산(탄현) 호텔 그라체",
+              "price": 130000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "고양",
+              "hotel_name": "일산(장항) 레이크베이",
+              "price": 125000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "고양",
+              "hotel_name": "일산(장항) 저스트플레이 라페스타점(Hostel)",
+              "price": 110000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "고양",
+              "hotel_name": "일산(장항) 퀸타운 HOTEL",
+              "price": 105000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "고양",
+              "hotel_name": "고양 HOTEL THE WYNN",
+              "price": 100000,
+              "platform": "yanolja"
+            }
+          ],
+          "bottom5": [
+            {
+              "city": "고양",
+              "hotel_name": "고양(주교) 제우스",
+              "price": 29000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "고양",
+              "hotel_name": "고양(주교) 뉴힐튼",
+              "price": 31000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "고양",
+              "hotel_name": "고양(토당) 로얄",
+              "price": 32000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "고양",
+              "hotel_name": "일산(장항) 스테이업 캡슐호텔",
+              "price": 33000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "고양",
+              "hotel_name": "고양(화정) VOLE",
+              "price": 33000,
+              "platform": "yanolja"
             }
           ]
         }
@@ -10280,6 +10984,70 @@
                   "platform": "yanolja"
                 }
               ]
+            }
+          ],
+          "top5": [
+            {
+              "city": "경상",
+              "hotel_name": "코스모스 울릉도 빌라 쏘메",
+              "price": 1239700,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경상",
+              "hotel_name": "쏠비치 남해 빌라",
+              "price": 709000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경상",
+              "hotel_name": "한화리조트 거제 르 씨엘",
+              "price": 494000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경상",
+              "hotel_name": "락고재 하회한옥호텔 기와본관",
+              "price": 435490,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경상",
+              "hotel_name": "대구 현풍 프라나 호텔",
+              "price": 359000,
+              "platform": "yanolja"
+            }
+          ],
+          "bottom5": [
+            {
+              "city": "경상",
+              "hotel_name": "헤미쉬호텔",
+              "price": 40000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경상",
+              "hotel_name": "장유 아몬드 키즈 호텔",
+              "price": 40000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경상",
+              "hotel_name": "씨엘미니호텔",
+              "price": 40000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경상",
+              "hotel_name": "대구 옐로 호텔",
+              "price": 40000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경상",
+              "hotel_name": "대구 멜로 호텔",
+              "price": 40000,
+              "platform": "yanolja"
             }
           ]
         },
@@ -11996,6 +12764,70 @@
                 }
               ]
             }
+          ],
+          "top5": [
+            {
+              "city": "서울",
+              "hotel_name": "JW 메리어트 호텔 서울",
+              "price": 1306800,
+              "platform": "yanolja"
+            },
+            {
+              "city": "서울",
+              "hotel_name": "조선 팰리스 서울 강남 럭셔리 컬렉션 호텔",
+              "price": 1100000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "서울",
+              "hotel_name": "그랜드 인터컨티넨탈 서울 파르나스",
+              "price": 1016400,
+              "platform": "yanolja"
+            },
+            {
+              "city": "서울",
+              "hotel_name": "아난티 앳 강남",
+              "price": 908600,
+              "platform": "yanolja"
+            },
+            {
+              "city": "서울",
+              "hotel_name": "보코 서울 강남 by IHG",
+              "price": 904000,
+              "platform": "yanolja"
+            }
+          ],
+          "bottom5": [
+            {
+              "city": "서울",
+              "hotel_name": "타오 호텔",
+              "price": 35000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "서울",
+              "hotel_name": "불광 포레스타 호텔",
+              "price": 40000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "서울",
+              "hotel_name": "호텔 더 블루 천호",
+              "price": 50000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "서울",
+              "hotel_name": "스테이 패스포트 익스프레스 경성 청량리점",
+              "price": 50000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "서울",
+              "hotel_name": "3S호텔 불광점",
+              "price": 50000,
+              "platform": "yanolja"
+            }
           ]
         },
         {
@@ -13159,6 +13991,70 @@
                 }
               ]
             }
+          ],
+          "top5": [
+            {
+              "city": "부산",
+              "hotel_name": "뉴시즈 해운대 레지던스",
+              "price": 449000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "부산",
+              "hotel_name": "파크 하얏트 부산",
+              "price": 437800,
+              "platform": "yanolja"
+            },
+            {
+              "city": "부산",
+              "hotel_name": "시그니엘 부산",
+              "price": 423500,
+              "platform": "yanolja"
+            },
+            {
+              "city": "부산",
+              "hotel_name": "뉴시즈 엘시티 레지던스",
+              "price": 413340,
+              "platform": "yanolja"
+            },
+            {
+              "city": "부산",
+              "hotel_name": "코지트리 서면점",
+              "price": 400000,
+              "platform": "yanolja"
+            }
+          ],
+          "bottom5": [
+            {
+              "city": "부산",
+              "hotel_name": "25h Hotel 2 범천점",
+              "price": 25000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "부산",
+              "hotel_name": "부산 서면 비즈니스호텔 J7",
+              "price": 30000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "부산",
+              "hotel_name": "광안리 호텔 메종",
+              "price": 35000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "부산",
+              "hotel_name": "나무늘보 호텔 서면점",
+              "price": 38000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "부산",
+              "hotel_name": "사상 고요한 호텔",
+              "price": 40000,
+              "platform": "yanolja"
+            }
           ]
         },
         {
@@ -14046,6 +14942,70 @@
                 }
               ]
             }
+          ],
+          "top5": [
+            {
+              "city": "강원",
+              "hotel_name": "강릉 씨마크 호텔",
+              "price": 605000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "강원",
+              "hotel_name": "소노펠리체 델피노",
+              "price": 310000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "강원",
+              "hotel_name": "쏠비치 삼척 D동(노블리안)",
+              "price": 293000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "강원",
+              "hotel_name": "호텔하운드 강릉경포",
+              "price": 288000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "강원",
+              "hotel_name": "소노펠리체 빌리지 델피노",
+              "price": 274000,
+              "platform": "yanolja"
+            }
+          ],
+          "bottom5": [
+            {
+              "city": "강원",
+              "hotel_name": "현대수 리조트 속초",
+              "price": 38000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "강원",
+              "hotel_name": "포트뷰 HOTEL",
+              "price": 39000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "강원",
+              "hotel_name": "아리아리 호텔 정선",
+              "price": 39990,
+              "platform": "yanolja"
+            },
+            {
+              "city": "강원",
+              "hotel_name": "해돋이 호텔",
+              "price": 40000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "강원",
+              "hotel_name": "에이트 호텔",
+              "price": 40000,
+              "platform": "yanolja"
+            }
           ]
         },
         {
@@ -14794,6 +15754,70 @@
                   "platform": "yanolja"
                 }
               ]
+            }
+          ],
+          "top5": [
+            {
+              "city": "전라",
+              "hotel_name": "목포 클라우드인 호텔 평화광장점",
+              "price": 440000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "전라",
+              "hotel_name": "소노캄 여수",
+              "price": 215000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "전라",
+              "hotel_name": "호텔현대 바이 라한 목포",
+              "price": 210000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "전라",
+              "hotel_name": "나주 웨스턴 호텔",
+              "price": 200000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "전라",
+              "hotel_name": "홀리데이인 광주",
+              "price": 180000,
+              "platform": "yanolja"
+            }
+          ],
+          "bottom5": [
+            {
+              "city": "전라",
+              "hotel_name": "호텔 여기어때 충장로점",
+              "price": 37000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "전라",
+              "hotel_name": "아늑호텔 전주점",
+              "price": 38250,
+              "platform": "yanolja"
+            },
+            {
+              "city": "전라",
+              "hotel_name": "전주 마리 호텔",
+              "price": 40000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "전라",
+              "hotel_name": "여수 맥스호텔",
+              "price": 42000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "전라",
+              "hotel_name": "여수 노블 호텔",
+              "price": 42750,
+              "platform": "yanolja"
             }
           ]
         },
@@ -15682,6 +16706,70 @@
                 }
               ]
             }
+          ],
+          "top5": [
+            {
+              "city": "충청",
+              "hotel_name": "솔라고 리조트",
+              "price": 640000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "충청",
+              "hotel_name": "호텔 디에디션",
+              "price": 430000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "충청",
+              "hotel_name": "보령 발레리조트",
+              "price": 320000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "충청",
+              "hotel_name": "호텔 오노마 대전, 오토그래프 컬렉션, 메리어트 인터내셔널",
+              "price": 286000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "충청",
+              "hotel_name": "제천 리솜 포레스트&레스트리",
+              "price": 254000,
+              "platform": "yanolja"
+            }
+          ],
+          "bottom5": [
+            {
+              "city": "충청",
+              "hotel_name": "천안 호텔 어반트",
+              "price": 35000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "충청",
+              "hotel_name": "천안 엔유 호텔",
+              "price": 35000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "충청",
+              "hotel_name": "소륜 호텔 천안 by 아늑",
+              "price": 35000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "충청",
+              "hotel_name": "탑클라우드 호텔 천안",
+              "price": 41400,
+              "platform": "yanolja"
+            },
+            {
+              "city": "충청",
+              "hotel_name": "천안 파르페",
+              "price": 42500,
+              "platform": "yanolja"
+            }
           ]
         },
         {
@@ -16569,6 +17657,70 @@
                 }
               ]
             }
+          ],
+          "top5": [
+            {
+              "city": "제주",
+              "hotel_name": "JW 메리어트 제주 리조트&스파",
+              "price": 1320000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "제주",
+              "hotel_name": "파르나스 호텔 제주",
+              "price": 772800,
+              "platform": "yanolja"
+            },
+            {
+              "city": "제주",
+              "hotel_name": "그랜드 조선 힐 스위트",
+              "price": 693000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "제주",
+              "hotel_name": "롯데아트빌라스",
+              "price": 680000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "제주",
+              "hotel_name": "제주신라호텔",
+              "price": 660000,
+              "platform": "yanolja"
+            }
+          ],
+          "bottom5": [
+            {
+              "city": "제주",
+              "hotel_name": "제주 아르본리조트",
+              "price": 25000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "제주",
+              "hotel_name": "호텔 마노앤디또",
+              "price": 34200,
+              "platform": "yanolja"
+            },
+            {
+              "city": "제주",
+              "hotel_name": "그랜드 밀리언스 호텔 서귀포",
+              "price": 34650,
+              "platform": "yanolja"
+            },
+            {
+              "city": "제주",
+              "hotel_name": "나비스호텔",
+              "price": 38000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "제주",
+              "hotel_name": "코델리아 호텔",
+              "price": 40000,
+              "platform": "yanolja"
+            }
           ]
         },
         {
@@ -17318,6 +18470,70 @@
                 }
               ]
             }
+          ],
+          "top5": [
+            {
+              "city": "경기",
+              "hotel_name": "코트야드 메리어트 서울 판교",
+              "price": 385000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경기",
+              "hotel_name": "코트야드 메리어트 수원",
+              "price": 341000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경기",
+              "hotel_name": "김포 스타비아 호텔",
+              "price": 305000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경기",
+              "hotel_name": "호텔 라뷔포레",
+              "price": 300000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경기",
+              "hotel_name": "그래비티 조선 서울 판교, 오토그래프 컬렉션",
+              "price": 299200,
+              "platform": "yanolja"
+            }
+          ],
+          "bottom5": [
+            {
+              "city": "경기",
+              "hotel_name": "수원역 J호텔",
+              "price": 25000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경기",
+              "hotel_name": "파주 피카소 호텔",
+              "price": 40000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경기",
+              "hotel_name": "수원역 아이비 스테이 호텔",
+              "price": 40000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경기",
+              "hotel_name": "도노 1796 호텔",
+              "price": 40000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경기",
+              "hotel_name": "홈즈스테이 수원",
+              "price": 45980,
+              "platform": "yanolja"
+            }
           ]
         },
         {
@@ -17790,6 +19006,70 @@
                   "platform": "yanolja"
                 }
               ]
+            }
+          ],
+          "top5": [
+            {
+              "city": "인천",
+              "hotel_name": "인천 H-Avenue 호텔 소래포구점",
+              "price": 799992,
+              "platform": "yanolja"
+            },
+            {
+              "city": "인천",
+              "hotel_name": "경원재 바이 워커힐",
+              "price": 334000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "인천",
+              "hotel_name": "인스파이어 엔터테인먼트 리조트",
+              "price": 330000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "인천",
+              "hotel_name": "쉐라톤 그랜드 인천",
+              "price": 314600,
+              "platform": "yanolja"
+            },
+            {
+              "city": "인천",
+              "hotel_name": "오크우드 프리미어 인천",
+              "price": 296450,
+              "platform": "yanolja"
+            }
+          ],
+          "bottom5": [
+            {
+              "city": "인천",
+              "hotel_name": "골드코스트 호텔",
+              "price": 34900,
+              "platform": "yanolja"
+            },
+            {
+              "city": "인천",
+              "hotel_name": "바다가 보이는 사이판 호텔",
+              "price": 35000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "인천",
+              "hotel_name": "그랑블루 호텔 앤 레지던스",
+              "price": 35000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "인천",
+              "hotel_name": "호텔 카카오",
+              "price": 36000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "인천",
+              "hotel_name": "스텔라호텔 (구. 인터내셔널호텔 인천영종)",
+              "price": 36000,
+              "platform": "yanolja"
             }
           ]
         }
@@ -19292,6 +20572,70 @@
                 }
               ]
             }
+          ],
+          "top5": [
+            {
+              "city": "강원",
+              "hotel_name": "동해 스테이피어471펜션",
+              "price": 600000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "강원",
+              "hotel_name": "강릉 더원펜션",
+              "price": 600000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "강원",
+              "hotel_name": "강릉 더뷰펜션",
+              "price": 600000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "강원",
+              "hotel_name": "양양 뷰펜션",
+              "price": 555000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "강원",
+              "hotel_name": "양양 비치마운틴펜션",
+              "price": 550000,
+              "platform": "yanolja"
+            }
+          ],
+          "bottom5": [
+            {
+              "city": "강원",
+              "hotel_name": "춘천 신촌캠프장",
+              "price": 21000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "강원",
+              "hotel_name": "홍천 쌍계곡펜션&캠핑",
+              "price": 30000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "강원",
+              "hotel_name": "양양 아름다운바다애견동반펜션",
+              "price": 33300,
+              "platform": "yanolja"
+            },
+            {
+              "city": "강원",
+              "hotel_name": "속초 설악비치타운",
+              "price": 35000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "강원",
+              "hotel_name": "강릉 빌리언스펜션",
+              "price": 35000,
+              "platform": "yanolja"
+            }
           ]
         },
         {
@@ -19902,6 +21246,70 @@
                   "platform": "yanolja"
                 }
               ]
+            }
+          ],
+          "top5": [
+            {
+              "city": "가평",
+              "hotel_name": "가평 미라몬티 독채 단체 풀빌라",
+              "price": 690000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "가평",
+              "hotel_name": "가평 리버프론트123",
+              "price": 650000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "가평",
+              "hotel_name": "가평 스카이캐슬펜션",
+              "price": 605000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "가평",
+              "hotel_name": "가평 별끌림하우스펜션",
+              "price": 544000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "가평",
+              "hotel_name": "가평 더멜로우키즈풀빌라",
+              "price": 450000,
+              "platform": "yanolja"
+            }
+          ],
+          "bottom5": [
+            {
+              "city": "가평",
+              "hotel_name": "가평 세라핌글램핑펜션",
+              "price": 39000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "가평",
+              "hotel_name": "가평 메종드파티오커플스파풀빌라펜션",
+              "price": 40000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "가평",
+              "hotel_name": "가평 그루잠펜션",
+              "price": 40000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "가평",
+              "hotel_name": "가평 일마레펜션",
+              "price": 41000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "가평",
+              "hotel_name": "가평 토리펜션",
+              "price": 41600,
+              "platform": "yanolja"
             }
           ]
         },
@@ -20651,6 +22059,70 @@
                   "platform": "yanolja"
                 }
               ]
+            }
+          ],
+          "top5": [
+            {
+              "city": "경북",
+              "hotel_name": "경주 워니유니키즈풀빌라",
+              "price": 490000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경북",
+              "hotel_name": "문경 수공방펜션",
+              "price": 450000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경북",
+              "hotel_name": "안동 더담다키즈펜션",
+              "price": 410000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경북",
+              "hotel_name": "포항 스윗미148풀빌라",
+              "price": 364000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경북",
+              "hotel_name": "경주 호헤 풀빌라",
+              "price": 360000,
+              "platform": "yanolja"
+            }
+          ],
+          "bottom5": [
+            {
+              "city": "경북",
+              "hotel_name": "울진 해빛뜰마을펜션",
+              "price": 15000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경북",
+              "hotel_name": "영덕 데이트리펜션",
+              "price": 30500,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경북",
+              "hotel_name": "포항 화진별장펜션",
+              "price": 39000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경북",
+              "hotel_name": "영덕 스페이스영덕",
+              "price": 39000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경북",
+              "hotel_name": "영주 소백산 비로오토파크캠핑&펜션",
+              "price": 40000,
+              "platform": "yanolja"
             }
           ]
         },
@@ -21539,6 +23011,70 @@
                 }
               ]
             }
+          ],
+          "top5": [
+            {
+              "city": "경남",
+              "hotel_name": "하동 하늘꼬마키즈풀빌라",
+              "price": 550000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경남",
+              "hotel_name": "밀양 고례 풀빌라앤펜션",
+              "price": 500000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경남",
+              "hotel_name": "거제도 구영리풀빌라",
+              "price": 385000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경남",
+              "hotel_name": "거제 스테이거제 풀빌라",
+              "price": 350000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경남",
+              "hotel_name": "거제도 비클래시 독채 키즈풀빌라 정글돔",
+              "price": 339000,
+              "platform": "yanolja"
+            }
+          ],
+          "bottom5": [
+            {
+              "city": "경남",
+              "hotel_name": "통영 오나펜션",
+              "price": 27000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경남",
+              "hotel_name": "거제도 까르페디엠펜션(몽돌해수욕장)",
+              "price": 28000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경남",
+              "hotel_name": "거제도 퀸모텔펜션",
+              "price": 35000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경남",
+              "hotel_name": "거제도 한솔펜션",
+              "price": 36000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경남",
+              "hotel_name": "거제도 메모리키즈풀빌라",
+              "price": 36550,
+              "platform": "yanolja"
+            }
           ]
         },
         {
@@ -22287,6 +23823,70 @@
                   "platform": "yanolja"
                 }
               ]
+            }
+          ],
+          "top5": [
+            {
+              "city": "전남",
+              "hotel_name": "여수 아른독채풀빌라",
+              "price": 700000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "전남",
+              "hotel_name": "여수 소트네풀빌라펜션",
+              "price": 637000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "전남",
+              "hotel_name": "여수 오아시스90 풀빌라 101동",
+              "price": 600000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "전남",
+              "hotel_name": "여수 백야스테이",
+              "price": 600000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "전남",
+              "hotel_name": "여수 오로라펜션",
+              "price": 500000,
+              "platform": "yanolja"
+            }
+          ],
+          "bottom5": [
+            {
+              "city": "전남",
+              "hotel_name": "화순 영벽정오토캠핑장",
+              "price": 30000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "전남",
+              "hotel_name": "여수 아임오션뷰펜션",
+              "price": 31000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "전남",
+              "hotel_name": "목포 달달마실",
+              "price": 33000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "전남",
+              "hotel_name": "여수 달콤에이펜션",
+              "price": 35000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "전남",
+              "hotel_name": "보성 율포오토캠핑리조트",
+              "price": 35000,
+              "platform": "yanolja"
             }
           ]
         },
@@ -23037,6 +24637,70 @@
                 }
               ]
             }
+          ],
+          "top5": [
+            {
+              "city": "충남",
+              "hotel_name": "천안 성거으뜸펜션",
+              "price": 405000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "충남",
+              "hotel_name": "태안 두여펜션",
+              "price": 360000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "충남",
+              "hotel_name": "대전 스테이대전",
+              "price": 350000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "충남",
+              "hotel_name": "태안 유키즈풀빌라",
+              "price": 300000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "충남",
+              "hotel_name": "태안 오션 더 힐",
+              "price": 297000,
+              "platform": "yanolja"
+            }
+          ],
+          "bottom5": [
+            {
+              "city": "충남",
+              "hotel_name": "보령(대천) 바다풍경펜션",
+              "price": 26000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "충남",
+              "hotel_name": "보령(대천) 동그라미펜션",
+              "price": 30000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "충남",
+              "hotel_name": "보령 대천초록펜션",
+              "price": 30000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "충남",
+              "hotel_name": "태안(안면도) 꽃지늘봄펜션",
+              "price": 33000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "충남",
+              "hotel_name": "보령(대천) 사과나무펜션",
+              "price": 33000,
+              "platform": "yanolja"
+            }
           ]
         },
         {
@@ -23786,6 +25450,70 @@
                 }
               ]
             }
+          ],
+          "top5": [
+            {
+              "city": "경기",
+              "hotel_name": "남양주 나무해담",
+              "price": 980000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경기",
+              "hotel_name": "양평 서후리141",
+              "price": 733000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경기",
+              "hotel_name": "남양주 하늘해담",
+              "price": 690000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경기",
+              "hotel_name": "용인 스테이뷰 풀빌라",
+              "price": 665000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경기",
+              "hotel_name": "남양주 슈필라움풀빌라",
+              "price": 565000,
+              "platform": "yanolja"
+            }
+          ],
+          "bottom5": [
+            {
+              "city": "경기",
+              "hotel_name": "남양주 힐링테니스펜션",
+              "price": 30000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경기",
+              "hotel_name": "포천 딥포레스트캠핑장",
+              "price": 31500,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경기",
+              "hotel_name": "포천 비발디하우스캠핑&펜션",
+              "price": 35000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경기",
+              "hotel_name": "파주 마실캠핑장",
+              "price": 40000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "경기",
+              "hotel_name": "양주 캠프랩",
+              "price": 40000,
+              "platform": "yanolja"
+            }
           ]
         },
         {
@@ -24397,6 +26125,70 @@
                 }
               ]
             }
+          ],
+          "top5": [
+            {
+              "city": "제주",
+              "hotel_name": "제주 올레하우스펜션",
+              "price": 590000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "제주",
+              "hotel_name": "서귀포 몬테르니 라미에르",
+              "price": 585000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "제주",
+              "hotel_name": "제주 오션스카이빌리지펜션",
+              "price": 580000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "제주",
+              "hotel_name": "제주 부티아풀빌라",
+              "price": 490000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "제주",
+              "hotel_name": "제주 인더뷰풀빌라",
+              "price": 439000,
+              "platform": "yanolja"
+            }
+          ],
+          "bottom5": [
+            {
+              "city": "제주",
+              "hotel_name": "서귀포 베프랑게스트하우스",
+              "price": 16200,
+              "platform": "yanolja"
+            },
+            {
+              "city": "제주",
+              "hotel_name": "서귀포 자유로운사색가",
+              "price": 21000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "제주",
+              "hotel_name": "서귀포 표선카라반",
+              "price": 38800,
+              "platform": "yanolja"
+            },
+            {
+              "city": "제주",
+              "hotel_name": "제주 하얀별펜션 (구엄리염전)",
+              "price": 39000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "제주",
+              "hotel_name": "서귀포 푸르미르펜션",
+              "price": 39000,
+              "platform": "yanolja"
+            }
           ]
         },
         {
@@ -24869,6 +26661,70 @@
                   "platform": "yanolja"
                 }
               ]
+            }
+          ],
+          "top5": [
+            {
+              "city": "인천",
+              "hotel_name": "을왕리 솔마루펜션",
+              "price": 600000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "인천",
+              "hotel_name": "대부도 쥬디스&보니따 펜션",
+              "price": 500000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "인천",
+              "hotel_name": "대부도 루아풀빌라펜션",
+              "price": 500000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "인천",
+              "hotel_name": "강화도 코호풀빌라",
+              "price": 496000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "인천",
+              "hotel_name": "대부도(영흥도) 메종드라메르",
+              "price": 465000,
+              "platform": "yanolja"
+            }
+          ],
+          "bottom5": [
+            {
+              "city": "인천",
+              "hotel_name": "인천 미호재 동인천역점",
+              "price": 24000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "인천",
+              "hotel_name": "인천 레토하우스",
+              "price": 36000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "인천",
+              "hotel_name": "대부도(선재도) 돌고래펜션",
+              "price": 39990,
+              "platform": "yanolja"
+            },
+            {
+              "city": "인천",
+              "hotel_name": "을왕리 서해캠핑장",
+              "price": 40000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "인천",
+              "hotel_name": "을왕리 경주모텔",
+              "price": 40000,
+              "platform": "yanolja"
             }
           ]
         },
@@ -25481,6 +27337,70 @@
                 }
               ]
             }
+          ],
+          "top5": [
+            {
+              "city": "전북",
+              "hotel_name": "무주 나린풀빌라",
+              "price": 700000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "전북",
+              "hotel_name": "완주 독채펜션정원채",
+              "price": 450000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "전북",
+              "hotel_name": "정읍 아름다운날쉼",
+              "price": 400000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "전북",
+              "hotel_name": "전주 풍류헌독채펜션",
+              "price": 400000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "전북",
+              "hotel_name": "무주 시크릿",
+              "price": 400000,
+              "platform": "yanolja"
+            }
+          ],
+          "bottom5": [
+            {
+              "city": "전북",
+              "hotel_name": "전주 한옥고희펜션",
+              "price": 30000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "전북",
+              "hotel_name": "전주 귀분씨네",
+              "price": 30000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "전북",
+              "hotel_name": "무주 조은펜션",
+              "price": 30000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "전북",
+              "hotel_name": "무주 제일산장펜션",
+              "price": 30000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "전북",
+              "hotel_name": "무주 여행숲 백암산장펜션",
+              "price": 30000,
+              "platform": "yanolja"
+            }
           ]
         },
         {
@@ -25953,6 +27873,70 @@
                   "platform": "yanolja"
                 }
               ]
+            }
+          ],
+          "top5": [
+            {
+              "city": "충북",
+              "hotel_name": "제천 정민박",
+              "price": 675000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "충북",
+              "hotel_name": "제천 화이트풀빌라",
+              "price": 500000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "충북",
+              "hotel_name": "진천 스테이 산 21",
+              "price": 431000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "충북",
+              "hotel_name": "진천 곤달비펜션",
+              "price": 396000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "충북",
+              "hotel_name": "제천 청풍호레이크뷰펜션",
+              "price": 380000,
+              "platform": "yanolja"
+            }
+          ],
+          "bottom5": [
+            {
+              "city": "충북",
+              "hotel_name": "보은 속리산 스테이펜션호텔",
+              "price": 28000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "충북",
+              "hotel_name": "괴산 운교랜드 캠핑카라반",
+              "price": 36000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "충북",
+              "hotel_name": "충주 천등산캠핑장",
+              "price": 40000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "충북",
+              "hotel_name": "단양 단양팔경펜션",
+              "price": 40000,
+              "platform": "yanolja"
+            },
+            {
+              "city": "충북",
+              "hotel_name": "충주 털보낚시펜션",
+              "price": 50000,
+              "platform": "yanolja"
             }
           ]
         }

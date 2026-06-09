@@ -218,8 +218,8 @@ function render(){
       <div class="chart-wrap"><canvas id="trendChart"></canvas></div>
     </div>
 
-    <!-- 구 선택 시: 호텔 Top/Bottom 목록 -->
-    ${gDistrict ? renderHotelLists(d) : ''}
+    <!-- 도시 or 구 선택 시: 호텔 Top/Bottom 목록 -->
+    ${gCity !== '전국' ? renderHotelLists(d) : ''}
 
     <!-- 전국 뷰일 때: 비싼/저렴 TOP10 -->
     ${gCity==='전국'?`
@@ -295,9 +295,11 @@ function renderDistrictPanel(d){
 // 호텔 Top/Bottom 목록 렌더
 function renderHotelLists(d){
   const cObj=d.cities.find(c=>c.city===gCity);
-  const dObj=cObj?.districts?.find(dd=>dd.district===gDistrict);
-  if(!dObj) return '';
-  const top=dObj.top5||[], bot=dObj.bottom5||[];
+  if(!cObj) return '';
+  // 구 선택 시 → 구 데이터 / 도시만 선택 시 → 도시 통합 데이터
+  const dObj=gDistrict ? cObj?.districts?.find(dd=>dd.district===gDistrict) : null;
+  const src=dObj || cObj;
+  const top=src?.top5||[], bot=src?.bottom5||[];
   if(!top.length && !bot.length) return '';
   const platColor=p=>p==='yanolja'?'#4f6ef7':'#f76f4f';
   const hotelItem=(h,i)=>`

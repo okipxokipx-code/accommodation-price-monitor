@@ -300,6 +300,21 @@ function exportDashboardData() {
       cityMap[d.city].districts.push(d);
     });
 
+    // 시 단위 Top5/Bottom5 (모든 구 통합)
+    const cityTopRows = db.prepare(`
+      SELECT region_city AS city,
+             hotel_name, MAX(price) AS price, platform
+      FROM prices
+      WHERE accommodation_type = ? AND scraped_at >= ?
+      GROUP BY region_city, hotel_name
+      ORDER BY region_city, price DESC
+    `).all(type, since2h);
+    Object.keys(cityMap).forEach(city => {
+      const rows = cityTopRows.filter(r => r.city === city);
+      cityMap[city].top5    = rows.slice(0, 5);
+      cityMap[city].bottom5 = [...rows].sort((a, b) => a.price - b.price).slice(0, 5);
+    });
+
     // 시 단위 집계
     const citiesRaw = db.prepare(`
       SELECT region_city AS city,
@@ -333,9 +348,11 @@ function exportDashboardData() {
     const cities = citiesRaw.map(c => {
       const plats = {};
       cityPlatRows.filter(r => r.city === c.city).forEach(r => { plats[r.platform] = { avg: r.avg, count: r.count }; });
-      const trend = cityTrendRows.filter(r => r.city === c.city);
+      const trend    = cityTrendRows.filter(r => r.city === c.city);
       const districts = (cityMap[c.city]?.districts) || [];
-      return { ...c, platforms: plats, trend, districts };
+      const top5     = cityMap[c.city]?.top5    || [];
+      const bottom5  = cityMap[c.city]?.bottom5 || [];
+      return { ...c, platforms: plats, trend, districts, top5, bottom5 };
     });
 
     // 전국 시간별 트렌드
