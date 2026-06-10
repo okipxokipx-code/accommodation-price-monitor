@@ -28,36 +28,54 @@ header h1 em { color: var(--accent); font-style: normal; }
 @keyframes blink { 0%,100%{opacity:1}50%{opacity:.3} }
 
 .wrap { max-width: 960px; margin: 0 auto; padding: 16px; }
-@media(max-width:600px){ .wrap { padding: 8px 0; } }
+@media(max-width:600px){ .wrap { padding: 0; } }
+
+/* ── 버튼/탭 공통 패딩 래퍼 ── */
+@media(max-width:600px){
+  .type-row, .plat-row, .region-bar, .district-wrap { margin-left: 0; margin-right: 0; }
+}
 
 /* 숙박 유형 탭 - 2×2 그리드 */
 .type-row { display: grid; grid-template-columns: repeat(4,1fr); gap: 6px; margin-bottom: 10px; }
-@media(max-width:600px){ .type-row { grid-template-columns: repeat(2,1fr); } }
+@media(max-width:600px){
+  .type-row { grid-template-columns: repeat(2,1fr); gap: 3px; margin-bottom: 3px; }
+}
 .type-btn {
   padding: 10px 4px; border-radius: 10px; border: 1px solid var(--border);
   background: var(--card); cursor: pointer; font-size: .88rem; color: var(--muted);
   transition: all .15s; text-align: center; font-weight: 500;
 }
+@media(max-width:600px){
+  .type-btn { padding: 16px 4px; font-size: 1.1rem; border-radius: 0; border: none; border-bottom: 3px solid transparent; background: var(--card2); }
+  .type-btn.on { background: var(--accent); border-bottom-color: var(--accent); }
+}
 .type-btn.on { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 700; }
 
 /* 플랫폼 탭 - 3등분 */
 .plat-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 6px; margin-bottom: 12px; }
+@media(max-width:600px){ .plat-row { gap: 0; margin-bottom: 3px; } }
 .plat-btn {
   padding: 7px 4px; border-radius: 8px; border: 1px solid var(--border);
   background: transparent; cursor: pointer; font-size: .82rem; color: var(--muted);
   transition: all .15s; text-align: center;
 }
+@media(max-width:600px){
+  .plat-btn { padding: 14px 4px; font-size: 1rem; border-radius: 0; border: none; border-bottom: 3px solid transparent; background: var(--card); }
+  .plat-btn.on { border-bottom-color: var(--accent); color: var(--accent); background: var(--card); font-weight: 700; }
+}
 .plat-btn.on { border-color: var(--accent); color: var(--accent); background: rgba(79,110,247,.1); font-weight: 600; }
 
-/* 지역 선택 - 줄바꿈 (스크롤 없음) */
+/* 지역 선택 - 줄바꿈 */
 .region-bar { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
+@media(max-width:600px){ .region-bar { gap: 6px; padding: 10px 10px; margin-bottom: 0; background: var(--bg); } }
 .region-pill {
   padding: 6px 14px; border-radius: 20px; border: 1px solid var(--border);
   background: var(--card); cursor: pointer; font-size: .82rem; color: var(--muted);
   white-space: nowrap; transition: all .13s;
 }
+@media(max-width:600px){ .region-pill { font-size: 1rem; padding: 8px 16px; } }
 .region-pill:hover { border-color: var(--accent); color: var(--text); }
-.region-pill.on { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+.region-pill.on { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 700; }
 
 /* 메인 통계 3칸 */
 .stat3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 16px; }
@@ -68,63 +86,78 @@ header h1 em { color: var(--accent); font-style: normal; }
 .stat-sub { font-size: .68rem; color: var(--muted); margin-top: 4px; }
 
 @media(max-width:600px){
-  .stat3 { grid-template-columns: 1fr; gap: 1px; border-radius: 0; }
-  .stat-val { font-size: 1.6rem; }
-  .stat-box { padding: 14px 16px; border-radius: 0; border-left: none; border-right: none; }
-  .stat-box:first-child { border-top: none; }
-  .top3-card { border-radius: 0; border-left: none; border-right: none; }
-  .chart-card { border-radius: 0; border-left: none; border-right: none; }
-  .district-wrap { border-radius: 0; border-left: none; border-right: none; }
-  .chart-box { height: 155px; }
+  .stat3 { grid-template-columns: 1fr; gap: 2px; margin: 6px 0; }
+  .stat-box { border-radius: 0; border-left: none; border-right: none; padding: 20px 16px; }
+  .stat-lbl { font-size: 1rem; margin-bottom: 8px; }
+  .stat-val { font-size: 2.4rem; }
+  .stat-sub { font-size: .9rem; margin-top: 6px; }
 }
 
 /* Top3 섹션 */
 .top3-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 16px; }
-@media(max-width:600px){ .top3-wrap { grid-template-columns: 1fr; } }
-.top3-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 12px; }
+@media(max-width:600px){ .top3-wrap { grid-template-columns: 1fr; gap: 2px; margin-bottom: 0; } }
+.top3-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 14px; }
+@media(max-width:600px){ .top3-card { border-radius: 0; border-left: none; border-right: none; padding: 16px; } }
 .top3-head { font-size: .75rem; font-weight: 700; margin-bottom: 9px; letter-spacing: .03em; }
-.top3-item { display: flex; align-items: center; gap: 7px; padding: 7px 0; border-bottom: 1px solid var(--border); }
+@media(max-width:600px){ .top3-head { font-size: 1rem; margin-bottom: 12px; } }
+.top3-item { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--border); }
 .top3-item:last-child { border-bottom: none; }
 .badge {
-  width: 20px; height: 20px; border-radius: 50%; flex-shrink: 0;
-  display: flex; align-items: center; justify-content: center; font-size: .66rem; font-weight: 700;
+  width: 26px; height: 26px; border-radius: 50%; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center; font-size: .72rem; font-weight: 700;
 }
+@media(max-width:600px){ .badge { width: 32px; height: 32px; font-size: .9rem; } }
 .badge.exp { background: rgba(244,67,54,.15); color: var(--red); }
 .badge.chp { background: rgba(76,175,80,.15); color: var(--green); }
 .hotel-info { flex: 1; min-width: 0; }
-.hotel-nm { font-size: .78rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.hotel-pl { font-size: .62rem; color: var(--muted); margin-top: 1px; }
-.hotel-pr { font-size: .82rem; font-weight: 700; flex-shrink: 0; }
+.hotel-nm { font-size: .85rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hotel-pl { font-size: .66rem; color: var(--muted); margin-top: 2px; }
+.hotel-pr { font-size: .9rem; font-weight: 700; flex-shrink: 0; }
+@media(max-width:600px){
+  .hotel-nm { font-size: 1.05rem; }
+  .hotel-pl { font-size: .85rem; margin-top: 4px; }
+  .hotel-pr { font-size: 1.1rem; }
+}
 
 /* 24h 차트 */
 .chart-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 14px; margin-bottom: 16px; }
+@media(max-width:600px){ .chart-card { border-radius: 0; border-left: none; border-right: none; margin: 6px 0; } }
 .sec-title { font-size: .75rem; font-weight: 600; color: var(--muted); margin-bottom: 10px; }
+@media(max-width:600px){ .sec-title { font-size: .95rem; } }
 .chart-box { position: relative; height: 180px; }
-@media(max-width:600px){ .chart-box { height: 160px; } }
+@media(max-width:600px){ .chart-box { height: 170px; } }
 
 /* 전국 도시 그리드 */
 .city-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px,1fr)); gap: 7px; }
-@media(max-width:600px){ .city-grid { grid-template-columns: repeat(2, 1fr); gap: 6px; }
-}
+@media(max-width:600px){ .city-grid { grid-template-columns: repeat(2,1fr); gap: 2px; } }
 .city-card {
   background: var(--card2); border: 1px solid var(--border); border-radius: 8px;
   padding: 10px 12px; cursor: pointer; transition: border-color .13s; text-align: center;
 }
+@media(max-width:600px){ .city-card { border-radius: 0; border-left: none; border-right: none; padding: 16px 12px; } }
 .city-card:hover, .city-card.on { border-color: var(--accent); background: rgba(79,110,247,.1); }
 .city-nm { font-size: .72rem; color: var(--muted); margin-bottom: 3px; }
 .city-avg { font-size: .95rem; font-weight: 700; }
 .city-cnt { font-size: .65rem; color: var(--muted); margin-top: 2px; }
+@media(max-width:600px){
+  .city-nm { font-size: .95rem; margin-bottom: 6px; }
+  .city-avg { font-size: 1.3rem; }
+  .city-cnt { font-size: .82rem; margin-top: 4px; }
+}
 
 /* 구 선택 */
 .district-wrap { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; margin-bottom: 12px; }
+@media(max-width:600px){ .district-wrap { border-radius: 0; border-left: none; border-right: none; padding: 12px 10px; margin-bottom: 0; } }
 .district-title { font-size: .72rem; color: var(--muted); font-weight: 600; margin-bottom: 8px; }
+@media(max-width:600px){ .district-title { font-size: .95rem; } }
 .district-pills { display: flex; gap: 6px; flex-wrap: wrap; }
 .dist-pill {
   padding: 6px 13px; border-radius: 8px; border: 1px solid var(--border);
   background: transparent; cursor: pointer; font-size: .78rem; color: var(--muted); transition: all .13s; white-space: nowrap;
 }
+@media(max-width:600px){ .dist-pill { font-size: 1rem; padding: 9px 14px; } }
 .dist-pill:hover { border-color: var(--accent); color: var(--text); }
-.dist-pill.on { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+.dist-pill.on { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 700; }
 
 .empty { text-align: center; padding: 40px; color: var(--muted); font-size: .88rem; }
 .loading { text-align: center; padding: 60px; color: var(--muted); }
