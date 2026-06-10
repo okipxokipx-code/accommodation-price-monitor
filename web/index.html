@@ -30,30 +30,31 @@ header h1 em { color: var(--accent); font-style: normal; }
 .wrap { max-width: 960px; margin: 0 auto; padding: 16px; }
 @media(max-width:600px){ .wrap { padding: 10px; } }
 
-/* 숙박 유형 탭 */
-.type-row { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
+/* 숙박 유형 탭 - 2×2 그리드 */
+.type-row { display: grid; grid-template-columns: repeat(4,1fr); gap: 6px; margin-bottom: 10px; }
+@media(max-width:600px){ .type-row { grid-template-columns: repeat(2,1fr); } }
 .type-btn {
-  padding: 7px 20px; border-radius: 24px; border: 1px solid var(--border);
-  background: var(--card); cursor: pointer; font-size: .88rem; color: var(--muted); transition: all .15s;
+  padding: 10px 4px; border-radius: 10px; border: 1px solid var(--border);
+  background: var(--card); cursor: pointer; font-size: .88rem; color: var(--muted);
+  transition: all .15s; text-align: center; font-weight: 500;
 }
 .type-btn.on { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 700; }
 
-/* 플랫폼 탭 */
-.plat-row { display: flex; gap: 5px; margin-bottom: 14px; }
+/* 플랫폼 탭 - 3등분 */
+.plat-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 6px; margin-bottom: 12px; }
 .plat-btn {
-  padding: 4px 13px; border-radius: 13px; border: 1px solid var(--border);
-  background: transparent; cursor: pointer; font-size: .78rem; color: var(--muted); transition: all .15s;
+  padding: 7px 4px; border-radius: 8px; border: 1px solid var(--border);
+  background: transparent; cursor: pointer; font-size: .82rem; color: var(--muted);
+  transition: all .15s; text-align: center;
 }
-.plat-btn.on { border-color: var(--text); color: var(--text); }
+.plat-btn.on { border-color: var(--accent); color: var(--accent); background: rgba(79,110,247,.1); font-weight: 600; }
 
-/* 지역 선택 스크롤 바 */
-.region-bar { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 8px; margin-bottom: 16px; scrollbar-width: thin; }
-.region-bar::-webkit-scrollbar { height: 4px; }
-.region-bar::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+/* 지역 선택 - 줄바꿈 (스크롤 없음) */
+.region-bar { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
 .region-pill {
-  padding: 5px 14px; border-radius: 20px; border: 1px solid var(--border);
+  padding: 6px 14px; border-radius: 20px; border: 1px solid var(--border);
   background: var(--card); cursor: pointer; font-size: .82rem; color: var(--muted);
-  white-space: nowrap; flex-shrink: 0; transition: all .13s;
+  white-space: nowrap; transition: all .13s;
 }
 .region-pill:hover { border-color: var(--accent); color: var(--text); }
 .region-pill.on { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
@@ -110,12 +111,12 @@ header h1 em { color: var(--accent); font-style: normal; }
 .city-cnt { font-size: .65rem; color: var(--muted); margin-top: 2px; }
 
 /* 구 선택 */
-.district-wrap { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; margin-bottom: 14px; }
+.district-wrap { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; margin-bottom: 12px; }
 .district-title { font-size: .72rem; color: var(--muted); font-weight: 600; margin-bottom: 8px; }
-.district-pills { display: flex; gap: 5px; flex-wrap: wrap; }
+.district-pills { display: flex; gap: 6px; flex-wrap: wrap; }
 .dist-pill {
-  padding: 4px 11px; border-radius: 16px; border: 1px solid var(--border);
-  background: transparent; cursor: pointer; font-size: .76rem; color: var(--muted); transition: all .13s; white-space: nowrap;
+  padding: 6px 13px; border-radius: 8px; border: 1px solid var(--border);
+  background: transparent; cursor: pointer; font-size: .78rem; color: var(--muted); transition: all .13s; white-space: nowrap;
 }
 .dist-pill:hover { border-color: var(--accent); color: var(--text); }
 .dist-pill.on { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
