@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-10T04:11:49.710Z",
+  "updatedAt": "2026-06-10T04:17:31.507Z",
   "types": {
     "motel": {
       "platforms": {
@@ -32757,8 +32757,8 @@
     "pension": {
       "platforms": {
         "all": {
-          "avg": 113097,
-          "count": 24161,
+          "avg": 112991,
+          "count": 24758,
           "min": 14000,
           "max": 1086400,
           "topHotel": {
@@ -32797,8 +32797,8 @@
           }
         },
         "yeogi": {
-          "avg": 111368,
-          "count": 1113,
+          "avg": 110429,
+          "count": 1710,
           "min": 17000,
           "max": 1086400,
           "topHotel": {
@@ -35368,8 +35368,8 @@
         },
         {
           "city": "경북",
-          "avg": 120925,
-          "count": 3238,
+          "avg": 120765,
+          "count": 3295,
           "min": 15000,
           "max": 450000,
           "platforms": {
@@ -35379,7 +35379,7 @@
             },
             "yeogi": {
               "avg": 111632,
-              "count": 57
+              "count": 114
             }
           },
           "trend": [
@@ -35542,15 +35542,15 @@
               "hour": "2026-06-10T04:00",
               "platform": "yeogi",
               "avg": 111632,
-              "count": 57
+              "count": 114
             }
           ],
           "districts": [
             {
               "city": "경북",
               "district": "경주(감포/불국사)",
-              "avg": 111470,
-              "count": 850,
+              "avg": 111370,
+              "count": 867,
               "min": 32000,
               "max": 450000,
               "platforms": {
@@ -35560,7 +35560,7 @@
                 },
                 "yeogi": {
                   "avg": 106347,
-                  "count": 17
+                  "count": 34
                 }
               },
               "trend": [
@@ -35730,7 +35730,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 106347,
-                  "count": 17
+                  "count": 34
                 }
               ],
               "top3": [
@@ -35783,8 +35783,8 @@
             {
               "city": "경북",
               "district": "포항",
-              "avg": 125789,
-              "count": 791,
+              "avg": 125691,
+              "count": 798,
               "min": 28000,
               "max": 434000,
               "platforms": {
@@ -35794,7 +35794,7 @@
                 },
                 "yeogi": {
                   "avg": 114627,
-                  "count": 7
+                  "count": 14
                 }
               },
               "trend": [
@@ -35964,7 +35964,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 114627,
-                  "count": 7
+                  "count": 14
                 }
               ],
               "top3": [
@@ -36017,8 +36017,8 @@
             {
               "city": "경북",
               "district": "문경/안동/상주/영주",
-              "avg": 143335,
-              "count": 711,
+              "avg": 143134,
+              "count": 717,
               "min": 40000,
               "max": 450000,
               "platforms": {
@@ -36028,7 +36028,7 @@
                 },
                 "yeogi": {
                   "avg": 119317,
-                  "count": 6
+                  "count": 12
                 }
               },
               "trend": [
@@ -36198,7 +36198,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 119317,
-                  "count": 6
+                  "count": 12
                 }
               ],
               "top3": [
@@ -36251,8 +36251,8 @@
             {
               "city": "경북",
               "district": "경주(황리단길/보문)",
-              "avg": 109555,
-              "count": 501,
+              "avg": 109489,
+              "count": 514,
               "min": 40100,
               "max": 415000,
               "platforms": {
@@ -36262,7 +36262,7 @@
                 },
                 "yeogi": {
                   "avg": 106973,
-                  "count": 13
+                  "count": 26
                 }
               },
               "trend": [
@@ -36448,7 +36448,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 106973,
-                  "count": 13
+                  "count": 26
                 }
               ],
               "top3": [
@@ -36501,8 +36501,8 @@
             {
               "city": "경북",
               "district": "영덕/울진",
-              "avg": 105220,
-              "count": 385,
+              "avg": 105653,
+              "count": 399,
               "min": 15000,
               "max": 320000,
               "platforms": {
@@ -36512,7 +36512,7 @@
                 },
                 "yeogi": {
                   "avg": 117583,
-                  "count": 14
+                  "count": 28
                 }
               },
               "trend": [
@@ -36698,7 +36698,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 117583,
-                  "count": 14
+                  "count": 28
                 }
               ],
               "top3": [
@@ -36792,8 +36792,8 @@
         },
         {
           "city": "경남",
-          "avg": 108702,
-          "count": 2584,
+          "avg": 108823,
+          "count": 2638,
           "min": 27000,
           "max": 649000,
           "platforms": {
@@ -36803,7 +36803,7 @@
             },
             "yeogi": {
               "avg": 114619,
-              "count": 54
+              "count": 108
             }
           },
           "trend": [
@@ -36966,15 +36966,15 @@
               "hour": "2026-06-10T04:00",
               "platform": "yeogi",
               "avg": 114619,
-              "count": 54
+              "count": 108
             }
           ],
           "districts": [
             {
               "city": "경남",
               "district": "거제도 북부(매미성)",
-              "avg": 115541,
-              "count": 658,
+              "avg": 115433,
+              "count": 671,
               "min": 34100,
               "max": 649000,
               "platforms": {
@@ -36984,7 +36984,7 @@
                 },
                 "yeogi": {
                   "avg": 109950,
-                  "count": 13
+                  "count": 26
                 }
               },
               "trend": [
@@ -37154,7 +37154,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 109950,
-                  "count": 13
+                  "count": 26
                 }
               ],
               "top3": [
@@ -37207,8 +37207,8 @@
             {
               "city": "경남",
               "district": "거제도 남부(바람의언덕)",
-              "avg": 87149,
-              "count": 517,
+              "avg": 87266,
+              "count": 525,
               "min": 28000,
               "max": 265000,
               "platforms": {
@@ -37218,7 +37218,7 @@
                 },
                 "yeogi": {
                   "avg": 94835,
-                  "count": 8
+                  "count": 16
                 }
               },
               "trend": [
@@ -37388,7 +37388,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 94835,
-                  "count": 8
+                  "count": 16
                 }
               ],
               "top3": [
@@ -37441,8 +37441,8 @@
             {
               "city": "경남",
               "district": "통영",
-              "avg": 88745,
-              "count": 480,
+              "avg": 88607,
+              "count": 487,
               "min": 27000,
               "max": 300000,
               "platforms": {
@@ -37452,7 +37452,7 @@
                 },
                 "yeogi": {
                   "avg": 79172,
-                  "count": 7
+                  "count": 14
                 }
               },
               "trend": [
@@ -37630,7 +37630,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 79172,
-                  "count": 7
+                  "count": 14
                 }
               ],
               "top3": [
@@ -37683,8 +37683,8 @@
             {
               "city": "경남",
               "district": "남해",
-              "avg": 124421,
-              "count": 367,
+              "avg": 124998,
+              "count": 382,
               "min": 50000,
               "max": 300000,
               "platforms": {
@@ -37694,7 +37694,7 @@
                 },
                 "yeogi": {
                   "avg": 139138,
-                  "count": 15
+                  "count": 30
                 }
               },
               "trend": [
@@ -37880,7 +37880,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 139138,
-                  "count": 15
+                  "count": 30
                 }
               ],
               "top3": [
@@ -37933,8 +37933,8 @@
             {
               "city": "경남",
               "district": "밀양/양산/김해/창원",
-              "avg": 128426,
-              "count": 308,
+              "avg": 128186,
+              "count": 316,
               "min": 45000,
               "max": 500000,
               "platforms": {
@@ -37944,7 +37944,7 @@
                 },
                 "yeogi": {
                   "avg": 118916,
-                  "count": 8
+                  "count": 16
                 }
               },
               "trend": [
@@ -38114,7 +38114,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 118916,
-                  "count": 8
+                  "count": 16
                 }
               ],
               "top3": [
@@ -38167,8 +38167,8 @@
             {
               "city": "경남",
               "district": "사천/산청/하동/합천",
-              "avg": 125939,
-              "count": 254,
+              "avg": 126060,
+              "count": 257,
               "min": 40000,
               "max": 550000,
               "platforms": {
@@ -38178,7 +38178,7 @@
                 },
                 "yeogi": {
                   "avg": 136257,
-                  "count": 3
+                  "count": 6
                 }
               },
               "trend": [
@@ -38348,7 +38348,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 136257,
-                  "count": 3
+                  "count": 6
                 }
               ],
               "top3": [
@@ -38442,8 +38442,8 @@
         },
         {
           "city": "전남",
-          "avg": 108362,
-          "count": 2192,
+          "avg": 106821,
+          "count": 2364,
           "min": 20000,
           "max": 721500,
           "platforms": {
@@ -38452,8 +38452,8 @@
               "count": 2020
             },
             "yeogi": {
-              "avg": 87159,
-              "count": 172
+              "avg": 87174,
+              "count": 344
             }
           },
           "trend": [
@@ -38601,16 +38601,16 @@
               "city": "전남",
               "hour": "2026-06-10T04:00",
               "platform": "yeogi",
-              "avg": 87159,
-              "count": 172
+              "avg": 87174,
+              "count": 344
             }
           ],
           "districts": [
             {
               "city": "전남",
               "district": "여수(돌산/금오도)",
-              "avg": 98497,
-              "count": 606,
+              "avg": 98264,
+              "count": 618,
               "min": 20000,
               "max": 430000,
               "platforms": {
@@ -38620,7 +38620,7 @@
                 },
                 "yeogi": {
                   "avg": 86504,
-                  "count": 12
+                  "count": 24
                 }
               },
               "trend": [
@@ -38790,7 +38790,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 86504,
-                  "count": 12
+                  "count": 24
                 }
               ],
               "top3": [
@@ -38843,8 +38843,8 @@
             {
               "city": "전남",
               "district": "여수(엑스포/화양)",
-              "avg": 120899,
-              "count": 601,
+              "avg": 120142,
+              "count": 614,
               "min": 29800,
               "max": 700000,
               "platforms": {
@@ -38854,7 +38854,7 @@
                 },
                 "yeogi": {
                   "avg": 85120,
-                  "count": 13
+                  "count": 26
                 }
               },
               "trend": [
@@ -39024,7 +39024,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 85120,
-                  "count": 13
+                  "count": 26
                 }
               ],
               "top3": [
@@ -39077,8 +39077,8 @@
             {
               "city": "전남",
               "district": "순천/구례",
-              "avg": 93347,
-              "count": 460,
+              "avg": 90904,
+              "count": 586,
               "min": 22000,
               "max": 721500,
               "platforms": {
@@ -39087,8 +39087,8 @@
                   "count": 334
                 },
                 "yeogi": {
-                  "avg": 81947,
-                  "count": 126
+                  "avg": 81967,
+                  "count": 252
                 }
               },
               "trend": [
@@ -39257,8 +39257,8 @@
                   "district": "순천/구례",
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
-                  "avg": 81947,
-                  "count": 126
+                  "avg": 81967,
+                  "count": 252
                 }
               ],
               "top3": [
@@ -39311,8 +39311,8 @@
             {
               "city": "전남",
               "district": "담양/곡성/장성",
-              "avg": 130939,
-              "count": 268,
+              "avg": 131125,
+              "count": 280,
               "min": 30000,
               "max": 430000,
               "platforms": {
@@ -39322,7 +39322,7 @@
                 },
                 "yeogi": {
                   "avg": 135292,
-                  "count": 12
+                  "count": 24
                 }
               },
               "trend": [
@@ -39492,7 +39492,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 135292,
-                  "count": 12
+                  "count": 24
                 }
               ],
               "top3": [
@@ -39545,8 +39545,8 @@
             {
               "city": "전남",
               "district": "무안/해남/완도",
-              "avg": 105636,
-              "count": 257,
+              "avg": 105438,
+              "count": 266,
               "min": 35000,
               "max": 259000,
               "platforms": {
@@ -39556,7 +39556,7 @@
                 },
                 "yeogi": {
                   "avg": 99778,
-                  "count": 9
+                  "count": 18
                 }
               },
               "trend": [
@@ -39726,7 +39726,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 99778,
-                  "count": 9
+                  "count": 18
                 }
               ],
               "top3": [
@@ -40964,8 +40964,8 @@
         },
         {
           "city": "충남",
-          "avg": 97591,
-          "count": 1901,
+          "avg": 97564,
+          "count": 1930,
           "min": 26000,
           "max": 420000,
           "platforms": {
@@ -40974,8 +40974,8 @@
               "count": 1840
             },
             "yeogi": {
-              "avg": 93525,
-              "count": 61
+              "avg": 94255,
+              "count": 90
             }
           },
           "trend": [
@@ -41137,8 +41137,8 @@
               "city": "충남",
               "hour": "2026-06-10T04:00",
               "platform": "yeogi",
-              "avg": 93525,
-              "count": 61
+              "avg": 94255,
+              "count": 90
             }
           ],
           "districts": [
@@ -41379,8 +41379,8 @@
             {
               "city": "충남",
               "district": "태안(안면도/꽃지)",
-              "avg": 93493,
-              "count": 457,
+              "avg": 93608,
+              "count": 476,
               "min": 40000,
               "max": 420000,
               "platforms": {
@@ -41390,7 +41390,7 @@
                 },
                 "yeogi": {
                   "avg": 96390,
-                  "count": 19
+                  "count": 38
                 }
               },
               "trend": [
@@ -41576,7 +41576,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 96390,
-                  "count": 19
+                  "count": 38
                 }
               ],
               "top3": [
@@ -41863,8 +41863,8 @@
             {
               "city": "충남",
               "district": "보령/대천해수욕장",
-              "avg": 59065,
-              "count": 346,
+              "avg": 60065,
+              "count": 356,
               "min": 26000,
               "max": 223277,
               "platforms": {
@@ -41874,7 +41874,7 @@
                 },
                 "yeogi": {
                   "avg": 94658,
-                  "count": 10
+                  "count": 20
                 }
               },
               "trend": [
@@ -42044,7 +42044,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 94658,
-                  "count": 10
+                  "count": 20
                 }
               ],
               "top3": [
@@ -44690,8 +44690,8 @@
         },
         {
           "city": "충북",
-          "avg": 127052,
-          "count": 1431,
+          "avg": 124548,
+          "count": 1625,
           "min": 17000,
           "max": 1086400,
           "platforms": {
@@ -44700,8 +44700,8 @@
               "count": 1235
             },
             "yeogi": {
-              "avg": 105903,
-              "count": 196
+              "avg": 105989,
+              "count": 390
             }
           },
           "trend": [
@@ -44849,16 +44849,16 @@
               "city": "충북",
               "hour": "2026-06-10T04:00",
               "platform": "yeogi",
-              "avg": 105903,
-              "count": 196
+              "avg": 105989,
+              "count": 390
             }
           ],
           "districts": [
             {
               "city": "충북",
               "district": "괴산/보은/청주",
-              "avg": 137345,
-              "count": 647,
+              "avg": 130528,
+              "count": 826,
               "min": 17000,
               "max": 1086400,
               "platforms": {
@@ -44867,8 +44867,8 @@
                   "count": 466
                 },
                 "yeogi": {
-                  "avg": 105703,
-                  "count": 181
+                  "avg": 105794,
+                  "count": 360
                 }
               },
               "trend": [
@@ -45037,8 +45037,8 @@
                   "district": "괴산/보은/청주",
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
-                  "avg": 105703,
-                  "count": 181
+                  "avg": 105794,
+                  "count": 360
                 }
               ],
               "top3": [
@@ -45091,8 +45091,8 @@
             {
               "city": "충북",
               "district": "단양",
-              "avg": 100743,
-              "count": 439,
+              "avg": 100587,
+              "count": 450,
               "min": 40000,
               "max": 360700,
               "platforms": {
@@ -45102,7 +45102,7 @@
                 },
                 "yeogi": {
                   "avg": 94362,
-                  "count": 11
+                  "count": 22
                 }
               },
               "trend": [
@@ -45272,7 +45272,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 94362,
-                  "count": 11
+                  "count": 22
                 }
               ],
               "top3": [
@@ -45325,8 +45325,8 @@
             {
               "city": "충북",
               "district": "제천/충주",
-              "avg": 141226,
-              "count": 345,
+              "avg": 141289,
+              "count": 349,
               "min": 40000,
               "max": 675000,
               "platforms": {
@@ -45336,7 +45336,7 @@
                 },
                 "yeogi": {
                   "avg": 146734,
-                  "count": 4
+                  "count": 8
                 }
               },
               "trend": [
@@ -45506,7 +45506,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 146734,
-                  "count": 4
+                  "count": 8
                 }
               ],
               "top3": [
@@ -45600,8 +45600,8 @@
         },
         {
           "city": "제주",
-          "avg": 129021,
-          "count": 1418,
+          "avg": 130589,
+          "count": 1470,
           "min": 16200,
           "max": 720200,
           "platforms": {
@@ -45611,7 +45611,7 @@
             },
             "yeogi": {
               "avg": 173337,
-              "count": 52
+              "count": 104
             }
           },
           "trend": [
@@ -45774,15 +45774,15 @@
               "hour": "2026-06-10T04:00",
               "platform": "yeogi",
               "avg": 173337,
-              "count": 52
+              "count": 104
             }
           ],
           "districts": [
             {
               "city": "제주",
               "district": "제주시 서부(공항/애월/협재)",
-              "avg": 131854,
-              "count": 463,
+              "avg": 132159,
+              "count": 476,
               "min": 35000,
               "max": 700000,
               "platforms": {
@@ -45792,7 +45792,7 @@
                 },
                 "yeogi": {
                   "avg": 142998,
-                  "count": 13
+                  "count": 26
                 }
               },
               "trend": [
@@ -45962,7 +45962,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 142998,
-                  "count": 13
+                  "count": 26
                 }
               ],
               "top3": [
@@ -46015,8 +46015,8 @@
             {
               "city": "제주",
               "district": "제주시 동부(조천/구좌/우도)",
-              "avg": 134256,
-              "count": 354,
+              "avg": 134959,
+              "count": 368,
               "min": 45000,
               "max": 580000,
               "platforms": {
@@ -46026,7 +46026,7 @@
                 },
                 "yeogi": {
                   "avg": 152728,
-                  "count": 14
+                  "count": 28
                 }
               },
               "trend": [
@@ -46204,7 +46204,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 152728,
-                  "count": 14
+                  "count": 28
                 }
               ],
               "top3": [
@@ -46257,8 +46257,8 @@
             {
               "city": "제주",
               "district": "서귀포 서부(중문/안덕/대정)",
-              "avg": 122014,
-              "count": 330,
+              "avg": 129350,
+              "count": 340,
               "min": 21000,
               "max": 720200,
               "platforms": {
@@ -46268,7 +46268,7 @@
                 },
                 "yeogi": {
                   "avg": 371436,
-                  "count": 10
+                  "count": 20
                 }
               },
               "trend": [
@@ -46454,7 +46454,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 371436,
-                  "count": 10
+                  "count": 20
                 }
               ],
               "top3": [
@@ -46507,8 +46507,8 @@
             {
               "city": "제주",
               "district": "서귀포 동부(성산/표선/남원)",
-              "avg": 125874,
-              "count": 271,
+              "avg": 123825,
+              "count": 286,
               "min": 16200,
               "max": 585000,
               "platforms": {
@@ -46518,7 +46518,7 @@
                 },
                 "yeogi": {
                   "avg": 86800,
-                  "count": 15
+                  "count": 30
                 }
               },
               "trend": [
@@ -46688,7 +46688,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 86800,
-                  "count": 15
+                  "count": 30
                 }
               ],
               "top3": [
@@ -46782,8 +46782,8 @@
         },
         {
           "city": "전북",
-          "avg": 104448,
-          "count": 1319,
+          "avg": 105103,
+          "count": 1358,
           "min": 30000,
           "max": 700000,
           "platforms": {
@@ -46792,8 +46792,8 @@
               "count": 1280
             },
             "yeogi": {
-              "avg": 127727,
-              "count": 39
+              "avg": 127482,
+              "count": 78
             }
           },
           "trend": [
@@ -46941,16 +46941,16 @@
               "city": "전북",
               "hour": "2026-06-10T04:00",
               "platform": "yeogi",
-              "avg": 127727,
-              "count": 39
+              "avg": 127482,
+              "count": 78
             }
           ],
           "districts": [
             {
               "city": "전북",
               "district": "무주",
-              "avg": 105542,
-              "count": 394,
+              "avg": 105607,
+              "count": 407,
               "min": 30000,
               "max": 700000,
               "platforms": {
@@ -46960,7 +46960,7 @@
                 },
                 "yeogi": {
                   "avg": 107562,
-                  "count": 13
+                  "count": 26
                 }
               },
               "trend": [
@@ -47130,7 +47130,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 107562,
-                  "count": 13
+                  "count": 26
                 }
               ],
               "top3": [
@@ -47183,8 +47183,8 @@
             {
               "city": "전북",
               "district": "전주",
-              "avg": 90237,
-              "count": 375,
+              "avg": 90257,
+              "count": 378,
               "min": 30000,
               "max": 400000,
               "platforms": {
@@ -47194,7 +47194,7 @@
                 },
                 "yeogi": {
                   "avg": 92744,
-                  "count": 3
+                  "count": 6
                 }
               },
               "trend": [
@@ -47364,7 +47364,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 92744,
-                  "count": 3
+                  "count": 6
                 }
               ],
               "top3": [
@@ -47417,8 +47417,8 @@
             {
               "city": "전북",
               "district": "고창/남원/완주",
-              "avg": 130448,
-              "count": 277,
+              "avg": 132518,
+              "count": 287,
               "min": 50000,
               "max": 450000,
               "platforms": {
@@ -47428,7 +47428,7 @@
                 },
                 "yeogi": {
                   "avg": 189860,
-                  "count": 10
+                  "count": 20
                 }
               },
               "trend": [
@@ -47598,7 +47598,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 189860,
-                  "count": 10
+                  "count": 20
                 }
               ],
               "top3": [
@@ -47651,8 +47651,8 @@
             {
               "city": "전북",
               "district": "부안(변산반도)",
-              "avg": 96009,
-              "count": 273,
+              "avg": 96495,
+              "count": 286,
               "min": 45000,
               "max": 320000,
               "platforms": {
@@ -47661,8 +47661,8 @@
                   "count": 260
                 },
                 "yeogi": {
-                  "avg": 108171,
-                  "count": 13
+                  "avg": 107437,
+                  "count": 26
                 }
               },
               "trend": [
@@ -47831,8 +47831,8 @@
                   "district": "부안(변산반도)",
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
-                  "avg": 108171,
-                  "count": 13
+                  "avg": 107437,
+                  "count": 26
                 }
               ],
               "top3": [
@@ -48061,16 +48061,16 @@
         {
           "hour": "2026-06-10T04:00",
           "platform": "yeogi",
-          "avg": 111368,
-          "count": 1113
+          "avg": 110429,
+          "count": 1710
         }
       ]
     },
     "guesthouse": {
       "platforms": {
         "all": {
-          "avg": 96866,
-          "count": 442,
+          "avg": 93924,
+          "count": 949,
           "min": 22000,
           "max": 291200,
           "topHotel": {
@@ -48097,8 +48097,8 @@
           "botHotel": null
         },
         "yeogi": {
-          "avg": 96866,
-          "count": 442,
+          "avg": 93924,
+          "count": 949,
           "min": 22000,
           "max": 291200,
           "topHotel": {
@@ -48120,14 +48120,14 @@
       "cities": [
         {
           "city": "경기",
-          "avg": 47780,
-          "count": 136,
+          "avg": 48684,
+          "count": 337,
           "min": 22000,
-          "max": 196970,
+          "max": 280000,
           "platforms": {
             "yeogi": {
-              "avg": 47780,
-              "count": 136
+              "avg": 48684,
+              "count": 337
             }
           },
           "trend": [
@@ -48135,22 +48135,22 @@
               "city": "경기",
               "hour": "2026-06-10T04:00",
               "platform": "yeogi",
-              "avg": 47780,
-              "count": 136
+              "avg": 48684,
+              "count": 337
             }
           ],
           "districts": [
             {
               "city": "경기",
               "district": "수원/용인/경기남부",
-              "avg": 43191,
-              "count": 120,
+              "avg": 45137,
+              "count": 305,
               "min": 22000,
-              "max": 196970,
+              "max": 280000,
               "platforms": {
                 "yeogi": {
-                  "avg": 43191,
-                  "count": 120
+                  "avg": 45137,
+                  "count": 305
                 }
               },
               "trend": [
@@ -48159,34 +48159,41 @@
                   "district": "수원/용인/경기남부",
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
-                  "avg": 43191,
-                  "count": 120
+                  "avg": 45137,
+                  "count": 305
                 }
               ],
               "top3": [
                 {
                   "city": "경기",
                   "district": "수원/용인/경기남부",
+                  "hotel_name": "나를 위한 쉼(休), 온전한 하루를 즐길 수 있는 | 여유",
+                  "price": 280000,
+                  "platform": "yeogi"
+                },
+                {
+                  "city": "경기",
+                  "district": "수원/용인/경기남부",
+                  "hotel_name": "포포인츠 바이 쉐라톤 수원",
+                  "price": 242000,
+                  "platform": "yeogi"
+                },
+                {
+                  "city": "경기",
+                  "district": "수원/용인/경기남부",
                   "hotel_name": "노보텔 앰배서더 수원",
                   "price": 196970,
-                  "platform": "yeogi"
-                },
-                {
-                  "city": "경기",
-                  "district": "수원/용인/경기남부",
-                  "hotel_name": "라마다 프라자 수원",
-                  "price": 151866,
-                  "platform": "yeogi"
-                },
-                {
-                  "city": "경기",
-                  "district": "수원/용인/경기남부",
-                  "hotel_name": "수원 행궁동 레보라호텔 by 아늑",
-                  "price": 130000,
                   "platform": "yeogi"
                 }
               ],
               "bottom3": [
+                {
+                  "city": "경기",
+                  "district": "수원/용인/경기남부",
+                  "hotel_name": "화성 게스트하우스",
+                  "price": 22000,
+                  "platform": "yeogi"
+                },
                 {
                   "city": "경기",
                   "district": "수원/용인/경기남부",
@@ -48200,27 +48207,20 @@
                   "hotel_name": "수원역 71번가-71st",
                   "price": 23000,
                   "platform": "yeogi"
-                },
-                {
-                  "city": "경기",
-                  "district": "수원/용인/경기남부",
-                  "hotel_name": "인계동 더두루와",
-                  "price": 24200,
-                  "platform": "yeogi"
                 }
               ]
             },
             {
               "city": "경기",
               "district": "가평/양평/경기북부",
-              "avg": 82192,
-              "count": 16,
+              "avg": 82486,
+              "count": 32,
               "min": 34660,
               "max": 148100,
               "platforms": {
                 "yeogi": {
-                  "avg": 82192,
-                  "count": 16
+                  "avg": 82486,
+                  "count": 32
                 }
               },
               "trend": [
@@ -48229,8 +48229,8 @@
                   "district": "가평/양평/경기북부",
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
-                  "avg": 82192,
-                  "count": 16
+                  "avg": 82486,
+                  "count": 32
                 }
               ],
               "top3": [
@@ -48261,7 +48261,7 @@
                   "city": "경기",
                   "district": "가평/양평/경기북부",
                   "hotel_name": "가평 슈가펜션",
-                  "price": 34660,
+                  "price": 44060,
                   "platform": "yeogi"
                 },
                 {
@@ -48284,24 +48284,30 @@
           "top3": [
             {
               "city": "경기",
+              "hotel_name": "나를 위한 쉼(休), 온전한 하루를 즐길 수 있는 | 여유",
+              "price": 280000,
+              "platform": "yeogi"
+            },
+            {
+              "city": "경기",
+              "hotel_name": "포포인츠 바이 쉐라톤 수원",
+              "price": 242000,
+              "platform": "yeogi"
+            },
+            {
+              "city": "경기",
               "hotel_name": "노보텔 앰배서더 수원",
               "price": 196970,
-              "platform": "yeogi"
-            },
-            {
-              "city": "경기",
-              "hotel_name": "라마다 프라자 수원",
-              "price": 151866,
-              "platform": "yeogi"
-            },
-            {
-              "city": "경기",
-              "hotel_name": "가평 실내수영장 온수 무료 펜션",
-              "price": 148100,
               "platform": "yeogi"
             }
           ],
           "bottom3": [
+            {
+              "city": "경기",
+              "hotel_name": "화성 게스트하우스",
+              "price": 22000,
+              "platform": "yeogi"
+            },
             {
               "city": "경기",
               "hotel_name": "인계동 엑스아이XI",
@@ -48313,25 +48319,19 @@
               "hotel_name": "수원역 71번가-71st",
               "price": 23000,
               "platform": "yeogi"
-            },
-            {
-              "city": "경기",
-              "hotel_name": "인계동 더두루와",
-              "price": 24200,
-              "platform": "yeogi"
             }
           ]
         },
         {
           "city": "제주",
           "avg": 120614,
-          "count": 107,
+          "count": 214,
           "min": 39000,
           "max": 278350,
           "platforms": {
             "yeogi": {
               "avg": 120614,
-              "count": 107
+              "count": 214
             }
           },
           "trend": [
@@ -48340,7 +48340,7 @@
               "hour": "2026-06-10T04:00",
               "platform": "yeogi",
               "avg": 120614,
-              "count": 107
+              "count": 214
             }
           ],
           "districts": [
@@ -48348,13 +48348,13 @@
               "city": "제주",
               "district": "협재(차귀도/풍차해안)",
               "avg": 113002,
-              "count": 15,
+              "count": 30,
               "min": 49000,
               "max": 207714,
               "platforms": {
                 "yeogi": {
                   "avg": 113002,
-                  "count": 15
+                  "count": 30
                 }
               },
               "trend": [
@@ -48364,7 +48364,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 113002,
-                  "count": 15
+                  "count": 30
                 }
               ],
               "top3": [
@@ -48418,13 +48418,13 @@
               "city": "제주",
               "district": "성산(우도/섭지코지)",
               "avg": 86800,
-              "count": 15,
+              "count": 30,
               "min": 39000,
               "max": 212933,
               "platforms": {
                 "yeogi": {
                   "avg": 86800,
-                  "count": 15
+                  "count": 30
                 }
               },
               "trend": [
@@ -48434,7 +48434,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 86800,
-                  "count": 15
+                  "count": 30
                 }
               ],
               "top3": [
@@ -48488,13 +48488,13 @@
               "city": "제주",
               "district": "산방산(모슬포/마라도)",
               "avg": 145508,
-              "count": 15,
+              "count": 30,
               "min": 47170,
               "max": 271210,
               "platforms": {
                 "yeogi": {
                   "avg": 145508,
-                  "count": 15
+                  "count": 30
                 }
               },
               "trend": [
@@ -48504,7 +48504,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 145508,
-                  "count": 15
+                  "count": 30
                 }
               ],
               "top3": [
@@ -48558,13 +48558,13 @@
               "city": "제주",
               "district": "월정/세화(월정리해변)",
               "avg": 119761,
-              "count": 14,
+              "count": 28,
               "min": 63000,
               "max": 180000,
               "platforms": {
                 "yeogi": {
                   "avg": 119761,
-                  "count": 14
+                  "count": 28
                 }
               },
               "trend": [
@@ -48574,7 +48574,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 119761,
-                  "count": 14
+                  "count": 28
                 }
               ],
               "top3": [
@@ -48628,13 +48628,13 @@
               "city": "제주",
               "district": "표선/남원",
               "avg": 130812,
-              "count": 12,
+              "count": 24,
               "min": 62300,
               "max": 250000,
               "platforms": {
                 "yeogi": {
                   "avg": 130812,
-                  "count": 12
+                  "count": 24
                 }
               },
               "trend": [
@@ -48644,7 +48644,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 130812,
-                  "count": 12
+                  "count": 24
                 }
               ],
               "top3": [
@@ -48698,13 +48698,13 @@
               "city": "제주",
               "district": "애월(곽지해변/새별오름)",
               "avg": 127647,
-              "count": 12,
+              "count": 24,
               "min": 53890,
               "max": 278350,
               "platforms": {
                 "yeogi": {
                   "avg": 127647,
-                  "count": 12
+                  "count": 24
                 }
               },
               "trend": [
@@ -48714,7 +48714,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 127647,
-                  "count": 12
+                  "count": 24
                 }
               ],
               "top3": [
@@ -48768,13 +48768,13 @@
               "city": "제주",
               "district": "서귀포(중문/천지연폭포)",
               "avg": 143668,
-              "count": 12,
+              "count": 24,
               "min": 39000,
               "max": 271210,
               "platforms": {
                 "yeogi": {
                   "avg": 143668,
-                  "count": 12
+                  "count": 24
                 }
               },
               "trend": [
@@ -48784,7 +48784,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 143668,
-                  "count": 12
+                  "count": 24
                 }
               ],
               "top3": [
@@ -48838,13 +48838,13 @@
               "city": "제주",
               "district": "함덕/사려니숲길",
               "avg": 127388,
-              "count": 6,
+              "count": 12,
               "min": 80809,
               "max": 246400,
               "platforms": {
                 "yeogi": {
                   "avg": 127388,
-                  "count": 6
+                  "count": 12
                 }
               },
               "trend": [
@@ -48854,7 +48854,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 127388,
-                  "count": 6
+                  "count": 12
                 }
               ],
               "top3": [
@@ -48908,13 +48908,13 @@
               "city": "제주",
               "district": "제주공항/이호테우해변",
               "avg": 78900,
-              "count": 4,
+              "count": 8,
               "min": 66600,
               "max": 95000,
               "platforms": {
                 "yeogi": {
                   "avg": 78900,
-                  "count": 4
+                  "count": 8
                 }
               },
               "trend": [
@@ -48924,7 +48924,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 78900,
-                  "count": 4
+                  "count": 8
                 }
               ],
               "top3": [
@@ -48978,13 +48978,13 @@
               "city": "제주",
               "district": "제주공항/삼양해수욕장",
               "avg": 71950,
-              "count": 2,
+              "count": 4,
               "min": 64900,
               "max": 79000,
               "platforms": {
                 "yeogi": {
                   "avg": 71950,
-                  "count": 2
+                  "count": 4
                 }
               },
               "trend": [
@@ -48994,7 +48994,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 71950,
-                  "count": 2
+                  "count": 4
                 }
               ],
               "top3": [
@@ -49074,14 +49074,14 @@
         },
         {
           "city": "강원",
-          "avg": 106958,
-          "count": 54,
+          "avg": 107003,
+          "count": 108,
           "min": 41750,
           "max": 259000,
           "platforms": {
             "yeogi": {
-              "avg": 106958,
-              "count": 54
+              "avg": 107003,
+              "count": 108
             }
           },
           "trend": [
@@ -49089,22 +49089,22 @@
               "city": "강원",
               "hour": "2026-06-10T04:00",
               "platform": "yeogi",
-              "avg": 106958,
-              "count": 54
+              "avg": 107003,
+              "count": 108
             }
           ],
           "districts": [
             {
               "city": "강원",
               "district": "속초/양양/고성",
-              "avg": 83642,
-              "count": 16,
+              "avg": 83793,
+              "count": 32,
               "min": 41750,
               "max": 199280,
               "platforms": {
                 "yeogi": {
-                  "avg": 83642,
-                  "count": 16
+                  "avg": 83793,
+                  "count": 32
                 }
               },
               "trend": [
@@ -49113,8 +49113,8 @@
                   "district": "속초/양양/고성",
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
-                  "avg": 83642,
-                  "count": 16
+                  "avg": 83793,
+                  "count": 32
                 }
               ],
               "top3": [
@@ -49168,13 +49168,13 @@
               "city": "강원",
               "district": "강릉",
               "avg": 112270,
-              "count": 16,
+              "count": 32,
               "min": 45175,
               "max": 189370,
               "platforms": {
                 "yeogi": {
                   "avg": 112270,
-                  "count": 16
+                  "count": 32
                 }
               },
               "trend": [
@@ -49184,7 +49184,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 112270,
-                  "count": 16
+                  "count": 32
                 }
               ],
               "top3": [
@@ -49238,13 +49238,13 @@
               "city": "강원",
               "district": "홍천/횡성/원주/평창",
               "avg": 142496,
-              "count": 13,
+              "count": 26,
               "min": 63349,
               "max": 259000,
               "platforms": {
                 "yeogi": {
                   "avg": 142496,
-                  "count": 13
+                  "count": 26
                 }
               },
               "trend": [
@@ -49254,7 +49254,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 142496,
-                  "count": 13
+                  "count": 26
                 }
               ],
               "top3": [
@@ -49308,13 +49308,13 @@
               "city": "강원",
               "district": "동해/삼척/태백",
               "avg": 93507,
-              "count": 7,
+              "count": 14,
               "min": 56178,
               "max": 177550,
               "platforms": {
                 "yeogi": {
                   "avg": 93507,
-                  "count": 7
+                  "count": 14
                 }
               },
               "trend": [
@@ -49324,7 +49324,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 93507,
-                  "count": 7
+                  "count": 14
                 }
               ],
               "top3": [
@@ -49378,13 +49378,13 @@
               "city": "강원",
               "district": "춘천/화천/양구/인제",
               "avg": 67090,
-              "count": 2,
+              "count": 4,
               "min": 62980,
               "max": 71200,
               "platforms": {
                 "yeogi": {
                   "avg": 67090,
-                  "count": 2
+                  "count": 4
                 }
               },
               "trend": [
@@ -49394,7 +49394,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 67090,
-                  "count": 2
+                  "count": 4
                 }
               ],
               "top3": [
@@ -49474,14 +49474,14 @@
         },
         {
           "city": "부산",
-          "avg": 110584,
-          "count": 38,
+          "avg": 111750,
+          "count": 76,
           "min": 50149,
-          "max": 214294,
+          "max": 220614,
           "platforms": {
             "yeogi": {
-              "avg": 110584,
-              "count": 38
+              "avg": 111750,
+              "count": 76
             }
           },
           "trend": [
@@ -49489,8 +49489,8 @@
               "city": "부산",
               "hour": "2026-06-10T04:00",
               "platform": "yeogi",
-              "avg": 110584,
-              "count": 38
+              "avg": 111750,
+              "count": 76
             }
           ],
           "districts": [
@@ -49498,13 +49498,13 @@
               "city": "부산",
               "district": "해운대/기장",
               "avg": 122120,
-              "count": 11,
+              "count": 22,
               "min": 50149,
               "max": 214294,
               "platforms": {
                 "yeogi": {
                   "avg": 122120,
-                  "count": 11
+                  "count": 22
                 }
               },
               "trend": [
@@ -49514,7 +49514,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 122120,
-                  "count": 11
+                  "count": 22
                 }
               ],
               "top3": [
@@ -49568,13 +49568,13 @@
               "city": "부산",
               "district": "남포동/자갈치",
               "avg": 92702,
-              "count": 10,
+              "count": 20,
               "min": 57408,
               "max": 129000,
               "platforms": {
                 "yeogi": {
                   "avg": 92702,
-                  "count": 10
+                  "count": 20
                 }
               },
               "trend": [
@@ -49584,7 +49584,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 92702,
-                  "count": 10
+                  "count": 20
                 }
               ],
               "top3": [
@@ -49637,14 +49637,14 @@
             {
               "city": "부산",
               "district": "광안리",
-              "avg": 117878,
-              "count": 8,
+              "avg": 123415,
+              "count": 16,
               "min": 57194,
-              "max": 189000,
+              "max": 220614,
               "platforms": {
                 "yeogi": {
-                  "avg": 117878,
-                  "count": 8
+                  "avg": 123415,
+                  "count": 16
                 }
               },
               "trend": [
@@ -49653,11 +49653,18 @@
                   "district": "광안리",
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
-                  "avg": 117878,
-                  "count": 8
+                  "avg": 123415,
+                  "count": 16
                 }
               ],
               "top3": [
+                {
+                  "city": "부산",
+                  "district": "광안리",
+                  "hotel_name": "★당일특가★ 부산 광안리 애프터챕터",
+                  "price": 220614,
+                  "platform": "yeogi"
+                },
                 {
                   "city": "부산",
                   "district": "광안리",
@@ -49670,13 +49677,6 @@
                   "district": "광안리",
                   "hotel_name": "오션 더포인트 호텔",
                   "price": 170000,
-                  "platform": "yeogi"
-                },
-                {
-                  "city": "부산",
-                  "district": "광안리",
-                  "hotel_name": "★당일특가★ 부산 광안리 애프터챕터",
-                  "price": 132014,
                   "platform": "yeogi"
                 }
               ],
@@ -49708,13 +49708,13 @@
               "city": "부산",
               "district": "부산역/송도/감천",
               "avg": 115357,
-              "count": 7,
+              "count": 14,
               "min": 82818,
               "max": 158860,
               "platforms": {
                 "yeogi": {
                   "avg": 115357,
-                  "count": 7
+                  "count": 14
                 }
               },
               "trend": [
@@ -49724,7 +49724,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 115357,
-                  "count": 7
+                  "count": 14
                 }
               ],
               "top3": [
@@ -49778,13 +49778,13 @@
               "city": "부산",
               "district": "서면",
               "avg": 90670,
-              "count": 2,
+              "count": 4,
               "min": 63689,
               "max": 117650,
               "platforms": {
                 "yeogi": {
                   "avg": 90670,
-                  "count": 2
+                  "count": 4
                 }
               },
               "trend": [
@@ -49794,7 +49794,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 90670,
-                  "count": 2
+                  "count": 4
                 }
               ],
               "top3": [
@@ -49834,6 +49834,12 @@
           "top3": [
             {
               "city": "부산",
+              "hotel_name": "★당일특가★ 부산 광안리 애프터챕터",
+              "price": 220614,
+              "platform": "yeogi"
+            },
+            {
+              "city": "부산",
               "hotel_name": "★당일특가★ 뉴시즈 해운대 레지던스",
               "price": 214294,
               "platform": "yeogi"
@@ -49842,12 +49848,6 @@
               "city": "부산",
               "hotel_name": "★당일특가★ 호텔 센트럴베이 광안리",
               "price": 189000,
-              "platform": "yeogi"
-            },
-            {
-              "city": "부산",
-              "hotel_name": "★당일특가★ 신라스테이 해운대",
-              "price": 179977,
               "platform": "yeogi"
             }
           ],
@@ -49875,13 +49875,13 @@
         {
           "city": "전남",
           "avg": 103623,
-          "count": 29,
+          "count": 58,
           "min": 29800,
           "max": 200000,
           "platforms": {
             "yeogi": {
               "avg": 103623,
-              "count": 29
+              "count": 58
             }
           },
           "trend": [
@@ -49890,7 +49890,7 @@
               "hour": "2026-06-10T04:00",
               "platform": "yeogi",
               "avg": 103623,
-              "count": 29
+              "count": 58
             }
           ],
           "districts": [
@@ -49898,13 +49898,13 @@
               "city": "전남",
               "district": "여수/순천",
               "avg": 85120,
-              "count": 13,
+              "count": 26,
               "min": 29800,
               "max": 131000,
               "platforms": {
                 "yeogi": {
                   "avg": 85120,
-                  "count": 13
+                  "count": 26
                 }
               },
               "trend": [
@@ -49914,7 +49914,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 85120,
-                  "count": 13
+                  "count": 26
                 }
               ],
               "top3": [
@@ -49968,13 +49968,13 @@
               "city": "전남",
               "district": "담양/나주/구례/곡성",
               "avg": 135292,
-              "count": 12,
+              "count": 24,
               "min": 85000,
               "max": 200000,
               "platforms": {
                 "yeogi": {
                   "avg": 135292,
-                  "count": 12
+                  "count": 24
                 }
               },
               "trend": [
@@ -49984,7 +49984,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 135292,
-                  "count": 12
+                  "count": 24
                 }
               ],
               "top3": [
@@ -50038,13 +50038,13 @@
               "city": "전남",
               "district": "목포/신안/해남/함평",
               "avg": 68750,
-              "count": 4,
+              "count": 8,
               "min": 50000,
               "max": 80000,
               "platforms": {
                 "yeogi": {
                   "avg": 68750,
-                  "count": 4
+                  "count": 8
                 }
               },
               "trend": [
@@ -50054,7 +50054,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 68750,
-                  "count": 4
+                  "count": 8
                 }
               ],
               "top3": [
@@ -50149,13 +50149,13 @@
         {
           "city": "서울",
           "avg": 184602,
-          "count": 27,
+          "count": 54,
           "min": 23000,
           "max": 291200,
           "platforms": {
             "yeogi": {
               "avg": 184602,
-              "count": 27
+              "count": 54
             }
           },
           "trend": [
@@ -50164,7 +50164,7 @@
               "hour": "2026-06-10T04:00",
               "platform": "yeogi",
               "avg": 184602,
-              "count": 27
+              "count": 54
             }
           ],
           "districts": [
@@ -50172,13 +50172,13 @@
               "city": "서울",
               "district": "홍대/신촌",
               "avg": 143943,
-              "count": 8,
+              "count": 16,
               "min": 23000,
               "max": 291200,
               "platforms": {
                 "yeogi": {
                   "avg": 143943,
-                  "count": 8
+                  "count": 16
                 }
               },
               "trend": [
@@ -50188,7 +50188,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 143943,
-                  "count": 8
+                  "count": 16
                 }
               ],
               "top3": [
@@ -50242,13 +50242,13 @@
               "city": "서울",
               "district": "서울역/용산/이태원",
               "avg": 249816,
-              "count": 6,
+              "count": 12,
               "min": 209140,
               "max": 290400,
               "platforms": {
                 "yeogi": {
                   "avg": 249816,
-                  "count": 6
+                  "count": 12
                 }
               },
               "trend": [
@@ -50258,7 +50258,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 249816,
-                  "count": 6
+                  "count": 12
                 }
               ],
               "top3": [
@@ -50312,13 +50312,13 @@
               "city": "서울",
               "district": "명동/남산/남대문",
               "avg": 203021,
-              "count": 5,
+              "count": 10,
               "min": 155170,
               "max": 278134,
               "platforms": {
                 "yeogi": {
                   "avg": 203021,
-                  "count": 5
+                  "count": 10
                 }
               },
               "trend": [
@@ -50328,7 +50328,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 203021,
-                  "count": 5
+                  "count": 10
                 }
               ],
               "top3": [
@@ -50382,13 +50382,13 @@
               "city": "서울",
               "district": "종로/삼청동/북촌/인사동",
               "avg": 176496,
-              "count": 3,
+              "count": 6,
               "min": 152000,
               "max": 211939,
               "platforms": {
                 "yeogi": {
                   "avg": 176496,
-                  "count": 3
+                  "count": 6
                 }
               },
               "trend": [
@@ -50398,7 +50398,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 176496,
-                  "count": 3
+                  "count": 6
                 }
               ],
               "top3": [
@@ -50452,13 +50452,13 @@
               "city": "서울",
               "district": "영등포/여의도/신림",
               "avg": 210730,
-              "count": 2,
+              "count": 4,
               "min": 151960,
               "max": 269500,
               "platforms": {
                 "yeogi": {
                   "avg": 210730,
-                  "count": 2
+                  "count": 4
                 }
               },
               "trend": [
@@ -50468,7 +50468,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 210730,
-                  "count": 2
+                  "count": 4
                 }
               ],
               "top3": [
@@ -50508,13 +50508,13 @@
               "city": "서울",
               "district": "동대문/대학로/노원",
               "avg": 84874,
-              "count": 2,
+              "count": 4,
               "min": 60000,
               "max": 109747,
               "platforms": {
                 "yeogi": {
                   "avg": 84874,
-                  "count": 2
+                  "count": 4
                 }
               },
               "trend": [
@@ -50524,7 +50524,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 84874,
-                  "count": 2
+                  "count": 4
                 }
               ],
               "top3": [
@@ -50564,13 +50564,13 @@
               "city": "서울",
               "district": "강남/잠실/건대/뚝섬",
               "avg": 198000,
-              "count": 1,
+              "count": 2,
               "min": 198000,
               "max": 198000,
               "platforms": {
                 "yeogi": {
                   "avg": 198000,
-                  "count": 1
+                  "count": 2
                 }
               },
               "trend": [
@@ -50580,7 +50580,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 198000,
-                  "count": 1
+                  "count": 2
                 }
               ],
               "top3": [
@@ -50647,13 +50647,13 @@
         {
           "city": "경남",
           "avg": 103701,
-          "count": 21,
+          "count": 42,
           "min": 38860,
           "max": 194580,
           "platforms": {
             "yeogi": {
               "avg": 103701,
-              "count": 21
+              "count": 42
             }
           },
           "trend": [
@@ -50662,7 +50662,7 @@
               "hour": "2026-06-10T04:00",
               "platform": "yeogi",
               "avg": 103701,
-              "count": 21
+              "count": 42
             }
           ],
           "districts": [
@@ -50670,13 +50670,13 @@
               "city": "경남",
               "district": "하동/산청/함양/밀양",
               "avg": 107573,
-              "count": 12,
+              "count": 24,
               "min": 60000,
               "max": 194580,
               "platforms": {
                 "yeogi": {
                   "avg": 107573,
-                  "count": 12
+                  "count": 24
                 }
               },
               "trend": [
@@ -50686,7 +50686,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 107573,
-                  "count": 12
+                  "count": 24
                 }
               ],
               "top3": [
@@ -50740,13 +50740,13 @@
               "city": "경남",
               "district": "통영/거제",
               "avg": 79172,
-              "count": 7,
+              "count": 14,
               "min": 38860,
               "max": 172500,
               "platforms": {
                 "yeogi": {
                   "avg": 79172,
-                  "count": 7
+                  "count": 14
                 }
               },
               "trend": [
@@ -50756,7 +50756,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 79172,
-                  "count": 7
+                  "count": 14
                 }
               ],
               "top3": [
@@ -50810,13 +50810,13 @@
               "city": "경남",
               "district": "울산/남해/고성/사천",
               "avg": 166316,
-              "count": 2,
+              "count": 4,
               "min": 162132,
               "max": 170500,
               "platforms": {
                 "yeogi": {
                   "avg": 166316,
-                  "count": 2
+                  "count": 4
                 }
               },
               "trend": [
@@ -50826,7 +50826,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 166316,
-                  "count": 2
+                  "count": 4
                 }
               ],
               "top3": [
@@ -50907,13 +50907,13 @@
         {
           "city": "충청",
           "avg": 114866,
-          "count": 14,
+          "count": 28,
           "min": 60000,
           "max": 230000,
           "platforms": {
             "yeogi": {
               "avg": 114866,
-              "count": 14
+              "count": 28
             }
           },
           "trend": [
@@ -50922,7 +50922,7 @@
               "hour": "2026-06-10T04:00",
               "platform": "yeogi",
               "avg": 114866,
-              "count": 14
+              "count": 28
             }
           ],
           "districts": [
@@ -50930,13 +50930,13 @@
               "city": "충청",
               "district": "충북/단양/충주/제천",
               "avg": 94362,
-              "count": 11,
+              "count": 22,
               "min": 60000,
               "max": 185060,
               "platforms": {
                 "yeogi": {
                   "avg": 94362,
-                  "count": 11
+                  "count": 22
                 }
               },
               "trend": [
@@ -50946,7 +50946,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 94362,
-                  "count": 11
+                  "count": 22
                 }
               ],
               "top3": [
@@ -51000,13 +51000,13 @@
               "city": "충청",
               "district": "충남/대전/태안/공주",
               "avg": 190048,
-              "count": 3,
+              "count": 6,
               "min": 161700,
               "max": 230000,
               "platforms": {
                 "yeogi": {
                   "avg": 190048,
-                  "count": 3
+                  "count": 6
                 }
               },
               "trend": [
@@ -51016,7 +51016,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 190048,
-                  "count": 3
+                  "count": 6
                 }
               ],
               "top3": [
@@ -51111,13 +51111,13 @@
         {
           "city": "경북",
           "avg": 111668,
-          "count": 11,
+          "count": 22,
           "min": 54700,
           "max": 202000,
           "platforms": {
             "yeogi": {
               "avg": 111668,
-              "count": 11
+              "count": 22
             }
           },
           "trend": [
@@ -51126,7 +51126,7 @@
               "hour": "2026-06-10T04:00",
               "platform": "yeogi",
               "avg": 111668,
-              "count": 11
+              "count": 22
             }
           ],
           "districts": [
@@ -51134,13 +51134,13 @@
               "city": "경북",
               "district": "경주",
               "avg": 107635,
-              "count": 10,
+              "count": 20,
               "min": 54700,
               "max": 202000,
               "platforms": {
                 "yeogi": {
                   "avg": 107635,
-                  "count": 10
+                  "count": 20
                 }
               },
               "trend": [
@@ -51150,7 +51150,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 107635,
-                  "count": 10
+                  "count": 20
                 }
               ],
               "top3": [
@@ -51204,13 +51204,13 @@
               "city": "경북",
               "district": "안동/봉화/문경/포항",
               "avg": 152000,
-              "count": 1,
+              "count": 2,
               "min": 152000,
               "max": 152000,
               "platforms": {
                 "yeogi": {
                   "avg": 152000,
-                  "count": 1
+                  "count": 2
                 }
               },
               "trend": [
@@ -51220,7 +51220,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 152000,
-                  "count": 1
+                  "count": 2
                 }
               ],
               "top3": [
@@ -51287,13 +51287,13 @@
         {
           "city": "전북",
           "avg": 85952,
-          "count": 5,
+          "count": 10,
           "min": 62673,
           "max": 114000,
           "platforms": {
             "yeogi": {
               "avg": 85952,
-              "count": 5
+              "count": 10
             }
           },
           "trend": [
@@ -51302,7 +51302,7 @@
               "hour": "2026-06-10T04:00",
               "platform": "yeogi",
               "avg": 85952,
-              "count": 5
+              "count": 10
             }
           ],
           "districts": [
@@ -51310,13 +51310,13 @@
               "city": "전북",
               "district": "전주",
               "avg": 92744,
-              "count": 3,
+              "count": 6,
               "min": 77600,
               "max": 114000,
               "platforms": {
                 "yeogi": {
                   "avg": 92744,
-                  "count": 3
+                  "count": 6
                 }
               },
               "trend": [
@@ -51326,7 +51326,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 92744,
-                  "count": 3
+                  "count": 6
                 }
               ],
               "top3": [
@@ -51380,13 +51380,13 @@
               "city": "전북",
               "district": "군산/익산/남원/진안",
               "avg": 75765,
-              "count": 2,
+              "count": 4,
               "min": 62673,
               "max": 88856,
               "platforms": {
                 "yeogi": {
                   "avg": 75765,
-                  "count": 2
+                  "count": 4
                 }
               },
               "trend": [
@@ -51396,7 +51396,7 @@
                   "hour": "2026-06-10T04:00",
                   "platform": "yeogi",
                   "avg": 75765,
-                  "count": 2
+                  "count": 4
                 }
               ],
               "top3": [
@@ -51479,8 +51479,8 @@
         {
           "hour": "2026-06-10T04:00",
           "platform": "yeogi",
-          "avg": 96866,
-          "count": 442
+          "avg": 93924,
+          "count": 949
         }
       ]
     }
