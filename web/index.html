@@ -28,7 +28,7 @@ header h1 em { color: var(--accent); font-style: normal; }
 @keyframes blink { 0%,100%{opacity:1}50%{opacity:.3} }
 
 .wrap { max-width: 960px; margin: 0 auto; padding: 16px; }
-@media(max-width:600px){ .wrap { padding: 10px; } }
+@media(max-width:600px){ .wrap { padding: 8px 0; } }
 
 /* 숙박 유형 탭 - 2×2 그리드 */
 .type-row { display: grid; grid-template-columns: repeat(4,1fr); gap: 6px; margin-bottom: 10px; }
@@ -68,9 +68,14 @@ header h1 em { color: var(--accent); font-style: normal; }
 .stat-sub { font-size: .68rem; color: var(--muted); margin-top: 4px; }
 
 @media(max-width:600px){
-  .stat3 { grid-template-columns: 1fr; gap: 8px; }
+  .stat3 { grid-template-columns: 1fr; gap: 1px; border-radius: 0; }
   .stat-val { font-size: 1.6rem; }
-  .stat-box { padding: 14px 16px; }
+  .stat-box { padding: 14px 16px; border-radius: 0; border-left: none; border-right: none; }
+  .stat-box:first-child { border-top: none; }
+  .top3-card { border-radius: 0; border-left: none; border-right: none; }
+  .chart-card { border-radius: 0; border-left: none; border-right: none; }
+  .district-wrap { border-radius: 0; border-left: none; border-right: none; }
+  .chart-box { height: 155px; }
 }
 
 /* Top3 섹션 */
