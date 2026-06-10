@@ -28,6 +28,7 @@ header h1 em { color: var(--accent); font-style: normal; }
 @keyframes blink { 0%,100%{opacity:1}50%{opacity:.3} }
 
 .wrap { max-width: 960px; margin: 0 auto; padding: 16px; }
+@media(max-width:600px){ .wrap { padding: 10px; } }
 
 /* 숙박 유형 탭 */
 .type-row { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
@@ -59,46 +60,56 @@ header h1 em { color: var(--accent); font-style: normal; }
 
 /* 메인 통계 3칸 */
 .stat3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 16px; }
-@media(max-width:480px){ .stat3 { grid-template-columns: 1fr 1fr; } }
 .stat-box { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
 .stat-box.hl { border-color: var(--accent); background: linear-gradient(135deg,#1a1d27,#1e2240); }
 .stat-lbl { font-size: .7rem; color: var(--muted); margin-bottom: 5px; }
 .stat-val { font-size: 1.45rem; font-weight: 700; }
 .stat-sub { font-size: .68rem; color: var(--muted); margin-top: 4px; }
 
+/* 모바일: 평균 전체너비(가운데 정렬), 최고/최저 2열 */
+@media(max-width:600px){
+  .stat3 { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .stat3 .stat-box:first-child { grid-column: 1 / -1; text-align: center; padding: 12px 16px; }
+  .stat3 .stat-box:first-child .stat-val { font-size: 1.9rem; }
+  .stat-val { font-size: 1.15rem; }
+  .stat-box { padding: 10px 11px; }
+  .stat-lbl { font-size: .67rem; }
+}
+
 /* Top3 섹션 */
-.top3-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
-@media(max-width:520px){ .top3-wrap { grid-template-columns: 1fr; } }
-.top3-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 14px; }
-.top3-head { font-size: .78rem; font-weight: 700; margin-bottom: 11px; letter-spacing: .03em; }
-.top3-item { display: flex; align-items: center; gap: 9px; padding: 9px 0; border-bottom: 1px solid var(--border); }
+.top3-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 16px; }
+.top3-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 12px; }
+.top3-head { font-size: .75rem; font-weight: 700; margin-bottom: 9px; letter-spacing: .03em; }
+.top3-item { display: flex; align-items: center; gap: 7px; padding: 7px 0; border-bottom: 1px solid var(--border); }
 .top3-item:last-child { border-bottom: none; }
 .badge {
-  width: 24px; height: 24px; border-radius: 50%; flex-shrink: 0;
-  display: flex; align-items: center; justify-content: center; font-size: .72rem; font-weight: 700;
+  width: 20px; height: 20px; border-radius: 50%; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center; font-size: .66rem; font-weight: 700;
 }
 .badge.exp { background: rgba(244,67,54,.15); color: var(--red); }
 .badge.chp { background: rgba(76,175,80,.15); color: var(--green); }
 .hotel-info { flex: 1; min-width: 0; }
-.hotel-nm { font-size: .85rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.hotel-pl { font-size: .66rem; color: var(--muted); margin-top: 2px; }
-.hotel-pr { font-size: .95rem; font-weight: 700; flex-shrink: 0; }
+.hotel-nm { font-size: .78rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hotel-pl { font-size: .62rem; color: var(--muted); margin-top: 1px; }
+.hotel-pr { font-size: .82rem; font-weight: 700; flex-shrink: 0; }
 
 /* 24h 차트 */
 .chart-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 14px; margin-bottom: 16px; }
-.sec-title { font-size: .78rem; font-weight: 600; color: var(--muted); margin-bottom: 10px; }
-.chart-box { position: relative; height: 190px; }
+.sec-title { font-size: .75rem; font-weight: 600; color: var(--muted); margin-bottom: 10px; }
+.chart-box { position: relative; height: 180px; }
+@media(max-width:600px){ .chart-box { height: 160px; } }
 
 /* 전국 도시 그리드 */
-.city-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px,1fr)); gap: 7px; }
+.city-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px,1fr)); gap: 7px; }
+@media(max-width:600px){ .city-grid { grid-template-columns: repeat(2, 1fr); gap: 6px; } }
 .city-card {
   background: var(--card2); border: 1px solid var(--border); border-radius: 8px;
-  padding: 10px 12px; cursor: pointer; transition: border-color .13s;
+  padding: 10px 12px; cursor: pointer; transition: border-color .13s; text-align: center;
 }
 .city-card:hover, .city-card.on { border-color: var(--accent); background: rgba(79,110,247,.1); }
-.city-nm { font-size: .74rem; color: var(--muted); margin-bottom: 3px; }
-.city-avg { font-size: .98rem; font-weight: 700; }
-.city-cnt { font-size: .68rem; color: var(--muted); }
+.city-nm { font-size: .72rem; color: var(--muted); margin-bottom: 3px; }
+.city-avg { font-size: .95rem; font-weight: 700; }
+.city-cnt { font-size: .65rem; color: var(--muted); margin-top: 2px; }
 
 /* 구 선택 */
 .district-wrap { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; margin-bottom: 14px; }
