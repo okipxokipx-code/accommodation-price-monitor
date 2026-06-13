@@ -1,6 +1,8 @@
 'use strict';
 
-const { chromium } = require('playwright');
+const { chromium } = require('playwright-extra');
+const StealthPlugin = require('puppeteer-extra-plugin-stealth');
+chromium.use(StealthPlugin());
 const { getAllRegions } = require('./regions');
 
 const BASE_URL = 'https://nol.yanolja.com';
@@ -70,7 +72,12 @@ async function scrapeRegion(region, ctx) {
             const t = (el.textContent || '').replace(/[^0-9]/g, '');
             if (t && !el.className.includes('line-through')) prices.push(t);
           }
-          // 대실가(첫번째) 보다 숙박가(두번째) 우선
+          // 카드 텍스트에 "숙박" 없이 "대실"만 있으면 제외 (만실 시 대실가 fallback 방지)
+          const cardText = a.textContent || '';
+          const hasSanbak = cardText.includes('숙박');
+          const hasDaesil = cardText.includes('대실');
+          if (hasDaesil && !hasSanbak) return { name: '', price: '' };
+          // 숙박가(두번째) 우선, 없으면 첫번째
           return {
             name: nameEl ? nameEl.textContent.trim() : '',
             price: prices[1] ?? prices[0] ?? '',
