@@ -63,7 +63,9 @@ async function scrapeByType(type, scrapeRegion, ctx) {
 }
 
 async function scrapePlatform(platformName, scraperModule, types) {
-  const { chromium } = require('playwright');
+  const { chromium } = require('playwright-extra');
+  const StealthPlugin = require('puppeteer-extra-plugin-stealth');
+  chromium.use(StealthPlugin());
   const { scrapeRegion } = scraperModule;
   types = types || getAccommodationTypes();
 
@@ -177,6 +179,14 @@ async function scrapeAll() {
     log(`[JSON/푸시 오류] ${err.message.slice(0, 120)}`);
   }
 }
+
+// ── 크래시 방지: uncaughtException / unhandledRejection 잡기 ──────────────
+process.on('uncaughtException', (err) => {
+  log(`[치명 오류 포착 - 계속 실행] ${err.message}`);
+});
+process.on('unhandledRejection', (reason) => {
+  log(`[미처리 거절 포착 - 계속 실행] ${reason}`);
+});
 
 // ── 즉시 1회 실행 + 매 정각 반복 ─────────────────────────────────────────
 log('=== 전국 숙박 객단가 모니터링 에이전트 시작 ===');
