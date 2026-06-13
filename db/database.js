@@ -216,11 +216,26 @@ function pruneOld(days = 30) {
  * - 최근 24시간 시간별 트렌드
  */
 function exportDashboardData() {
-  const since2h  = new Date(Date.now() -  2 * 3600 * 1000).toISOString();
-  const since24h = new Date(Date.now() - 24 * 3600 * 1000).toISOString();
-  const types    = ['motel', 'hotel', 'pension', 'guesthouse'];
+  // 최근 2시간 데이터 없으면 가장 최근 배치 기준으로 자동 fallback
+  const now = Date.now();
+  const since2h  = new Date(now -  2 * 3600 * 1000).toISOString();
+  const since24h = new Date(now - 24 * 3600 * 1000).toISOString();
 
-  const result = { updatedAt: new Date().toISOString(), types: {} };
+  const recentCheck = db.prepare(`SELECT COUNT(*) as c FROM prices WHERE scraped_at >= ?`).get(since2h);
+  let batchSince = since2h;
+  let batchAt = new Date(now).toISOString(); // 대시보드 updatedAt
+  if (recentCheck.c === 0) {
+    // 가장 최근 수집 시각 기준 ±1시간 윈도우 사용
+    const lastRow = db.prepare(`SELECT MAX(scraped_at) as last FROM prices`).get();
+    if (lastRow?.last) {
+      const lastMs = new Date(lastRow.last).getTime();
+      batchSince = new Date(lastMs - 2 * 3600 * 1000).toISOString();
+      batchAt = lastRow.last;
+    }
+  }
+
+  const types = ['motel', 'hotel', 'pension', 'guesthouse'];
+  const result = { updatedAt: batchAt, types: {} };
 
   for (const type of types) {
     // 플랫폼별 통계 + 전국 최고가/최저가 호텔 정보
@@ -232,7 +247,7 @@ function exportDashboardData() {
                MIN(price) AS min, MAX(price) AS max
         FROM prices
         WHERE accommodation_type = ? AND scraped_at >= ? ${platClause}
-      `).get(type, since2h) || { avg: null, count: 0, min: null, max: null };
+      `).get(type, batchSince) || { avg: null, count: 0, min: null, max: null };
 
       // 전국 최고가 호텔
       const topHotel = db.prepare(`
@@ -240,7 +255,7 @@ function exportDashboardData() {
         FROM prices
         WHERE accommodation_type = ? AND scraped_at >= ? ${platClause}
         ORDER BY price DESC LIMIT 1
-      `).get(type, since2h);
+      `).get(type, batchSince);
 
       // 전국 최저가 호텔
       const botHotel = db.prepare(`
@@ -248,7 +263,7 @@ function exportDashboardData() {
         FROM prices
         WHERE accommodation_type = ? AND scraped_at >= ? ${platClause}
         ORDER BY price ASC LIMIT 1
-      `).get(type, since2h);
+      `).get(type, batchSince);
 
       platforms[plat] = { ...base, topHotel: topHotel || null, botHotel: botHotel || null };
     }
@@ -262,7 +277,7 @@ function exportDashboardData() {
       WHERE accommodation_type = ? AND scraped_at >= ?
       GROUP BY region_city, region_district
       ORDER BY region_city, count DESC
-    `).all(type, since2h);
+    `).all(type, batchSince);
 
     // 구 단위 × 플랫폼별 (최근 2h)
     const districtPlatRows = db.prepare(`
@@ -271,7 +286,7 @@ function exportDashboardData() {
       FROM prices
       WHERE accommodation_type = ? AND scraped_at >= ?
       GROUP BY region_city, region_district, platform
-    `).all(type, since2h);
+    `).all(type, batchSince);
 
     // 구 단위 × 시간별 트렌드 (24h)
     const districtTrendRows = db.prepare(`
@@ -294,7 +309,7 @@ function exportDashboardData() {
       WHERE accommodation_type = ? AND scraped_at >= ?
       GROUP BY region_city, region_district, hotel_name
       ORDER BY region_city, region_district, price DESC
-    `).all(type, since2h);
+    `).all(type, batchSince);
 
     // 구 단위에 플랫폼 + 트렌드 + 호텔 목록 병합
     const districtsWithDetail = districtRaw.map(d => {
@@ -326,7 +341,7 @@ function exportDashboardData() {
       WHERE accommodation_type = ? AND scraped_at >= ?
       GROUP BY region_city, hotel_name
       ORDER BY region_city, price DESC
-    `).all(type, since2h);
+    `).all(type, batchSince);
     Object.keys(cityMap).forEach(city => {
       const rows = cityTopRows.filter(r => r.city === city);
       cityMap[city].top3    = rows.slice(0, 3);
@@ -342,7 +357,7 @@ function exportDashboardData() {
       WHERE accommodation_type = ? AND scraped_at >= ?
       GROUP BY region_city
       ORDER BY count DESC
-    `).all(type, since2h);
+    `).all(type, batchSince);
 
     const cityPlatRows = db.prepare(`
       SELECT region_city AS city, platform,
@@ -350,7 +365,7 @@ function exportDashboardData() {
       FROM prices
       WHERE accommodation_type = ? AND scraped_at >= ?
       GROUP BY region_city, platform
-    `).all(type, since2h);
+    `).all(type, batchSince);
 
     const cityTrendRows = db.prepare(`
       SELECT region_city AS city,

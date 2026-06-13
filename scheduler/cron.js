@@ -151,30 +151,44 @@ async function scrapeAll() {
 
   log(`=== 완료: 총 ${total}건 저장 ===`);
 
-  // ── JSON 내보내기 + GitHub 자동 푸시 ─────────────────────────────
+  // ── JSON 내보내기 + GitHub 자동 푸시 (재시도 3회) ────────────────
   try {
     const data = exportDashboardData();
     const outPath = path.join(DATA_EXPORT_DIR, 'latest.json');
-    fs.writeFileSync(outPath, JSON.stringify(data, null, 2));
-    log(`JSON 내보내기 완료 → data-export/latest.json`);
+    fs.writeFileSync(outPath, JSON.stringify(data));
+    log(`JSON 내보내기 완료 → data-export/latest.json (${data.updatedAt})`);
 
     const repoDir = path.join(__dirname, '..');
     const gitPath = '/usr/bin/git';
     const ghPath = path.join(process.env.HOME, 'bin', 'gh');
-
-    // gh CLI 토큰으로 credential 설정 (백그라운드 실행 시 keychain 접근 불가 대비)
     const env = { ...process.env, PATH: `${process.env.HOME}/bin:/usr/local/bin:/usr/bin:/bin` };
+
     try {
       const token = execSync(`${ghPath} auth token`, { env, stdio: 'pipe' }).toString().trim();
       execSync(`${gitPath} config credential.helper '!f(){ echo username=x-token-auth; echo password=${token}; }; f'`,
         { cwd: repoDir, stdio: 'pipe' });
-    } catch (_) { /* gh 없으면 osxkeychain 사용 */ }
+    } catch (_) {}
 
     execSync(`${gitPath} add data-export/latest.json`, { cwd: repoDir, stdio: 'pipe' });
     const timestamp = new Date().toLocaleString('ko-KR', { timeZone: 'Asia/Seoul' });
-    execSync(`${gitPath} commit -m "데이터 갱신: ${timestamp}"`, { cwd: repoDir, stdio: 'pipe' });
-    execSync(`${gitPath} push`, { cwd: repoDir, env, stdio: 'pipe' });
-    log('GitHub 자동 푸시 완료 ✓');
+    try {
+      execSync(`${gitPath} commit -m "데이터 갱신: ${timestamp}"`, { cwd: repoDir, stdio: 'pipe' });
+    } catch (_) { /* 변경사항 없으면 commit 스킵 */ }
+
+    // push 재시도 3회 (네트워크 일시 끊김 대비)
+    let pushed = false;
+    for (let attempt = 1; attempt <= 3; attempt++) {
+      try {
+        execSync(`${gitPath} push`, { cwd: repoDir, env, stdio: 'pipe', timeout: 30000 });
+        log(`GitHub 자동 푸시 완료 ✓ (${attempt}회)`);
+        pushed = true;
+        break;
+      } catch (pushErr) {
+        log(`[푸시 실패 ${attempt}/3] ${pushErr.message.slice(0, 80)}`);
+        if (attempt < 3) await new Promise(r => setTimeout(r, 10000)); // 10초 대기 후 재시도
+      }
+    }
+    if (!pushed) log('[푸시 최종 실패] 다음 수집 시 재시도됩니다.');
   } catch (err) {
     log(`[JSON/푸시 오류] ${err.message.slice(0, 120)}`);
   }
